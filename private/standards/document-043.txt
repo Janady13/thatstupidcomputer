@@ -1,0 +1,47 @@
+DOCUMENT 043 OF 135
+Title: AI citation engineering — controllable inputs and observable outcomes
+Path: Library/Framework/framework-aicitations.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# AI citation engineering — controllable inputs and observable outcomes
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S02 S08 S10 S11 S12 S29 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-aicitations.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Define the objective correctly
+
+The engineering objective is to make accurate public information retrievable and useful to the intended consumers, then measure actual visibility and business outcomes where observable. It is not to reconstruct private model algorithms from a collection of supposed ranking tricks.
+
+Different providers document different search, training and user-triggered retrieval roles. Use the [engine control matrix](framework-engine-control-matrix.md) rather than treating every named AI bot as one interchangeable crawler. [S08, S10, S11, S12]
+
+## The delivery architecture
+
+Build a factual record for each service, product or reference topic. Render the useful content on the public page. Derive consistent metadata and appropriate structured data from the same approved record. Provide stable links and intentional URL behavior. Configure permitted access at robots, edge and application layers without exposing private information.
+
+A documentation index, feed or agent interface can be useful when a named consumer supports it. It should have an owner, a documented purpose and a freshness test. Do not create special files merely to satisfy an unsupported belief that every model requires them. Google's guidance explicitly rejects a special-file prerequisite for its AI Search features. [S02]
+
+## Avoid false equivalences
+
+Training opt-in is not proven search inclusion. Crawler success is not index acceptance. Indexing is not citation selection. A citation is not a click. A click is not a qualified lead. Keep those distinctions in both technical telemetry and client proposals.
+
+A user-agent simulation cannot verify a real crawler. A high synthetic content score cannot prove an engine's selection probability. A patent does not establish the production ranking mechanism, and a study's best-case uplift cannot become a universal client forecast.
+
+## Practical optimization
+
+Start with failures that can be demonstrated: blocked relevant public paths, missing useful content, wrong canonical targets, inaccurate offers, inconsistent entity facts, stale information or broken customer actions. Fix those before adding speculative optimization layers.
+
+For uncertain presentation choices, define an experiment with a stable page cohort and a declared outcome. The GEO paper is a research foundation, but its results depend on the tested models, datasets and visibility metrics. Do not convert them into guaranteed current-engine multipliers. [S29]
+
+## Reporting and client acceptance
+
+Use engine-native reporting when available, a permission-compliant observation protocol when necessary, analytics for measured visits and CRM data for qualified outcomes. Report unavailable data as unavailable. Preserve the response/query context for sampled answers so the findings can be interpreted later.
+
+Acceptance should concern implemented controls, corrected data, test evidence and configured observation. Outcome goals may guide the work but should not be misrepresented as something an external engine has promised.
+
+The complete legacy document remains available for recovery and further source review. Unsupported “mandatory AI upgrades,” fixed citation rates and universal extractor assumptions are not part of this canonical replacement.
+
+==============================================================================

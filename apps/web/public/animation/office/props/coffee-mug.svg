@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-43.00 -136.00 96.17 158.00" width="97" height="158">
+  <title>Coffee mug / separate steam wisps</title>
+  <g id="coffee-mug" data-art="coffee-mug">
+    <ellipse id="coffee-mug-contact" cx="0" cy="7" rx="35" ry="7" fill="#29261F" stroke="none" stroke-width="1.5" opacity="0.12"/>
+    <path id="coffee-mug-handle-outer" d="M25 -45 Q47 -50 45 -22 Q42 -7 27 -12 L26 -21 Q36 -19 37 -31 Q39 -41 26 -37 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="coffee-mug-cup-body" d="M-28 -51 Q0 -59 28 -51 L26 0 Q0 13 -26 2 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="coffee-mug-cup-side" d="M18 -51 L28 -51 L26 0 Q22 5 14 7 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+    <path id="coffee-mug-rust-band-top" d="M-27 -37 Q0 -29 28 -37 L27 -31 Q0 -23 -27 -31 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="coffee-mug-rust-band-lower" d="M-27 -24 Q0 -16 27 -24 L27 -19 Q0 -10 -26 -18 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse id="coffee-mug-rim" cx="0" cy="-51" rx="28" ry="6" fill="#F4E5C4" stroke="#29261F" stroke-width="1.5"/>
+    <ellipse id="coffee-mug-coffee" cx="0" cy="-51" rx="23" ry="3.6" fill="#29261F" stroke="none" stroke-width="1.5"/>
+    <g id="coffee-mug-steam" data-effect="steam">
+      <g id="coffee-mug-steam-1-motion" data-motion="steam" data-phase="0">
+        <path id="coffee-mug-steam-1" d="M-12 -62 C-2 -77 -24 -83 -17 -96 C-10 -108 -2 -111 -8 -128" fill="none" stroke="#F4E5C4" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"/>
+        <path id="coffee-mug-steam-1-edge" d="M-12 -62 C-2 -77 -24 -83 -17 -96 C-10 -108 -2 -111 -8 -128" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.17"/>
+      </g>
+      <g id="coffee-mug-steam-2-motion" data-motion="steam" data-phase="0.34">
+        <path id="coffee-mug-steam-2" d="M1 -62 C11 -77 -11 -83 -4 -96 C3 -108 11 -111 5 -128" fill="none" stroke="#F4E5C4" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"/>
+        <path id="coffee-mug-steam-2-edge" d="M1 -62 C11 -77 -11 -83 -4 -96 C3 -108 11 -111 5 -128" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.17"/>
+      </g>
+      <g id="coffee-mug-steam-3-motion" data-motion="steam" data-phase="0.69">
+        <path id="coffee-mug-steam-3" d="M11 -62 C21 -77 -1 -83 6 -96 C13 -108 21 -111 15 -128" fill="none" stroke="#F4E5C4" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.82"/>
+        <path id="coffee-mug-steam-3-edge" d="M11 -62 C21 -77 -1 -83 6 -96 C13 -108 21 -111 15 -128" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.17"/>
+      </g>
+    </g>
+  </g>
+</svg>

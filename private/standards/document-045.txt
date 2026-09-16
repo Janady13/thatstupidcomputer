@@ -1,0 +1,40 @@
+DOCUMENT 045 OF 135
+Title: Bing AI Performance and citation-share interpretation
+Path: Library/Framework/framework-bing-ai-performance-2026.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Bing AI Performance and citation-share interpretation
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Bing Webmaster Tools AI visibility and participating surfaces  
+**Evidence:** S06, S07, S30 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Use the report that exists
+
+Bing introduced AI Performance as a public preview in February 2026. Its June expansion adds Intents, Topics, Citation Share and period comparison. Citation Share concerns a site's citations relative to all cited sites for a grounding query; it is not organic position, click share, traffic share or a universal authority score. Intent/topic classifications are analytical groupings, not exact user intent labels. [S06, S07]
+
+## Establish a reproducible baseline
+
+Record the property, access level, preview availability, exact labels, date range and export method. Document whether a metric counts citations or cited pages. A page may appear more than once, while a count of distinct pages behaves differently. Never merge these into one “AI score.”
+
+Keep the raw export immutable. Normalize URLs in a separate field, recording redirect and canonical assumptions. Group pages by client service, product family or editorial objective using a versioned taxonomy. Maintain an “unclassified” bucket rather than forcing ambiguous pages into a favorable category.
+
+For each reporting cycle, show the stable page cohort, new pages and retired pages separately. Inspect the queries/topics connected to business-relevant pages. A rise in unrelated visibility is not necessarily valuable. If a report withholds data or returns no usable rows, mark the observation as unavailable until the reason is known.
+
+## Analyze changes without manufacturing causation
+
+Use the same filters and comparable periods. Note holidays, product availability, site releases, campaigns and underlying content changes. A citation-share increase can occur because another source's citations fall; distinguish changes in the site's own count from changes in the denominator. A relative measure alone cannot establish improvement in absolute exposure.
+
+Use the report to nominate a test: better factual specificity, a clearer comparison, an updated product record or a corrected crawling problem. Define the hypothesis and the measurement window before changing the page. Do not rewrite every page with the same answer-first template merely because a few pages performed well.
+
+## Submission is not success
+
+IndexNow can notify participating engines of changed URLs, but an accepted submission is receipt, not indexing or citation confirmation. Track notification status as a technical delivery field, not a visibility result. [S30]
+
+A complete client handoff includes available report definitions, source exports, a URL-to-business mapping, a changes ledger, caveats and the next evidence-driven action. It should not include an invented competitor-domain report or an unsupported market-share estimate. Account access and actual client report retrieval remain outside this package's completed work.
+
+==============================================================================

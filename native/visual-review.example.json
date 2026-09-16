@@ -1,0 +1,37 @@
+{
+  "smartphone": {
+    "sha256": null,
+    "approved": false,
+    "reviewer": null,
+    "reviewedAt": null,
+    "notes": "Compare all 14 performances against the approved source at several timestamps; verify paths, strokes, layer order, censor, walk contacts and hold interpolation."
+  },
+  "flip-phone": {
+    "sha256": null,
+    "approved": false,
+    "reviewer": null,
+    "reviewedAt": null,
+    "notes": "Compare all 14 performances against the approved source at several timestamps; verify paths, strokes, layer order, censor, walk contacts and hold interpolation."
+  },
+  "app-bot": {
+    "sha256": null,
+    "approved": false,
+    "reviewer": null,
+    "reviewedAt": null,
+    "notes": "Compare all 14 performances against the approved source at several timestamps; verify paths, strokes, layer order, censor, walk contacts and hold interpolation."
+  },
+  "pager": {
+    "sha256": null,
+    "approved": false,
+    "reviewer": null,
+    "reviewedAt": null,
+    "notes": "Compare all 14 performances against the approved source at several timestamps; verify paths, strokes, layer order, censor, walk contacts and hold interpolation."
+  },
+  "handheld": {
+    "sha256": null,
+    "approved": false,
+    "reviewer": null,
+    "reviewedAt": null,
+    "notes": "Compare all 14 performances against the approved source at several timestamps; verify paths, strokes, layer order, censor, walk contacts and hold interpolation."
+  }
+}

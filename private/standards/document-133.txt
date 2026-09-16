@@ -1,0 +1,19 @@
+DOCUMENT 133 OF 135
+Title: Implementation templates
+Path: Templates/README.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Implementation templates
+
+The 12 JSON files in this folder are working data contracts and fictional examples, not populated client reports. `null` means unknown or not yet measured; it must not be converted to zero. A draft or unapproved record is not authorization to publish, delete URLs or alter accounts.
+
+Start with `project-intake.example.json`, then complete the applicable source-fact, URL, engine-policy and metric records. Use the claim register for evidence, the release acceptance record for actual test output and the maintenance ledger for future changes. Keep Tier 13 retired in the client-scope record.
+
+The example engine policy allows named search bots while denying selected training/product-use tokens. It intentionally leaves unlisted consumers to the wildcard rule and is NOT a comprehensive opt-out from all training. Google-Extended has additional grounding consequences. Review the [engine control matrix](../Library/Framework/framework-engine-control-matrix.md) before generating any policy.
+
+No production key, private user record or live account configuration is included. The robots generator requires an approved policy unless explicitly run in example mode.
+
+==============================================================================

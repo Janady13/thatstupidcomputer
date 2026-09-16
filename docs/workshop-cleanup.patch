@@ -1,0 +1,1225 @@
+--- a/apps/web/src/App.tsx
++++ b/apps/web/src/App.tsx
+@@ -5,6 +5,7 @@
+ import type { PublicSiteConfig } from '../../../packages/site/truth';
+ import { AnimationProvider, useAnimation } from './animation/orchestration/AnimationProvider';
+ import { Workshop } from './components/Workshop';
++import { ComputerConversation } from './components/ComputerConversation';
+ import { DemoForm } from './components/DemoForm';
+ import { ContentSections, LiveWorkSample, RelatedPages } from './components/PageContent';
+ import { Icon } from './components/Icons';
+@@ -30,7 +31,6 @@
+   const [ready, setReady] = useState(false);
+   const heading = useRef<HTMLHeadingElement>(null);
+   const mobileMenu = useRef<HTMLDetailsElement>(null);
+-  const guide = useRef<HTMLDetailsElement>(null);
+   const previousPath = useRef(path);
+   const trigger = useRef<HTMLElement | null>(null);
+   const triggerIdentity = useRef<{ href: string; className: string } | null>(null);
+@@ -53,12 +53,14 @@
+   useEffect(() => {
+     analytics.pageView(path);
+     if (mobileMenu.current) mobileMenu.current.open = false;
+-    if (guide.current) guide.current.open = false;
+     if (previousPath.current !== path) {
+       const restoredTrigger = home && triggerIdentity.current ? Array.from(document.querySelectorAll<HTMLAnchorElement>('a[href]')).find(anchor => anchor.getAttribute('href') === triggerIdentity.current?.href && anchor.className === triggerIdentity.current?.className) : undefined;
+-      if (home && trigger.current?.isConnected) trigger.current.focus();
+-      else if (restoredTrigger) restoredTrigger.focus();
+-      else heading.current?.focus({ preventScroll: true });
++      const returnTarget = home && trigger.current?.isConnected ? trigger.current : restoredTrigger;
++      if (returnTarget) {
++        const disclosure = returnTarget.closest('details');
++        if (disclosure && !disclosure.open) disclosure.querySelector('summary')?.focus();
++        else returnTarget.focus();
++      } else heading.current?.focus({ preventScroll: true });
+       panel.current?.scrollTo({ top: 0 });
+       previousPath.current = path;
+     }
+@@ -68,7 +70,6 @@
+     const keydown = (event: KeyboardEvent) => {
+       if (event.key !== 'Escape' || event.defaultPrevented) return;
+       if (mobileMenu.current?.open) { mobileMenu.current.open = false; mobileMenu.current.querySelector('summary')?.focus(); return; }
+-      if (guide.current?.open) { guide.current.open = false; guide.current.querySelector('summary')?.focus(); return; }
+       if (!home) { event.preventDefault(); navigate('/'); }
+     };
+     document.addEventListener('keydown', keydown);
+@@ -85,7 +86,7 @@
+ 
+   return <div className={`site-shell ${home ? 'is-home' : 'has-page'} ${paused ? 'motion-paused' : ''}`} onClickCapture={rememberTrigger}>
+     <a className="skip-link" href="#main-content">Skip to content</a>
+-    {!home && <Workshop path={path} paused={paused} onInteraction={interaction} />}
++    {!home && <Workshop path={path} paused={paused} />}
+     <header className="site-header">
+       <Link className="wordmark" to="/" aria-label="That Stupid Computer — home"><span>that stupid</span><span>computer<span className="wordmark-period">.</span></span></Link>
+       <nav className="desktop-navigation" aria-label="Main navigation">{navigation}</nav>
+@@ -94,9 +95,9 @@
+ 
+     {home ? <main id="main-content" className="home-content" tabIndex={-1}>
+       <div className="hero-copy"><p className="eyebrow"><span className="status-dot" />Websites with a little more human</p><h1 ref={heading} tabIndex={-1}>{page?.heading ?? 'Less stupid. More business.'}</h1><p className="hero-intro">{page?.intro}</p><Link className="button button-rust hero-demo" to="/contact/" onClick={() => startDemo('hero')}>Get my demo<Icon name="arrow" /></Link><p className="hero-footnote">Good websites start with a conversation.</p></div>
+-      <Workshop path={path} paused={paused} onInteraction={interaction} />
+-      <div className="room-intro"><span className="room-intro-line" /><span>Make yourself at home.<br /><strong>The room is the website.</strong></span><span aria-hidden="true">↗</span></div>
+-      <details className="home-guide" ref={guide}><summary><span className="guide-closed-label">A quick look around</span><span className="guide-open-label">Close the quick tour</span><Icon name="arrow" className="guide-closed-label" /><Icon name="close" className="guide-open-label" /></summary><div className="home-guide-paper"><p className="eyebrow">Welcome to the workshop</p><h2>What brings you here?</h2><ContentSections sections={page?.sections ?? []} type="guide" /></div></details>
++      <Workshop path={path} paused={paused} />
++      <ComputerConversation onInteraction={() => interaction('character')} />
++      <section className="home-overview" aria-label="Website services and next steps"><ContentSections sections={page?.sections ?? []} type="guide" /></section>
+     </main> : <>
+       <div className="panel-scene-note" aria-hidden="true"><span>Less frustration.</span><strong>More possibility.</strong><span className="scene-note-rule" /><p>The computer has opinions.<br />Your website should have a purpose.</p></div>
+       <main id="main-content" ref={panel} className={`page-panel ${contact ? 'page-panel-contact' : ''}`} tabIndex={-1}>
+--- a/apps/web/src/components/Workshop.tsx
++++ b/apps/web/src/components/Workshop.tsx
+@@ -1,39 +1,14 @@
+ import { lazy, Suspense, useEffect, useState } from 'react';
+-import { Link } from 'react-router';
+ import { useAnimation } from '../animation/orchestration/AnimationProvider';
+ import { Character } from '../animation/rive/Character';
+ import type { CharacterSlug } from '../animation/mobile/types';
+-import type { RoomOverrides } from '../animation/office/types';
+ import { AnimationBoundary } from '../animation/core/AnimationBoundary';
+-import type { SceneAction } from '../measurement';
+-import { Icon, type IconName } from './Icons';
+-import { ComputerConversation } from './ComputerConversation';
+ 
+ const RoomScene = lazy(() => import('../animation/office/RoomScene').then(module => ({ default: module.RoomScene })));
+ 
+-const roomObjects: RoomOverrides = {
+-  window: { x: 1120, y: -35, scale: .76 },
+-  'bulletin-board': { x: 720, y: 80, scale: .65 },
+-  clock: { x: 1050, y: 130, scale: .72 },
+-  shelf: { x: 1380, y: 258, scale: .74 },
+-  workbench: { x: 420, y: 506, scale: .88 },
+-  'desk-lamp': { x: 980, y: -10, scale: .75 },
+-  'parts-organizer': { x: 120, y: -107, scale: .8 },
+-  'filing-cabinet': { x: 1480, y: 407, scale: .81 },
+-  'tool-cart': { x: 20, y: 582, scale: .87 },
+-  'floor-box': { x: 1400, y: 740, scale: .82 },
+-};
+-const destinations: { path: string; action: SceneAction; label: string; object: string; icon: IconName; tip: string }[] = [
+-  { path: '/services/', action: 'services', label: 'What we do', object: 'board', icon: 'grid', tip: 'Good websites. Fewer headaches.' },
+-  { path: '/work/', action: 'work', label: 'The work', object: 'drawer', icon: 'folder', tip: 'Open the good stuff.' },
+-  { path: '/process/', action: 'process', label: 'The process', object: 'clock', icon: 'clock', tip: 'There is a method to this.' },
+-  { path: '/about/', action: 'about', label: 'Meet the human', object: 'coffee', icon: 'coffee', tip: 'Yes, an actual human.' },
+-];
+-
+-export function Workshop({ path, paused, onInteraction }: { path: string; paused: boolean; onInteraction: (action: SceneAction) => void }) {
+-  const { state, cue } = useAnimation();
++export function Workshop({ path, paused }: { path: string; paused: boolean }) {
++  const { state } = useAnimation();
+   const [narrow, setNarrow] = useState<boolean | null>(null);
+-  const [drawer, setDrawer] = useState(false);
+   useEffect(() => {
+     const media = window.matchMedia('(max-width: 767px)');
+     const update = () => setNarrow(media.matches);
+@@ -45,19 +20,8 @@
+   return <div className="workshop" data-testid="workshop" data-scene={narrow ? 'mobile-workshop' : 'desktop-office'}>
+     <div className="room-art" aria-hidden="true">
+       <AnimationBoundary fallback={<img className="initial-room-poster" src="/animation/office/office-with-computer.svg" alt="" width="1648" height="928" />}>
+-      {narrow === null ? <picture><source media="(max-width: 767px)" srcSet="/animation/mobile/smartphone/poster.svg" /><img className="initial-room-poster" src="/animation/office/office-with-computer.svg" alt="" width="1648" height="928" /></picture> : narrow ? <div className="pocket-workshop"><div className="pocket-window"><span /><span /><span /></div><div className="pocket-note">BIG IDEAS.<br />SMALL SCREEN.</div><div className="pocket-ground" /><Character renderer="auto" character={character} action={state.action} paused={paused} replay={state.replay} attitudeEnabled={state.attitude} /></div> : <Suspense fallback={<img className="initial-room-poster" src="/animation/office/office-with-computer.svg" alt="" width="1648" height="928" />}><RoomScene objects={roomObjects} character={{ state: state.desktop }} paused={paused} drawerOpen={drawer ? 1 : 0} replay={state.replay} attitudeEnabled={state.attitude} /></Suspense>}
++      {narrow === null ? <picture><source media="(max-width: 767px)" srcSet="/animation/mobile/smartphone/poster.svg" /><img className="initial-room-poster" src="/animation/office/office-with-computer.svg" alt="" width="1648" height="928" /></picture> : narrow ? <div className="pocket-workshop"><div className="pocket-window"><span /><span /><span /></div><div className="pocket-note">BIG IDEAS.<br />SMALL SCREEN.</div><div className="pocket-ground" /><Character renderer="auto" character={character} action={state.action} paused={paused} replay={state.replay} attitudeEnabled={state.attitude} /></div> : <Suspense fallback={<img className="initial-room-poster" src="/animation/office/office-with-computer.svg" alt="" width="1648" height="928" />}><RoomScene character={{ state: state.desktop }} paused={paused} replay={state.replay} attitudeEnabled={state.attitude} /></Suspense>}
+       </AnimationBoundary>
+     </div>
+-    {path === '/' && <>
+-      <nav className="room-navigation" aria-label="Explore the workshop">
+-        {destinations.map(item => <Link key={item.path} className={`room-link room-link-${item.object}`} to={item.path}
+-          onMouseEnter={() => { if (item.object === 'drawer') setDrawer(true); }}
+-          onMouseLeave={() => setDrawer(false)} onFocus={() => { if (item.object === 'drawer') setDrawer(true); }} onBlur={() => setDrawer(false)}
+-          onClick={() => { cue('service.focused'); onInteraction(item.action); }}>
+-          <span className="room-link-dot"><Icon name={item.icon} /></span><span className="room-link-label">{item.label}<span aria-hidden="true"> ↗</span></span><span className="room-link-tip" aria-hidden="true">{item.tip}</span>
+-        </Link>)}
+-      </nav>
+-      <ComputerConversation onInteraction={() => onInteraction('character')} />
+-    </>}
+   </div>;
+ }
+--- a/apps/web/src/components/ComputerConversation.tsx
++++ b/apps/web/src/components/ComputerConversation.tsx
+@@ -1,5 +1,6 @@
+-import { useEffect, useId, useRef, useState, type MouseEvent } from 'react';
++import { lazy, Suspense, useEffect, useId, useRef, useState, type MouseEvent } from 'react';
+ import { Link } from 'react-router';
++import { AnimationBoundary } from '../animation/core/AnimationBoundary';
+ import { useAnimation } from '../animation/orchestration/AnimationProvider';
+ import { DESKTOP_PERFORMANCES } from '../animation/desktop/performances.mjs';
+ import { createConversation, INTENTS, ROASTS, transitionConversation, type ConversationEvent, type ConversationIntent } from '../animation/conversation/director.mjs';
+@@ -10,10 +11,14 @@
+ import { Icon } from './Icons';
+ import '../styles/computer-conversation.css';
+ 
++const DesktopCharacter = lazy(() => import('../animation/desktop/DesktopCharacter').then(module => ({ default: module.DesktopCharacter })));
++
+ export function ComputerConversation({ onInteraction }: { onInteraction: () => void }) {
+   const { send, state: animation } = useAnimation();
+   const [conversation, setConversation] = useState(createConversation);
+   const [announcement, setAnnouncement] = useState('');
++  const [enhanced, setEnhanced] = useState(false);
++  const [previewFailed, setPreviewFailed] = useState(false);
+   const disclosure = useRef<HTMLDetailsElement>(null);
+   const summary = useRef<HTMLElement>(null);
+   const heading = useRef<HTMLHeadingElement>(null);
+@@ -22,7 +27,9 @@
+   const id = useId();
+   const open = conversation.view !== 'closed';
+   const choice = conversation.intent ? INTENTS[conversation.intent] : null;
++  const poster = <img src="/animation/desktop/computer.svg" width="1254" height="1254" alt="" loading="lazy" />;
+ 
++  useEffect(() => { setEnhanced(true); }, []);
+   useEffect(() => {
+     if (focusNext.current === 'summary') summary.current?.focus();
+     if (focusNext.current === 'heading') heading.current?.focus();
+@@ -31,6 +38,7 @@
+   useEffect(() => () => { latestSend.current({ type: 'ATTITUDE', enabled: false }); }, []);
+ 
+   function act(event: ConversationEvent, metric?: ComputerStage, focus?: 'summary' | 'heading') {
++    if (!open) setPreviewFailed(false);
+     const next = transitionConversation(conversation, event);
+     setConversation(next);
+     setAnnouncement(next.announcement);
+@@ -57,8 +65,11 @@
+     send({ type: 'PERFORM', action: 'PointRight' });
+   }
+ 
+-  return <div className="computer-conversation" data-testid="computer-conversation" data-conversation={conversation.view} data-computer-mood={conversation.desktop} data-attitude={conversation.attitude ? 'allowed' : 'off'}>
+-    <p className="computer-invitation">Need a better website?<br />I have opinions.</p>
++  return <section className="computer-conversation" aria-label="Talk about your website" data-testid="computer-conversation" data-conversation={conversation.view} data-computer-mood={conversation.desktop} data-attitude={conversation.attitude ? 'allowed' : 'off'}>
++    <div className="computer-conversation-intro">
++      <div><p className="computer-invitation">Need a better website? I have opinions.</p><p className="computer-introduction">Ask the computer, or go straight to the human.</p></div>
++      <div className="computer-entry-actions"><Link className="computer-demo computer-entry-demo" to={conversation.intent ? demoHref(conversation.intent) : '/contact/'} onClick={startDemo}>Get my demo<Icon name="arrow" /></Link>{!open && <button type="button" className="computer-invitation-roast" onClick={() => act({ type: 'ROAST' }, 'attitude_requested', 'heading')}>Roast my website</button>}</div>
++    </div>
+     <details ref={disclosure} className="computer-chat" open={open} onToggle={event => {
+       if (event.currentTarget.open && !open) act({ type: 'OPEN' }, 'open');
+       if (!event.currentTarget.open && open) act({ type: 'CLOSE' }, 'dismissed');
+@@ -67,6 +78,8 @@
+     }}>
+       <summary ref={summary} aria-controls={`${id}-panel`}><span>Ask the computer</span><Icon name="spark" /></summary>
+       <section className="computer-chat-paper" id={`${id}-panel`} aria-labelledby={`${id}-heading`}>
++        <div className="computer-conversation-preview" aria-hidden="true" data-testid="conversation-computer-preview"><AnimationBoundary key={open ? 'open' : 'closed'} fallback={poster} onError={() => setPreviewFailed(true)}>{enhanced && open && !previewFailed ? <Suspense fallback={poster}><DesktopCharacter state={animation.desktop} paused={animation.paused} replay={animation.replay} attitudeEnabled={animation.attitude} onError={() => setPreviewFailed(true)} /></Suspense> : poster}</AnimationBoundary></div>
++        <div className="computer-conversation-copy">
+         <div className="computer-chat-topline"><span>That stupid computer</span><button type="button" aria-label="Close computer conversation" onClick={() => act({ type: 'CLOSE' }, 'dismissed', 'summary')}><Icon name="close" /></button></div>
+         <h2 id={`${id}-heading`} ref={heading} tabIndex={-1}>{conversation.view === 'recommendation' && choice ? choice.heading : conversation.view === 'roast' ? 'A little professional attitude.' : 'What brings you in?'}</h2>
+         {(conversation.view === 'choose' || conversation.view === 'closed') && <>
+@@ -97,9 +110,9 @@
+           setAnnouncement(`${DESKTOP_PERFORMANCES.find(item => item.id === value)?.label || 'Expression'} selected.`);
+         }}>{DESKTOP_PERFORMANCES.map(performance => <option key={performance.id} value={performance.id} disabled={performance.requiresAttitude && !conversation.attitude}>{performance.label}{performance.requiresAttitude && !conversation.attitude ? ' — opt in to attitude' : ''}</option>)}</select><p>Choose a still expression when motion is paused or reduced.</p>{conversation.view !== 'roast' && <button type="button" className="computer-roast-link" onClick={() => act({ type: 'ROAST' }, 'attitude_requested', 'heading')}>Give me attitude</button>}</details>
+         <div className="computer-chat-bottom">{conversation.view !== 'choose' && conversation.view !== 'closed' && <button type="button" onClick={() => act({ type: 'BACK' }, 'back', 'heading')}>← Start again</button>}<button type="button" onClick={() => act({ type: 'CLOSE' }, 'dismissed', 'summary')}>Let me look around</button>{animation.paused && <span>Motion is paused.</span>}</div>
++        </div>
+       </section>
+     </details>
+-    {!open && <button type="button" className="computer-invitation-roast" onClick={() => act({ type: 'ROAST' }, 'attitude_requested', 'heading')}>Roast my website</button>}
+     <span className="computer-announcement" role="status" aria-live="polite" aria-atomic="true">{announcement}</span>
+-  </div>;
++  </section>;
+ }
+--- a/apps/web/src/styles/site.css
++++ b/apps/web/src/styles/site.css
+@@ -279,190 +279,6 @@
+   color: var(--muted);
+   margin-top: 14px
+ }
+-.room-intro {
+-  position: absolute;
+-  bottom: 18%;
+-  left: 6.3%;
+-  display: flex;
+-  align-items: center;
+-  gap: 14px;
+-  font-size: 12px;
+-  color: var(--muted);
+-  line-height: 1.8;
+-  max-width: 250px
+-}
+-.room-intro strong {
+-  font-weight: 500;
+-  color: var(--ink)
+-}
+-.room-intro-line {
+-  width: 30px;
+-  height: 1px;
+-  background: var(--ink)
+-}
+-.room-intro>span:last-child {
+-  font-size: 23px;
+-  margin-left: 8px;
+-  color: var(--rust)
+-}
+-.room-navigation {
+-  position: absolute;
+-  inset: 0;
+-  z-index: 6;
+-  pointer-events: none
+-}
+-.room-link {
+-  position: absolute;
+-  display: flex;
+-  align-items: center;
+-  gap: 7px;
+-  pointer-events: auto;
+-  text-decoration: none;
+-  min-height: 44px;
+-  color: var(--ink)
+-}
+-.room-link-dot {
+-  display: grid;
+-  place-items: center;
+-  width: 30px;
+-  height: 30px;
+-  background: var(--paper-light);
+-  border: 1px solid #29261f55;
+-  border-radius: 50%;
+-  box-shadow: 0 3px 9px #29261f14;
+-  transition: transform .18s,background .18s
+-}
+-.room-link-dot svg {
+-  width: 14px;
+-  height: 14px
+-}
+-.room-link-label {
+-  font-size: 12px;
+-  letter-spacing: .2px;
+-  font-weight: 700;
+-  padding: 7px 10px;
+-  background: var(--paper-light);
+-  box-shadow: 0 2px 10px #29261f12;
+-  border: 1px solid #29261f28;
+-  white-space: nowrap
+-}
+-.room-link-label>span {
+-  margin-left: 5px;
+-  color: var(--rust)
+-}
+-.room-link-tip {
+-  position: absolute;
+-  bottom: calc(100% + 2px);
+-  left: 0;
+-  white-space: nowrap;
+-  font-size: 12px;
+-  background: var(--ink);
+-  color: var(--paper-light);
+-  padding: 8px 12px;
+-  opacity: 0;
+-  transform: translateY(4px);
+-  transition: opacity .18s,transform .18s;
+-  pointer-events: none
+-}
+-.room-link:hover .room-link-tip,.room-link:focus-visible .room-link-tip {
+-  opacity: 1;
+-  transform: translateY(0)
+-}
+-.room-link:hover .room-link-dot {
+-  transform: scale(1.12);
+-  background: white
+-}
+-.room-link-board {
+-  left: 51%;
+-  top: 27%
+-}
+-.room-link-drawer {
+-  left: 72%;
+-  top: 70%
+-}
+-.room-link-clock {
+-  left: 64%;
+-  top: 13.5%
+-}
+-.room-link-coffee {
+-  left: 42%;
+-  top: 55%
+-}
+-.character-aside {
+-  position: absolute;
+-  z-index: 5;
+-  left: 54%;
+-  top: 78%;
+-  max-width: 275px;
+-  transform: rotate(-3deg)
+-}
+-.character-aside p {
+-  font-family: Georgia,serif;
+-  font-style: italic;
+-  font-size: 17px;
+-  line-height: 1.35;
+-  text-wrap: balance
+-}
+-.character-aside button {
+-  display: inline-flex;
+-  gap: 9px;
+-  align-items: center;
+-  border: 0;
+-  background: none;
+-  padding: 9px 0;
+-  font-size: 12px;
+-  text-transform: uppercase;
+-  letter-spacing: 1px;
+-  font-weight: 700
+-}
+-.character-aside button svg {
+-  width: 13px;
+-  height: 13px
+-}
+-.home-guide {
+-  position: absolute;
+-  bottom: 9.5%;
+-  left: 6.3%;
+-  pointer-events: auto;
+-  font-size: 12px
+-}
+-.home-guide>summary {
+-  display: flex;
+-  gap: 20px;
+-  align-items: center;
+-  cursor: pointer;
+-  list-style: none;
+-  padding: 9px 0;
+-  border-bottom: 1px solid var(--line)
+-}
+-.home-guide>summary::-webkit-details-marker {
+-  display: none
+-}
+-.home-guide>summary svg {
+-  width: 15px;
+-  height: 15px
+-}
+-.home-guide-paper {
+-  position: fixed;
+-  right: 38px;
+-  top: 108px;
+-  bottom: 90px;
+-  width: min(640px,70vw);
+-  overflow-y: auto;
+-  padding: 44px;
+-  background: var(--paper-light);
+-  border: 1px solid var(--line);
+-  box-shadow: 0 20px 100px #29261f33;
+-  z-index: 18
+-}
+-.home-guide[open] {
+-  z-index: 25
+-}
+-.home-guide-paper>h2 {
+-  font-size: 42px;
+-  letter-spacing: -2px;
+-  margin: 12px 0 30px
+-}
+ .site-footer {
+   position: absolute;
+   left: 40px;
+@@ -1071,9 +887,6 @@
+     font-size: 48px;
+     max-width: 430px
+   }
+-  .room-intro,.home-guide {
+-    left: 8%
+-  }
+ }
+ @media(max-height:760px) and (min-width:768px) {
+   .site-shell {
+@@ -1105,31 +918,13 @@
+     font-size: 12px;
+     margin-top: 11px
+   }
+-  .room-intro {
+-    bottom: 16%;
+-    font-size: 12px
+-  }
+   .page-panel {
+     top: 97px;
+     bottom: 72px
+   }
+-  .character-aside {
+-    top: 79%;
+-    max-width: 230px
+-  }
+-  .character-aside p {
+-    font-size: 14px
+-  }
+   .site-footer {
+     bottom: 18px
+   }
+-  .home-guide {
+-    bottom: 8.5%
+-  }
+-  .home-guide-paper {
+-    top: 97px;
+-    bottom: 72px
+-  }
+   .panel-scene-note {
+     font-size: 28px;
+     max-width: 220px
+@@ -1175,35 +970,9 @@
+     padding: 15px 19px;
+     gap: 20px
+   }
+-  .room-intro,.home-guide {
+-    left: 5%
+-  }
+   .room-art {
+     width: max(108vw,160svh)
+   }
+-  .room-link-board {
+-    left: 49%;
+-    top: 29%
+-  }
+-  .room-link-clock {
+-    left: 65%;
+-    top: 17%
+-  }
+-  .room-link-coffee {
+-    left: 43%;
+-    top: 57%
+-  }
+-  .character-aside {
+-    left: 57%;
+-    max-width: 220px
+-  }
+-  .character-aside p {
+-    font-size: 14px
+-  }
+-  .room-link-label {
+-    font-size: 12px;
+-    padding: 6px 8px
+-  }
+   .site-footer {
+     left: 27px;
+     right: 27px
+@@ -1454,95 +1223,6 @@
+     left: 55%;
+     bottom: -4px
+   }
+-  .room-navigation {
+-    left: 23px;
+-    right: 23px;
+-    top: 796px;
+-    bottom: auto;
+-    display: grid;
+-    grid-template-columns: 1fr 1fr;
+-    gap: 9px
+-  }
+-  .room-link {
+-    position: relative;
+-    left: auto;
+-    top: auto;
+-    display: flex;
+-    min-height: 43px;
+-    gap: 9px;
+-    padding: 6px 8px;
+-    background: #fbf5e6ed;
+-    border: 1px solid #29261f35
+-  }
+-  .room-link-dot {
+-    border: 0;
+-    background: transparent;
+-    box-shadow: none;
+-    width: 19px;
+-    height: 19px
+-  }
+-  .room-link-dot svg {
+-    width: 16px;
+-    height: 16px
+-  }
+-  .room-link-label {
+-    font-size: 12px;
+-    box-shadow: none;
+-    padding: 0;
+-    border: 0;
+-    background: transparent
+-  }
+-  .room-link-tip {
+-    display: none
+-  }
+-  .room-link-label>span {
+-    margin-left: 2px
+-  }
+-  .character-aside {
+-    left: auto;
+-    right: 24px;
+-    top: 704px;
+-    max-width: 172px;
+-    transform: rotate(-5deg);
+-    text-align: left
+-  }
+-  .character-aside p {
+-    font-size: 13px;
+-    background: #f9eed8cc;
+-    padding: 6px 8px
+-  }
+-  .character-aside button {
+-    font-size: 12px;
+-    padding: 3px 8px;
+-    gap: 7px
+-  }
+-  .room-intro {
+-    display: none
+-  }
+-  .home-guide {
+-    position: relative;
+-    left: auto;
+-    bottom: auto;
+-    margin-top: 471px;
+-    width: fit-content;
+-    font-size: 12px;
+-    pointer-events: auto
+-  }
+-  .home-guide>summary {
+-    gap: 22px;
+-    min-height: 40px
+-  }
+-  .home-guide-paper {
+-    position: fixed;
+-    inset: 95px 14px 25px;
+-    width: auto;
+-    padding: 28px;
+-    z-index: 30
+-  }
+-  .home-guide-paper>h2 {
+-    font-size: 35px;
+-    margin-bottom: 25px
+-  }
+   .site-footer {
+     position: relative;
+     left: auto;
+@@ -1767,9 +1447,6 @@
+     top: 12px;
+     font-size: 12px
+   }
+-  .home-guide-paper .content-section h2 {
+-    font-size: 20px
+-  }
+ }
+ @media(max-width:370px) {
+   .site-header {
+@@ -1806,18 +1483,6 @@
+   .hero-intro {
+     max-width: 275px
+   }
+-  .room-navigation {
+-    left: 20px;
+-    right: 20px;
+-    gap: 7px
+-  }
+-  .room-link {
+-    padding: 6px;
+-    gap: 6px
+-  }
+-  .room-link-label {
+-    font-size: 12px
+-  }
+   .page-panel {
+     padding-left: 18px;
+     padding-right: 18px
+@@ -1843,12 +1508,9 @@
+   .button:hover {
+     transform: none
+   }
+-  .room-link:hover .room-link-dot {
+-    transform: none
+-  }
+ }
+ @media(forced-colors:active) {
+-  .room-link-label,.room-link-dot,.button,.page-panel,.form-field input,.form-field select,.form-field textarea {
++  .button,.page-panel,.form-field input,.form-field select,.form-field textarea {
+     border: 1px solid CanvasText
+   }
+   .status-dot {
+@@ -1866,7 +1528,7 @@
+   font-size: 12px;
+   letter-spacing: 1.3px
+ }
+-.desktop-navigation a,.header-demo,.text-link,.content-sections-services .text-link,.room-link-label,.home-guide,.home-guide>summary {
++.desktop-navigation a,.header-demo,.text-link,.content-sections-services .text-link {
+   font-size: 14px
+ }
+ .hero-intro,.page-intro,.content-section p,.editorial-list li,.content-sections-contact .content-section p,.content-sections-contact .editorial-list li,.page-callout p,.form-accepted p:not(.eyebrow) {
+@@ -1888,7 +1550,7 @@
+   background: radial-gradient(ellipse at 20% 45%,#f4e5c4f5 53%,#f4e5c4bc 70%,#f4e5c400 100%);
+   pointer-events: none
+ }
+-.hero-footnote,.room-intro,.room-link-tip,.footer-credit,.footer-left>a,.site-footer,.motion-control,.panel-footer,.back-link,.form-key,.form-field em,.field-error,.form-reassurance,.form-alternative,.work-sample figcaption,.work-sample-address,.provider-credit {
++.hero-footnote,.footer-credit,.footer-left>a,.site-footer,.motion-control,.panel-footer,.back-link,.form-key,.form-field em,.field-error,.form-reassurance,.form-alternative,.work-sample figcaption,.work-sample-address,.provider-credit {
+   font-size: 12px
+ }
+ .button,.hero-demo,.form-submit,.page-callout .button,.form-accepted .button {
+@@ -1902,31 +1564,6 @@
+ .hero-demo {
+   min-height: 58px
+ }
+-.room-link-label {
+-  padding: 9px 11px
+-}
+-.room-link-dot {
+-  width: 34px;
+-  height: 34px
+-}
+-.room-link-clock {
+-  top: 17%
+-}
+-.room-link-coffee {
+-  left: 44%;
+-  top: 57%
+-}
+-.character-aside button {
+-  font-size: 12px;
+-  letter-spacing: .6px;
+-  min-height: 44px
+-}
+-.character-aside p {
+-  font-size: 18px
+-}
+-.character-aside {
+-  pointer-events: auto
+-}
+ .home-content>.workshop {
+   pointer-events: auto
+ }
+@@ -1939,7 +1576,7 @@
+   height: 100%;
+   object-fit: contain
+ }
+-.home-guide>summary,.motion-control,.close-panel {
++.motion-control,.close-panel {
+   min-height: 44px
+ }
+ .close-panel {
+@@ -2058,24 +1695,6 @@
+     font-size: 16px;
+     max-width: 320px
+   }
+-  .room-link-label {
+-    font-size: 12px
+-  }
+-  .room-link-dot {
+-    width: 28px;
+-    height: 28px
+-  }
+-  .room-link-coffee {
+-    left: 46%;
+-    top: 58%
+-  }
+-  .character-aside {
+-    left: 58%;
+-    max-width: 230px
+-  }
+-  .character-aside p {
+-    font-size: 16px
+-  }
+   .panel-scene-note p {
+     font-size: 14px
+   }
+@@ -2112,12 +1731,6 @@
+   .hero-footnote {
+     font-size: 12px
+   }
+-  .room-intro {
+-    display: none
+-  }
+-  .character-aside p {
+-    font-size: 16px
+-  }
+ }
+ @media(max-width:767px) {
+   .home-content {
+@@ -2184,64 +1797,6 @@
+   .room-art>picture>img,.room-art>img {
+     height: 405px
+   }
+-  .room-navigation {
+-    top: 405px;
+-    left: 23px;
+-    right: 23px;
+-    gap: 10px
+-  }
+-  .room-link {
+-    min-height: 46px;
+-    padding: 9px 10px;
+-    gap: 8px
+-  }
+-  .room-link-dot {
+-    width: 19px;
+-    height: 19px
+-  }
+-  .room-link-label {
+-    font-size: 14px;
+-    padding: 0;
+-    white-space: normal;
+-    line-height: 1.4
+-  }
+-  .room-link-label>span {
+-    display: none
+-  }
+-  .room-link-clock,.room-link-coffee {
+-    left: auto;
+-    top: auto
+-  }
+-  .character-aside {
+-    top: 304px;
+-    right: 22px;
+-    max-width: 190px
+-  }
+-  .character-aside p {
+-    font-size: 16px;
+-    line-height: 1.35
+-  }
+-  .character-aside button {
+-    font-size: 12px;
+-    min-height: 42px;
+-    letter-spacing: 0
+-  }
+-  .home-guide {
+-    order: 2;
+-    position: relative;
+-    left: auto;
+-    bottom: auto;
+-    margin: 15px 23px 0;
+-    width: fit-content;
+-    font-size: 14px
+-  }
+-  .home-guide>summary {
+-    font-size: 14px;
+-    min-height: 44px
+-  }
+-  .home-guide-paper {
+-    padding: 28px 24px
+-  }
+   .site-footer {
+     margin-top: 26px;
+     padding: 24px 23px;
+@@ -2387,9 +1942,6 @@
+   .panel-footer {
+     font-size: 12px
+   }
+-  .home-guide-paper .content-section h2 {
+-    font-size: 24px
+-  }
+   .pocket-workshop>.tsc-native-shell {
+     height: 400px;
+     width: 100%;
+@@ -2422,17 +1974,6 @@
+     font-size: 12px;
+     max-width: 230px
+   }
+-  .room-navigation {
+-    left: 20px;
+-    right: 20px
+-  }
+-  .room-link {
+-    padding: 8px;
+-    gap: 6px
+-  }
+-  .room-link-label {
+-    font-size: 14px
+-  }
+   .page-panel {
+     padding-left: 18px;
+     padding-right: 18px
+@@ -2440,9 +1981,6 @@
+   .page-heading h1 {
+     font-size: 36px
+   }
+-  .home-guide {
+-    margin-left: 20px
+-  }
+ }
+ 
+ .desktop-navigation a {
+@@ -2457,29 +1995,33 @@
+   .site-header { height: auto; min-height: 82px; flex-wrap: wrap; }
+   .header-actions { margin-left: auto; }
+   .home-content > .workshop { height: auto; min-height: 518px; }
+-  .room-navigation { position: relative; inset: auto; margin: 405px 23px 0; }
+-}
+-@media (max-width: 370px) {
+-  .room-navigation { margin-left: 20px; margin-right: 20px; }
+ }
+ 
+-.guide-open-label { display: none; }
+-.home-guide[open] .guide-closed-label { display: none; }
+-.home-guide[open] .guide-open-label { display: inline; }
+-.home-guide[open] > summary {
+-  position: fixed;
+-  right: 62px;
+-  top: 118px;
+-  z-index: 20;
+-  background: var(--paper-light);
+-  border: 1px solid var(--line);
+-  padding: 8px 12px;
+-}
+-.home-guide-paper { padding-top: 82px; }
+-@media (max-height: 760px) and (min-width: 768px) {
+-  .home-guide[open] > summary { top: 107px; }
++
++/* V4: the artwork is a room; navigation lives in the header. */
++.is-home.site-shell { min-height: 100svh; height: auto; overflow: clip; display: flex; flex-direction: column; }
++.is-home .home-content { height: auto; min-height: 0; flex: 1; pointer-events: auto; }
++.is-home > .site-footer { position: relative; inset: auto; margin: 0; padding: 20px 40px 24px; }
++@media (min-width: 768px) {
++  .is-home > .site-header { position: relative; inset: auto; min-height: 96px; padding: 24px 40px; flex-shrink: 0; background: var(--paper); }
++  .is-home .home-content { display: flex; flex-direction: column; }
++  .is-home .hero-copy { position: absolute; width: 1px; height: 1px; min-height: 0; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
++  .is-home .hero-copy::before, .is-home .hero-demo { display: none; }
++  .is-home .home-content > .workshop { --workshop-height: clamp(390px, calc(100svh - 300px), 900px); position: relative; inset: auto; height: var(--workshop-height); min-height: 0; width: 100%; flex: none; overflow: hidden; }
++  .is-home .workshop .room-art { position: absolute; width: max(100vw, calc(var(--workshop-height) * 1.775862)); height: auto; aspect-ratio: 1648 / 928; left: 50%; top: 50%; transform: translate(-50%, -50%); }
++  .is-home .room-art > .office-room, .is-home .room-art > picture, .is-home .room-art > picture > img, .is-home .room-art > img { width: 100%; height: 100%; max-width: none; }
+ }
+ @media (max-width: 767px) {
+-  .home-guide[open] > summary { top: 106px; right: 25px; }
+-  .home-guide-paper { padding-top: 80px; }
++  .is-home .home-content > .workshop { height: 408px; min-height: 408px; }
++  .is-home > .site-footer { padding: 24px 23px; }
++}
++
++.home-overview { order: 3; width: 100%; max-width: 1280px; margin: 0 auto; padding: 12px clamp(20px, 4vw, 56px) 36px; }
++.home-overview .content-sections { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
++.home-overview .content-section { min-width: 0; border-top: 1px solid var(--line); border-bottom: 0; padding: 24px 0 0; }
++.home-overview .content-section h2 { font-size: 25px; line-height: 1.2; letter-spacing: -.5px; }
++@media (min-width: 768px) {
++  .is-home.site-shell { padding-bottom: 88px; }
++  .is-home > .site-footer { position: fixed; left: 0; right: 0; top: auto; bottom: 0; padding: 16px 40px 20px; background: var(--paper); border-top: 1px solid var(--line); }
+ }
++@media (max-width: 900px) { .home-overview .content-sections { grid-template-columns: 1fr; gap: 24px; } }
+--- a/apps/web/src/styles/computer-conversation.css
++++ b/apps/web/src/styles/computer-conversation.css
+@@ -1,50 +1,70 @@
+-.computer-conversation { position: absolute; z-index: 8; left: 54%; bottom: 12%; width: min(340px, 40%); pointer-events: auto; color: #29261f; }
+-.computer-invitation { margin: 0 0 7px; font: italic 18px/1.4 Georgia, serif; }
+-.computer-chat > summary { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; font-size: 14px; font-weight: 700; cursor: pointer; list-style: none; }
++.computer-conversation {
++  position: relative;
++  order: 2;
++  width: 100%;
++  max-width: 1280px;
++  min-width: 0;
++  margin: 0 auto;
++  padding: 22px clamp(20px, 4vw, 56px) 24px;
++  color: #29261f;
++  pointer-events: auto;
++}
++.computer-conversation-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 28px; }
++.computer-conversation-intro > div { min-width: 0; }
++.computer-invitation { margin: 0 0 5px; font: italic 22px/1.35 Georgia, serif; }
++.computer-introduction { margin: 0; color: #655843; font-size: 16px; line-height: 1.6; }
++.computer-entry-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; }
++.computer-conversation .computer-entry-demo { min-width: 170px; font-size: 16px; }
++.computer-invitation-roast { font: inherit; font-size: 14px; min-height: 44px; padding: 9px 0; border: 0; background: none; color: #84331b; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
++.computer-chat { margin-top: 8px; }
++.computer-chat > summary { display: flex; align-items: center; justify-content: space-between; gap: 15px; width: fit-content; max-width: 100%; min-height: 44px; padding: 8px 0; font-size: 14px; font-weight: 700; cursor: pointer; list-style: none; }
+ .computer-chat > summary::-webkit-details-marker, .computer-moods > summary::-webkit-details-marker { display: none; }
+-.computer-chat > summary svg { width: 17px; height: 17px; }
+-.computer-invitation-roast { font: inherit; font-size: 14px; display: block; min-height: 44px; padding: 8px 0; border: 0; background: none; text-decoration: underline; text-underline-offset: 4px; }
+-.computer-chat-paper { position: fixed; right: 24px; bottom: 100px; width: min(360px, 29vw); max-height: calc(100svh - 210px); overflow-y: auto; overscroll-behavior: contain; background: #faf2e0; border: 1px solid #a3957d; box-shadow: 0 16px 45px #33291c30; padding: 19px 24px 21px; scrollbar-gutter: stable; }
+-.computer-chat-topline { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin: -8px -10px 9px 0; }
++.computer-chat > summary svg { width: 17px; height: 17px; flex-shrink: 0; }
++.computer-chat[open] > summary { border-bottom: 2px solid #a44323; }
++.computer-chat-paper { display: grid; grid-template-columns: minmax(160px, 220px) minmax(0, 1fr); align-items: start; gap: 32px; width: 100%; max-width: 1032px; min-width: 0; margin: 20px 0 0; padding: 18px 0 0; border-top: 1px solid #a3957d; }
++.computer-conversation-preview { position: sticky; top: 16px; width: 100%; min-width: 0; aspect-ratio: 1; pointer-events: none; }
++.computer-conversation-preview img, .computer-conversation-preview .tsc-desktop-actor, .computer-conversation-preview svg { display: block; width: 100%; height: 100%; max-width: none; }
++.computer-conversation-copy { min-width: 0; }
++.computer-chat-topline { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin: -8px 0 9px; }
+ .computer-chat-topline > span { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #655843; }
+ .computer-chat-paper button, .computer-chat-paper a, .computer-chat-paper select { font-family: inherit; font-size: 14px; line-height: 1.45; }
+ .computer-chat-paper button { min-height: 44px; background: none; color: inherit; border: 0; cursor: pointer; padding: 9px 0; text-align: left; }
+ .computer-chat-topline button { display: grid; place-items: center; min-width: 44px; padding: 10px; }
+-.computer-chat-paper h2 { margin: 0 0 15px; font-size: 29px; letter-spacing: -1px; line-height: 1.1; outline: none; }
+-.computer-chat-paper p { font-size: 16px; line-height: 1.65; margin: 0 0 17px; }
+-.computer-intents { display: grid; gap: 8px; margin: 18px 0 8px; }
+-.computer-intent { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 49px; padding: 12px 14px; border: 1px solid #b5a58a; background: #fff9ed; text-decoration: none; font-weight: 600; }
++.computer-chat-paper h2 { margin: 0 0 15px; font-size: 32px; letter-spacing: -1px; line-height: 1.12; outline: none; }
++.computer-chat-paper p { font-size: 16px; line-height: 1.65; margin: 0 0 17px; max-width: 66ch; }
++.computer-intents { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 20px 0 8px; }
++.computer-intent { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; min-height: 54px; padding: 13px 15px; border: 1px solid #b5a58a; background: #fff9ed; text-decoration: none; font-weight: 600; overflow-wrap: anywhere; }
+ .computer-intent svg, .computer-demo svg { width: 19px; height: 19px; flex-shrink: 0; }
+ .computer-intent:hover { background: #eee0c3; border-color: #a44323; }
+ .computer-chat-paper .computer-roast-link { color: #84331b; text-decoration: underline; text-underline-offset: 4px; }
+ .computer-response { font-family: Georgia, serif; }
+-.computer-demo { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 52px; padding: 13px 16px; background: #a44323; color: #fff9ed; border: 1px solid #a44323; text-decoration: none; font-weight: 700; }
++.computer-demo { display: inline-flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 100%; min-height: 52px; padding: 13px 18px; background: #a44323; color: #fff9ed; border: 1px solid #a44323; text-decoration: none; font-size: 16px; line-height: 1.45; font-weight: 700; }
+ .computer-demo:hover { background: #84331b; }
+-.computer-chat-paper .computer-next-step { font-size: 12px; line-height: 1.65; color: #655843; margin: 12px 0 8px; }
+-.computer-chat-paper .computer-roast-context { font-size: 12px; color: #655843; margin-bottom: 12px; }
+-.computer-chat-paper .computer-roast { font-size: 19px; line-height: 1.5; }
++.computer-chat-paper .computer-next-step { font-size: 14px; line-height: 1.65; color: #655843; margin: 12px 0 8px; }
++.computer-chat-paper .computer-roast-context { font-size: 14px; color: #655843; margin-bottom: 12px; }
++.computer-chat-paper .computer-roast { font-size: 22px; line-height: 1.5; }
+ .computer-gesture-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+-.computer-chat-paper .computer-gesture-controls button { border: 1px solid #b5a58a; padding: 10px 12px; background: #fff9ed; }
++.computer-chat-paper .computer-gesture-controls button { border: 1px solid #b5a58a; padding: 10px 14px; background: #fff9ed; }
+ .computer-chat-paper .computer-bridge { font-weight: 600; margin-top: 20px; }
+-.computer-moods { border-top: 1px solid #29261f25; margin-top: 16px; padding-top: 6px; }
+-.computer-moods > summary { display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: 14px; list-style: none; cursor: pointer; }
++.computer-moods { max-width: 520px; border-top: 1px solid #29261f25; margin-top: 22px; padding-top: 6px; }
++.computer-moods > summary { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 44px; font-size: 14px; list-style: none; cursor: pointer; }
+ .computer-moods label { display: block; margin: 10px 0; font-size: 14px; }
+ .computer-chat-paper .computer-moods select { width: 100%; max-width: 100%; min-height: 48px; background: #fff9ed; border: 1px solid #95866d; padding: 10px; font-size: 16px; color: #29261f; }
+-.computer-chat-paper .computer-moods p { font-size: 12px; margin: 10px 0; color: #655843; }
+-.computer-chat-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-top: 8px; border-top: 1px solid #29261f25; }
+-.computer-chat-bottom span { flex-basis: 100%; font-size: 12px; color: #655843; }
++.computer-chat-paper .computer-moods p { font-size: 14px; margin: 10px 0; color: #655843; }
++.computer-chat-bottom { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; margin-top: 14px; padding-top: 5px; border-top: 1px solid #29261f25; }
++.computer-chat-bottom span { font-size: 14px; color: #655843; }
+ .computer-conversation :is(button, a, summary, select):focus-visible { outline: 3px solid #a44323; outline-offset: 4px; }
+ .computer-announcement { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+-@media (max-width: 1100px) and (min-width: 768px) { .computer-conversation { left: 53%; bottom: 11%; width: 41%; } .computer-chat-paper { width: 42vw; max-height: 33svh; right: 20px; bottom: 12%; padding: 17px 19px; } }
+-@media (max-height: 760px) and (min-width: 1101px) { .computer-conversation { bottom: 13%; } .computer-chat-paper { max-height: calc(100svh - 170px); } }
+ @media (max-width: 767px) {
+-  .computer-conversation { position: relative; inset: auto; width: auto; margin: 22px 23px 0; padding: 20px 0 0; border-top: 1px solid #29261f25; }
+-  .computer-invitation { font-size: 19px; }
+-  .computer-invitation br { display: none; }
+-  .computer-chat-paper { position: relative; inset: auto; width: 100%; max-height: none; overflow: visible; margin-top: 14px; padding: 20px; }
++  .computer-conversation { padding-top: 23px; }
++  .computer-conversation-intro { align-items: flex-start; }
++  .computer-entry-actions { width: 100%; }
++  .computer-invitation { font-size: 21px; }
++  .computer-chat { margin-top: 6px; }
++  .computer-chat-paper { grid-template-columns: 96px minmax(0, 1fr); gap: 14px; }
+   .computer-chat-paper h2 { font-size: 29px; }
+-  .computer-invitation-roast { display: inline-flex; }
++  .computer-intents { grid-template-columns: 1fr; }
+ }
+-@media (max-width: 370px) { .computer-conversation { margin-left: 20px; margin-right: 20px; } .computer-chat-paper { padding: 16px; } .computer-chat-paper h2 { font-size: 27px; } }
++@media (max-width: 370px) { .computer-chat-paper { grid-template-columns: 80px minmax(0, 1fr); gap: 12px; } .computer-chat-paper h2 { font-size: 27px; } .computer-demo { gap: 14px; padding-left: 15px; padding-right: 15px; } }
+ @media (prefers-reduced-motion: reduce) { .computer-conversation *, .computer-conversation *::before, .computer-conversation *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+ @media (forced-colors: active) { .computer-demo, .computer-intent, .computer-chat-paper { border-color: CanvasText; } }
+--- a/packages/site/content.ts
++++ b/packages/site/content.ts
+@@ -41,7 +41,7 @@
+         { label: 'People need to find and understand my site', href: '/services/search-visibility/' },
+         { label: 'I need help keeping it running', href: '/services/website-care/' },
+       ] },
+-      { heading: 'Play a little. Then get somewhere.', paragraphs: ['Explore the office to open the services, work and project brief. Every destination also has a direct link, so you can take the scenic route or go straight to what you need.'], links: [{ label: 'See this website in action', href: '/work/' }, { label: 'See how a project works', href: '/process/' }] },
++      { heading: 'Play a little. Then get somewhere.', paragraphs: ['Meet the computer, try its expressions, then use the navigation or project choices to find your next step. Services, work and the project brief each have a direct link.'], links: [{ label: 'See this website in action', href: '/work/' }, { label: 'See how a project works', href: '/process/' }] },
+       { heading: 'Start with a conversation, not a specification.', paragraphs: ['You do not need a technical brief to get started. Share what you do, what is getting in your way and what a better website would make possible. If you have an existing site, include its address.'] },
+     ], relatedPaths: ['/services/', '/work/', '/process/', '/contact/'], cta: contact,
+   },
+--- a/tests/animation/demo-ssr.test.ts
++++ b/tests/animation/demo-ssr.test.ts
+@@ -49,14 +49,18 @@
+   return Array.from(element.attributes).find(attribute => attribute.name.toLowerCase() === name.toLowerCase())?.value ?? null;
+ }
+ 
+-test('home SSR includes ordinary demo CTAs and three native intent links before JavaScript', () => {
++test('home SSR provides header navigation and native demo choices without floating room tabs', () => {
+   const markup = renderer.render('/', config);
+   const links = elements(markup, 'a');
+-  const hero = links.find(node => node.getAttribute('class')?.split(' ').includes('hero-demo'));
+-  assert.ok(hero);
+-  assert.equal(hero.getAttribute('href'), '/contact/');
+-  assert.equal(hero.textContent?.trim(), 'Get my demo');
+-  assert.equal(hero.hasAttribute('aria-hidden'), false);
++  const entry = links.find(node => node.getAttribute('class')?.split(' ').includes('computer-entry-demo'));
++  assert.ok(entry, 'The computer provides a direct demo link even before the conversation opens');
++  assert.equal(entry.getAttribute('href'), '/contact/');
++  assert.equal(entry.textContent?.trim(), 'Get my demo');
++  assert.equal(entry.hasAttribute('aria-hidden'), false);
++  const mainNav = elements(markup, 'nav').find(node => node.getAttribute('aria-label') === 'Main navigation');
++  assert.ok(mainNav);
++  assert.deepEqual(Array.from(mainNav.getElementsByTagName('a')).map(link => link.getAttribute('href')), ['/services/', '/work/', '/process/', '/about/']);
++  assert.doesNotMatch(markup, /class="(?:room-navigation|room-link[^"]*|home-guide[^"]*)"/);
+   const intentLabels = { design: 'I need a new website', rescue: 'My website needs rescuing', search: 'Help customers find me' };
+   for (const [project, label] of Object.entries(intentLabels)) {
+     const link = links.find(node => node.textContent?.trim() === label);
+--- a/tests/browser/site.spec.ts
++++ b/tests/browser/site.spec.ts
+@@ -35,11 +35,20 @@
+   expect(result.violations).toEqual([]);
+ }
+ 
++async function mainNavigation(page: Page) {
++  const desktop = page.locator('.desktop-navigation');
++  if (await desktop.isVisible()) return desktop;
++  const menu = page.locator('.mobile-navigation');
++  if ((await menu.getAttribute('open')) === null) await menu.locator(':scope > summary').click();
++  return menu.getByRole('navigation', { name: 'Mobile navigation', exact: true });
++}
++
+ test('the illustrated home and complete contact process have no detectable axe failures', async ({ page }) => {
+   await page.goto('/');
+-  await expect(page.getByRole('heading', { level: 1, name: 'Less stupid. More business.' })).toBeVisible();
++  // The desktop heading remains semantic content while the illustration leads.
++  await expect(page.getByRole('heading', { level: 1, name: 'Less stupid. More business.' })).toHaveCount(1);
+   await expectAxe(page);
+-  await page.locator('.hero-demo').click();
++  await page.locator('.header-demo').click();
+   await expect(page.locator('#demo-name')).toBeVisible();
+   await expectAxe(page);
+   await page.getByRole('button', { name: 'Get my demo', exact: true }).click();
+@@ -49,10 +58,20 @@
+   await expectAxe(page);
+ });
+ 
+-test('room navigation, Back, Forward, Escape and focus return form a complete path', async ({ page }) => {
++test('header navigation, Back, Forward, Escape and focus return form a complete path', async ({ page }) => {
+   await page.goto('/');
+-  const roomLink = page.locator('.room-link-board');
+-  await roomLink.click();
++  // Hovering the illustration must not create floating navigation or tooltips.
++  const workshop = page.getByTestId('workshop');
++  await workshop.scrollIntoViewIfNeeded();
++  const scene = await workshop.boundingBox();
++  expect(scene).not.toBeNull();
++  if (scene) await page.mouse.move(scene.x + scene.width / 2, scene.y + scene.height / 2);
++  await expect(page.locator('.room-navigation, .room-link, .room-link-tip, .room-intro, .home-guide')).toHaveCount(0);
++  await expect(page.getByTestId('workshop').getByRole('tooltip')).toHaveCount(0);
++  const navigation = await mainNavigation(page);
++  const mobile = await navigation.getAttribute('aria-label') === 'Mobile navigation';
++  const services = navigation.locator('a[href="/services/"]');
++  await services.click();
+   await expect(page).toHaveURL(/\/services\/$/);
+   await expect(page.locator('h1')).toBeFocused();
+   await page.getByRole('link', { name: 'Explore website design', exact: true }).click();
+@@ -64,7 +83,7 @@
+   await expect(page).toHaveURL(/\/services\/website-design\/$/);
+   await page.keyboard.press('Escape');
+   await expect(page).toHaveURL(/\/$/);
+-  await expect(page.locator('.room-link-board')).toBeFocused();
++  await expect(mobile ? page.locator('.mobile-navigation > summary') : page.locator('.desktop-navigation a[href="/services/"]')).toBeFocused();
+ });
+ 
+ test('all service pages and the direct inquiry route render substantive content', async ({ page }) => {
+@@ -180,7 +199,7 @@
+   expect(googleRequests).toBe(0);
+   await expect(page.locator('script[src*="googletagmanager"]')).toHaveCount(0);
+   await page.getByRole('button', { name: 'Decline analytics', exact: true }).click();
+-  await page.locator('.hero-demo').click();
++  await page.locator('.header-demo').click();
+   expect(googleRequests).toBe(0);
+   await page.getByRole('button', { name: 'Privacy preferences', exact: true }).click();
+   await page.getByRole('button', { name: 'Allow analytics', exact: true }).click();
+@@ -191,7 +210,7 @@
+   // The synthetic API repeats one receipt across a remount: the same accepted request
+   // must not become a second conversion, and the receipt must never leave the app.
+   await page.locator('.form-accepted .button').click();
+-  await page.locator('.hero-demo').click();
++  await page.locator('.header-demo').click();
+   await fillBrief(page);
+   await page.getByRole('button', { name: 'Get my demo', exact: true }).click();
+   await expect(page.locator('.form-accepted')).toBeVisible();
+@@ -215,14 +234,14 @@
+   await page.emulateMedia({ reducedMotion: 'reduce' });
+   await expect(page.getByRole('button', { name: 'Reduced motion', exact: true })).toBeDisabled();
+   await expect(page.locator('.site-shell')).toHaveClass(/motion-paused/);
+-  await expect(page.locator('.hero-demo')).toBeVisible();
++  await expect(page.locator('.header-demo')).toBeVisible();
+ });
+ 
+ test('320px reflow and deliberately enlarged text preserve the inquiry path', async ({ page }) => {
+   for (const width of [320, 390, 768, 1440]) {
+     await page.setViewportSize({ width, height: 900 });
+     await page.goto('/'); await expectNoHorizontalOverflow(page);
+-    await page.locator('.hero-demo').click();
++    await page.locator('.header-demo').click();
+     await expect(page.locator('#demo-name')).toBeVisible();
+     await expectNoHorizontalOverflow(page);
+   }
+@@ -243,7 +262,7 @@
+   await page.route('**/animation/mobile/**/scene.json', route => route.abort('failed'));
+   await page.route('**/animation/mobile/**/motion.json', route => route.abort('failed'));
+   await page.goto('/');
+-  await page.locator('.hero-demo').click();
++  await page.locator('.header-demo').click();
+   await expect(page.locator('#demo-name')).toBeVisible();
+   await fillBrief(page);
+   await page.getByRole('button', { name: 'Get my demo', exact: true }).click();
+@@ -261,8 +280,14 @@
+   const plain = await context.newPage();
+   try {
+     await plain.goto('/');
+-    await plain.locator('.home-guide>summary').click();
+-    await plain.getByRole('link', { name: 'I need a new website', exact: true }).click();
++    const computer = plain.getByTestId('computer-conversation');
++    await expect(computer.locator('.computer-entry-demo')).toBeVisible();
++    await computer.locator('.computer-chat > summary').click();
++    await expect(computer.getByRole('link', { name: 'I need a new website', exact: true })).toHaveAttribute('href', '/contact/?project=design&from=computer#demo-request');
++    await computer.locator('.computer-chat > summary').click();
++    await (await mainNavigation(plain)).locator('a[href="/services/"]').click();
++    await expect(plain).toHaveURL(/\/services\/$/);
++    await plain.getByRole('link', { name: 'Explore website design', exact: true }).click();
+     await expect(plain).toHaveURL(/\/services\/website-design\/$/);
+     await plain.locator('.page-callout .button').click();
+     await fillBrief(plain);
+--- a/tests/browser/desktop-conversation.spec.ts
++++ b/tests/browser/desktop-conversation.spec.ts
+@@ -12,6 +12,8 @@
+ async function openComputer(page: Page) {
+   await page.goto('/');
+   const chat = page.getByTestId('computer-conversation');
++  await expect(chat.locator('.computer-entry-demo')).toBeVisible();
++  await expect(chat.locator('.computer-entry-demo')).toHaveAttribute('href', '/contact/');
+   await chat.locator('.computer-chat > summary').click();
+   await expect(chat).toHaveAttribute('data-conversation', 'choose');
+   return chat;
+@@ -54,7 +56,7 @@
+   await chat.getByRole('button', { name: 'Put the hands down', exact: true }).click();
+   await expect(chat).toHaveAttribute('data-attitude', 'off');
+   await expect(chat).toHaveAttribute('data-computer-mood', 'eye-roll');
+-  await expect(chat.getByRole('link', { name: 'Get my demo', exact: true })).toHaveAttribute('href', '/contact/?project=rescue&from=computer#demo-request');
++  await expect(chat.locator('.computer-chat-paper .computer-demo')).toHaveAttribute('href', '/contact/?project=rescue&from=computer#demo-request');
+   await chat.getByRole('button', { name: 'Show the censored gesture', exact: true }).click();
+   await chat.getByRole('button', { name: 'Start again', exact: false }).click();
+   await expect(chat).toHaveAttribute('data-attitude', 'off');
+@@ -75,7 +77,7 @@
+   await select.selectOption('thumbs-up');
+   await expect(chat).toHaveAttribute('data-computer-mood', 'thumbs-up');
+   await expect(page.getByRole('button', { name: 'Reduced motion', exact: true })).toBeDisabled();
+-  await expect(page.locator('.hero-demo')).toHaveAttribute('href', '/contact/');
++  await expect(page.locator('.header-demo')).toHaveAttribute('href', '/contact/');
+ });
+ 
+ test('Escape dismisses without a trap and restores focus to the invitation', async ({ page }) => {
+@@ -86,28 +88,50 @@
+   await expect(chat.locator('.computer-chat > summary')).toBeFocused();
+   await expect(page).toHaveURL(/\/$/);
+   await expect(chat.locator('.computer-announcement')).toHaveText('');
+-  await page.locator('.hero-demo').click();
++  await expect(chat.locator('.computer-entry-demo')).toBeVisible();
++  await chat.locator('.computer-entry-demo').click();
+   await expect(page.locator('#demo-name')).toBeVisible();
+ });
+ 
+ test('the expanded conversation is readable, has no detectable axe failures and reflows', async ({ page }) => {
+-  await page.setViewportSize({ width: 320, height: 900 });
+-  const chat = await openComputer(page);
+-  const results = await new AxeBuilder({ page }).include('[data-testid="computer-conversation"]').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+-  expect(results.violations).toEqual([]);
+-  await expect(chat.getByRole('link', { name: 'I need a new website', exact: true })).toBeVisible();
+-  const dimensions = await page.evaluate(() => ({ viewport: document.documentElement.clientWidth, content: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth) }));
+-  expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
+-  const targets = await chat.locator('.computer-intent, .computer-chat-paper button').evaluateAll(elements => elements.filter(element => element.getBoundingClientRect().height > 0).map(element => ({ text: element.textContent, height: element.getBoundingClientRect().height, font: parseFloat(getComputedStyle(element).fontSize) })));
+-  for (const target of targets) { expect(target.height, target.text || '').toBeGreaterThanOrEqual(44); expect(target.font, target.text || '').toBeGreaterThanOrEqual(14); }
++  for (const width of [320, 1440]) {
++    await page.setViewportSize({ width, height: 900 });
++    const chat = await openComputer(page);
++    const results = await new AxeBuilder({ page }).include('[data-testid="computer-conversation"]').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
++    expect(results.violations).toEqual([]);
++    await expect(chat.getByRole('link', { name: 'I need a new website', exact: true })).toBeVisible();
++    const layout = await chat.evaluate(element => {
++      const paper = element.querySelector<HTMLElement>('.computer-chat-paper')!;
++      const workshop = document.querySelector<HTMLElement>('[data-testid="workshop"]')!;
++      return {
++        viewport: document.documentElement.clientWidth,
++        content: Math.max(document.documentElement.scrollWidth, document.body.scrollWidth),
++        positions: [getComputedStyle(element).position, getComputedStyle(paper).position],
++        conversationTop: element.getBoundingClientRect().top,
++        workshopBottom: workshop.getBoundingClientRect().bottom,
++        paperContent: paper.scrollHeight,
++        paperHeight: paper.clientHeight,
++      };
++    });
++    expect(layout.content).toBeLessThanOrEqual(layout.viewport + 1);
++    // Expanded content must follow the scene and grow with its text, so users
++    // read it by scrolling the page instead of a small floating inner panel.
++    for (const position of layout.positions) expect(['static', 'relative']).toContain(position);
++    expect(layout.conversationTop).toBeGreaterThanOrEqual(layout.workshopBottom - 1);
++    expect(layout.paperContent).toBeLessThanOrEqual(layout.paperHeight + 1);
++    const targets = await chat.locator('.computer-intent, .computer-chat-paper button').evaluateAll(elements => elements.filter(element => element.getBoundingClientRect().height > 0).map(element => ({ text: element.textContent, height: element.getBoundingClientRect().height, font: parseFloat(getComputedStyle(element).fontSize) })));
++    for (const target of targets) { expect(target.height, target.text || '').toBeGreaterThanOrEqual(44); expect(target.font, target.text || '').toBeGreaterThanOrEqual(14); }
++  }
+ });
+ 
+ test('native disclosure and intent links keep the inquiry reachable without JavaScript', async ({ browser, baseURL }) => {
+-  const context = await browser.newContext({ javaScriptEnabled: false, baseURL });
++  const context = await browser.newContext({ javaScriptEnabled: false, baseURL, viewport: { width: 1440, height: 900 } });
+   const page = await context.newPage();
+   try {
+     await page.route('**/api/demo', route => route.fulfill({ status: 503, body: 'Synthetic request blocked.' }));
+     await page.goto('/');
++    await expect(page.locator('.computer-entry-demo')).toBeVisible();
++    await expect(page.locator('.desktop-navigation a[href="/services/"]')).toBeVisible();
+     await page.locator('.computer-chat > summary').click();
+     const rescue = page.getByRole('link', { name: 'My website needs rescuing', exact: true });
+     await expect(rescue).toHaveAttribute('href', '/contact/?project=rescue&from=computer#demo-request');

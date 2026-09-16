@@ -1,0 +1,44 @@
+DOCUMENT 072 OF 135
+Title: First-party facts, provenance and reusable evidence
+Path: Library/Framework/framework-source-provenance.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# First-party facts, provenance and reusable evidence
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Service pages, case studies, comparison pages and factual datasets  
+**Evidence:** S19, S20, S29 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Build a source of truth, not a citation costume
+
+A website should draw business facts from approved records: services actually offered, real qualifications, current availability, genuine project outcomes and verifiable contact details. Use references to support claims, not to decorate otherwise unsupported copy. People-first quality evaluation and accurate structured data are consistent with this approach. [S19, S20]
+
+## Fact record
+
+Store a fact ID, exact statement, subject/entity, evidence owner, source location, source date, approved public wording, privacy restrictions, expiration condition and affected pages. Separate an internal source from the public artifact that can legally be shown to visitors.
+
+For a case study, record what happened, the baseline, the time period, the measurement system, the denominator, other simultaneous changes and client permission. Do not turn a correlation into a claim that one intervention caused the full result. A business testimonial is not an independently verified measurement.
+
+## Reuse without contradiction
+
+Connect the approved fact record to page copy, metadata, structured data, downloadable material and relevant feeds. Update dependent representations together. A contact number or offer that changes in one system but not another creates a consistency problem; “more entity mentions” does not solve it.
+
+Preserve edit history. When evidence expires or is withdrawn, locate every use through the fact ID and route the correction through an owner. Keep a correction note when the public claim materially changes. Do not merely refresh the date while leaving stale information intact.
+
+## Content design
+
+Place the relevant answer and supporting context where a reader can understand them. Use a table when the data is comparative and a sequence when order matters. Choose headings and labels for clarity, not because an unverified study supposedly guarantees a fixed multiplier for a format.
+
+A useful reference page can include definitions, limitations, examples and source context. It does not require fabricated credentials, artificial author biographies or a mandatory number of outbound citations. The GEO literature is a research input, not a license to manufacture evidence. [S29]
+
+## Acceptance
+
+A reviewer should trace each important public claim back to an approved record. Check rights to images, testimonials and excerpts. Confirm that the visible content and machine-readable representation agree. Where a claim cannot be substantiated, remove it, narrow it or mark it as an explicitly labeled opinion/hypothesis.
+
+The handoff is a fact register, publishing map, review ownership and correction workflow. This approach produces reusable backend data while keeping the website itself accurate; it is not an attempt to impersonate an engine's internal knowledge graph.
+
+==============================================================================

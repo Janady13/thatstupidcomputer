@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "schema": "tsc-native-timeline-sync/v2",
+  "generatedAt": "2026-09-13T10:55:45.269Z",
+  "format": "Official Rive CLI RML LinearAnimation/KeyedObject/KeyedProperty/KeyFrameDouble",
+  "files": [
+    {
+      "slug": "smartphone",
+      "originalRmlSHA256": "523b8e7b1291c0c00136b2d7ee3be7589b371d36b0f62c58e1e5f1e19c97b5fb",
+      "motionSHA256": "c5b9aadf4f2e91d4655d2d77410a797d7554d41efac4b1e55c252219170b9dda",
+      "buildRmlSHA256": "0804101181ba78e3f54a0b7eb403b95f48abf6d2346432ce2e9fc81526f17ab7",
+      "animations": 32,
+      "tracks": 2144,
+      "keyframes": 31574
+    },
+    {
+      "slug": "flip-phone",
+      "originalRmlSHA256": "c7e19a0568e838071fc8f23b00e2af2d577da7d5a02ce39075783b7e5c847a26",
+      "motionSHA256": "6822f7903db16790b13a134e68271881eb90f08aa23abbe87e13f7c5d853eae1",
+      "buildRmlSHA256": "6ad7f3cceb802e89ac599d5146004726542cf3c2ad961bb836ce5a130fcaaaa1",
+      "animations": 32,
+      "tracks": 2176,
+      "keyframes": 33289
+    },
+    {
+      "slug": "app-bot",
+      "originalRmlSHA256": "c6a31f1c899cec04f6197347c78c3a009c033c9b4fa85fe49ef52b71f9477ce0",
+      "motionSHA256": "5bf51eadbb302b2153dffa0599005d0027d36a0fa3b552c14f6938a752352a7d",
+      "buildRmlSHA256": "3020c323240c5c800282e137b2eb0e423d98b48f2d59b4ba6600f12e16baaf11",
+      "animations": 32,
+      "tracks": 2208,
+      "keyframes": 37097
+    },
+    {
+      "slug": "pager",
+      "originalRmlSHA256": "f1ddf970920e9ba613a19132f7797c5c4d6676a0d4901871b66a7678c8c86f7d",
+      "motionSHA256": "d128f1ac3dd8d92aa731f8e2206179a84a23ef0fbeec68cdf3a4f5ad203e7ff2",
+      "buildRmlSHA256": "6d0f31cf649eafb65d822fd6697bebdc27bbd46c2bfd41035b0fe104a6a50892",
+      "animations": 32,
+      "tracks": 2176,
+      "keyframes": 39776
+    },
+    {
+      "slug": "handheld",
+      "originalRmlSHA256": "5cbb9673e5a4df6e6145820b5bf87b222dc37e17aa2daa986bcc9432df4f668d",
+      "motionSHA256": "0a2b8729f47049b0dfd3ef8d25b99507bb36385d78c75d995da25cd7d967ad6c",
+      "buildRmlSHA256": "8e4869a167e877368ba63bc89b15d58307bcc1b1a3b4b15e9840243235a7d2dc",
+      "animations": 32,
+      "tracks": 2144,
+      "keyframes": 31951
+    }
+  ]
+}

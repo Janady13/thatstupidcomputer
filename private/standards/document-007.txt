@@ -1,0 +1,53 @@
+DOCUMENT 007 OF 135
+Title: Build public expertise from the internal discipline library
+Path: Library/Disciplines/04-SEARCH-EXPERTISE-PUBLISHING.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Build public expertise from the internal discipline library
+
+## Two layers, two different jobs
+
+The **private operating layer** teaches an AI assistant how to route work, gather evidence and avoid conflicting fixes. It includes site facts, prompts, internal findings, logs and release records. It should not be dumped into a public web directory. Internal architecture, secrets and customer information remain private.
+
+The **public expertise layer** helps a reader solve a real problem and assess the author's competence. It contains useful explanations, original methods, bounded demonstrations, actual case studies when permission/evidence exists, truthful bylines and safe proof. Search systems can only discover public eligible material through their supported mechanisms; adding files to this private ZIP does not make the business visible.
+
+Google encourages original useful content, reliable sourcing and clear authorship, and explicitly rejects special-file tricks as a substitute for useful websites in its AI optimization guidance. This is a reason to publish valuable work—not a guarantee that Google, ChatGPT or any other system will select it. [People-first guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [AI guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
+
+## What to publish first
+
+Use the 26 briefs as a **coverage map**, not a demand to publish 26 near-identical pages. Prioritize demonstrated capabilities and buyer problems. A strong first cluster could explain outside-in website troubleshooting, contact-to-mailbox proof, real-browser versus emulated coverage, defensible AI-visibility measurement, secure releases and honest acceptance. The supplied six drafts are methodology articles, not invented client success stories.
+
+Each public page needs a distinct reader question, a defensible answer, the evidence that makes it useful, explicit scope and a real next action. A page about “R17 Email Deliverability Engineer” is less useful to a business owner than an article answering why the contact form says sent but no inquiry arrives. Role titles organize the private system; user problems organize the public content.
+
+## Publication chain
+
+**Demonstrated work → sanitized evidence → useful explanation → truthful attribution → technically eligible publication → relevant independent corroboration → measured observations.** None of these stages alone establishes universal expertise or guaranteed search placement.
+
+R23 validates audience/demand; R10 checks relevance; R13 edits; R14 approves claims; R20 redacts; R11 models truthful entities; R08 checks the chosen public URL; R12 defines engine-specific observations; R16 measures qualified outcomes. R25 controls the publication change and R26 verifies the agreed acceptance scope.
+
+## Author and brand identity
+
+Joseph may publish work he actually authored or substantively reviewed, with his approved name and a truthful biography. Do not state that he holds all 26 job titles, certifications or professional memberships merely because this system contains those prompts. Do not claim a 26-person team. Keep writing assistance disclosures consistent with actual editorial policy and circumstances.
+
+Separate Person, Organization and article entities. Use stable IDs tied to the chosen canonical home. `sameAs` means a verified identity reference for the same entity, not a list of impressive related websites; do not invent a Wikidata item. Schema is a representation of verified facts, not an authority-creation mechanism. [Person](https://schema.org/Person), [Organization](https://schema.org/Organization), [structured-data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
+
+## Canonical publication home
+
+The package does not choose a primary domain or initiate a migration. ThatDevPro as a research/tool publication home and ThatDeveloperGuy as a service-facing site is a **provisional option only**. Review existing pages, links, traffic, ownership and business positioning before deciding. Put each original article at one canonical location, link contextually from the other relevant site, and avoid duplicating the entire library. Both domain names are user-supplied; their current live configurations have not been inspected here.
+
+Suggested paths in briefs are planning paths, not deployed pages. Before publication, approve the host, actual route, canonical, byline, date, sources, schema, internal links, contact journey and measurement. Draft placeholders must not leak into public copy.
+
+## Evidence without fiction
+
+A methodology article can explain documented principles and clearly hypothetical examples without claiming a completed engagement. A case study needs actual work, scope, dates, original artifacts, customer permission where relevant, baseline comparability and approved outcome language. No fabricated percentages, awards, testimonials, client logos or guarantees. FTC guidance supports truthful advertising and substantiation; jurisdiction-specific legal questions remain outside this technical library. [Advertising guidance](https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business).
+
+## Measure recognition instead of announcing it
+
+Record engine/surface, query, locale, date, cited URL and observation method. Track referrals and qualified inquiries separately. Owned profiles, paid placements and earned independent coverage are different evidence. Digital PR should surface useful original work, not manufacture endorsements or link schemes. [Google spam policies](https://developers.google.com/search/docs/essentials/spam-policies).
+
+Use [publication briefs](../../Publishing/README.md), the [publication contract](../../Templates/Disciplines/publication-contract.template.json) and the existing current AI-observation/attribution modules. The outcome promised by this package is a stronger operating and publishing framework—not a ranking or model-recommendation guarantee.
+
+==============================================================================

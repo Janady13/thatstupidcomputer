@@ -1,0 +1,52 @@
+DOCUMENT 009 OF 135
+Title: Decision ownership and conflicting-repair matrix
+Path: Library/Disciplines/06-CONFLICT-RESOLUTION.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Decision ownership and conflicting-repair matrix
+
+“Exclusive” means one accountable decision owner, not an isolated silo. Implementation may be carried out by another authorized operator. Each row states who owns intent and who must review interfaces.
+
+| Decision | Accountable owner | Required interface review |
+| --- | --- | --- |
+| Public DNS/routing/TLS intent | R02 | R01 ingress; R20 exposure/security; R08 hostname policy |
+| Nginx/systemd runtime repair | R01 | R03 upstream; R02 transport; R25 change sequence |
+| SMTP application state and queue handling | R03 | R17 delivery contract; R16 event semantics |
+| SPF/DKIM/DMARC policy intent | R17 | R02 DNS implementation; R03 sending streams; R20 privacy |
+| Form UI state and progressive behavior | R04 | R03 truth of response; R07 accessibility; R05 compatibility |
+| Required real-browser/device matrix | R05 | R07 assistive combinations; R21 automation; R26 acceptance |
+| Performance optimization proposal | R06 | R01 cache runtime; R04 assets; R08 crawl; R20 privacy |
+| Accessibility criterion assessment | R07 | R04 implementation; R05 actual platform; R26 coverage |
+| URL status/canonical/robots/sitemap contract | R08 | R09 purpose; R12 engine controls; R20 access boundaries |
+| Page hierarchy and navigation purpose | R09 | R10 relevance; R13 content; R08 route changes |
+| Query relevance and owned retrieval evaluation | R10 | R23 demand; R13 answers; R12 observations |
+| Entity/structured-data representation | R11 | R14 verified facts; R08 IDs/canonicals; R18 local facts |
+| Named AI-consumer observation/control proposal | R12 | R08 policy; R02 reachability; R16 attribution; R20 safety |
+| Editorial purpose and final draft | R13 | R14 claims; R23 audience; R09 duplication; R20 redaction |
+| Allowed factual/credential/outcome wording | R14 | Evidence-owning specialist; R13 expression; R20 privacy |
+| Conversion hypothesis and experiment plan | R15 | R16 metrics; R23 offer; R07 accessibility; R14 claims |
+| Event/metric definition and reporting scope | R16 | R03 business truth; R12 AI visibility; R20 consent |
+| GBP eligibility and profile representation | R18 | R14 business facts; R11 graph; R13 regional pages |
+| Earned authority/outreach and disclosure | R19 | R14 claims; R13 asset; R20 permission |
+| Application security/privacy risk disposition | R20 | Affected implementers; responsible legal/business owner |
+| Regression suite coverage and fixtures | R21 | Contract owners; R05/R07 nonautomated coverage; R26 |
+| Authorized falsification plan | R22 | R20 security scope; R21 regression; R24 assumptions |
+| Audience/offer-market hypothesis | R23 | R13 content; R10 queries; R15 testing; R24 capacity |
+| Cross-discipline architecture decision | R24 | Every affected owner; no unilateral bypass of safety gates |
+| Deployment sequencing and change record | R25 | R24 dependencies; R01 recovery; R26 verdict |
+| Fresh acceptance verdict and independence declaration | R26 | R25 decision; R24 ambiguity; R14 public claims |
+
+## Resolution procedure
+
+Freeze conflicting writes. Collect the competing expected outcomes, evidence, affected interfaces and rollback costs. R24 selects a coherent proposal or marks the decision BLOCKED. Owners retain their domain-specific acceptance requirements; the integrator cannot erase an unresolved security or truthfulness failure by majority vote.
+
+Record alternatives and why the selected option meets the requirements. Agree one writer/merge owner, the exact artifact version and a test that can falsify the chosen assumption. R25 sequences the approved change; R26 verifies the original contract. An emergency containment route still needs actual authority and a recorded retrospective, not self-granted permission.
+
+Example: a cache change may improve a lab result while serving stale canonical tags or private inquiry responses. R06 owns the optimization proposal, R01 its runtime application, R08 the URL/content contract and R20 privacy. It cannot ship until those interfaces agree and the relevant regressions pass.
+
+This matrix is an agency design informed by [production readiness](https://sre.google/sre-book/evolving-sre-engagement-model/) and [release engineering](https://sre.google/sre-book/release-engineering/), not a claim that the source publishers prescribe these 26 titles.
+
+==============================================================================

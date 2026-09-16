@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -8.00 143.00 144.00" width="143" height="144">
+  <title>Small-parts organizer / twelve drawers</title>
+  <g id="parts-organizer" data-art="parts-organizer">
+    <path id="parts-organizer-side" d="M111 4 L127 11 L127 127 L111 123 Z" fill="#29261F" stroke="#29261F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="parts-organizer-body" x="0" y="0" width="111" height="124" rx="1" fill="#29261F" stroke="#29261F" stroke-width="2"/>
+    <g id="parts-organizer-bin-01">
+      <rect id="parts-organizer-bin-01-frame" x="7" y="7" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-01-window" x="10" y="10" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-01-parts" d="M12 22 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-01-pull" d="M17 28 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-02">
+      <rect id="parts-organizer-bin-02-frame" x="41" y="7" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-02-window" x="44" y="10" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-02-parts" d="M46 22 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-02-pull" d="M51 28 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-03">
+      <rect id="parts-organizer-bin-03-frame" x="75" y="7" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-03-window" x="78" y="10" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-03-parts" d="M80 22 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-03-pull" d="M85 28 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-04">
+      <rect id="parts-organizer-bin-04-frame" x="7" y="35" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-04-window" x="10" y="38" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-04-parts" d="M12 50 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-04-pull" d="M17 56 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-05">
+      <rect id="parts-organizer-bin-05-frame" x="41" y="35" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-05-window" x="44" y="38" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-05-parts" d="M46 50 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-05-pull" d="M51 56 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-06">
+      <rect id="parts-organizer-bin-06-frame" x="75" y="35" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-06-window" x="78" y="38" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-06-parts" d="M80 50 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-06-pull" d="M85 56 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-07">
+      <rect id="parts-organizer-bin-07-frame" x="7" y="63" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-07-window" x="10" y="66" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-07-parts" d="M12 78 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-07-pull" d="M17 84 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-08">
+      <rect id="parts-organizer-bin-08-frame" x="41" y="63" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-08-window" x="44" y="66" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-08-parts" d="M46 78 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-08-pull" d="M51 84 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-09">
+      <rect id="parts-organizer-bin-09-frame" x="75" y="63" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-09-window" x="78" y="66" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-09-parts" d="M80 78 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-09-pull" d="M85 84 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-10">
+      <rect id="parts-organizer-bin-10-frame" x="7" y="91" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-10-window" x="10" y="94" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-10-parts" d="M12 106 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-10-pull" d="M17 112 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-11">
+      <rect id="parts-organizer-bin-11-frame" x="41" y="91" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-11-window" x="44" y="94" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-11-parts" d="M46 106 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#F4E5C4" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-11-pull" d="M51 112 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="parts-organizer-bin-12">
+      <rect id="parts-organizer-bin-12-frame" x="75" y="91" width="29" height="23" rx="1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <rect id="parts-organizer-bin-12-window" x="78" y="94" width="23" height="15" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.6"/>
+      <path id="parts-organizer-bin-12-parts" d="M80 106 l4 -3 3 4 4 -6 4 6 4 -2 0 4 -19 0 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.68"/>
+      <path id="parts-organizer-bin-12-pull" d="M85 112 h10" fill="none" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path id="parts-organizer-foot" d="M0 124 L110 126 L127 128" fill="none" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

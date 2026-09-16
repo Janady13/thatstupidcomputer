@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED",
+  "scope": "Browser/WebGL verification and promotion",
+  "reason": "Existing browser URL policy rejected this workflow. Alternate browsers, CDP, navigation workarounds and browser commands are prohibited. No browser server is started.",
+  "permittedAlternative": "Official Canvas WASM inside Node with @napi-rs/canvas, local bytes only; no HTTP or browser control."
+}

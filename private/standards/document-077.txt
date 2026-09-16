@@ -1,0 +1,61 @@
+DOCUMENT 077 OF 135
+Title: From public delivery to useful answers and observed AI citations
+Path: Library/Playbooks/03-DISCOVERY-TO-AI-CITATIONS.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# From public delivery to useful answers and observed AI citations
+
+**Lead:** R12 for a named AI surface, with R08 owning general crawl/index contracts. **Consulted roles:** R02, R08, R09, R10, R11, R12, R13, R14, R16, R20, R23. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+The business wants relevant search/AI visibility, or a particular named surface does not show its content. No position or citation can be guaranteed by completing the checklist.
+
+## Sequence and ownership
+
+### 1. Name the observation
+
+Record the engine/surface, exact query, locale, timestamp and exposed model state. Different products may not share crawler policies, indexes or reporting.
+
+### 2. Verify delivery and eligibility
+
+R02 establishes public reachability; R08 checks response/directive/canonical/link contracts and available engine reports. R12 checks search/training/user-fetch controls with current provider documentation.
+
+### 3. Evaluate answer value
+
+R10 judges query-to-page relevance; R13 adds distinct useful explanations and genuine proof. R14 approves factual claims. R09 prevents orphan/duplicate pages and R11 keeps identity markup truthful.
+
+### 4. Observe selection separately
+
+R12 records citations and counterexamples with the original source URL and method. Do not infer model training or memory from a citation or a crawl log.
+
+### 5. Reconcile business outcomes
+
+R16 reports available search exposure, referrals and qualified inquiries with compatible scopes. R23 checks whether the questions correspond to real buyer problems.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Each asserted outcome has the correct source and observation context
+- Crawler access, indexing, citations, referrals and leads are not conflated
+- No special-file or formatting guarantee replaces useful content
+
+## Stop or block
+
+Unavailable dashboards or model identifiers remain unavailable. Do not create synthetic testimonials, low-value query-variant pages or guaranteed inclusion promises to fill a measurement gap.
+
+## Role and source references
+
+- [R08 — Technical SEO Engineer](../Disciplines/R08-technical-seo.md)
+- [R10 — Search Relevance/IR Engineer](../Disciplines/R10-search-relevance-ir.md)
+- [R12 — AEO/AIO/GEO Engineer](../Disciplines/R12-aeo-aio-geo.md)
+
+Primary-source IDs: D13, D20, D21, D22, D23, D24, D29, D31. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

@@ -1,0 +1,22 @@
+DOCUMENT 083 OF 135
+Title: Cross-discipline playbooks
+Path: Library/Playbooks/README.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Cross-discipline playbooks
+
+Use these dependency-oriented workflows with the [routing protocol](../Disciplines/01-MASTER-ROUTER.md). They coordinate specialist work without merging distinct evidence states or granting production permissions.
+
+- [Bubbles: outside-in availability and public reachability](01-BUBBLES-PUBLIC-REACHABILITY.md)
+- [Contact form to actual mailbox: an end-to-end evidence chain](02-CONTACT-TO-MAILBOX.md)
+- [From public delivery to useful answers and observed AI citations](03-DISCOVERY-TO-AI-CITATIONS.md)
+- [Browser and accessibility regressions across a complete task](04-BROWSER-ACCESSIBILITY.md)
+- [Improve measured performance without damaging the website](05-PERFORMANCE-WITHOUT-REGRESSIONS.md)
+- [Turn verified work into a public expertise asset](06-EVIDENCE-TO-PUBLIC-EXPERTISE.md)
+- [Coordinate hostname, URL and content migrations](07-MIGRATION-AND-URL-CHANGES.md)
+- [Preflight, controlled release and fresh acceptance](08-RELEASE-AND-INDEPENDENT-ACCEPTANCE.md)
+
+==============================================================================

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10.00 -8.00 243.00 92.00" width="243" height="92">
+  <title>Desk drawer / upper</title>
+  <g id="drawer-top" data-art="drawer-top">
+    <g id="drawer-top-slide-motion" data-motion="drawer-top" data-pivot="0,0">
+      <path id="drawer-top-box-interior" d="M0 0 L225 0 L224 60 L-2 63 Z" fill="#29261F" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-top-drawer-front" d="M-1 0 L225 1 L222 76 L-2 70 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-top-face-bevel" d="M5 6 L218 7 L216 69 L5 65 Z" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+      <path id="drawer-top-label-frame" d="M83 23 L139 24 L139 49 L83 48 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-top-label-paper" d="M88 27 L134 28 L134 44 L88 43 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-top-handle" d="M92 51 L132 52" fill="none" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

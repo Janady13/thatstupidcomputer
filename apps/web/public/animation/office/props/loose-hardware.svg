@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-38.53 -18.39 88.09 34.89" width="89" height="35">
+  <title>Loose screws and nuts</title>
+  <g id="loose-hardware" data-art="loose-hardware">
+    <g id="loose-hardware-fastener-1" transform="rotate(18 -25 4)">
+      <path id="loose-hardware-fastener-1-shank" d="M-26 4 l2 -6 3 1 -1 6 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse id="loose-hardware-fastener-1-head" cx="-25" cy="4" rx="5" ry="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="loose-hardware-fastener-1-slot" d="M-27 4 L-23 4" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="loose-hardware-fastener-2" transform="rotate(-14 -3 -1)">
+      <path id="loose-hardware-fastener-2-shank" d="M-4 -1 l2 -6 3 1 -1 6 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse id="loose-hardware-fastener-2-head" cx="-3" cy="-1" rx="5" ry="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="loose-hardware-fastener-2-slot" d="M-5 -1 L-1 -1" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="loose-hardware-fastener-3" transform="rotate(24 18 1)">
+      <path id="loose-hardware-fastener-3-shank" d="M17 1 l2 -6 3 1 -1 6 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse id="loose-hardware-fastener-3-head" cx="18" cy="1" rx="5" ry="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="loose-hardware-fastener-3-slot" d="M16 1 L20 1" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="loose-hardware-fastener-4" transform="rotate(-21 36 -3)">
+      <path id="loose-hardware-fastener-4-shank" d="M35 -3 l2 -6 3 1 -1 6 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <ellipse id="loose-hardware-fastener-4-head" cx="36" cy="-3" rx="5" ry="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="loose-hardware-fastener-4-slot" d="M34 -3 L38 -3" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path id="loose-hardware-washer" d="M1 6 a5 2.5 0 1 0 10 0 a5 2.5 0 1 0 -10 0 M4 6 a2 1 0 1 1 4 0 a2 1 0 1 1 -4 0" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill-rule="evenodd"/>
+  </g>
+</svg>

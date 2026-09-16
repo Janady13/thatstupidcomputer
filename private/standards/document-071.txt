@@ -1,0 +1,44 @@
+DOCUMENT 071 OF 135
+Title: Social and video platform properties in Search Console
+Path: Library/Framework/framework-social-video-properties.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Social and video platform properties in Search Console
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Supported publisher/business profiles and video discovery  
+**Evidence:** S43, S44, S50 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Separate Google discovery from platform-native performance
+
+Google's July 29, 2026 announcement describes globally available platform properties for supported social/video services, including Instagram, TikTok, X and YouTube. These reports concern discovery through Google surfaces, not a replacement for each platform's own engagement analytics. [S43, S44]
+
+## Ownership and setup
+
+Create an inventory of legitimate client profiles, account owners, access permissions and official website relationships. Verify the relevant account using the current product workflow. Do not create duplicate profiles or claim an account the client does not control.
+
+Record the exact profile identifier and property scope. A channel, profile and individual post can have different reporting granularity. Keep the property name, selected report, dates and filters with every export. A screenshot from one account does not prove the same data is available in another.
+
+## Content mapping
+
+Map each profile and important content item to its business purpose and related website page where appropriate. Use clear, consistent factual identity and a useful destination. Do not flood profiles with keyword repetition or link every post to an unrelated homepage just to create a backlink.
+
+For video hosted on the client's site, evaluate watch-page eligibility, stable thumbnails and accessible media according to Google's video guidance. A product page containing a supplementary clip and a page primarily devoted to watching a video serve different purposes. [S50]
+
+## Reporting workflow
+
+Track discovery impressions/clicks where the selected report exposes them, then separately examine native-platform views, engagement and website referrals. Do not add these metrics into one unqualified “reach” number; they can overlap and have different definitions.
+
+Compare content cohorts by topic and user intent. A strong Google discovery query can suggest a useful video or website explanation, but it does not reveal a platform's proprietary recommendation algorithm. Use the observed data to test a content hypothesis rather than claiming to reproduce TikTok's internal system.
+
+## Acceptance and maintenance
+
+The deliverable includes verified-profile scope, evidence of available reporting, content-to-business mapping, metric definitions and a list of actions supported by the data. Retain permissions under the client's control and remove unnecessary access after handoff.
+
+This module adds a current reporting opportunity to the library. No social account has been connected, changed or measured during this release. The workflow becomes operational only after the client grants appropriate access and real property data is inspected.
+
+==============================================================================

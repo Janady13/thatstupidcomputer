@@ -1,0 +1,19 @@
+DOCUMENT 130 OF 135
+Title: Schema examples — fictional, not deployable as supplied
+Path: Schema.org/README.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Schema examples — fictional, not deployable as supplied
+
+These four files illustrate graph structure, not real businesses, credentials, offers, addresses or ratings. They pass local JSON syntax tests only. No live Rich Results Test, vocabulary validator, feature approval or client factual validation has been performed.
+
+Replace every `example.com`, fictional name, address, date, price and image with approved current facts. Do not publish a customer-facing address for a service-area business that has no genuine eligible storefront. No `AggregateRating` is included merely to make an example look complete. The product example is not a complete merchant feed or a guarantee of all shopping features.
+
+Before publication, validate the current intended feature, required fields, visible-page consistency, resource URLs, permissions and safe HTML embedding. Use `Tools/seo_html_check.py` for limited saved-HTML checks and `Tools/jsonld_embed.py` for safe script serialization; neither certifies factual accuracy or rich-result eligibility.
+
+See [schema lifecycle](../Library/Framework/framework-schema-lifecycle.md), [current type reference](../Library/Framework/framework-schema-types-2026.md) and [primary sources](../Research/SOURCE-REGISTER.md), especially S20–S23.
+
+==============================================================================

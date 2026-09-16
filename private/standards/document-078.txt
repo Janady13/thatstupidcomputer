@@ -1,0 +1,61 @@
+DOCUMENT 078 OF 135
+Title: Browser and accessibility regressions across a complete task
+Path: Library/Playbooks/04-BROWSER-ACCESSIBILITY.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Browser and accessibility regressions across a complete task
+
+**Lead:** R05 for environment-specific behavior; R07 for accessibility assessment. **Consulted roles:** R03, R04, R05, R07, R21, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+A critical task fails in a browser/device or cannot be completed with keyboard/screen-reader operation. The acceptance matrix must identify actual versus emulated environments.
+
+## Sequence and ownership
+
+### 1. Record the environment
+
+Capture OS, device, browser/version, input mode and assistive technology. State whether the test uses a branded product, engine build, emulation or actual device.
+
+### 2. Map the complete process
+
+Include discovery, navigation, form entry, validation, error recovery and confirmation. A homepage screenshot is not task coverage.
+
+### 3. Isolate and repair
+
+R05 produces a minimal reproduction; R07 maps access failures to criteria and process impact; R04 proposes a semantic/behavioral repair with R03 contract review.
+
+### 4. Retest interactions
+
+Run appropriate automated regression checks through R21, but retain manual keyboard/screen-reader and actual-device requirements. Check zoom/reflow and affected alternate states.
+
+### 5. Accept honestly
+
+R26 verifies required matrix rows. Report real environments unavailable for testing as BLOCKED rather than substituting WebKit for Safari or a desktop resize for an iPhone.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Required environment rows identify exactly what was run
+- Critical process works under agreed keyboard/assistive workflows
+- Automation and manual assessment scopes remain distinct
+
+## Stop or block
+
+No automated score is a complete WCAG conformance verdict. Missing real-device coverage cannot be silently relabeled. Avoid changing a UI based only on one screenshot without a reproducible behavior.
+
+## Role and source references
+
+- [R04 — Frontend Web Engineer](../Disciplines/R04-frontend-web.md)
+- [R05 — Browser Compatibility Engineer](../Disciplines/R05-browser-compatibility.md)
+- [R07 — Accessibility Specialist](../Disciplines/R07-accessibility.md)
+
+Primary-source IDs: D07, D08, D11, D12. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

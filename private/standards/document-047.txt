@@ -1,0 +1,44 @@
+DOCUMENT 047 OF 135
+Title: Commerce data consistency across page, feed and structured data
+Path: Library/Framework/framework-commerce-data-consistency.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Commerce data consistency across page, feed and structured data
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Product detail pages, offers and merchant integrations  
+**Evidence:** S23, S20, S22 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## One approved commercial record
+
+Use a controlled product record as the source for visible price, currency, availability, product identity and the matching structured-data output. A theme, feed connector and frontend must not independently invent these values. Document which system owns each field and how updates propagate.
+
+Google's merchant documentation specifies feature-dependent Product/Offer requirements and current sale-duration properties. Truthful markup must match the purchasable product and landing-page information; adding an invented rating is not a valid way to complete a template. [S23, S20, S22]
+
+## Field ownership and update flow
+
+Create a mapping from catalog fields to the rendered page, JSON-LD, merchant feed and checkout. Include units, currency, timezone, stock states, identifiers, images, variants, shipping and returns where applicable. Mark fields that require another official feature guide before implementation rather than assuming every merchant integration uses the same contract.
+
+For sale windows, store explicit start/end values and timezone. Test before the sale, during the sale and after expiration. A stale cache can make the page, markup and checkout disagree. Invalidate dependent representations together or define an explicit acceptable delay with monitoring.
+
+## Variant and availability cases
+
+Test product-level and variant-level URLs deliberately. A shopper landing on a selected color or size should see the corresponding factual state. Do not canonicalize distinct commercially useful variants or parameter combinations automatically; determine the intended URL policy first.
+
+Handle out-of-stock and discontinued states with an approved customer experience. An unavailable product may still be useful for support or alternatives, but its offer must not claim it is currently purchasable. Use the URL lifecycle contract for permanent retirement.
+
+## Validation suite
+
+Prepare fixtures for normal price, sale price, expired sale, missing optional identifier, no reviews, out-of-stock, multiple currencies and an invalid image. Compare the rendered value, JSON value and feed value. Reject impossible dates and inconsistent currencies. Keep rounding and tax-display rules explicit in the business implementation.
+
+A minimum useful acceptance report lists the tested product IDs, raw field values, rendered captures, validation findings, ownership decisions and unresolved exceptions. A generic schema validator cannot verify that a physical product exists, that a review is genuine or that a commercial policy is lawful.
+
+## Monitoring
+
+Watch for increasing feed disapprovals, unexpected price differences, missing images and checkout failures. Treat conversion and availability incidents as business defects, not merely search defects. Prioritize correctness before adding optional markup. This release does not connect to a merchant account, upload a feed or certify any client's catalog.
+
+==============================================================================

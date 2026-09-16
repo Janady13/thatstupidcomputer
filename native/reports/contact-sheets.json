@@ -1,0 +1,568 @@
+{
+  "status": "REVIEWED_WITH_SCOPE",
+  "generatedAt": "2026-09-13T10:56:54.772Z",
+  "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+  "capture": "Authored peakSeconds from the performance catalog, native left / authoritative source right",
+  "files": [
+    {
+      "slug": "smartphone",
+      "nativeSHA256": "04ea1b6bf955f0b4f0470b64a6f9e151a915558d898995a994fddcb0661797e0",
+      "actionCount": 32,
+      "overview": {
+        "path": "native/reports/smartphone-parity.png",
+        "sha256": "54c22e033754ff1c4ab61f7831304c777c8678f6cb7d75184954b33d2e8bf44f",
+        "width": 1664,
+        "height": 1916,
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      "pages": [
+        {
+          "path": "native/reports/contact-sheets/smartphone-01.png",
+          "sha256": "992931dad0ecec4cdd456b44db474c84ed9e54c553431bceb491c3561015cb35",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Idle",
+            "Happy",
+            "Excited",
+            "Sad",
+            "Angry",
+            "Confused",
+            "Searching",
+            "Sassy"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/smartphone-02.png",
+          "sha256": "f44cfedb120f35ef0f5d7ea0f76627cf68b7a79fe62f15839c18d5951f9e133e",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "EyeRoll",
+            "RudeFlipOff",
+            "Wave",
+            "Revived",
+            "WalkRight",
+            "WalkLeft",
+            "Laugh",
+            "Proud"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/smartphone-03.png",
+          "sha256": "641936783e1a57c148affc84eaf82d03fb3970a7f53d5a8ec179cbfd32a63b59",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shy",
+            "Suspicious",
+            "Startled",
+            "Frustrated",
+            "Sleepy",
+            "WakeUp",
+            "Think",
+            "Facepalm"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/smartphone-04.png",
+          "sha256": "bb94465697055ea13cb67052186fa7edfd03b6c4d7b9b857eb76aed3f215a46b",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shrug",
+            "PointLeft",
+            "PointRight",
+            "Bow",
+            "Jump",
+            "Land",
+            "RunRight",
+            "RunLeft"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "flip-phone",
+      "nativeSHA256": "2e7725d58d30c64324c72ae2ff3972c8c00fedfaa70a61944ff202d937a196d3",
+      "actionCount": 32,
+      "overview": {
+        "path": "native/reports/flip-phone-parity.png",
+        "sha256": "ac1b1e8968937e1269e36728c30f9d3c020e4e26c464dd98adde777a813c4239",
+        "width": 1664,
+        "height": 1916,
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      "pages": [
+        {
+          "path": "native/reports/contact-sheets/flip-phone-01.png",
+          "sha256": "f4a773f1f8ef1c42d0e0e4c9dd03184593c5fa28a70992719f3e4e26960215fc",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Idle",
+            "Happy",
+            "Excited",
+            "Sad",
+            "Angry",
+            "Confused",
+            "Searching",
+            "Sassy"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/flip-phone-02.png",
+          "sha256": "7ffdfecc0e0ea82cfa4dd985609f9ef28e3c76b6f9f946e984db9cbc97d3c6c4",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "EyeRoll",
+            "RudeFlipOff",
+            "Wave",
+            "Revived",
+            "WalkRight",
+            "WalkLeft",
+            "Laugh",
+            "Proud"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/flip-phone-03.png",
+          "sha256": "4618dbdbac06a37f8021c759aa8c8f84c58f6571c8815dcc0a98c81c5bfb34b9",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shy",
+            "Suspicious",
+            "Startled",
+            "Frustrated",
+            "Sleepy",
+            "WakeUp",
+            "Think",
+            "Facepalm"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/flip-phone-04.png",
+          "sha256": "27cd510991fcdaf6280f2f165010308fd75efc74d984719bfa23215958d02f59",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shrug",
+            "PointLeft",
+            "PointRight",
+            "Bow",
+            "Jump",
+            "Land",
+            "RunRight",
+            "RunLeft"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "app-bot",
+      "nativeSHA256": "607803b06bdf52ced750ed4fac7eba13a45eef1a6fc1844e7a54b43f73bafff6",
+      "actionCount": 32,
+      "overview": {
+        "path": "native/reports/app-bot-parity.png",
+        "sha256": "cd9e4958f24d9e05f741e42b1f207db4d75e87c895343fa4e9eb557fe546afef",
+        "width": 1664,
+        "height": 1916,
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      "pages": [
+        {
+          "path": "native/reports/contact-sheets/app-bot-01.png",
+          "sha256": "528650885fdda9baa9e9140003e173e9d12658acd4d3e0ca8ac0f3abf50ea3dd",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Idle",
+            "Happy",
+            "Excited",
+            "Sad",
+            "Angry",
+            "Confused",
+            "Searching",
+            "Sassy"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/app-bot-02.png",
+          "sha256": "58d490a0064196237951fc3b82896760fbb84945a00c3c29dfce479e9aab5415",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "EyeRoll",
+            "RudeFlipOff",
+            "Wave",
+            "Revived",
+            "WalkRight",
+            "WalkLeft",
+            "Laugh",
+            "Proud"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/app-bot-03.png",
+          "sha256": "e72e171b012507d68a50d10ae792023394f6e1533d822aff08e165d012406fb0",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shy",
+            "Suspicious",
+            "Startled",
+            "Frustrated",
+            "Sleepy",
+            "WakeUp",
+            "Think",
+            "Facepalm"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/app-bot-04.png",
+          "sha256": "d0faed3d0f06a04c43eb0402748f994d60cfe44e9e7c1155a2d043df96f8bbd9",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shrug",
+            "PointLeft",
+            "PointRight",
+            "Bow",
+            "Jump",
+            "Land",
+            "RunRight",
+            "RunLeft"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pager",
+      "nativeSHA256": "af40fe90fddf608e98c5c5e558fc3f833dab018b2e6aa512a30dd69a1b569f24",
+      "actionCount": 32,
+      "overview": {
+        "path": "native/reports/pager-parity.png",
+        "sha256": "4f3d8d316c4a2c8d15b6b308a03385eda5cd0ba6c93b86b42766fe9224ca05e4",
+        "width": 1664,
+        "height": 1916,
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      "pages": [
+        {
+          "path": "native/reports/contact-sheets/pager-01.png",
+          "sha256": "314fdf143bf1130c76565e7ba4a3085bda97b7690bea2b16c129e38edb3583e5",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Idle",
+            "Happy",
+            "Excited",
+            "Sad",
+            "Angry",
+            "Confused",
+            "Searching",
+            "Sassy"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/pager-02.png",
+          "sha256": "c501c069f5f8748e43a1869baf68ecd4347449f30ccb993ae8d902c203822092",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "EyeRoll",
+            "RudeFlipOff",
+            "Wave",
+            "Revived",
+            "WalkRight",
+            "WalkLeft",
+            "Laugh",
+            "Proud"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/pager-03.png",
+          "sha256": "9e442068b9b2f51314599b38a90279fedd8aa1e937f984b810fd311f88076f1c",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shy",
+            "Suspicious",
+            "Startled",
+            "Frustrated",
+            "Sleepy",
+            "WakeUp",
+            "Think",
+            "Facepalm"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/pager-04.png",
+          "sha256": "39b0307aabcd09ba3ee90d687c6d373c9d8f76242754c58cde40375894e803c5",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shrug",
+            "PointLeft",
+            "PointRight",
+            "Bow",
+            "Jump",
+            "Land",
+            "RunRight",
+            "RunLeft"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "handheld",
+      "nativeSHA256": "69e2d51e5fab99d6352e30ab0691cbbe7e5a1d2dc928a75b131eb89cf3da927f",
+      "actionCount": 32,
+      "overview": {
+        "path": "native/reports/handheld-parity.png",
+        "sha256": "62b7ce4f817bcf9818396442d3a09e0f4e781634f2987390a438f02853e79b04",
+        "width": 1664,
+        "height": 1916,
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      "pages": [
+        {
+          "path": "native/reports/contact-sheets/handheld-01.png",
+          "sha256": "4fe7302dc024eed43f9cb8bb25e2243b3a2f33043ddd7e92af919337fbd0c71c",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Idle",
+            "Happy",
+            "Excited",
+            "Sad",
+            "Angry",
+            "Confused",
+            "Searching",
+            "Sassy"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/handheld-02.png",
+          "sha256": "92ddf954c32e994793276f051ecbfe7084e0c729bfe7fa1edff271f206f4fd5f",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "EyeRoll",
+            "RudeFlipOff",
+            "Wave",
+            "Revived",
+            "WalkRight",
+            "WalkLeft",
+            "Laugh",
+            "Proud"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/handheld-03.png",
+          "sha256": "37f3b39be9e06071d90b00c056cacf74ae2e7a65ef0fe3ca495b42b776f2cf35",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shy",
+            "Suspicious",
+            "Startled",
+            "Frustrated",
+            "Sleepy",
+            "WakeUp",
+            "Think",
+            "Facepalm"
+          ]
+        },
+        {
+          "path": "native/reports/contact-sheets/handheld-04.png",
+          "sha256": "601462f2679078797db6f5d35c259c23cb7a11b05ccf5fde0667e59e7980f599",
+          "width": 1040,
+          "height": 1229,
+          "actions": [
+            "Shrug",
+            "PointLeft",
+            "PointRight",
+            "Bow",
+            "Jump",
+            "Land",
+            "RunRight",
+            "RunLeft"
+          ]
+        }
+      ]
+    }
+  ],
+  "visualReview": {
+    "path": "native/canvas-visual-review.json",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "All five overviews plus detail pages 03 and 04 for all five rigs; additional separate animation-authoring review recorded per asset."
+  }
+}

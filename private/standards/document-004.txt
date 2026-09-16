@@ -1,0 +1,66 @@
+DOCUMENT 004 OF 135
+Title: Master routing protocol — choose the right specialist before acting
+Path: Library/Disciplines/01-MASTER-ROUTER.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Master routing protocol — choose the right specialist before acting
+
+## Routing is a decision, not a performance
+
+The purpose is to classify work, load appropriate instructions and enforce interfaces. Telling a model it is “the world's best” in 26 jobs does not supply tools, credentials, access, current documentation or independent verification. Each activated role must produce bounded observations and explicit handoffs.
+
+Start with the symptom and user-visible consequence. Ask what evidence would distinguish transport failure from application failure, an indexing exclusion from poor relevance, or missing analytics from missing inquiries. Use available authorized reads before asking for facts that can already be discovered.
+
+## Required intake
+
+Record task ID, objective, intended outcome, authorized assets, environment/build, read versus write permission, known facts, unavailable access and acceptance criteria. Do not invent the Bubbles host IP, unit name, database, port, provider or backup location. The [site-facts template](../../Templates/Disciplines/site-facts.template.json) intentionally contains unknown fields.
+
+Classify intent as **audit, repair, publish or release**. All modes begin read-only. Repair means design and verification of a possible repair; it is not production write approval. Publish means preparing and validating a public artifact; it is not permission to publish credentials or client data.
+
+## Practical routing examples
+
+| Symptom | First accountable owner | Necessary supporting owners |
+| --- | --- | --- |
+| Exposed secret or sensitive inquiry data | R20 | R01/R03 for containment interfaces; R25 for authorized changes |
+| Nginx 502 / failed critical site journey | R01 | R02 transport, R03 upstream, R24 integration |
+| Works on tailnet, fails publicly | R02 | R01 ingress, R08 public discovery, R20 exposure intent |
+| Form displays success but no inquiry arrives | R03 | R17 mail, R16 event truth, R21 regression, R26 fresh acceptance |
+| Known provider-accepted mail fails authentication/receipt | R17 | R03 message identity, R02 DNS, R20 privacy |
+| Only Safari/iPhone fails | R05 | R04 implementation, R07 assistive workflows, R21 regression |
+| Robots/canonical/indexing exclusion | R08 | R02 transport when relevant, R09 hierarchy, R12 AI-specific controls |
+| AI answer omits the business | R12 | R08 eligibility, R10 relevance, R13 useful proof, R16 observation |
+| Build a public evidence-led discipline article | R13 | R23 buyer relevance, R14 claims, R20 redaction, R11 entity facts |
+| Conflicting cache/security/SEO repairs | R24 | R06/R20/R08/R01; R25 sequences the agreed change |
+| Release a verified change | R25 | R24 dependencies, R21 preflight, R26 independent checks |
+
+The helper's finite keyword rules cannot understand every symptom, negation or causal relationship. Review the route before use, add omitted roles, or use an explicit lead override. An unknown task routes to R24 rather than pretending confidence.
+
+## Compact AI execution contract
+
+1. Read root `AGENTS.md`, this protocol, the site facts and the selected charters. Load current source-linked framework documents only as needed.
+2. Return the selected lead, consultees, scope, blocked access and proposed first test. Keep alternative causes visible until evidence discriminates.
+3. Investigate using authorized tools. Record actual tool results and artifacts, not imagined command output.
+4. Submit a minimal integrated plan with rollback and interface reviews. Resolve conflicting writes through R24.
+5. After actual authorization, test the exact changed build. R25 controls deployment sequencing; R26 records fresh acceptance and genuine independence level.
+6. Return exact work performed, tests not run, unresolved risks and any public-safe evidence that could support an article. Never state that an internal prompt has made the owner an externally recognized expert.
+
+## Offline tool
+
+From the extracted library root:
+
+```
+python3 Tools/discipline_router.py --task "The contact form says sent but no email reaches the mailbox" --intent repair --output /tmp/route.json --prompt-output /tmp/task-context.txt
+```
+
+The tool reads local role records, selects a proposed lead and supporting roles, and optionally writes a bounded context pack. It makes no network calls and does not execute the task. Run `--help` for an explicit role override or task-file input. Paths are examples; use an authorized working directory. More instructions are in the [tools guide](../../Tools/DISCIPLINES-README.md).
+
+## Context budget and updates
+
+Do not paste the million-word legacy corpus into every prompt. Load the router, role prompt and directly relevant current modules. The context pack limits specialist prompts and names other required readers; it is not proof they executed. Refresh provider-specific documentation when a decision depends on a changing policy or product.
+
+Codex discovers `AGENTS.md` through its documented configuration hierarchy and size limits; placement matters. The downloaded file cannot alter another project automatically. Use the [integration guide](05-INTEGRATION-GUIDE.md) and [official Codex instructions](https://developers.openai.com/codex/guides/agents-md).
+
+==============================================================================

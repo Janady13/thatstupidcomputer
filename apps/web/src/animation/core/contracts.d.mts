@@ -1,0 +1,20 @@
+import type { ActionName, CharacterSlug, CharacterModel, Clip } from '../mobile/types';
+export type DesktopState = "idle" | "alert" | "overheating" | "searching" | "defeated" | "revived" | "amused" | "skeptical" | "sleepy" | "proud" | "startled" | "thinking" | "happy" | "sad" | "angry" | "confused" | "sassy" | "eye-roll" | "facepalm" | "shrug" | "wave" | "point-left" | "point-right" | "beckon" | "thumbs-up" | "bow" | "shush" | "raspberry" | "rude-flip-off" | "double-flip-off" | "demo-invite" | "demo-success";
+export type ScenePreference = 'auto' | 'mobile' | 'desktop' | 'office';
+export type SiteCue = 'visitor.arrived' | 'service.focused' | 'project.started' | 'inquiry.pending' | 'inquiry.accepted' | 'inquiry.failed' | 'attitude.requested' | 'scene.rest';
+export interface AnimationState { character: CharacterSlug; action: ActionName; desktop: DesktopState; paused: boolean; attitude: boolean; replay: number; scene: ScenePreference }
+export type AnimationEvent = { type: 'SELECT'; character: CharacterSlug } | { type: 'PERFORM'; action: ActionName } | { type: 'DESKTOP'; state: DesktopState } | { type: 'PAUSE' | 'PLAY' | 'REPLAY' } | { type: 'ATTITUDE'; enabled: boolean } | { type: 'SCENE'; scene: ScenePreference } | { type: 'CUE'; cue: SiteCue };
+export const CHARACTER_IDS: readonly CharacterSlug[];
+export const MOBILE_ACTIONS: readonly ActionName[];
+export const DESKTOP_STATES: readonly DesktopState[];
+export const CUES: Readonly<Record<SiteCue, { mobile: ActionName; desktop: DesktopState }>>;
+export const INITIAL_STATE: Readonly<AnimationState>;
+export function clamp(n: number, lo: number, hi: number): number;
+export function selectScene(preference: ScenePreference, width: number): Exclude<ScenePreference, 'auto'>;
+export function safeAction(action: ActionName, attitude: boolean): ActionName;
+export function safeDesktopState(state: DesktopState, attitude?: boolean): DesktopState;
+export function transition(state: AnimationState, event: AnimationEvent): AnimationState;
+export function advanceTravel(x: number, direction: number, dt: number, pixelsPerSecond: number, maxX: number): { x: number; direction: number };
+export function assetURL(base: string, relative: string): string;
+export function validateCharacter(model: unknown, clips: unknown): { model: CharacterModel; clips: Clip[] };
+export function loadCharacter(base: string, slug: CharacterSlug, signal?: AbortSignal): Promise<{ model: CharacterModel; clips: Clip[] }>;

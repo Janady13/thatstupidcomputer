@@ -1,0 +1,931 @@
+{
+  "version": "2.0.0",
+  "characters": [
+    {
+      "id": "M01",
+      "slug": "smartphone",
+      "name": "Smartphone",
+      "subtitle": "The patient one",
+      "width": 720,
+      "height": 920,
+      "sourceRevision": "v02",
+      "poster": "/animation/mobile/smartphone/poster.svg",
+      "scene": "/animation/mobile/smartphone/scene.json",
+      "motion": "/animation/mobile/smartphone/motion.json",
+      "artboard": "Smartphone",
+      "clips": [
+        {
+          "name": "Idle",
+          "seconds": 4.4,
+          "loop": true
+        },
+        {
+          "name": "Happy",
+          "seconds": 3.2,
+          "loop": true
+        },
+        {
+          "name": "Excited",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Sad",
+          "seconds": 4,
+          "loop": true
+        },
+        {
+          "name": "Angry",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Confused",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Searching",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Sassy",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "EyeRoll",
+          "seconds": 2.8,
+          "loop": false
+        },
+        {
+          "name": "RudeFlipOff",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Wave",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Revived",
+          "seconds": 4.2,
+          "loop": false
+        },
+        {
+          "name": "WalkRight",
+          "seconds": 1.3333333333333333,
+          "loop": true
+        },
+        {
+          "name": "WalkLeft",
+          "seconds": 1.3333333333333333,
+          "loop": true
+        },
+        {
+          "name": "Laugh",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Proud",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shy",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Suspicious",
+          "seconds": 4,
+          "loop": false
+        },
+        {
+          "name": "Startled",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Frustrated",
+          "seconds": 3.4,
+          "loop": false
+        },
+        {
+          "name": "Sleepy",
+          "seconds": 5.2,
+          "loop": false
+        },
+        {
+          "name": "WakeUp",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Think",
+          "seconds": 4.8,
+          "loop": false
+        },
+        {
+          "name": "Facepalm",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shrug",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "PointLeft",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "PointRight",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Bow",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Jump",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Land",
+          "seconds": 1.6,
+          "loop": false
+        },
+        {
+          "name": "RunRight",
+          "seconds": 0.9,
+          "loop": true
+        },
+        {
+          "name": "RunLeft",
+          "seconds": 0.9,
+          "loop": true
+        }
+      ],
+      "nativeStatus": "unverified",
+      "nativePath": null,
+      "personality": "Deadpan and sarcastic",
+      "recommendedActions": [
+        "Suspicious",
+        "Facepalm",
+        "Think",
+        "Shrug",
+        "Laugh"
+      ]
+    },
+    {
+      "id": "M02",
+      "slug": "flip-phone",
+      "name": "Flip phone",
+      "subtitle": "The old friend",
+      "width": 720,
+      "height": 920,
+      "sourceRevision": "v02",
+      "poster": "/animation/mobile/flip-phone/poster.svg",
+      "scene": "/animation/mobile/flip-phone/scene.json",
+      "motion": "/animation/mobile/flip-phone/motion.json",
+      "artboard": "Flip phone",
+      "clips": [
+        {
+          "name": "Idle",
+          "seconds": 4.4,
+          "loop": true
+        },
+        {
+          "name": "Happy",
+          "seconds": 3.2,
+          "loop": true
+        },
+        {
+          "name": "Excited",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Sad",
+          "seconds": 4,
+          "loop": true
+        },
+        {
+          "name": "Angry",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Confused",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Searching",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Sassy",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "EyeRoll",
+          "seconds": 2.8,
+          "loop": false
+        },
+        {
+          "name": "RudeFlipOff",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Wave",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Revived",
+          "seconds": 4.2,
+          "loop": false
+        },
+        {
+          "name": "WalkRight",
+          "seconds": 1.5,
+          "loop": true
+        },
+        {
+          "name": "WalkLeft",
+          "seconds": 1.5,
+          "loop": true
+        },
+        {
+          "name": "Laugh",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Proud",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shy",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Suspicious",
+          "seconds": 4,
+          "loop": false
+        },
+        {
+          "name": "Startled",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Frustrated",
+          "seconds": 3.4,
+          "loop": false
+        },
+        {
+          "name": "Sleepy",
+          "seconds": 5.2,
+          "loop": false
+        },
+        {
+          "name": "WakeUp",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Think",
+          "seconds": 4.8,
+          "loop": false
+        },
+        {
+          "name": "Facepalm",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shrug",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "PointLeft",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "PointRight",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Bow",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Jump",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Land",
+          "seconds": 1.6,
+          "loop": false
+        },
+        {
+          "name": "RunRight",
+          "seconds": 0.9,
+          "loop": true
+        },
+        {
+          "name": "RunLeft",
+          "seconds": 0.9,
+          "loop": true
+        }
+      ],
+      "nativeStatus": "unverified",
+      "nativePath": null,
+      "personality": "Theatrical and expressive",
+      "recommendedActions": [
+        "Bow",
+        "Startled",
+        "Laugh",
+        "Shy",
+        "Proud"
+      ]
+    },
+    {
+      "id": "M03",
+      "slug": "app-bot",
+      "name": "App stack",
+      "subtitle": "Too many tabs, still trying",
+      "width": 720,
+      "height": 920,
+      "sourceRevision": "v02",
+      "poster": "/animation/mobile/app-bot/poster.svg",
+      "scene": "/animation/mobile/app-bot/scene.json",
+      "motion": "/animation/mobile/app-bot/motion.json",
+      "artboard": "App stack",
+      "clips": [
+        {
+          "name": "Idle",
+          "seconds": 4.4,
+          "loop": true
+        },
+        {
+          "name": "Happy",
+          "seconds": 3.2,
+          "loop": true
+        },
+        {
+          "name": "Excited",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Sad",
+          "seconds": 4,
+          "loop": true
+        },
+        {
+          "name": "Angry",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Confused",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Searching",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Sassy",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "EyeRoll",
+          "seconds": 2.8,
+          "loop": false
+        },
+        {
+          "name": "RudeFlipOff",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Wave",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Revived",
+          "seconds": 4.2,
+          "loop": false
+        },
+        {
+          "name": "WalkRight",
+          "seconds": 1.1666666666666667,
+          "loop": true
+        },
+        {
+          "name": "WalkLeft",
+          "seconds": 1.1666666666666667,
+          "loop": true
+        },
+        {
+          "name": "Laugh",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Proud",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shy",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Suspicious",
+          "seconds": 4,
+          "loop": false
+        },
+        {
+          "name": "Startled",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Frustrated",
+          "seconds": 3.4,
+          "loop": false
+        },
+        {
+          "name": "Sleepy",
+          "seconds": 5.2,
+          "loop": false
+        },
+        {
+          "name": "WakeUp",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Think",
+          "seconds": 4.8,
+          "loop": false
+        },
+        {
+          "name": "Facepalm",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shrug",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "PointLeft",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "PointRight",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Bow",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Jump",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Land",
+          "seconds": 1.6,
+          "loop": false
+        },
+        {
+          "name": "RunRight",
+          "seconds": 0.9,
+          "loop": true
+        },
+        {
+          "name": "RunLeft",
+          "seconds": 0.9,
+          "loop": true
+        }
+      ],
+      "nativeStatus": "unverified",
+      "nativePath": null,
+      "personality": "Eager and bouncy",
+      "recommendedActions": [
+        "Jump",
+        "Laugh",
+        "Proud",
+        "WakeUp",
+        "PointRight"
+      ]
+    },
+    {
+      "id": "M04",
+      "slug": "pager",
+      "name": "Pocket pager",
+      "subtitle": "Always on call",
+      "width": 720,
+      "height": 920,
+      "sourceRevision": "v02",
+      "poster": "/animation/mobile/pager/poster.svg",
+      "scene": "/animation/mobile/pager/scene.json",
+      "motion": "/animation/mobile/pager/motion.json",
+      "artboard": "Pocket pager",
+      "clips": [
+        {
+          "name": "Idle",
+          "seconds": 4.4,
+          "loop": true
+        },
+        {
+          "name": "Happy",
+          "seconds": 3.2,
+          "loop": true
+        },
+        {
+          "name": "Excited",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Sad",
+          "seconds": 4,
+          "loop": true
+        },
+        {
+          "name": "Angry",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Confused",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Searching",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Sassy",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "EyeRoll",
+          "seconds": 2.8,
+          "loop": false
+        },
+        {
+          "name": "RudeFlipOff",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Wave",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Revived",
+          "seconds": 4.2,
+          "loop": false
+        },
+        {
+          "name": "WalkRight",
+          "seconds": 1.3333333333333333,
+          "loop": true
+        },
+        {
+          "name": "WalkLeft",
+          "seconds": 1.3333333333333333,
+          "loop": true
+        },
+        {
+          "name": "Laugh",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Proud",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shy",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Suspicious",
+          "seconds": 4,
+          "loop": false
+        },
+        {
+          "name": "Startled",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Frustrated",
+          "seconds": 3.4,
+          "loop": false
+        },
+        {
+          "name": "Sleepy",
+          "seconds": 5.2,
+          "loop": false
+        },
+        {
+          "name": "WakeUp",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Think",
+          "seconds": 4.8,
+          "loop": false
+        },
+        {
+          "name": "Facepalm",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shrug",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "PointLeft",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "PointRight",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Bow",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Jump",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Land",
+          "seconds": 1.6,
+          "loop": false
+        },
+        {
+          "name": "RunRight",
+          "seconds": 0.9,
+          "loop": true
+        },
+        {
+          "name": "RunLeft",
+          "seconds": 0.9,
+          "loop": true
+        }
+      ],
+      "nativeStatus": "unverified",
+      "nativePath": null,
+      "personality": "Anxious and alert",
+      "recommendedActions": [
+        "Suspicious",
+        "Startled",
+        "Shy",
+        "Think",
+        "Sleepy"
+      ]
+    },
+    {
+      "id": "M05",
+      "slug": "handheld",
+      "name": "Handheld console",
+      "subtitle": "Player two has arrived",
+      "width": 720,
+      "height": 920,
+      "sourceRevision": "v02",
+      "poster": "/animation/mobile/handheld/poster.svg",
+      "scene": "/animation/mobile/handheld/scene.json",
+      "motion": "/animation/mobile/handheld/motion.json",
+      "artboard": "Handheld console",
+      "clips": [
+        {
+          "name": "Idle",
+          "seconds": 4.4,
+          "loop": true
+        },
+        {
+          "name": "Happy",
+          "seconds": 3.2,
+          "loop": true
+        },
+        {
+          "name": "Excited",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Sad",
+          "seconds": 4,
+          "loop": true
+        },
+        {
+          "name": "Angry",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Confused",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Searching",
+          "seconds": 3.6,
+          "loop": true
+        },
+        {
+          "name": "Sassy",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "EyeRoll",
+          "seconds": 2.8,
+          "loop": false
+        },
+        {
+          "name": "RudeFlipOff",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Wave",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Revived",
+          "seconds": 4.2,
+          "loop": false
+        },
+        {
+          "name": "WalkRight",
+          "seconds": 1.1666666666666667,
+          "loop": true
+        },
+        {
+          "name": "WalkLeft",
+          "seconds": 1.1666666666666667,
+          "loop": true
+        },
+        {
+          "name": "Laugh",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "Proud",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shy",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Suspicious",
+          "seconds": 4,
+          "loop": false
+        },
+        {
+          "name": "Startled",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Frustrated",
+          "seconds": 3.4,
+          "loop": false
+        },
+        {
+          "name": "Sleepy",
+          "seconds": 5.2,
+          "loop": false
+        },
+        {
+          "name": "WakeUp",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Think",
+          "seconds": 4.8,
+          "loop": false
+        },
+        {
+          "name": "Facepalm",
+          "seconds": 3.8,
+          "loop": false
+        },
+        {
+          "name": "Shrug",
+          "seconds": 3.2,
+          "loop": false
+        },
+        {
+          "name": "PointLeft",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "PointRight",
+          "seconds": 3,
+          "loop": false
+        },
+        {
+          "name": "Bow",
+          "seconds": 3.6,
+          "loop": false
+        },
+        {
+          "name": "Jump",
+          "seconds": 2.2,
+          "loop": false
+        },
+        {
+          "name": "Land",
+          "seconds": 1.6,
+          "loop": false
+        },
+        {
+          "name": "RunRight",
+          "seconds": 0.9,
+          "loop": true
+        },
+        {
+          "name": "RunLeft",
+          "seconds": 0.9,
+          "loop": true
+        }
+      ],
+      "nativeStatus": "unverified",
+      "nativePath": null,
+      "personality": "Competitive and crisp",
+      "recommendedActions": [
+        "Proud",
+        "Jump",
+        "RunRight",
+        "Frustrated",
+        "PointLeft"
+      ]
+    }
+  ],
+  "nativeStatus": "BLOCKED_RUNTIME_VERIFICATION"
+}

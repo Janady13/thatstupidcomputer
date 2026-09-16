@@ -1,0 +1,786 @@
+{
+  "schemaVersion": 1,
+  "visibility": "PRIVATE_NOT_WEB_CONTENT",
+  "startedAt": "2026-09-13T21:40:11.767Z",
+  "endedAt": "2026-09-13T21:40:12.449Z",
+  "command": "node --import tsx scripts/check-build.ts",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "linux",
+    "arch": "x64",
+    "method": "Fastify.inject plus non-rendering HTML parser; no sockets, browser, DNS or mail transport"
+  },
+  "status": "PASS",
+  "passed": 21,
+  "failed": 0,
+  "limitations": [
+    "No actual browser hydration, JavaScript execution, layout, WebGL, keyboard or accessibility-conformance proof.",
+    "No live email send, mailbox receipt, production identity, account data, DNS/TLS, public indexing or field-performance observation.",
+    "Public-source marker checks are targeted artifact-boundary evidence, not a claim that arbitrary secrets cannot exist."
+  ],
+  "checks": [
+    {
+      "id": "build-record-and-route-inventory",
+      "status": "PASS",
+      "detail": {
+        "routes": 11,
+        "missingPage": 1,
+        "builtAt": "2026-09-13T21:40:08.901Z",
+        "deployment": "production",
+        "lockSha256": "818f0012c01844dc38517611b18166b0229098dd4e348db206739b8c8a8c6c69",
+        "currentGeneratedAssets": 16
+      }
+    },
+    {
+      "id": "page:/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 19536,
+        "canonical": "https://thatstupidcomputer.com/",
+        "title": "Websites with personality. Built to work. | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/services/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 17220,
+        "canonical": "https://thatstupidcomputer.com/services/",
+        "title": "Website services | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/services/website-design/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 16861,
+        "canonical": "https://thatstupidcomputer.com/services/website-design/",
+        "title": "Website design and development | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/services/website-rescue/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 24450,
+        "canonical": "https://thatstupidcomputer.com/services/website-rescue/",
+        "title": "Website rescue and repair | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/services/search-visibility/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 39194,
+        "canonical": "https://thatstupidcomputer.com/services/search-visibility/",
+        "title": "SEO and AI search visibility | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/services/website-care/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 16653,
+        "canonical": "https://thatstupidcomputer.com/services/website-care/",
+        "title": "Ongoing website care | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/work/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 16394,
+        "canonical": "https://thatstupidcomputer.com/work/",
+        "title": "Inside this interactive website | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/process/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 14391,
+        "canonical": "https://thatstupidcomputer.com/process/",
+        "title": "How a website project works | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/about/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 14552,
+        "canonical": "https://thatstupidcomputer.com/about/",
+        "title": "About That Stupid Computer | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "page:/contact/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 17727,
+        "canonical": "https://thatstupidcomputer.com/contact/",
+        "title": "Start a website project | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": true
+      }
+    },
+    {
+      "id": "page:/privacy/",
+      "status": "PASS",
+      "detail": {
+        "status": 200,
+        "bytes": 13694,
+        "canonical": "https://thatstupidcomputer.com/privacy/",
+        "title": "Privacy and website inquiries | That Stupid Computer",
+        "initialHTML": true,
+        "nativeForm": false
+      }
+    },
+    {
+      "id": "all-native-internal-links-resolve",
+      "status": "PASS",
+      "detail": {
+        "distinctTargets": 14
+      }
+    },
+    {
+      "id": "publisher-crawler-public-private-parity-without-credentials",
+      "status": "PASS",
+      "detail": {
+        "providersReviewed": [
+          "bing",
+          "google",
+          "openai",
+          "anthropic",
+          "perplexity",
+          "xai",
+          "mistral",
+          "deepseek"
+        ],
+        "simulatedAgents": 13,
+        "modelApiCalls": 0,
+        "outcome": "publisher-delivery-only; not real crawler or citation evidence"
+      }
+    },
+    {
+      "id": "missing-page-and-hydration-input-consistency",
+      "status": "PASS",
+      "detail": "Actual 404 response and initial metadata agree with the current route resolver; browser hydration itself is untested."
+    },
+    {
+      "id": "canonical-redirect-and-attribution",
+      "status": "PASS",
+      "detail": "Each known slash alias redirects once; only the finite unique source label is preserved."
+    },
+    {
+      "id": "robots-sitemap-and-page-mode-agree",
+      "status": "PASS",
+      "detail": {
+        "deployment": "production",
+        "sitemapEntries": 11,
+        "crawlerPolicy": {
+          "training": "allow",
+          "openaiTraining": "allow",
+          "anthropicTraining": "allow",
+          "mistralTraining": "allow",
+          "googleExtended": "allow",
+          "source": "deployment-config"
+        }
+      }
+    },
+    {
+      "id": "every-built-asset-is-served-with-exact-bytes-and-mime",
+      "status": "PASS",
+      "detail": {
+        "assets": 95,
+        "nativeRiveFiles": 5
+      }
+    },
+    {
+      "id": "public-artifact-boundary-and-private-path-denial",
+      "status": "PASS",
+      "detail": "No forbidden path or selected private-source/provenance markers found; targeted leak checks are not a universal secret scanner."
+    },
+    {
+      "id": "actual-build-form-and-api-failure-integration",
+      "status": "PASS",
+      "detail": {
+        "syntheticOnly": true,
+        "mailTransportConfigured": false,
+        "emailSends": 0,
+        "readinessIsDeliveryProof": false
+      }
+    },
+    {
+      "id": "built-output-unchanged-during-check",
+      "status": "PASS",
+      "detail": {
+        "files": 107
+      }
+    }
+  ],
+  "publicBuild": [
+    {
+      "path": "apps/web/dist/404.html",
+      "bytes": 9206,
+      "sha256": "23ebdbdc5b8000b35c0342601c4ebfcf085847f503ce5a31da39fc10f4bbce9b"
+    },
+    {
+      "path": "apps/web/dist/about/index.html",
+      "bytes": 14552,
+      "sha256": "24cdadc27436f3f0a35c2136d946cd9cb955f89b9e324c1eb95d9540c11c80d1"
+    },
+    {
+      "path": "apps/web/dist/animation/desktop/computer.svg",
+      "bytes": 51682,
+      "sha256": "be9e898b4d23cf51aaa5b479598a5c8bd81c1ee87ea67040b512d953e38a227a"
+    },
+    {
+      "path": "apps/web/dist/animation/manifest.json",
+      "bytes": 19343,
+      "sha256": "97a5e6617322ab6740f4ad80c047566dffca3319c087ab08e2b1430b2f9156fa"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/app-bot/motion.json",
+      "bytes": 812365,
+      "sha256": "5bf51eadbb302b2153dffa0599005d0027d36a0fa3b552c14f6938a752352a7d"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/app-bot/pivots.json",
+      "bytes": 6469,
+      "sha256": "8a2aec9da7eb635879a1b4d20a980a25270b8f51163b39255c83a288e62486d2"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/app-bot/poster.svg",
+      "bytes": 94618,
+      "sha256": "4fd205809383668027327117b75d9387ae88ee9d7763cc5a8133b2460e82e48e"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/app-bot/scene.json",
+      "bytes": 66427,
+      "sha256": "f34e060674f32328801fe1b25be9bc553c79dd1fbd02f24910a99e6841a6a430"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/flip-phone/motion.json",
+      "bytes": 751731,
+      "sha256": "6822f7903db16790b13a134e68271881eb90f08aa23abbe87e13f7c5d853eae1"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/flip-phone/pivots.json",
+      "bytes": 9100,
+      "sha256": "7cda954eb2ead3cbaba7fb797d4c49934ede5f27ea49fd9181204825e5331a2e"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/flip-phone/poster.svg",
+      "bytes": 107158,
+      "sha256": "14ac731177b2b0b3917c6e01b038ea3d55ca1c2dc35353c6dfe33aea9d7e0837"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/flip-phone/scene.json",
+      "bytes": 74986,
+      "sha256": "1df4c3afea2b29baedd9b8896e5561de526f62d1b7e4d15eec3b332e9553db52"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/handheld/motion.json",
+      "bytes": 723151,
+      "sha256": "0a2b8729f47049b0dfd3ef8d25b99507bb36385d78c75d995da25cd7d967ad6c"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/handheld/pivots.json",
+      "bytes": 7021,
+      "sha256": "819973f21dd4203a03cdb1d98fb97e3f6207969f33eec0b64df19ec68d1570c4"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/handheld/poster.svg",
+      "bytes": 93959,
+      "sha256": "c5afc70ed4bb9a0c26b5e751a8a2d575e3c61c98e261e8df3dd0ba89f8a4d490"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/handheld/scene.json",
+      "bytes": 65993,
+      "sha256": "906e12056995b6eb226281b2871de62955b2b23ba88d27f93ff39bdbbb4de849"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/pager/motion.json",
+      "bytes": 851091,
+      "sha256": "d128f1ac3dd8d92aa731f8e2206179a84a23ef0fbeec68cdf3a4f5ad203e7ff2"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/pager/pivots.json",
+      "bytes": 6303,
+      "sha256": "548117a5d8e978465b0cd635e3e7a76fa08d6cf113d51695f49d3a9cceb3937a"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/pager/poster.svg",
+      "bytes": 105466,
+      "sha256": "277b9e957130f465d4a211dcb5916e19d204067a69e6f56289e86022a802f257"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/pager/scene.json",
+      "bytes": 78468,
+      "sha256": "b8617ae5fa4d677a026ba88b3a5c881689202c61d4a37ea1480c689b36908549"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/smartphone/motion.json",
+      "bytes": 718174,
+      "sha256": "c5b9aadf4f2e91d4655d2d77410a797d7554d41efac4b1e55c252219170b9dda"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/smartphone/pivots.json",
+      "bytes": 6105,
+      "sha256": "e9c11012dffabd7a4f85c83fbb50a9a54a6cf44aab3e57d404a8f87053f74485"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/smartphone/poster.svg",
+      "bytes": 88456,
+      "sha256": "da920ce5d0c44919899b1c6bfe7463bf9461e8fb8a16688c303dd836d686e96b"
+    },
+    {
+      "path": "apps/web/dist/animation/mobile/smartphone/scene.json",
+      "bytes": 61389,
+      "sha256": "69d5e0795888558649a943be96cc1096079f390404fb4622f19956cd219d1471"
+    },
+    {
+      "path": "apps/web/dist/animation/office/object-bounds.json",
+      "bytes": 3992,
+      "sha256": "19949e0d4f32d7df50a5139739b0214607b771285a443b6271753fc0d84ecfb4"
+    },
+    {
+      "path": "apps/web/dist/animation/office/office-room.svg",
+      "bytes": 154838,
+      "sha256": "ccd88fbb1a4d78e9a9e453d32af533149f3b72b75ad0f2b4646e6977aac23b24"
+    },
+    {
+      "path": "apps/web/dist/animation/office/office-with-computer.svg",
+      "bytes": 216257,
+      "sha256": "ae1efb1405c8717d907375cf4af035464a0677b193db38bb597a0cbd56ebc6fc"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/air-dust.svg",
+      "bytes": 3092,
+      "sha256": "9d371b2619970900e8a4936a40789ff6ff10be1c8f433a09011c964b42a36c75"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/baseboard.svg",
+      "bytes": 826,
+      "sha256": "4b410b68f9920550813e3e1719c0756d022caa5447fc8681519421827235a23c"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/binders.svg",
+      "bytes": 2741,
+      "sha256": "e80e0d782747e95bc6bdcf9529c360dfe3fea91b9e7f5d3ae4e90757556aeaba"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/blinds.svg",
+      "bytes": 8385,
+      "sha256": "afe23887a37d8ea5a00f3eb84ae65351cec881e0064384442b813c6a91fe9e03"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/board-blueprint.svg",
+      "bytes": 2437,
+      "sha256": "ab3e38a5e7d349eb323d711df8e91f20275e9fe2e6f426840a63a160f8592947"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/board-photo.svg",
+      "bytes": 2738,
+      "sha256": "d8030f1fb2d905abfc52bbfde629c93a2bfc945abd856f295ee78aabca715ee1"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/board-reminder.svg",
+      "bytes": 2428,
+      "sha256": "56574ea33b3dd40b855568f8e88e765dbab791e168e960ffcee38d67fc2f00ef"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/board-small-note.svg",
+      "bytes": 1997,
+      "sha256": "e9ce7a7e8bcf78f79136bdc74ff3677d8d4d08cd6960442b13cf110131a9bd32"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/board-smile.svg",
+      "bytes": 1012,
+      "sha256": "74b31a03191fd4da5b0e476c339de2701dc8a13efad99f44ea5d8992e94966f2"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/bulletin-board.svg",
+      "bytes": 5867,
+      "sha256": "f27efecd6cc6c07b49de047a9786dab617d463b61162377cde1200543b171cc8"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/cable-reel.svg",
+      "bytes": 2916,
+      "sha256": "6f540e1d4dcbd3051c29b18906e52b116fcc1d83510085be77e41ba5c3bfdd94"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/cart-box.svg",
+      "bytes": 1260,
+      "sha256": "0d89d72a832451b36c8bf091f5f05e6b8cc95334e8da7a66c24dbedcc46e85c8"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/cart-tool-cup.svg",
+      "bytes": 2390,
+      "sha256": "5e1df2179c8617b58910bf3e5a4d012eb2537b9967dfa6c550d72a9ae863ca55"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/clock.svg",
+      "bytes": 13982,
+      "sha256": "5984c52277e8792617bffc4f8b3066fcf77fe836b9f3278cfe812019dadc4b6a"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/coffee-mug.svg",
+      "bytes": 3184,
+      "sha256": "4ab006e5f6156c69ab50aeb4236b28a266ad68d5ebf111738c59e9eaa0a0c308"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/desk-lamp.svg",
+      "bytes": 6302,
+      "sha256": "1852ade3ad31b37d2d9b422a2f5df11d03c6c6517552c390efd751379b9fd82f"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/desk-paper.svg",
+      "bytes": 1539,
+      "sha256": "cfc743ec43e44d013f066c7d401df230461d0083ead9ccb244f3b26fb4ca741e"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/desk-pedestal.svg",
+      "bytes": 1687,
+      "sha256": "84f55043fcfa4f5013956ab6ac6ac93ec88b163cbfecd9c17a9c639778d0190c"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/desk-plant.svg",
+      "bytes": 7760,
+      "sha256": "8834bd2a0f129b1dcf2b6fd5ead30caf3cf6b715584ff80b19aa950c26d00593"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/drawer-bottom.svg",
+      "bytes": 2161,
+      "sha256": "ec1ff88265872468da9a12bf4c3ae01936a07334130f7462e30d2f50b726258e"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/drawer-top.svg",
+      "bytes": 1355,
+      "sha256": "6903b1c50fb158d555fb9844bad24dfe3fd96ba1eb73e93b2f3fcbf3cf7b8c50"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/filing-cabinet.svg",
+      "bytes": 4884,
+      "sha256": "07c595b84784f78a326cfc4e626d55d931c36ee3c239e95b3d3b90f6de98d804"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/floor-box.svg",
+      "bytes": 3741,
+      "sha256": "ec583ae3a2c13908d6e7aa02bff0a4769661285608fa05f236bf3738b9fb1892"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/floor.svg",
+      "bytes": 1056,
+      "sha256": "52d181b1a786a32eed77c41c901f1958f23566c8962b7f558230db8c49f00235"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/loose-hardware.svg",
+      "bytes": 2676,
+      "sha256": "41226e05e9f8405d0bfa6375fa9daf2356ccf1651427d10549e57c37908e1bba"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/outlet.svg",
+      "bytes": 1398,
+      "sha256": "ec810b35cffe619e201abffcfd81c7461b6f6f9bda2f67627f81df095396bc7b"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/outside.svg",
+      "bytes": 3699,
+      "sha256": "97100d06db7fc12b2da88482915dda98661100303a422bd48b1dd55f0e793719"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/parts-organizer.svg",
+      "bytes": 9036,
+      "sha256": "c21b479add09da9d0df54e09732fa983fc1ccef8e12f31e558da0b4024282d23"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/pencil-cup.svg",
+      "bytes": 2938,
+      "sha256": "55e880ad24247fe094bebe67cb0b28760cb951372e2966f23e2692533cdde08f"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/screwdriver.svg",
+      "bytes": 1312,
+      "sha256": "2026ad7fa6c69b246ab672591f69683c59cb25d1f255c03108f2d0c714494b99"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/shelf-plant.svg",
+      "bytes": 13028,
+      "sha256": "383015ed1e1d32f18925b405a9ece9dc651eade038894abacb77ebc42ec9fc67"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/shelf.svg",
+      "bytes": 2016,
+      "sha256": "7b83daacaefd34733946314412f3d35ba4bbba522f159c5182ec69e29fd9f8a2"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/soldering-station.svg",
+      "bytes": 2783,
+      "sha256": "43798cbb1b5d2bf0c410152583a73bb70dceae323be86ca21d6da5a778c31bbc"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/storage-boxes.svg",
+      "bytes": 1839,
+      "sha256": "28b980b7d17986f9946c732b766740400ae3677177d14abf08a2ea70bbcb0454"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/tape-roll.svg",
+      "bytes": 778,
+      "sha256": "c58efe609761ce804b3b971390bbd5e091e390cb07fa69dad9a4e43ac332e31b"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/test-meter.svg",
+      "bytes": 3063,
+      "sha256": "fdc6b7d21de660049f2ce45125c1f65a540a70a03e36ed39da96bc3ef28f43e5"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/tool-cart.svg",
+      "bytes": 3894,
+      "sha256": "12b4acb2aa7331b135d07e089bbb11652eba5da7b72fe18250a132df61624d15"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/wall.svg",
+      "bytes": 900,
+      "sha256": "8ed9eac5fd1e2d5c31d49e0b69edcf108392116f06f1424c312a6529671d0788"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/window.svg",
+      "bytes": 2534,
+      "sha256": "95e42272e7d01add6f1d3c47c1d0d85ac7b9178c9499cf922d201cee0457ee25"
+    },
+    {
+      "path": "apps/web/dist/animation/office/props/workbench.svg",
+      "bytes": 5114,
+      "sha256": "f3ef10f686d0281a71a9b4222f272ae84316937401d8ac9e1d28888b3886a5dc"
+    },
+    {
+      "path": "apps/web/dist/animation/office/room-manifest.json",
+      "bytes": 12856,
+      "sha256": "bbe8e9648fec21e2d742ff72ab62dac0b7c0d6e9efd112fc382bf0f61c569c38"
+    },
+    {
+      "path": "apps/web/dist/animation/office/room-motion-map.json",
+      "bytes": 11550,
+      "sha256": "87e48d6ab789b7eefb3eaf03f8cc4695ed44e2b0ab1f7023d8330f0a286bf97c"
+    },
+    {
+      "path": "apps/web/dist/animation/rive/app-bot.riv",
+      "bytes": 480946,
+      "sha256": "607803b06bdf52ced750ed4fac7eba13a45eef1a6fc1844e7a54b43f73bafff6"
+    },
+    {
+      "path": "apps/web/dist/animation/rive/flip-phone.riv",
+      "bytes": 442718,
+      "sha256": "2e7725d58d30c64324c72ae2ff3972c8c00fedfaa70a61944ff202d937a196d3"
+    },
+    {
+      "path": "apps/web/dist/animation/rive/handheld.riv",
+      "bytes": 420386,
+      "sha256": "69e2d51e5fab99d6352e30ab0691cbbe7e5a1d2dc928a75b131eb89cf3da927f"
+    },
+    {
+      "path": "apps/web/dist/animation/rive/pager.riv",
+      "bytes": 516921,
+      "sha256": "af40fe90fddf608e98c5c5e558fc3f833dab018b2e6aa512a30dd69a1b569f24"
+    },
+    {
+      "path": "apps/web/dist/animation/rive/smartphone.riv",
+      "bytes": 413178,
+      "sha256": "04ea1b6bf955f0b4f0470b64a6f9e151a915558d898995a994fddcb0661797e0"
+    },
+    {
+      "path": "apps/web/dist/animation/runtime/rive.js",
+      "bytes": 452578,
+      "sha256": "5a560086d2f68bcfd3a3aee818356b5c447f893471cd2f4e2568c4f50dfb6a10"
+    },
+    {
+      "path": "apps/web/dist/animation/runtime/rive.wasm",
+      "bytes": 2159033,
+      "sha256": "ec4624b8654fbd6074b63e2a2e9e24520689a6190159d5d2dd03bf5c95061f13"
+    },
+    {
+      "path": "apps/web/dist/animation/runtime/version.json",
+      "bytes": 139,
+      "sha256": "3abc5daef056b52a69ef19ed9015bfd503e7764097510071cd1a8e6f72537897"
+    },
+    {
+      "path": "apps/web/dist/assets/CharacterPlayground-CcbjZ2kB.css",
+      "bytes": 8333,
+      "sha256": "5d90297a0a8ae91bd7753f7bc9db274dcd8cd7be5c6c162f3349d3f18b365f07"
+    },
+    {
+      "path": "apps/web/dist/assets/CharacterPlayground-Cl7MsW5m.js",
+      "bytes": 12758,
+      "sha256": "a7e9d3fbc52d6b30c893094a1fd6a6875f37ff773a05b3c6f14b2ad2b69590c4"
+    },
+    {
+      "path": "apps/web/dist/assets/DesktopCharacter-BxK1gzX3.js",
+      "bytes": 1593,
+      "sha256": "20b0978f3dc872f04ce051d9202fe9f57e6f967e52648005a0e93d5867b8ca60"
+    },
+    {
+      "path": "apps/web/dist/assets/RiveCharacter-BWRvlGeh.js",
+      "bytes": 213084,
+      "sha256": "7bb068c4568d23eed53d41598190754e2df52ee72f42741365233a91c1e5b325"
+    },
+    {
+      "path": "apps/web/dist/assets/RoomScene-CcgE5q2Z.css",
+      "bytes": 189,
+      "sha256": "545507dc010ab3f1190b4955de58a627dc0f2bd225e9c85f81d17ce696d87bf4"
+    },
+    {
+      "path": "apps/web/dist/assets/RoomScene-Dny4GR9L.js",
+      "bytes": 182000,
+      "sha256": "e6f892b371d472d386be109388d5607db251190d6e41120ad23e20637292b067"
+    },
+    {
+      "path": "apps/web/dist/assets/cable-poses-B_v1guN-.js",
+      "bytes": 68713,
+      "sha256": "32e502d570d96c5e2562ba6300006d64856c1adc9f089f15d49f20834eaba688"
+    },
+    {
+      "path": "apps/web/dist/assets/catalog-Y29USzYT.js",
+      "bytes": 14065,
+      "sha256": "73d9fd78eed7f65b7bf3558971249454ed0713c8009831fdcfe6e9bf48a5c5d0"
+    },
+    {
+      "path": "apps/web/dist/assets/character-controller-BlTWrNV3.js",
+      "bytes": 5880,
+      "sha256": "2c9c0968168cb995b70312d3fb77cf900611183af7bfdec10da0820f7531ece8"
+    },
+    {
+      "path": "apps/web/dist/assets/computer-motion-CTEPQ1mK.js",
+      "bytes": 28698,
+      "sha256": "39f5959789aa5233355db642c059f344116f413f771babf8669955acafad6517"
+    },
+    {
+      "path": "apps/web/dist/assets/index-DYNZsBd6.js",
+      "bytes": 434315,
+      "sha256": "e7fa83a6d6bdd7a2315dcf329d2719bece778a531f5169ecac59e57700318f8b"
+    },
+    {
+      "path": "apps/web/dist/assets/index-mmY_ar5f.css",
+      "bytes": 52309,
+      "sha256": "15e35724a517c58e51103b015ef0dd8b1c04689fd0b5debb1133338f66cb959b"
+    },
+    {
+      "path": "apps/web/dist/assets/room-motion-Des6XmjM.js",
+      "bytes": 5518,
+      "sha256": "61772ef4d05e383e263d5ffc19ba24a182880ef13ee3d692a8f7012b2690799d"
+    },
+    {
+      "path": "apps/web/dist/assets/stage-BsyvmQCR.css",
+      "bytes": 1724,
+      "sha256": "06974abceaa8786ce7847f60c7ede77eeaab4fc19ee1846490206dfdc7d22cfb"
+    },
+    {
+      "path": "apps/web/dist/assets/stage-Cz3AghhZ.js",
+      "bytes": 12939,
+      "sha256": "4e0f96275b863735058399a3a2bfb8c77feaf1d337f2e5bab78c11d9a12fc991"
+    },
+    {
+      "path": "apps/web/dist/assets/web-vitals-b9li_OYc.js",
+      "bytes": 8720,
+      "sha256": "9146afe82f537e3df689752d78995736605703593d10d568fe75a12ad4a3b5d1"
+    },
+    {
+      "path": "apps/web/dist/contact/index.html",
+      "bytes": 17727,
+      "sha256": "43f84ee0b7272e3fe70ee2af03132bd215ea7f69a7fd60ab50769f9bdd1d36ad"
+    },
+    {
+      "path": "apps/web/dist/favicon.svg",
+      "bytes": 467,
+      "sha256": "ac1da0479864e81671c667d51e1a1b46d0ad2239c15a19b3bc0531a9f5dcd53d"
+    },
+    {
+      "path": "apps/web/dist/images/tsc-workshop-social.png",
+      "bytes": 279730,
+      "sha256": "518f636f1af7580f32d81ec5a3b8f3b53a5684f7e19c0a58dd1af8cd160e45b8"
+    },
+    {
+      "path": "apps/web/dist/index.html",
+      "bytes": 19536,
+      "sha256": "cd39b733fc19b83ebe87c300aa755bf57b412b76d2f415bdc9682ae3fb9da644"
+    },
+    {
+      "path": "apps/web/dist/privacy/index.html",
+      "bytes": 13694,
+      "sha256": "cadbe2065ddc8efab5f198956507d5bcb725a208e45b987bf035be4773cd97f7"
+    },
+    {
+      "path": "apps/web/dist/process/index.html",
+      "bytes": 14391,
+      "sha256": "a206855a15229a390eb2ffb6817c7143c0004b1bfebad64c80bd017081e262df"
+    },
+    {
+      "path": "apps/web/dist/robots.txt",
+      "bytes": 1969,
+      "sha256": "94fd6b6a2f47bfb8ce650568627627d867da0a77a4c9b13008c132365018c155"
+    },
+    {
+      "path": "apps/web/dist/services/index.html",
+      "bytes": 17220,
+      "sha256": "ef919f15c2574a08660f598abb1e64f54c20204dd7a0b374c828d6a8409f4411"
+    },
+    {
+      "path": "apps/web/dist/services/search-visibility/index.html",
+      "bytes": 39194,
+      "sha256": "f28692d7ca3568c8efd46e5dc364f8cc26be85856208d225c4d36d0abc96baa1"
+    },
+    {
+      "path": "apps/web/dist/services/website-care/index.html",
+      "bytes": 16653,
+      "sha256": "f3b48b0acb4ef2c80157955de03798b8757a283e6efc2472f6b247052169cc36"
+    },
+    {
+      "path": "apps/web/dist/services/website-design/index.html",
+      "bytes": 16861,
+      "sha256": "931ec2d1be321a7e75d83a64e9837568bdc7b59325cb4efb20dc25eade898fda"
+    },
+    {
+      "path": "apps/web/dist/services/website-rescue/index.html",
+      "bytes": 24450,
+      "sha256": "fd8613f317785cc09639cf73f4f30316ec9d6c87e62d369cd51e049614c6d9b3"
+    },
+    {
+      "path": "apps/web/dist/sitemap.xml",
+      "bytes": 867,
+      "sha256": "c4976f7a0199dd9ab2063888031cfd4dd031700c6a0505c798f24fbb96e0a8b2"
+    },
+    {
+      "path": "apps/web/dist/work/index.html",
+      "bytes": 16394,
+      "sha256": "70e5a9faf6261cab7f347c9455990627618c16a370bfc5c0d6fac8e53e737bb7"
+    }
+  ]
+}

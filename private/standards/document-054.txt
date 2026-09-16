@@ -1,0 +1,44 @@
+DOCUMENT 054 OF 135
+Title: Field performance and interaction acceptance
+Path: Library/Framework/framework-field-performance-acceptance.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Field performance and interaction acceptance
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Core Web Vitals, frontend releases and experience budgets  
+**Evidence:** S28 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Use the correct measurement layer
+
+Current Core Web Vitals are LCP, INP and CLS. The good thresholds are LCP at most 2.5 seconds, INP at most 200 milliseconds and CLS at most 0.1, assessed at the 75th percentile with mobile and desktop segmentation. Lab checks are useful diagnostics but do not substitute for field evidence. [S28]
+
+## Establish a baseline
+
+Record route class, device group, observation period, sample volume, data source and metric definitions. Keep field observations separate from simulated tests. A fast office laptop running a single route does not represent every customer device or interaction.
+
+Where field data is unavailable, explicitly label the gap. Use realistic lab scenarios to identify risks and collect permitted real-user data after release; do not invent a passing field score. A high Lighthouse result is not a certificate of search performance or accessibility.
+
+## Prioritize meaningful interactions
+
+Map the steps a customer must complete: navigate to a service, open a menu, compare a product, choose a variant, fill a form, submit and receive confirmation. Test these paths on constrained devices and realistic network conditions. A page can load quickly while an essential interaction stalls or fails.
+
+For each issue, identify the responsible component, third-party script or server dependency. Distinguish rendering delay, slow server response, long tasks, unstable layout and network contention. Choose a change that addresses the measured cause rather than applying every optimization snippet indiscriminately.
+
+## Budget and rollout
+
+Set component or route budgets as project decisions. Include large hero media, fonts, consent tooling, chat widgets and analytics in the tested configuration, not only in a stripped-down demo. Compare the same measurement setup before and after the change.
+
+Release to a controlled cohort where feasible and monitor both experience and business completion. A performance improvement that breaks form submission is not a successful release. Maintain a rollback for risky third-party or rendering changes.
+
+## Reporting
+
+Show percentile values, sample period and device cohort. Explain missing samples and major distribution changes. Track business outcomes separately; passing a threshold is not proof that an engine will rank the page higher. Use the observed user experience to justify the work rather than a promised ranking uplift.
+
+The acceptance record includes the baseline, diagnostic evidence, code change, lab comparison, available field follow-up and unresolved limitations. This package contains a measurement procedure, not measured Core Web Vitals for any of Joseph's websites.
+
+==============================================================================

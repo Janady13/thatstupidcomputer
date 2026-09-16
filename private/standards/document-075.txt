@@ -1,0 +1,60 @@
+DOCUMENT 075 OF 135
+Title: Bubbles: outside-in availability and public reachability
+Path: Library/Playbooks/01-BUBBLES-PUBLIC-REACHABILITY.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Bubbles: outside-in availability and public reachability
+
+**Lead:** R02 when public/private behavior differs; R01 when service/proxy failure is established. **Consulted roles:** R01, R02, R03, R08, R20, R24, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+An intended public customer journey fails, or works only on a private/Tailscale connection. Bubbles is a host label, not evidence of its OS, addresses or service names.
+
+## Sequence and ownership
+
+### 1. Define exposure
+
+Record intended public hostnames and private services. Confirm authorization and obtain an independent public test vantage. Do not publish a private service merely to make a test pass.
+
+### 2. Split the path
+
+R02 compares authoritative/recursive DNS, IPv4/IPv6 and TLS hostname behavior. R01 checks actual ingress/listeners/proxy/upstream with bounded redacted logs. Preserve timestamps.
+
+### 3. Locate the failing layer
+
+Compare external response with origin-side response and correlated application evidence. A live process alone cannot prove the journey. A tailnet connection alone cannot prove public crawlability.
+
+### 4. Reconcile repair
+
+R24 assigns one writer for the affected DNS/config path. R20 reviews exposure changes. R08 reviews public host/canonical implications. R25 prepares a scoped authorized change and rollback.
+
+### 5. Accept from outside
+
+R26 repeats the critical public journey using fresh inputs on the declared build. Record each published address family and disclose unavailable vantages.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Intended public journey succeeds from an independent public vantage
+- Advertised IPv4/IPv6 paths meet the contract
+- Private services remain private; no fabricated host configuration
+
+## Stop or block
+
+If public vantage or host access is missing, keep the corresponding check BLOCKED and provide only the observations actually available. Do not remove AAAA records or enable public tunneling without owner-approved diagnosis.
+
+## Role and source references
+
+- [R01 — Site Reliability Engineer](../Disciplines/R01-site-reliability.md)
+- [R02 — Network/DNS Engineer](../Disciplines/R02-network-dns.md)
+
+Primary-source IDs: D01, D02, D04, D06. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

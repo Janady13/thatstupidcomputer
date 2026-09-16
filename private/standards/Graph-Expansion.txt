@@ -1,0 +1,2558 @@
+SEO / AIO GRAPH SYSTEMS — RESEARCH AND IMPLEMENTATION EXPANSION
+============================================================
+Release: 2026.09.12-g40
+Research review date: September 12, 2026
+Intended use: accurate human instruction and evidence-led AI-assisted implementation.
+Status: a researched library expansion, not a deployed website or live graph audit.
+
+READ THIS FIRST
+---------------
+This expansion defines 40 selected graph types, representations, and practical graph views. It is not a claim that there are exactly 40 relevant graphs in computer science, that search engines disclose all of their graphs, or that these 40 views are 40 independent ranking systems. Many are different views over one source-linked data model. The names and priorities organize this library; they are not professional certifications or provider-mandated departments.
+
+There are four different kinds of authority here:
+1. Documented provider systems, such as Google's Knowledge Graph and Shopping Graph.
+2. Standards and protocols, such as RDF, JSON-LD, PROV-O, SKOS, SHACL, and Open Graph.
+3. Published methods, such as GraphRAG and HNSW approximate-neighbor indexing.
+4. This library's proposed analytical and operating views, including an E-E-A-T evidence graph, a SERP observation graph, and a release-evidence graph.
+
+A standard can define valid structure without certifying truth. A provider can describe a system without exposing its current internals. A useful internal graph can improve consistency without being a ranking factor. Sources S01–S49 are listed at the end and in Research/sources.json; individual cards identify their relevant source basis. Standards are pinned references, not claims that no later specification exists.
+
+1. WHAT THE SUPPLIED LIBRARY ALREADY HAS
+--------------------------------------
+The supplied TXT is a conversion of 135 embedded documents from the HTML release 2026.09.09-d26. Its R11 charter already requires stable identifiers, truthful Person/business/document distinctions, exact identity links, graph consistency, and claim provenance. The public entity plan already prohibits inventing organizations, credentials, or Wikidata identities. Those foundations are retained.
+
+The supplied master index lists framework-eeat.md, SERP-Optimization.md, and framework-entitysalience.md as legacy, not fully verified. Those index entries are not equivalent to complete, freshly researched graph lessons. The export also references companion artifacts that are not included in the TXT. This expansion does not claim to have recovered or revalidated an unseen original archive.
+
+The additions here are a typed graph catalog; practical personal/business modeling; explicit E-E-A-T and SERP evidence views; private AI-retrieval and governance views; examples and blocked templates; and executable offline package checks. No commercial tier, role number, or original text has been silently rewritten. R11 remains the graph/structured-data lead. R14 governs factual claims; R08 URL contracts; R12 AI observations; R16 measurement; R20 privacy; R24 integration; R25 authorized release; R26 scoped acceptance.
+
+2. START WITH A RELATIONSHIP, NOT A PICTURE
+-----------------------------------------
+A graph contains nodes and relationships. A typed semantic example is:
+
+  [article] --author--> [person]
+  [article] --publisher--> [organization]
+  [service] --provider--> [organization]
+
+In RDF, the basic unit is a subject–predicate–object triple; datasets can separate graphs. JSON-LD is one way to serialize linked data using JSON. A visual network diagram is only a view: the useful asset is the inspectable identity, relationship, evidence, and version record. [S12, S13]
+
+For this library, a relationship that makes a material real-world claim must also identify its basis. "Joseph founded Organization A" is not merely a line to draw. It is an assertion requiring the right person, the right organization, an actual founding relationship, and evidence. Ownership, founding, employment, operating a website, publishing an article, and using a brand must not be substituted for one another.
+
+Use a durable entity registry and a separate claim registry. The registry distinguishes things from their documents. A person may have multiple profile pages without becoming multiple people. An organization may publish several websites without those sites becoming the same page. A brand may identify a commercial offering without being a separate legal organization.
+
+Do not infer that an absent fact is false. An unknown founder, office address, credential, or legal name remains unknown. A graph that leaves unsupported attributes empty is preferable to one that invents a complete-looking biography.
+
+3. PERSONAL AND BUSINESS MODEL FOR JOSEPH
+---------------------------------------
+Joseph's name and the domains ThatDevPro.com and ThatDeveloperGuy.com are user-supplied context. This task has not independently audited their live pages, legal structures, official profiles, ownership evidence, or search-engine recognition. Do not turn the following decision process into published claims without verification.
+
+First establish Joseph's approved public identity and its canonical profile home. Then inventory each actual operating organization, trading name, brand, website, and service. Decide which distinctions are real before choosing types. Keep a register of ambiguities instead of guessing that the two domains are either the same legal business or separate legal businesses.
+
+The proposed logical model is:
+
+  Joseph (Person)
+    ↔ actual authored work and approved profile pages
+    ↔ only verified professional or business relationships
+
+  Operating organization(s), once established
+    → real brand(s), where applicable
+    → actual service(s)
+    → website(s) and published work
+
+  ThatDevPro.com / ThatDeveloperGuy.com (websites)
+    → their verified publisher/operator
+    → distinct pages and purpose
+
+Choose one stable public identity for a person or organization and reuse it consistently wherever that exact entity is represented. A page's canonical URL and the identity of its subject are separate decisions. Do not migrate an existing identity or page solely because this document shows a cleaner-looking example.
+
+Schema.org's sameAs identifies the same item through an unambiguous reference. It is not an "all my websites" field, an ownership relationship, or a way to borrow authority from related Wikipedia topics. [S04] The packet's example deliberately omits sameAs because no actual third-party identity URLs have been verified here.
+
+For an appropriate biography page, ProfilePage can point through mainEntity to the Person. A real article can reference its actual author and publisher. A real service can reference its provider. ProfilePage is not a universal type for every business landing page. [S03, S07]
+
+Implementation sequence proposed for Joseph:
+- Approve actual person, organization, brand, website, and service identities.
+- Record evidence and the canonical-home decision before minting production IDs.
+- Render approved facts consistently in visible HTML and applicable JSON-LD.
+- Check existing public profiles for exact identity, then add only justified identity references.
+- Test all selected representations and record engine observations separately.
+
+The general library should retain this decision process and a neutral synthetic example, not hard-code Joseph's private facts into every future client build.
+
+4. THE E-E-A-T GRAPH THAT IS USEFUL TO BUILD
+-------------------------------------------
+Google discusses experience, expertise, authoritativeness, and trustworthiness as qualities associated with useful content; E-E-A-T itself is not a specific ranking factor. Google does not supply an "E-E-A-T graph" specification or public score for this library to implement. [S01]
+
+Our proposed E-E-A-T evidence view instead asks a concrete question: what supports this particular experience or expertise claim?
+
+  claim about capability
+    → actual work performed
+    → original evidence with scope and date
+    → an attributable explanation
+    → authorized publication
+    → independent corroboration, when it genuinely exists
+
+Examples of defensible inputs are a documented repair, an original design process, a reproducible test, a relevant qualification actually held, or a correction made when evidence changed. A case study must distinguish observed outcomes from causality. A public methodology article can teach a process without pretending that a client engagement occurred.
+
+Store the source owner and whether each mention is owned, paid, syndicated, or independently earned. Two sites owned by the same person can truthfully describe that person's work, but they should not be counted as two independent endorsements merely because they use different domains. The anti-circularity rule is part of this library's evidence design.
+
+Use the view to find unsupported assertions, stale biographies, overbroad claims, missing author responsibility, and public evidence gaps. Do not convert it into an invented Google score or require artificial citations for every sentence. The objective is justified claims and useful instruction, not graph density.
+
+5. THE SERP GRAPH THAT CAN ACTUALLY BE MEASURED
+----------------------------------------------
+SERP means search engine results page. The proposed graph is an observation model, not an exposed internal search-engine graph. Each result appearance belongs to a snapshot; the same URL appearing twice or in different features should not be flattened into a timeless "ranks for" edge.
+
+Record engine, surface, query, observation time with time zone, language, location setting at the least sensitive useful resolution, device class, collection method, personalization assumptions, result feature, position definition, raw URL, and evidence reference. Unknown values remain null. Do not infer the user's precise location or private search history.
+
+Represent the relationship as:
+
+  snapshot --for-query--> query
+  snapshot --contains--> result occurrence
+  result occurrence --points-to--> URL
+  result occurrence --has-feature--> organic / local / ad / other observed feature
+
+Query-to-document graphs are naturally modeled with two node sets; the detailed snapshot design here is our own use of that representation. [S40]
+
+To compare two observed result sets A and B, a simple descriptive overlap is:
+
+  Jaccard(A, B) = |A intersection B| / |A union B|
+
+Define whether the members are full URLs, canonical pages, or domains before calculating. Do not mix definitions between comparisons. If the union is empty, record the result as undefined, not as perfect similarity or zero visibility. A position-sensitive metric needs its own explicitly declared weighting and is still not an engine's proprietary weight.
+
+Use overlap to discover candidate clusters and competing answers, then inspect user intent and content. A competitor sharing several results does not prove its schema, page length, or internal-link pattern caused the ranking. A sampled absence is not proof that a website never appears anywhere.
+
+6. AI CITATIONS NEED THEIR OWN OBSERVATION LAYER
+-----------------------------------------------
+Bing's current AI Performance documentation supports analysis of grounding-query and cited-page relationships and explicitly separates citation observations from ranking, authority, and traffic. Grounding phrases must not be relabeled as the original user prompts. Coverage, aggregation, and denominators matter. [S22, S23]
+
+Keep separate record types for an actual captured answer, an aggregated report row, a citation occurrence, and a source-support assessment. An aggregated report must not be converted into fabricated individual answers. A page cited by an answer may support only one part of that answer; inspect the relevant source passage before asserting support.
+
+Google's current guidance also points to a Generative AI performance report in Search Console. Reconfirm the available report, account coverage, and field definitions before building an importer; a private graph cannot substitute for actual account access. [S21]
+
+Recommended outputs are a dated citation-observation table, a source/claim support map, and a separate referral/lead view. Keep unavailable evidence explicit. Never multiply citation counts by assumed click-through or conversion rates and present the product as measured customers.
+
+OpenAI documents different access roles for search, training, and user-directed retrieval. Treat those as distinct controls and observations. A search crawler's permitted access does not prove that a page was selected or that a private library was learned. [S27]
+
+7. WHAT PUBLIC GRAPHS AND APIS DO NOT GIVE YOU
+---------------------------------------------
+Google's Knowledge Graph is a documented entity system. Its older Knowledge Graph Search API is read-only, returns matching entities rather than a connected-graph export, includes a migration notice, and warns against a production-critical dependency. An API response score is not a website authority or E-E-A-T measurement. Recheck the current replacement product and terms before designing a new integration. [S10, S11]
+
+Google has also described Shopping Graph and, historically, a Topic Layer associated with Knowledge Graph. These are useful concepts to teach, but historical announcements are not complete current architecture specifications. Merchant data and relevant public content are inputs through supported mechanisms, not an interface for writing arbitrary ranking relationships. [S31, S44]
+
+Wikidata and OpenAlex offer useful public entity and scholarly-data resources. Use them for reference discovery and identifier reconciliation with source and identity checks. Do not create misleading entries, copy unsupported attributes, or treat inclusion as an endorsement. [S36, S37]
+
+Open Graph is the social-preview protocol, not Google Knowledge Graph. Its metadata should be accurate and useful to sharing consumers, but it does not replace your entity or evidence model. [S35]
+
+8. PUBLIC PUBLISHING VERSUS PRIVATE AI RETRIEVAL
+-----------------------------------------------
+Maintain two deliberate projections of the approved data:
+
+PUBLIC
+  Actual useful pages, approved identity facts, accurate bylines, applicable
+  structured data, images, navigation, and supported feeds when relevant.
+
+PRIVATE
+  Raw evidence, client records, ownership documentation, review decisions,
+  graph-extraction candidates, source lineage, permissions, tests, and workflows.
+
+Do not publish the private corpus, AGENTS instructions, logs, access tokens, client messages, or inferred relationships to make a graph easier for crawlers to discover. A robots directive is not a substitute for access control.
+
+Google's generative-search guidance does not require special AI files or special schema. Private GraphRAG chunking is an internal retrieval choice, not a reason to break every public article into tiny pages. A custom public /graph.json endpoint should exist only for a named consumer and a reviewed contract, not because it supposedly forces all engines to use it. [S21]
+
+The practical architecture is one governed registry with multiple adapters. Generate selected public facts into HTML and suitable structured data. Use private source-backed records for AI retrieval and audits. Keep public and private storage and authorization boundaries enforceable, not merely decorative visibility labels.
+
+9. GRAPH-RAG IS AN OPTIONAL RETRIEVAL METHOD, NOT AN SEO SWITCH
+---------------------------------------------------------------
+Microsoft GraphRAG organizes source material using extracted entities and relationships and can combine graph-linked information with original text units. Its documentation describes multiple retrieval strategies. [S24, S25]
+
+For this library, retain the source text and version first. Extract candidate entities, resolve them carefully, and store candidate relationships with provenance. Generated summaries are derived artifacts and inherit restrictions from their sources. They must not become new independent evidence just because another model wrote them.
+
+Evaluate a pilot against ordinary text search and a vector-retrieval baseline using tasks such as:
+- Find the current claim and supporting source for one structured-data rule.
+- Distinguish a person from an organization with a similar name.
+- Retrieve an older rule only when the question concerns the older date.
+- Refuse a request to expose private evidence in public markup.
+- Identify conflicting source statements without inventing a resolution.
+
+Measure answer support, entity-resolution errors, missed applicable sources, restricted-data leakage, latency, and cost. Do not assume the graph approach wins every task. An HNSW index is a graph of approximate vector-neighbor relationships, not the same thing as a graph of verified facts. [S26]
+
+10. MACHINE-READABLE CLAIM CONTRACT
+-----------------------------------
+The supplied claim.schema.json is a library record schema, not Schema.org markup. It keeps candidate facts separate from publication approval. The object is either a referenced entity or a literal; the two forms are not interchangeable. Example and candidate records remain intentionally blocked for publication-readiness purposes.
+
+Required concepts include:
+  claim ID and namespace-qualified predicate;
+  subject and typed object;
+  evidence class and source locators;
+  observation time and effective interval, when known;
+  status: candidate, supported, disputed, retired, or unknown;
+  confidence rationale, not an uncalibrated ranking-like number;
+  owner/source independence classification;
+  verification state and reviewer record;
+  private/public-approval state and actual authority to publish;
+  example flag, review date, and dependent graph views.
+
+The schema can test form. The included Python helper tests a deliberately limited structural readiness policy. Neither can verify that a reviewer is real, that evidence supports a statement, or that a client authorized publication. Human or otherwise genuinely authorized review must evaluate actual evidence. The helper always reports authorization_granted=false.
+
+Changing a candidate to "supported" by editing JSON does not create support. A source URL without a relevant locator does not establish a claim. A copied article with a different URL is not independent corroboration. A missing field must not be filled with a plausible guess solely to satisfy validation.
+
+11. ACCEPTANCE LAYERS
+---------------------
+Use separate outcomes for separate checks:
+
+A. Record validity: JSON parses; required fields and types are present.
+B. Identity consistency: IDs are unique and refer to intended distinct entities.
+C. Relationship validity: selected predicates fit the intended meaning.
+D. Evidence review: material assertions have relevant source-backed support.
+E. Temporal applicability: historical or superseded instructions are not used as current.
+F. Privacy and permission: the actual system prevents unauthorized disclosure.
+G. Page agreement: public structured data agrees with visible approved facts.
+H. Feature eligibility: the current targeted provider requirements are satisfied.
+I. Observed discovery: actual crawl/index/result/citation evidence is recorded.
+J. Business outcome: actual qualified inquiries or revenue are measured separately.
+
+SHACL provides a standards-based way to check graph constraints; this package supplies a JSON Schema rather than claiming to ship a full SHACL implementation. Neither syntax nor shape conformance proves factual truth. [S16] Public feature validation is a separate task. [S08]
+
+For each required check, retain PASS, FAIL, BLOCKED, or NOT_APPLICABLE with rationale. Missing live access is BLOCKED, not a fabricated pass. A local fixture is not production evidence, and a second pass by the same assistant is not an independent audit.
+
+12. EVALUATION WITHOUT FAKE AUTHORITY SCORES
+-------------------------------------------
+These are proposed internal quality measures, not search-engine metrics:
+
+Provenance coverage: supported material public claims divided by material public claims in the declared sample. Report the sample, exclusions, and manual-review method.
+
+Identity-resolution precision: reviewed correct accepted matches divided by reviewed accepted matches. Keep ambiguous and unreviewed matches outside the numerator and report their counts separately.
+
+Reference closure: internal references resolving to expected records divided by tested internal references. External URLs require separate checks; they are not unresolved just because they are not nodes in the local graph.
+
+Staleness exposure: number of current-use artifacts depending on claims whose review is overdue under the chosen internal policy. Overdue means review needed, not automatically false.
+
+Contradiction burden: unresolved material disputes and their dependent outputs. Do not hide them in one average confidence score.
+
+Retrieval support rate: sampled answers whose material assertions are supported by the retrieved sources, using an explicit review rubric. This needs actual evaluated answers, not a theoretical score.
+
+For a zero denominator, report undefined or not applicable with reason rather than manufacturing a perfect percentage. Metrics should identify useful next actions, not become optimization targets detached from truth.
+
+13. CURRICULUM AND WORKED CHECKS
+-------------------------------
+Lesson 1 — Identity versus document.
+Exercise: one developer has two websites and three social profiles. How many people exist?
+Expected answer: the records may describe one person, but exact matches require evidence. Websites and profile pages are separate entities/documents. Do not infer the number of legal businesses from the number of domains.
+
+Lesson 2 — Exact identity versus relationship.
+Exercise: two brands share an owner. Should they be linked with sameAs?
+Expected answer: no, not merely for shared ownership. Record the actual relationship and keep their identities distinct. Use sameAs only when the reference unambiguously identifies the same item. [S04]
+
+Lesson 3 — Provenance versus repetition.
+Exercise: six articles repeat one press release. How many independent sources support its central claim?
+Expected answer: this dataset shows one underlying origin unless independent investigation is demonstrated. Six publication URLs alone do not establish six independent confirmations.
+
+Lesson 4 — Evidence versus E-E-A-T scoring.
+Exercise: an AI writes "internationally recognized expert" because the entity graph has many edges.
+Expected answer: reject or rewrite the claim unless real evidence supports it. A graph's density is not an expertise credential or an official E-E-A-T score.
+
+Lesson 5 — Snapshot versus timeless ranking.
+Exercise: a service page is absent from one mobile result snapshot in one city.
+Expected answer: report that bounded observation. It does not establish absence from every search or a causal reason for the result.
+
+Lesson 6 — Citation versus business outcome.
+Exercise: a report shows 100 citations but no referral or CRM data.
+Expected answer: report the citations with scope. Referral sessions, leads, and revenue are unavailable, not zero and not estimated actuals.
+
+Lesson 7 — Shape versus truth.
+Exercise: a valid JSON-LD graph says an invented person earned an invented award.
+Expected answer: syntax may pass, but evidence/publication checks fail. A shape validator cannot establish the real-world claim.
+
+Lesson 8 — Retrieval versus publication.
+Exercise: GraphRAG finds a useful client email proving an outcome.
+Expected answer: use only within authorized private scope; do not publish or disclose it without actual permission and redaction review. A derived summary can still leak confidential content.
+
+Lesson 9 — Time and authority.
+Exercise: a fresh blog contradicts an older applicable official specification.
+Expected answer: inspect scope, effective dates, and source authority. Freshness alone does not resolve the conflict.
+
+Lesson 10 — Delivery versus discovery.
+Exercise: public JSON-LD renders correctly, but there is no engine observation.
+Expected answer: report successful delivery checks only. Indexing, panel inclusion, citations, and rankings remain unobserved.
+
+14. IMPLEMENTATION ORDER
+------------------------
+Priority P0: personal identity; actual organizations/brands; cross-domain relationships; entity resolution; authorship; claim provenance; internal navigation; canonical policy; crawl/render evidence; public representation consistency; acceptance; permissions.
+Deliverable: a small approved registry, source-backed claims, limited public projection, and an inspectable test report. Do not publish candidate identities merely to make the graph look complete.
+
+Priority P1: E-E-A-T evidence, reputation, topics, query/page relevance, SERP and AI-citation observation, conversion semantics, Open Graph, curriculum, and workflow routing. Local and migration modules activate when applicable.
+Deliverable: useful explanations and evidence, working observation definitions, and isolated public/private data flows. A module marked applicable still needs actual data and tests.
+
+Priority P2: private GraphRAG pilot, vector-neighbor indexing when needed, temporal/supersession controls, contradictions, source-impact mapping, citation projections, and co-occurrence analysis.
+Deliverable: measured retrieval comparisons and a maintenance process. Do not choose an infrastructure stack by fashion or a hypothetical SEO boost.
+
+Priority P3: commerce, localization, media, professional/social graphs, scholarly data, and events as the actual website or teaching objective requires.
+Deliverable: specialized contracts and truthful data, not empty graph templates represented as deployed capabilities.
+
+These priorities are a proposed dependency order, not provider mandates or a guarantee of search improvement. Preserve original 26-role routing rather than launching 40 independent agents or creating 40 databases.
+
+15. MAINTENANCE AND SOURCE GOVERNANCE
+------------------------------------
+Every source record needs a title, publisher, exact URL, reviewed date, scope, and limitations. The supplied source register does not pretend that a review date is a publication date or that source pages were archived. Add actual effective dates when established.
+
+Proposed maintenance policy: re-open fast-changing platform guidance before a deployment decision that depends on it; run a periodic change review for provider features; review identity claims when the owner reports a change; and review evidence permissions before every new public use. Select actual scheduling and ownership in the host project. Nothing in this packet installs a scheduler or background monitor.
+
+On change, record the specific altered claim, evaluate applicability, mark affected artifacts for review, test proposed revisions, and publish a bounded changelog. A changed webpage hash is only a signal to inspect; navigation edits are not necessarily policy changes. Keep superseded lessons available as history with their dates, but out of default current-use retrieval.
+
+16. AI PROJECT INTEGRATION CONTRACT
+-----------------------------------
+Use the existing root AGENTS.md and role router. Add a reference to this expansion only after merging with project instructions; do not replace a real AGENTS.md automatically. This packet includes an integration snippet, not a remote configuration change.
+
+An AI task should receive: the authorized objective; verified site facts; relevant graph IDs; selected role owners; actual read/write limits; current sources; desired public/private outputs; acceptance criteria; and rollback requirements for any approved change. Retrieve only relevant lessons and records rather than loading the whole library as unquestioned authority.
+
+The assistant must distinguish proposed work, actual code changes, locally executed checks, untested external behavior, and live engine observations. It may not fill missing evidence with fictional outputs, self-granted approval, fabricated credentials, or a claim that changing persona made its review independent.
+
+17. PACKAGE SCOPE AND LIMITATIONS
+---------------------------------
+This release adds the curriculum and machine-readable starting structures. It does not build a production graph database, install GraphRAG, access Joseph's accounts, verify all public profiles, submit search data, deploy markup, edit a live site, or recertify the original 135 documents. The 40 cards are source-linked implementation guides, not completed deployments.
+
+The offline tests inspect this package's records, examples, and limited readiness rules. They do not run live Rich Results tests, search-engine indexing tests, real browser journeys, private-source permissions, or an external independent audit. Those remain requirements for a real implementation.
+
+
+18. NAMED RESEARCH SYSTEMS AND ALGORITHMS TO KNOW
+------------------------------------------------
+These names belong in the library because they explain several real graph-based approaches that marketing language often blends together. They are a methods appendix, not five new disclosed ranking factors. Map them into the appropriate Gxx views rather than adding an agent, endpoint, or public score for every name.
+
+Knowledge Vault — probabilistic knowledge fusion.
+The 2014 Google Research paper combines extracted web information with prior knowledge and models uncertainty in the fused facts. This is a useful historical basis for teaching extraction, reconciliation, confidence calibration, and source fusion. It is not the same claim as "my site has been entered in Knowledge Vault." [S46]
+Library use: connect G04 entity resolution, G09 document/entity mappings, G10 provenance, and G30 contradictions. Keep uncertain extractions out of approved public facts. Calibrated probabilities in a research model are different from an assistant inventing a confidence percentage.
+
+Knowledge-Based Trust (KBT) — fact-based source trust research.
+The 2015 paper investigates estimating source trustworthiness from extracted facts while separating extraction mistakes from errors in the source itself. [S45]
+Library use: teach why evidence quality and the reliability of extraction must both be examined. A bad parser can make a correct source look inconsistent; a frequently repeated assertion can still be wrong. KBT is not interchangeable with E-E-A-T, link-based trust, or a consumer-visible website score. Do not claim a modern engine uses this exact paper without separate deployment evidence.
+
+TrustRank — seed-guided link analysis for spam detection.
+The 2004 paper uses a small expert-reviewed seed set and the web's link structure to identify other pages likely to be reputable. The reviewed paper is by researchers affiliated with Stanford and Yahoo, and its experiments are historical. [S49]
+Library use: attach this method to G14 external link analysis and an explicitly labeled research lesson on trust propagation. Explain seed dependence and probabilistic assumptions. Do not substitute "all government sites" or "all university sites" for a demonstrated seed set, and do not translate proximity into a guaranteed modern ranking benefit. The paper is not evidence that the original TrustRank algorithm currently governs Google Search.
+
+HITS — hubs and authorities.
+HITS distinguishes hub scores from authority scores for a supplied linked graph; the NetworkX documentation exposes an implementation. [S47]
+Library use: compare it with PageRank in a controlled G13/G14 lesson. Show that two algorithms applied to the same small graph answer different mathematical questions. Neither supplies Google's hidden scores. A node labeled "authority" by an algorithm has not acquired a real-world credential or permission to make unsupported claims.
+
+Query–entity click graphs.
+Microsoft Research's 2011 Jigs and Lures work models associations between queries and typed entities using click-graph information. [S48]
+Library use: enrich G21 query relevance and G26 measurement teaching with a distinction between a query-to-result appearance and an observed click association. Only use actually available, authorized data. Do not invent click logs from rankings or infer a click from a displayed citation. Historical experimental gains are not a promised improvement on another business's site.
+
+A compact comparison:
+  Knowledge graph: entities and semantic relationships.
+  Web-link graph: pages and hyperlinks.
+  Click graph: observed query/item or user/item interactions.
+  Trust-propagation model: assumptions and labels propagated across a network.
+  Probabilistic knowledge fusion: combining uncertain extracted assertions.
+  E-E-A-T evidence view: this library's map from claims to real support.
+  SERP observation view: this library's dated record of displayed results.
+  Vector-neighbor graph: proximity under an embedding representation.
+
+Do not transfer a score across these categories. A high local hub score, an extracted-fact probability, a vector similarity, a citation count, and an editorial claim of expertise are not measurements of the same thing. Every algorithm lesson must identify its graph definition, data scope, parameters, assumptions, evaluation set, and deployment status.
+
+
+==============================================================================
+
+GRAPH CATALOG INDEX
+===================
+G01  Personal identity and profile graph  [P0; standards-backed library view]
+G02  Organization, business, and brand graph  [P0; standards-backed library view]
+G03  Cross-domain operating and ownership graph  [P0; library analytical view]
+G04  Entity resolution and reconciliation graph  [P0; library analytical view]
+G05  Local business, place, and service-area graph  [P1_IF_APPLICABLE; standards-backed library view]
+G06  Product, offer, merchant, and inventory graph  [P3_IF_APPLICABLE; standards-backed library view]
+G07  Authorship and editorial contribution graph  [P0; standards-backed library view]
+G08  Topic, ontology, and taxonomy graph  [P1; standards-backed library view]
+G09  Document, passage, and entity graph  [P1; library analytical view]
+G10  Claim, evidence, and provenance graph  [P0; standards-backed library view]
+G11  E-E-A-T evidence graph  [P1; custom library evidence view; not a Google graph specification]
+G12  Reputation, review, and corroboration graph  [P1; library analytical view]
+G13  Internal link and navigation graph  [P0; library analytical view of documented web links]
+G14  External web-link graph  [P1; documented link-analysis concept; local reconstruction]
+G15  Citation, co-citation, and bibliographic-coupling graph  [P2; research/analysis view]
+G16  Canonical and duplicate-document graph  [P0; library view of documented URL policy]
+G17  Redirect and migration graph  [P1_IF_APPLICABLE; library engineering view]
+G18  Hreflang and locale-alternative graph  [P3_IF_APPLICABLE; library view of documented localization signals]
+G19  Crawl, rendering, and resource-dependency graph  [P0; library engineering view]
+G20  Structured-data consistency graph  [P0; serialization/validation view]
+G21  Query, intent, and page-relevance graph  [P1; library analytical view]
+G22  SERP observation and competitor-overlap graph  [P1; custom observational view; not an official SERP graph]
+G23  Question, task, and query-fan-out map  [P1; custom planning/observation view]
+G24  Entity-mention and co-occurrence graph  [P2; library analytical view]
+G25  AI answer, grounding, and citation graph  [P1; custom observation view of documented report data]
+G26  Search-to-lead and customer-journey graph  [P1; custom measurement view]
+G27  GraphRAG and owned-corpus retrieval graph  [P2; documented method with library-specific adaptation]
+G28  Embedding-similarity and nearest-neighbor graph  [P2; published algorithmic method]
+G29  Temporal, version, and supersession graph  [P2; library governance view]
+G30  Contradiction, uncertainty, and dispute graph  [P2; library governance view]
+G31  Source-dependency and change-impact graph  [P2; library governance view]
+G32  Instruction, capability, and workflow dependency graph  [P1; private library operating design]
+G33  Requirement, test, evidence, and acceptance graph  [P0; private library operating design]
+G34  Permissions, consent, and disclosure graph  [P0; policy-description and private governance view]
+G35  Multimedia, transcript, and rights graph  [P3_IF_APPLICABLE; standards-informed library view]
+G36  Open Graph social-preview metadata  [P1; documented protocol; naming distinction]
+G37  Social, professional, and interaction graphs  [P3_IF_APPLICABLE; documented graph family; library analysis must be scoped]
+G38  Scholarly and research graph  [P3_IF_APPLICABLE; documented public-data graph family]
+G39  Event, venue, organizer, and time graph  [P3_IF_APPLICABLE; standards-backed library view]
+G40  Learning prerequisite and curriculum graph  [P1; custom teaching design]
+
+==============================================================================
+
+40 GRAPH REFERENCE CARDS
+========================
+
+------------------------------------------------------------------------------
+
+# G01 — Personal identity and profile graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P0
+Accountability: R11, R14, R13
+
+## Question
+Which person is this, and which records identify that same person?
+
+## Nodes
+Person; ProfilePage; Verified profile; Creative work
+
+## Relationship sketch
+- profile.mainEntity → person
+- work.author → person
+- person.sameAs → exact identity reference
+
+## Evidence inputs
+Owner-approved public name, actual profile records, bylines, and relationship evidence.
+
+## Implementation
+Allocate one stable person identifier. Keep the person separate from biography documents, user accounts, businesses, and people with similar names. Leave unknown properties unset.
+
+## Acceptance checks
+- Person and biography page have different identifiers
+- Identity links are reviewed for an exact match
+- No unverified credential is published
+
+## Do not infer
+A descriptive biography, account handle, or confident name match does not prove identity.
+
+## Publication boundary
+Approved identity facts may be public; supporting sensitive records stay private.
+
+## Source basis
+S03, S04, S05. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G02 — Organization, business, and brand graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P0
+Accountability: R11, R14, R18
+
+## Question
+Which organization operates a service, and which brands does it actually use?
+
+## Nodes
+Organization; Brand; WebSite; Service
+
+## Relationship sketch
+- organization.brand → brand
+- website.publisher → organization
+- service.provider → organization
+
+## Evidence inputs
+Owner-confirmed operating structure, real trading names, visible service pages, and verified legal details when needed.
+
+## Implementation
+Model organizations, brands, domains, and services separately. Choose the smallest accurate model; do not create a legal entity for each domain or force several businesses into one.
+
+## Acceptance checks
+- Every node has an explicit type and verified meaning
+- Public names match approved visible facts
+- Service provider is not confused with its website
+
+## Do not infer
+An owned domain is not automatically an organization, legal name, or separate local office.
+
+## Publication boundary
+Publish approved organization/brand/service facts, not private ownership documents.
+
+## Source basis
+S02, S06, S07. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G03 — Cross-domain operating and ownership graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P0
+Accountability: R11, R14, R24
+
+## Question
+How are the owner, organizations, brands, websites, and publications related?
+
+## Nodes
+Person; Organization; Brand; Domain; Publication
+
+## Relationship sketch
+- verified ownership assertion → evidence
+- website → operating organization
+- publication → publisher
+
+## Evidence inputs
+Explicit ownership/operating statements, domain control evidence where authorized, and approved publisher assignments.
+
+## Implementation
+Keep private ownership assertions as qualified claims; map only supported relationships into public vocabulary. Domain control, employment, founding, and publishing are different predicates.
+
+## Acceptance checks
+- No sameAs links connect merely affiliated businesses
+- Every ownership or founder assertion has evidence
+- The person and all website IDs remain distinct
+
+## Do not infer
+Common ownership is not identity equivalence, editorial independence, or proof of founding.
+
+## Publication boundary
+Relationship summary may be public; contracts and control records normally remain private.
+
+## Source basis
+S02, S04, S07. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G04 — Entity resolution and reconciliation graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P0
+Accountability: R11, R14, R21
+
+## Question
+Which mentions or imported records refer to the same entity?
+
+## Nodes
+Mention; Candidate entity; Identifier; Source record; Resolution decision
+
+## Relationship sketch
+- mention → candidate
+- candidate → supporting identifier
+- decision → accepted/rejected match
+
+## Evidence inputs
+Names, identifiers, profile URLs, contextual attributes, conflicts, and reviewer decisions.
+
+## Implementation
+Generate candidates without merging them. Require corroboration, keep rejected alternatives and confidence rationale, and support reversible merges. Give human reviewers ambiguous cases.
+
+## Acceptance checks
+- Known same-name people remain separate in negative tests
+- Reversing a merge restores source associations
+- All accepted matches retain provenance
+
+## Do not infer
+Vector similarity or identical names are not sufficient evidence of identity.
+
+## Publication boundary
+Private resolution records; only approved identity references become public.
+
+## Source basis
+S04, S10, S12. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G05 — Local business, place, and service-area graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P1_IF_APPLICABLE
+Accountability: R18, R11, R14, R20
+
+## Question
+Which real business is at a location, and where does it provide service?
+
+## Nodes
+Organization; LocalBusiness; Place; Address; Service area; Profile
+
+## Relationship sketch
+- branch → parent organization
+- business → actual place
+- service → area served
+
+## Evidence inputs
+Approved location facts, eligible business profiles, hours, real service coverage, and privacy decisions.
+
+## Implementation
+Distinguish headquarters, branches, customer-facing premises, mailing addresses, and service areas. Do not derive a physical office from a city page or a travel radius.
+
+## Acceptance checks
+- Each published physical location is real
+- Service-area claims do not create fictional branches
+- Sensitive home-address publication is explicitly reviewed
+
+## Do not infer
+One page for each town is not evidence of one office in each town.
+
+## Publication boundary
+Public business facts only; avoid unnecessary personal location information.
+
+## Source basis
+S07, S28. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G06 — Product, offer, merchant, and inventory graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P3_IF_APPLICABLE
+Accountability: R11, R03, R14, R16
+
+## Question
+What is sold, by whom, with which current offer and availability?
+
+## Nodes
+Product; Variant; Offer; Merchant; Inventory observation
+
+## Relationship sketch
+- offer → item
+- offer → seller
+- inventory observation → offer/version
+
+## Evidence inputs
+Actual catalog, identifiers, landing pages, feeds, dated price and stock records.
+
+## Implementation
+Separate an enduring product identity from a seller-specific, time-sensitive offer. Reconcile pages and feeds. Only use variant relationships supported by the actual catalog.
+
+## Acceptance checks
+- Offer currency and price agree with the reviewed source
+- Availability has an observation time
+- Variants are not merged solely because names resemble each other
+
+## Do not infer
+Your catalog graph is not direct control of Google Shopping Graph.
+
+## Publication boundary
+Approved catalog facts public; supplier and customer records private.
+
+## Source basis
+S30, S31. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G07 — Authorship and editorial contribution graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P0
+Accountability: R13, R11, R14
+
+## Question
+Who actually authored, reviewed, edited, or published this work?
+
+## Nodes
+Person; Work; Revision; Contribution; Publisher
+
+## Relationship sketch
+- work.author → person
+- revision → actual reviewer
+- work.publisher → organization
+
+## Evidence inputs
+Actual contribution records, approved bylines, editorial review, revision history.
+
+## Implementation
+Track contributions per work/version rather than giving every page the same impressive author. Separate authorship, review, publishing, and tool assistance.
+
+## Acceptance checks
+- Byline agrees with actual contribution
+- Reviewer records identify the reviewed version
+- An AI role prompt is not represented as a staff member
+
+## Do not infer
+A reviewer credit is not proof that every claim or future revision was reviewed.
+
+## Publication boundary
+Approved bylines and methodology may be public; draft review logs private.
+
+## Source basis
+S03, S05, S08. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G08 — Topic, ontology, and taxonomy graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P1
+Accountability: R10, R09, R11, R13
+
+## Question
+Which concepts exist, and how do their meanings and scopes relate?
+
+## Nodes
+Concept; Preferred label; Alternative label; Concept scheme
+
+## Relationship sketch
+- concept → broader/narrower concept
+- concept → related concept
+- label → concept
+
+## Evidence inputs
+Domain definitions, terminology decisions, source-backed distinctions, and reader questions.
+
+## Implementation
+Use controlled concepts to connect documents without making each term a public page. Record synonyms separately from broader concepts; avoid over-specific taxonomies that users cannot navigate.
+
+## Acceptance checks
+- Broader-than relationships are not mistaken for same-identity links
+- Ambiguous abbreviations have definitions
+- Concept revisions preserve stable identifiers
+
+## Do not infer
+A dense taxonomy does not certify topical authority or completeness of expertise.
+
+## Publication boundary
+A helpful subset may be published; internal editorial notes stay private.
+
+## Source basis
+S15, S44. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G09 — Document, passage, and entity graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P1
+Accountability: R10, R11, R13
+
+## Question
+Which part of which document describes or supports an entity or concept?
+
+## Nodes
+Document; Version; Section; Passage; Entity; Concept
+
+## Relationship sketch
+- passage → document version
+- passage → mentions entity
+- section → concerns concept
+
+## Evidence inputs
+Original text, offsets or section locators, content hashes, extraction method, and source rights.
+
+## Implementation
+Preserve document and section boundaries when indexing. Treat mentions as mentions, not verified assertions; keep a route from each retrieved passage back to the actual source.
+
+## Acceptance checks
+- Every passage resolves to an exact source version
+- Quoted context can be reconstructed
+- Mention extraction does not silently assert facts
+
+## Do not infer
+Entity mention, aboutness, evidence support, and endorsement are different relationships.
+
+## Publication boundary
+Public passages follow source rights; private corpus records remain private.
+
+## Source basis
+S12, S14, S25. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G10 — Claim, evidence, and provenance graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P0
+Accountability: R14, R11, R20
+
+## Question
+What supports a particular assertion, and where did that support originate?
+
+## Nodes
+Claim; Evidence; Source version; Extraction activity; Reviewer
+
+## Relationship sketch
+- claim → supported/contradicted by evidence
+- evidence → source version
+- derived artifact → source activity
+
+## Evidence inputs
+Exact assertion scope, original source locator, observation date, evidence class, and review decision.
+
+## Implementation
+Make claims first-class records. Preserve source chains and ownership/independence labels. A summary derived from a source is not a new independent source.
+
+## Acceptance checks
+- Every published material assertion has a source or labeled basis
+- Conflicting evidence remains attached
+- Unsupported assertions cannot pass the publication-readiness check
+
+## Do not infer
+Five copies of the same claim do not constitute five independent confirmations.
+
+## Publication boundary
+Publish safe citations, not secrets, client messages, or restricted originals.
+
+## Source basis
+S14, S16. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G11 — E-E-A-T evidence graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom library evidence view; not a Google graph specification
+Priority: P1
+Accountability: R14, R13, R11, R19
+
+## Question
+What real evidence demonstrates experience, expertise, attribution, and trust for this claim?
+
+## Nodes
+Person; Work performed; Evidence; Published work; Independent mention; Correction
+
+## Relationship sketch
+- work performed → evidence
+- claim → bounded experience basis
+- mention → source and independence class
+
+## Evidence inputs
+Actual work artifacts, methods, relevant verified qualifications, corrections, disclosures, and earned recognition.
+
+## Implementation
+Build an evidence map for specific claims and subjects. Use it to expose missing support and accurate authorship, not to manufacture a universal authority score.
+
+## Acceptance checks
+- Experience claims point to real work or are omitted
+- Owned/paid/earned sources stay distinguished
+- No public Google E-E-A-T number is invented
+
+## Do not infer
+This is an internal teaching and audit model; Google does not document it as a standalone ranking system.
+
+## Publication boundary
+Publish substantiated selected evidence with permission; private engagement records remain private.
+
+## Source basis
+S01, S08, S43. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G12 — Reputation, review, and corroboration graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P1
+Accountability: R19, R14, R11, R18
+
+## Question
+Who said what about which entity, with what provenance and independence?
+
+## Nodes
+Reviewer; Review; Reviewed entity; Publisher; Disclosure; Source owner
+
+## Relationship sketch
+- review → exact subject
+- statement → publisher
+- publisher → ownership/disclosure record
+
+## Evidence inputs
+Actual reviews and dates, subject matching, publication rights, disclosed sponsorship, source lineage.
+
+## Implementation
+Preserve review context and scales. Record whether a source is owned, paid, syndicated, or independently earned; never infer independence from different domain names alone.
+
+## Acceptance checks
+- Review subject is not confused with another product/business
+- Syndicated copies share a provenance origin
+- Feature eligibility is checked separately from review authenticity
+
+## Do not infer
+Authentic self-hosted testimonials do not automatically qualify for LocalBusiness/Organization review stars.
+
+## Publication boundary
+Approved review evidence public; unnecessary reviewer data excluded.
+
+## Source basis
+S29, S14, S43. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G13 — Internal link and navigation graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view of documented web links
+Priority: P0
+Accountability: R08, R09, R04
+
+## Question
+Can visitors and crawlers find the intended pages through useful links?
+
+## Nodes
+Page; Link; Anchor; Navigation context
+
+## Relationship sketch
+- page → linked page
+- link → anchor and location
+
+## Evidence inputs
+Authorized crawl, initial/rendered HTML as relevant, intended navigation, canonical route list.
+
+## Implementation
+Inspect reachable components and important pages with no incoming links. Evaluate navigational usefulness alongside graph metrics. Keep page purpose and user journeys ahead of arbitrary link quotas.
+
+## Acceptance checks
+- Important public pages are reachable from intended entry points
+- Actual href targets work
+- Any reported orphan definition and crawl scope are explicit
+
+## Do not infer
+A crawl of only part of a site cannot prove whole-site orphan status.
+
+## Publication boundary
+Navigation is public; diagnostic reports normally private.
+
+## Source basis
+S19, S41. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G14 — External web-link graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: documented link-analysis concept; local reconstruction
+Priority: P1
+Accountability: R19, R08, R10
+
+## Question
+Which external pages link to your content, and what does the observed network show?
+
+## Nodes
+External page; Internal page; Domain; Observed hyperlink
+
+## Relationship sketch
+- source page → target page
+
+## Evidence inputs
+Actual link observations, collection source, timestamps, anchor and link attributes, coverage limitations.
+
+## Implementation
+Analyze observed linking relationships and ownership clusters. Mark third-party crawl coverage as partial. Distinguish network measurements from the search engine's internal scoring.
+
+## Acceptance checks
+- Links are checked at their source when practical
+- Collection coverage is documented
+- Local metrics are labeled as locally computed
+
+## Do not infer
+NetworkX PageRank, third-party domain scores, and Google ranking values are not interchangeable.
+
+## Publication boundary
+Public links; private outreach and analysis records.
+
+## Source basis
+S09, S39, S43. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G15 — Citation, co-citation, and bibliographic-coupling graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: research/analysis view
+Priority: P2
+Accountability: R10, R14, R11
+
+## Question
+Which works cite which sources, and which share citation neighborhoods?
+
+## Nodes
+Work; Cited source; Citation occurrence
+
+## Relationship sketch
+- work → cited source
+- two works → shared reference projection
+- two sources → jointly cited projection
+
+## Evidence inputs
+Resolved citations, source locators, document versions, and duplication provenance.
+
+## Implementation
+Maintain the directed citation graph first. Co-citation connects items cited together; bibliographic coupling connects works sharing references. Label derived edges and formulas, not endorsements.
+
+## Acceptance checks
+- Derived projections can be recomputed from citation records
+- Copied source lists do not count as independent evidence
+- A citation is inspected before treating it as support
+
+## Do not infer
+Being cited together does not imply identity, agreement, quality, or ranking equivalence.
+
+## Publication boundary
+Respect source licenses; publish only permitted citation data.
+
+## Source basis
+S14, S37, S40. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G16 — Canonical and duplicate-document graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library view of documented URL policy
+Priority: P0
+Accountability: R08, R09, R11
+
+## Question
+Which URLs describe duplicate documents, and what canonical signals are observed?
+
+## Nodes
+URL; Document version; Declared canonical; Observed engine canonical
+
+## Relationship sketch
+- URL → declared canonical
+- inspection observation → selected canonical
+- document → duplicate candidate
+
+## Evidence inputs
+Page headers/HTML, sitemaps, redirect signals, actual engine inspection when available.
+
+## Implementation
+Store publisher-declared and engine-observed canonicals separately. Review cross-domain canonical proposals for real document duplication; do not canonicalize distinct services merely to connect brands.
+
+## Acceptance checks
+- Each observation distinguishes intent from engine behavior
+- Canonical targets are valid intended documents
+- Conflicting page/header signals are reported
+
+## Do not infer
+Canonicalizing a page does not merge people or organizations.
+
+## Publication boundary
+Page canonical signals public; inspection records private.
+
+## Source basis
+S17, S08. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G17 — Redirect and migration graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library engineering view
+Priority: P1_IF_APPLICABLE
+Accountability: R08, R01, R25, R26
+
+## Question
+What happens to each old URL, and is the migration reversible?
+
+## Nodes
+Old URL; Hop; Destination; Release; Rollback mapping
+
+## Relationship sketch
+- old URL → redirect hop
+- final URL → intended replacement
+- mapping → release version
+
+## Evidence inputs
+Authorized redirect map, actual HTTP observations, content equivalence decisions, backup mapping.
+
+## Implementation
+Check loops, long chains, deleted destinations, and mismatched content. Treat redirect changes as authorized production changes with rollback; do not silently replace all missing pages with the homepage.
+
+## Acceptance checks
+- No loop in approved redirect paths
+- Every moved important URL has a reviewed outcome
+- Rollback restores the previous mapping
+
+## Do not infer
+An HTTP redirect does not prove the destination inherited a particular ranking.
+
+## Publication boundary
+Redirect behavior public; migration control records private.
+
+## Source basis
+S17, S41. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G18 — Hreflang and locale-alternative graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library view of documented localization signals
+Priority: P3_IF_APPLICABLE
+Accountability: R08, R09, R13
+
+## Question
+Which localized documents are alternatives for the same user task?
+
+## Nodes
+Localized page; Language; Region; Alternate group
+
+## Relationship sketch
+- page → locale
+- page → alternate page
+
+## Evidence inputs
+Actual translated/localized pages and annotations, canonical policy, language/region intent.
+
+## Implementation
+Validate reciprocal alternative sets under the current implementation method. Do not confuse localization with location claims or populate a graph using untranslated duplicate pages.
+
+## Acceptance checks
+- Alternate URLs resolve as intended
+- Annotation sets are consistent and reciprocal where required
+- Language/region intent matches actual content
+
+## Do not infer
+An alternate-language page is not a different business entity.
+
+## Publication boundary
+Appropriate locale annotations public.
+
+## Source basis
+S18, S17. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G19 — Crawl, rendering, and resource-dependency graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library engineering view
+Priority: P0
+Accountability: R04, R08, R06, R20
+
+## Question
+What must load for the user and each tested consumer to observe the real content?
+
+## Nodes
+URL; HTML; Script; Stylesheet; Image; Rendered state; Consumer observation
+
+## Relationship sketch
+- page → required resource
+- render observation → observed content
+- consumer → access result
+
+## Evidence inputs
+Initial responses, browser network captures, blocked-resource observations, versioned tests.
+
+## Implementation
+Trace critical content, metadata, and links to dependencies. Test optional-script failure and record differences between browser and crawler observations; avoid pretending all consumers render identically.
+
+## Acceptance checks
+- Essential content is observed under the agreed delivery contract
+- Blocked resources have documented impact
+- Actual crawler evidence is separated from a spoofed user-agent test
+
+## Do not infer
+User-agent string selection does not authenticate a crawler or reproduce its complete behavior.
+
+## Publication boundary
+Public assets; private traces redacted.
+
+## Source basis
+S20, S27. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G20 — Structured-data consistency graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: serialization/validation view
+Priority: P0
+Accountability: R11, R04, R14, R21
+
+## Question
+Do all public representations describe the same approved entities and facts?
+
+## Nodes
+Entity registry; Page; JSON-LD node; Feed record; Validation finding
+
+## Relationship sketch
+- page representation → entity ID
+- assertion → approved claim
+- finding → affected representation
+
+## Evidence inputs
+Approved entity registry, actual page markup, visible content, feed versions, validation output.
+
+## Implementation
+Generate public subsets from a reviewed source of truth. Detect conflicting identifiers and facts across templates. Run syntax, vocabulary, graph, content, and feature checks separately.
+
+## Acceptance checks
+- Public references resolve to intended entity records
+- No template invents a second identity
+- Visible content and JSON-LD agree on material facts
+
+## Do not infer
+A large @graph array is not proof of completeness, authority, or provider ingestion.
+
+## Publication boundary
+Only approved public projections; private full graph stays private.
+
+## Source basis
+S13, S16, S08. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G21 — Query, intent, and page-relevance graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P1
+Accountability: R10, R23, R13, R16
+
+## Question
+Which pages answer which actual reader questions and tasks?
+
+## Nodes
+Query; Task; Intent hypothesis; Page; Evidence of demand
+
+## Relationship sketch
+- query → task hypothesis
+- task → helpful page
+- query → observed page result
+
+## Evidence inputs
+Actual inquiries, permitted search-report data, editorial judgments, and annotated evaluation sets.
+
+## Implementation
+Separate measured queries from brainstorming. Evaluate whether a page answers the task instead of merely sharing words. Keep ambiguous intents explicit rather than forcing one interpretation.
+
+## Acceptance checks
+- Observed and hypothetical demand are labeled
+- Page-task relevance is reviewed against content
+- Internal retrieval tests include relevant and irrelevant pages
+
+## Do not infer
+Your intent taxonomy is not a disclosure of an engine's hidden query representation.
+
+## Publication boundary
+Useful user-facing content public; query logs privacy-reviewed.
+
+## Source basis
+S09, S40. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G22 — SERP observation and competitor-overlap graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom observational view; not an official SERP graph
+Priority: P1
+Accountability: R10, R16, R08
+
+## Question
+What appeared for a specified query under specified conditions?
+
+## Nodes
+Query; SERP snapshot; Result occurrence; URL; Domain; Result feature
+
+## Relationship sketch
+- snapshot → query/context
+- snapshot → occurrence
+- occurrence → URL and feature
+
+## Evidence inputs
+Permitted search observations or licensed data, exact collection context, time, URL and feature details.
+
+## Implementation
+Model each appearance as an occurrence, not a timeless edge. Distinguish organic results, ads, local results, and AI citations. Compare URL-set overlaps only within documented sampling.
+
+## Acceptance checks
+- Every result belongs to a dated snapshot
+- Position definition and feature type are retained
+- Unavailable result data is not represented as zero visibility
+
+## Do not infer
+Ranking for one query does not make a competitor's schema, word count, or backlink pattern causal.
+
+## Publication boundary
+Aggregate research may be public; raw collected data obeys permissions.
+
+## Source basis
+S09, S40. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G23 — Question, task, and query-fan-out map
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom planning/observation view
+Priority: P1
+Accountability: R10, R12, R13
+
+## Question
+What related questions must be answered for the user's task?
+
+## Nodes
+Task; Question; Subquestion; Observed grounding phrase; Hypothesized expansion
+
+## Relationship sketch
+- task → subquestion
+- question → supporting page
+- observed phrase → evidence record
+
+## Evidence inputs
+User research, actual questions, provider-exposed phrases when available, separate model-generated suggestions.
+
+## Implementation
+Use related questions to improve coverage without producing a page for every paraphrase. Tag suggestions as hypotheses, and never label generated subquestions as actual hidden provider fan-out.
+
+## Acceptance checks
+- Observed and hypothesized expansions remain separate
+- Each proposed section serves a real task
+- Redundant pages are not generated just to fill graph nodes
+
+## Do not infer
+Public descriptions of query fan-out do not reveal the exact query tree for a particular answer.
+
+## Publication boundary
+Helpful answers public; research/observation records private.
+
+## Source basis
+S21, S22, S43. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G24 — Entity-mention and co-occurrence graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library analytical view
+Priority: P2
+Accountability: R10, R11, R14
+
+## Question
+Where are entities mentioned together, and in what context?
+
+## Nodes
+Mention; Passage; Entity candidate; Source; Co-occurrence projection
+
+## Relationship sketch
+- passage → mentions candidate
+- projection → shared passage/source
+
+## Evidence inputs
+Actual text spans, entity-resolution decisions, source lineage, language and time.
+
+## Implementation
+Preserve sentiment and relationship context when known; a criticism and a recommendation are not equivalent. Use co-occurrence to find inspection candidates, not to auto-create sameAs or endorsements.
+
+## Acceptance checks
+- Every mention maps to a source span
+- False name matches are tested
+- Derived associations are labeled and reversible
+
+## Do not infer
+Co-occurrence does not establish identity, expertise, recommendation, or causation.
+
+## Publication boundary
+Public-source analysis only as permitted; minimize personal data.
+
+## Source basis
+S12, S14, S40. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G25 — AI answer, grounding, and citation graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom observation view of documented report data
+Priority: P1
+Accountability: R12, R16, R14
+
+## Question
+Which answer or report observation cites which source, and for what support?
+
+## Nodes
+Answer observation; Grounding phrase; Citation occurrence; Page; Claim; Provider
+
+## Relationship sketch
+- observation → source citation
+- grounding phrase → reported page
+- citation → reviewed support relation
+
+## Evidence inputs
+Actual cited URLs, provider report/export definitions, observation context, original answer when available.
+
+## Implementation
+Distinguish observed answers from aggregated reports and grounding phrases from original prompts. Inspect source support rather than assuming a citation validates all nearby text.
+
+## Acceptance checks
+- Every count has a denominator and coverage window
+- Actual prompts are not invented from grounding phrases
+- Citation observations are separate from referral sessions and leads
+
+## Do not infer
+Citation count is not a public authority metric or proof of customers acquired.
+
+## Publication boundary
+Sanitized aggregates may be public; user prompts and private reports protected.
+
+## Source basis
+S22, S23, S21. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G26 — Search-to-lead and customer-journey graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom measurement view
+Priority: P1
+Accountability: R16, R03, R12, R20
+
+## Question
+Which observed discovery events connect to actual business outcomes?
+
+## Nodes
+Referral; Session; Event; Durable inquiry; Qualified lead; Outcome
+
+## Relationship sketch
+- permitted session → observed event
+- inquiry → qualification decision
+- outcome → attributed evidence
+
+## Evidence inputs
+Authorized analytics and backend events, consent-aware identifiers, actual qualification and outcome records.
+
+## Implementation
+Start from accurate business-state transitions. Preserve attribution uncertainty, unknown origin, and missing identifiers; do not stitch anonymous people across contexts without authority.
+
+## Acceptance checks
+- Submit success does not substitute for durable acceptance
+- Lead definitions are explicit
+- Unknown attribution remains unknown rather than allocated to AI
+
+## Do not infer
+A crawler request, indexed page, citation, click, and sale are different observations.
+
+## Publication boundary
+Private by default; aggregate only with appropriate review.
+
+## Source basis
+S22, S14, S42. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G27 — GraphRAG and owned-corpus retrieval graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: documented method with library-specific adaptation
+Priority: P2
+Accountability: R10, R11, R12, R20, R21
+
+## Question
+Can an assistant retrieve connected facts and their original supporting passages?
+
+## Nodes
+Entity; Relationship candidate; Text unit; Community; Summary; Source version
+
+## Relationship sketch
+- entity → original text
+- community → member entity
+- summary → supporting records
+
+## Evidence inputs
+Authorized corpus, extraction outputs, source text, evaluation set, permitted access labels.
+
+## Implementation
+Pilot graph-assisted retrieval beside lexical and vector baselines. Treat extracted edges and generated summaries as candidates until reviewed; return original evidence and scope limitations.
+
+## Acceptance checks
+- Retrieved claims link back to original passages
+- Privacy filtering happens before retrieval output
+- Held-out evaluation compares quality, latency, and cost
+
+## Do not infer
+Installing GraphRAG does not make public search engines ingest your graph or train their models.
+
+## Publication boundary
+Private retrieval by default; only separately approved exports public.
+
+## Source basis
+S24, S25. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G28 — Embedding-similarity and nearest-neighbor graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: published algorithmic method
+Priority: P2
+Accountability: R10, R21
+
+## Question
+Which vectors are approximately close under a specified representation and metric?
+
+## Nodes
+Vector; Text/entity record; Model version; Neighbor relation
+
+## Relationship sketch
+- vector → source record
+- vector → approximate neighbor
+
+## Evidence inputs
+Actual embedding model/version, dimension, similarity metric, indexed corpus, measured retrieval results.
+
+## Implementation
+Keep an ANN index such as HNSW conceptually separate from the semantic fact graph. Record model changes and compare candidate retrieval against labeled relevant passages.
+
+## Acceptance checks
+- Embedding/version metadata is recorded
+- Approximate retrieval is evaluated on task examples
+- Similarity does not auto-merge entity identities
+
+## Do not infer
+Nearest-neighbor proximity is not a factual predicate or proof that one statement supports another.
+
+## Publication boundary
+Private search infrastructure unless explicitly published.
+
+## Source basis
+S26, S24. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G29 — Temporal, version, and supersession graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library governance view
+Priority: P2
+Accountability: R14, R11, R24
+
+## Question
+Which fact or instruction applied at the relevant time?
+
+## Nodes
+Claim; Document version; Effective interval; Observation; Supersession
+
+## Relationship sketch
+- version → superseded version
+- claim → applicable interval
+- observation → collected time
+
+## Evidence inputs
+Actual publication/effective dates, revision records, retrieval date, scope decisions.
+
+## Implementation
+Store effective time separately from observation time. Keep historical claims for historical questions while blocking them from current instructions when superseded.
+
+## Acceptance checks
+- An unknown effective date stays null
+- Current retrieval respects supersession
+- A review date is not substituted for a publication date
+
+## Do not infer
+Newer text is not automatically more authoritative than older applicable evidence.
+
+## Publication boundary
+Public revision notes as appropriate; internal record history private.
+
+## Source basis
+S12, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G30 — Contradiction, uncertainty, and dispute graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library governance view
+Priority: P2
+Accountability: R14, R11, R24
+
+## Question
+Which assertions conflict, and what prevents a confident conclusion?
+
+## Nodes
+Claim; Conflicting claim; Scope; Evidence; Resolution decision
+
+## Relationship sketch
+- claim → conflicts with claim
+- resolution → supporting scope/evidence
+
+## Evidence inputs
+Contradictory source statements, version/time differences, identity uncertainty, reviewer reasoning.
+
+## Implementation
+Check whether apparent disagreements concern different dates, scopes, or entities before declaring contradiction. Retain unresolved alternatives and block their promotion into public facts.
+
+## Acceptance checks
+- Conflicts remain inspectable after a preferred answer is chosen
+- Scope/date distinctions are recorded
+- Unresolved critical facts block dependent publication
+
+## Do not infer
+A majority of copied statements is not a reliable conflict-resolution rule.
+
+## Publication boundary
+Public corrections where appropriate; sensitive disputes private.
+
+## Source basis
+S14, S16. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G31 — Source-dependency and change-impact graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: library governance view
+Priority: P2
+Accountability: R14, R24, R21
+
+## Question
+Which lessons, code, tests, and pages must be reviewed when guidance changes?
+
+## Nodes
+Source section; Claim; Lesson; Template; Code artifact; Test; Public page
+
+## Relationship sketch
+- artifact → depends on claim
+- claim → source section
+- change → affected artifact
+
+## Evidence inputs
+Explicit dependency mappings, source review events, version hashes, actual artifact identifiers.
+
+## Implementation
+Track direct dependencies rather than merely storing a bibliography. A source change generates a scoped review queue; it must not silently rewrite production code or mark dependent claims false.
+
+## Acceptance checks
+- A simulated source change identifies known dependents
+- Unknown impact is reported
+- Human review controls promotion of changed requirements
+
+## Do not infer
+A changed webpage hash does not prove that the relevant technical requirement changed.
+
+## Publication boundary
+Private maintenance graph; public changelog may summarize real updates.
+
+## Source basis
+S14, S16. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G32 — Instruction, capability, and workflow dependency graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: private library operating design
+Priority: P1
+Accountability: R24, R25, R20
+
+## Question
+Which authorized task can run with which dependencies and tools?
+
+## Nodes
+Task; Role; Capability; Tool access; Artifact; Approval
+
+## Relationship sketch
+- task → requires capability
+- step → predecessor
+- change → authorization record
+
+## Evidence inputs
+Actual available tools, project instructions, owner scope, environment, and observed access.
+
+## Implementation
+Use existing roles as responsibilities rather than invented staff. For each task, load the minimal context and one accountable writer. Distinguish a suggested plan from an executed step.
+
+## Acceptance checks
+- Missing capability leaves the step blocked
+- Document text cannot grant tool permissions
+- Dependency cycles requiring a strict execution order are detected
+
+## Do not infer
+An AGENTS file, schema, or plan is not a running agent or authority to deploy.
+
+## Publication boundary
+Private; never expose operating instructions or credentials for SEO.
+
+## Source basis
+S14, S42. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G33 — Requirement, test, evidence, and acceptance graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: private library operating design
+Priority: P0
+Accountability: R21, R26, R25, R14
+
+## Question
+Which executed check supports each release or publication requirement?
+
+## Nodes
+Requirement; Test definition; Test run; Build; Evidence; Verdict
+
+## Relationship sketch
+- test → requirement
+- run → exact build
+- verdict → observed evidence
+
+## Evidence inputs
+Predeclared contract, real runs, actual artifacts, timestamps, reviewer identity and independence declaration.
+
+## Implementation
+Connect outcomes to exact tested builds. Keep self-review distinct from independent execution. A structural check catches missing records but cannot prove truth or authorize deployment.
+
+## Acceptance checks
+- Every required pass has an executed matching test
+- Missing evidence remains blocked
+- A fixture pass is never reported as a client-site pass
+
+## Do not infer
+A green JSON validation result does not prove a live website or mailbox works.
+
+## Publication boundary
+Private evidence; only approved bounded public claims.
+
+## Source basis
+S16, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G34 — Permissions, consent, and disclosure graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: policy-description and private governance view
+Priority: P0
+Accountability: R20, R14, R24
+
+## Question
+Who may access, use, export, or publish each record?
+
+## Nodes
+Resource; Person/role; Permission; Prohibition; Purpose; Disclosure decision
+
+## Relationship sketch
+- policy → resource
+- permission → permitted action
+- derived artifact → inherited restrictions
+
+## Evidence inputs
+Actual authorization, rights statements, owner-approved disclosure decisions, retention requirements.
+
+## Implementation
+Enforce access in the real storage/retrieval layer; graph labels describe policy but do not enforce it. Review derived summaries for private-source leakage and track revocation through outputs.
+
+## Acceptance checks
+- Unauthorized retrieval/export test is denied by real controls
+- Private evidence is excluded from public examples
+- Revocation identifies dependent outputs
+
+## Do not infer
+A consent field or ODRL record alone is not legal compliance or effective access control.
+
+## Publication boundary
+Policy summaries may be public; sensitive access records private.
+
+## Source basis
+S42, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G35 — Multimedia, transcript, and rights graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-informed library view
+Priority: P3_IF_APPLICABLE
+Accountability: R13, R11, R04, R20
+
+## Question
+How are images, videos, transcripts, creators, subjects, and rights connected?
+
+## Nodes
+Image; Video; Transcript; WebPage; Creator; Rights statement
+
+## Relationship sketch
+- asset → creator
+- transcript → video/version
+- page → displayed asset
+- asset → rights evidence
+
+## Evidence inputs
+Actual files and metadata, visible captions, source/creator records, rights and approved descriptions.
+
+## Implementation
+Keep a rights-aware asset registry that connects each media item to its page and accurate context. Distinguish depicted subjects from authors; avoid creating sensitive personal identity claims from appearances.
+
+## Acceptance checks
+- Media references resolve to the intended asset
+- Captions/transcripts identify their correct version
+- Publication rights are reviewed before exporting metadata
+
+## Do not infer
+Alt text, captions, and a transcript do not make all underlying facts correct or a video indexed.
+
+## Publication boundary
+Approved assets/context public; rights evidence may be private.
+
+## Source basis
+S33, S34, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G36 — Open Graph social-preview metadata
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: documented protocol; naming distinction
+Priority: P1
+Accountability: R04, R11, R13
+
+## Question
+Which title, image, type, and URL should a sharing consumer preview?
+
+## Nodes
+WebPage; Preview image; Title; Object type; URL
+
+## Relationship sketch
+- page → preview metadata
+- preview → image asset
+
+## Evidence inputs
+Actual rendered head metadata and observed sharing previews under stated conditions.
+
+## Implementation
+Maintain Open Graph metadata alongside ordinary metadata and check consumer-specific output. Treat this as a preview representation, not as your semantic entity registry or evidence store.
+
+## Acceptance checks
+- Preview URL and image match the intended page
+- Metadata is not copied with wrong titles across routes
+- Observed previews are recorded separately from configured intent
+
+## Do not infer
+Open Graph, Google Knowledge Graph, and GraphRAG are three different things.
+
+## Publication boundary
+Public page metadata.
+
+## Source basis
+S35. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G37 — Social, professional, and interaction graphs
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: documented graph family; library analysis must be scoped
+Priority: P3_IF_APPLICABLE
+Accountability: R19, R11, R14, R20
+
+## Question
+What real professional relationships and permitted interactions are observable?
+
+## Nodes
+Person/account; Organization; Work; Professional profile; Interaction
+
+## Relationship sketch
+- profile → identified person
+- interaction → source/time
+- person → verified relationship
+
+## Evidence inputs
+Permissioned/public profile facts, real collaborations, platform-exposed data, and collection limits.
+
+## Implementation
+Use actual professional context to disambiguate identities or document work. Keep platform interactions separate from verified credentials and do not infer private relationships from recommendations.
+
+## Acceptance checks
+- Every asserted relationship has a real source
+- Unverified profile matches remain candidates
+- Data collection respects platform and privacy boundaries
+
+## Do not infer
+Connections, followers, or engagement counts do not establish expertise or Google ranking causality.
+
+## Publication boundary
+Public approved professional facts only; private contacts not exported.
+
+## Source basis
+S38, S04, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G38 — Scholarly and research graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: documented public-data graph family
+Priority: P3_IF_APPLICABLE
+Accountability: R10, R14, R11
+
+## Question
+Which works, authors, institutions, and citations form the relevant research record?
+
+## Nodes
+Scholarly work; Author; Institution; Topic; Source; Citation
+
+## Relationship sketch
+- work → author
+- work → cited work
+- author record → candidate person
+
+## Evidence inputs
+Primary papers, public scholarly metadata such as OpenAlex, verified identifiers, original bibliographic sources.
+
+## Implementation
+Use scholarly graphs to find literature and provenance, then read the actual work and verify author identity. Retain uncertain matches and separate a paper's claim from its later corroboration.
+
+## Acceptance checks
+- Author matches are reviewed
+- Cited conclusions match the actual paper scope
+- Retractions/corrections are checked where material
+
+## Do not infer
+A citation count or database entry does not prove a research claim or a person's credentials.
+
+## Publication boundary
+Permitted metadata and citations public; restricted full texts not republished.
+
+## Source basis
+S37, S36, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G39 — Event, venue, organizer, and time graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: standards-backed library view
+Priority: P3_IF_APPLICABLE
+Accountability: R11, R13, R14
+
+## Question
+Which real event occurs when and where, and who organizes it?
+
+## Nodes
+Event occurrence; Series; Venue; Organizer; Performer; Offer
+
+## Relationship sketch
+- occurrence → venue/time
+- occurrence → organizer
+- series → actual occurrences
+
+## Evidence inputs
+Actual event announcements, schedules, organizers, cancellations, venue facts, and ticket details.
+
+## Implementation
+Track occurrences and status changes rather than treating a recurring event as one eternal date. Keep online locations, venues, and organizers distinct.
+
+## Acceptance checks
+- Dates and time zones match approved announcements
+- Cancelled or rescheduled status is retained
+- The page actually represents an event eligible for the selected feature
+
+## Do not infer
+An organization's ordinary opening hours are not automatically an eligible Event.
+
+## Publication boundary
+Approved event information public.
+
+## Source basis
+S32. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+------------------------------------------------------------------------------
+
+# G40 — Learning prerequisite and curriculum graph
+
+Status: NEW RESEARCHED DESIGN; not deployed
+Reviewed: 2026-09-12
+Nature: custom teaching design
+Priority: P1
+Accountability: R13, R10, R14, R24
+
+## Question
+What must a learner or agent understand before attempting each task?
+
+## Nodes
+Concept; Lesson; Exercise; Prerequisite; Assessment; Source requirement
+
+## Relationship sketch
+- lesson → prerequisite
+- exercise → concept
+- assessment → evidence of competence
+
+## Evidence inputs
+This curriculum, learning objectives, source-linked explanations, actual exercise answers and review.
+
+## Implementation
+Sequence identity before markup, evidence before authority claims, and observations before causal inference. Route learners to prerequisites when an assessment exposes a misconception.
+
+## Acceptance checks
+- Prerequisite dependencies are coherent
+- Each lesson has an exercise and answer criteria
+- Completing lessons is not presented as a professional credential
+
+## Do not infer
+A generated completion badge does not certify expertise or successful production execution.
+
+## Publication boundary
+Teaching content may be public after review; learner records private.
+
+## Source basis
+S15, S14. See Research/sources.json.
+Sources support the primitives or named technology. The organization, labels, actions, and acceptance contracts in this catalog are this library's design, not claimed provider requirements.
+
+
+==============================================================================
+
+PRIMARY SOURCE REGISTER
+=======================
+All review dates: 2026-09-12. A review date is not a source publication date.
+Sources were used for the scoped graph expansion, not to revalidate the entire original corpus.
+URLs are references to live documents, not archived snapshots.
+
+S01 — Creating helpful, reliable, people-first content
+Publisher: Google
+https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Supports: E-E-A-T and authorship guidance; not a specific standalone ranking factor.
+Does not establish: Does not specify an E-E-A-T graph, public numeric score, or guaranteed outcomes.
+
+S02 — Organization structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/organization
+Supports: Published organization identification and supported structured-data properties.
+Does not establish: Does not establish facts about Joseph or require every domain to be a separate business.
+
+S03 — ProfilePage structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/profile-page
+Supports: Profile pages focused on one affiliated Person or Organization and their eligible markup.
+Does not establish: Does not guarantee a knowledge panel or authorize invented biographies.
+
+S04 — sameAs
+Publisher: Schema.org
+https://schema.org/sameAs
+Supports: A reference URL that unambiguously identifies the same item.
+Does not establish: Does not mean related topic, common ownership, endorsement, or automatic provider recognition.
+
+S05 — Person
+Publisher: Schema.org
+https://schema.org/Person
+Supports: Vocabulary for people and documented person properties.
+Does not establish: Vocabulary availability does not verify a credential or relationship.
+
+S06 — Brand
+Publisher: Schema.org
+https://schema.org/Brand
+Supports: A brand is representable separately from the organization, website, and person.
+Does not establish: Does not establish legal status or ownership.
+
+S07 — Service
+Publisher: Schema.org
+https://schema.org/Service
+Supports: Service, provider, and service-area modeling vocabulary.
+Does not establish: Does not establish a physical branch or guarantee a rich result.
+
+S08 — General structured data guidelines
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/sd-policies
+Supports: Visible-content accuracy, policies, and feature eligibility.
+Does not establish: Valid JSON alone does not guarantee eligibility or display.
+
+S09 — A guide to Google Search ranking systems
+Publisher: Google
+https://developers.google.com/search/docs/appearance/ranking-systems-guide
+Supports: Link analysis and evolved PageRank are among documented ranking systems.
+Does not establish: Does not expose present proprietary weights or make a local centrality score a Google score.
+
+S10 — Knowledge Graph Search API
+Publisher: Google
+https://developers.google.com/knowledge-graph
+Supports: Read-only entity search; individual matches rather than an interconnected graph; migration and critical-dependency warnings.
+Does not establish: Not an ingestion API, full graph export, authority score, or recommended new production dependency.
+
+S11 — Introducing the Knowledge Graph: things, not strings
+Publisher: Google
+https://blog.google/products-and-platforms/products/search/introducing-knowledge-graph-things-not/
+Supports: Historical disclosure of an entity-and-relationship system.
+Does not establish: Historical counts and implementation details must not be presented as current.
+
+S12 — RDF 1.1 Concepts and Abstract Syntax
+Publisher: W3C
+https://www.w3.org/TR/rdf11-concepts/
+Supports: Triples, directed labeled graphs, IRIs, and RDF datasets.
+Does not establish: This pinned specification is not a requirement imposed on ordinary SEO websites.
+
+S13 — JSON-LD 1.1
+Publisher: W3C
+https://www.w3.org/TR/json-ld11/
+Supports: JSON-based Linked Data representation, identifiers, contexts, and graphs.
+Does not establish: Serialization does not establish truth or search-engine ingestion.
+
+S14 — PROV-O: The PROV Ontology
+Publisher: W3C
+https://www.w3.org/TR/prov-o/
+Supports: Entities, activities, agents, and provenance relationships.
+Does not establish: Does not certify source independence or guarantee factual correctness.
+
+S15 — SKOS Simple Knowledge Organization System Reference
+Publisher: W3C
+https://www.w3.org/TR/skos-reference/
+Supports: Concept schemes, labels, broader/narrower and related concepts.
+Does not establish: A topic taxonomy is not a public Google topical-authority score.
+
+S16 — Shapes Constraint Language (SHACL)
+Publisher: W3C
+https://www.w3.org/TR/shacl/
+Supports: Validation of data graphs against shapes and constraints.
+Does not establish: A conforming graph is not necessarily factually true.
+
+S17 — Consolidate duplicate URLs
+Publisher: Google
+https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
+Supports: Canonicalization of duplicate or similar documents and associated signals.
+Does not establish: Document equivalence is not identity equivalence between their publishers.
+
+S18 — Localized versions of your pages
+Publisher: Google
+https://developers.google.com/search/docs/specialty/international/localized-versions
+Supports: Language/region alternative page annotations.
+Does not establish: Does not require unrelated regional doorway pages or prove a business has offices there.
+
+S19 — Make your links crawlable
+Publisher: Google
+https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+Supports: Discoverable links and useful anchor text.
+Does not establish: Does not prescribe an ideal universal link count or expose link weights.
+
+S20 — JavaScript SEO basics
+Publisher: Google
+https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+Supports: Crawling, rendering, links, content, and JavaScript delivery considerations.
+Does not establish: Does not make a successful browser run proof that an external engine indexed the page.
+
+S21 — Optimizing for generative AI features on Google Search
+Publisher: Google
+https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+Supports: SEO foundations, query fan-out, no special AI schema/file requirement, and current reporting guidance.
+Does not establish: Does not mandate a public graph endpoint or disclose an exact query fan-out for a particular result.
+
+S22 — AI Performance help
+Publisher: Microsoft Bing
+https://www.bing.com/webmasters/help/ai-performance-9f8e7d6c
+Supports: Documented grounding-query and cited-page observations with metric boundaries.
+Does not establish: Citations are not rankings, authority, traffic, or the complete universe of AI usage.
+
+S23 — Introducing AI Performance in Bing Webmaster Tools: Public Preview
+Publisher: Microsoft Bing
+https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview
+Supports: Dated February 2026 launch context for citation reporting.
+Does not establish: Launch documentation alone does not establish all later report fields.
+
+S24 — GraphRAG documentation
+Publisher: Microsoft
+https://microsoft.github.io/graphrag/
+Supports: Graph-based organization and retrieval of a corpus with entity/community representations.
+Does not establish: Not proof that public search products use this implementation or that it beats every baseline.
+
+S25 — GraphRAG local search
+Publisher: Microsoft
+https://microsoft.github.io/graphrag/query/local_search/
+Supports: Retrieval combining graph-linked entities with original text units.
+Does not establish: Generated extraction or summaries must not be treated as independently verified facts.
+
+S26 — Hierarchical Navigable Small World graphs
+Publisher: Malkov and Yashunin
+https://arxiv.org/abs/1603.09320
+Supports: Primary research on graph-based approximate nearest-neighbor search.
+Does not establish: Vector proximity is not identity, entailment, citation support, or human authority.
+
+S27 — Overview of OpenAI crawlers
+Publisher: OpenAI
+https://developers.openai.com/api/docs/bots
+Supports: Separate search, training, and user-directed access roles.
+Does not establish: Allowing a crawler does not guarantee citation or train an assistant on a private uploaded graph.
+
+S28 — LocalBusiness structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/local-business
+Supports: Feature-specific business/location representations and requirements.
+Does not establish: A service area must not be used to invent a physical location; publication needs privacy review.
+
+S29 — Review snippet structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/review-snippet
+Supports: Review feature eligibility and self-serving LocalBusiness/Organization review restrictions.
+Does not establish: Authentic testimonials do not automatically qualify for review stars.
+
+S30 — Product structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/product
+Supports: Product and offer information in supported search experiences.
+Does not establish: Does not imply all product information is current or validate feed/landing-page agreement.
+
+S31 — Shopping Graph explained
+Publisher: Google
+https://blog.google/products-and-platforms/products/shopping/shopping-graph-explained/
+Supports: Documented shopping graph as a product and shopping-information system.
+Does not establish: Not a graph publishers can directly overwrite; historical quantities are not current metrics.
+
+S32 — Event structured data
+Publisher: Google
+https://developers.google.com/search/docs/appearance/structured-data/event
+Supports: Event-specific dates, locations, and feature modeling.
+Does not establish: Not every service, sale, or recurring business schedule is an eligible event.
+
+S33 — Google Images SEO best practices
+Publisher: Google
+https://developers.google.com/search/docs/appearance/google-images
+Supports: Image discovery, contextual information, and relevant metadata.
+Does not establish: Does not mandate the custom multimedia graph defined in this package.
+
+S34 — Video SEO best practices
+Publisher: Google
+https://developers.google.com/search/docs/appearance/video
+Supports: Video discovery and page/asset context.
+Does not establish: A transcript or graph record alone does not prove a video is eligible or indexed.
+
+S35 — The Open Graph protocol
+Publisher: Open Graph protocol
+https://ogp.me/
+Supports: Social-preview metadata including title, type, image, and URL.
+Does not establish: Open Graph is not Google Knowledge Graph, an E-E-A-T score, or GraphRAG.
+
+S36 — Help: Sources
+Publisher: Wikidata
+https://www.wikidata.org/wiki/Help:Sources
+Supports: Source-backed statements in Wikidata.
+Does not establish: Does not justify creating promotional identities or ignoring project inclusion policies.
+
+S37 — How it is built
+Publisher: OpenAlex
+https://help.openalex.org/data/how-its-built/
+Supports: Public scholarly data assembled from multiple sources.
+Does not establish: Dataset inclusion does not prove a person authored a work or that a claim is true.
+
+S38 — Economic Graph
+Publisher: LinkedIn
+https://economicgraph.linkedin.com/
+Supports: A documented professional/economic graph initiative.
+Does not establish: Not evidence that LinkedIn connections cause Google rankings or establish credentials.
+
+S39 — PageRank algorithm documentation
+Publisher: NetworkX
+https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html
+Supports: Computing PageRank on a graph supplied by the analyst.
+Does not establish: Not access to the Google ranking graph or proprietary PageRank values.
+
+S40 — Bipartite graphs
+Publisher: NetworkX
+https://networkx.org/documentation/stable/reference/algorithms/bipartite.html
+Supports: Two-set graph modeling and graph operations.
+Does not establish: Does not make a query-document projection a disclosed search-engine system.
+
+S41 — Components
+Publisher: NetworkX
+https://networkx.org/documentation/stable/reference/algorithms/component.html
+Supports: Connected and strongly connected component algorithms.
+Does not establish: A cycle in ordinary site navigation is not inherently a defect.
+
+S42 — ODRL Information Model 2.2
+Publisher: W3C
+https://www.w3.org/TR/odrl-model/
+Supports: Permissions, prohibitions, and duties as a policy description.
+Does not establish: Descriptions do not enforce access or certify valid legal consent.
+
+S43 — Spam policies for Google web search
+Publisher: Google
+https://developers.google.com/search/docs/essentials/spam-policies
+Supports: Abuse boundaries including link spam and scaled content abuse.
+Does not establish: Does not authorize manipulation because it is expressed as graph construction.
+
+S44 — Helping you along your Search journeys
+Publisher: Google
+https://blog.google/products-and-platforms/products/search/helping-you-along-your-search-journeys/
+Supports: Historical disclosure of a Topic Layer associated with Knowledge Graph.
+Does not establish: Not evidence of current complete architecture, exact graph weights, or a publisher-controlled feature.
+
+S45 — Knowledge-Based Trust: Estimating the Trustworthiness of Web Sources
+Publisher: Dong and colleagues
+https://arxiv.org/abs/1502.03519
+Supports: Historical primary research estimating source trustworthiness from extracted factual information while distinguishing extraction errors.
+Does not establish: Not proof of current Google deployment, a public SEO score, or equivalence with E-E-A-T.
+
+S46 — Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion
+Publisher: Google Research
+https://research.google/pubs/knowledge-vault-a-web-scale-approach-to-probabilistic-knowledge-fusion/
+Supports: Historical primary research combining web extractions and prior knowledge with probabilistic fusion.
+Does not establish: A research publication is not a currently available submission endpoint or guaranteed factual correctness.
+
+S47 — HITS: hubs and authorities
+Publisher: NetworkX
+https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.hits_alg.hits.html
+Supports: Official implementation documentation for separate hub and authority scores on an input graph.
+Does not establish: Not an engine-provided E-E-A-T score or evidence that this exact implementation runs in current Google Search.
+
+S48 — Jigs and Lures: Associating Web Queries with Strongly-Typed Entities
+Publisher: Microsoft Research
+https://www.microsoft.com/en-us/research/publication/jigs-and-lures-associating-web-queries-with-strongly-typed-entities/
+Supports: Primary research using query–entity click graphs to model associations.
+Does not establish: An association does not establish identity or truth; experimental logs are not the user's available data or current production specification.
+
+S49 — Combating Web Spam with TrustRank
+Publisher: Gyöngyi, Garcia-Molina, and Pedersen / VLDB
+https://www.vldb.org/conf/2004/RS15P3.PDF
+Supports: Historical primary research using expert-reviewed seeds and link structure for spam detection; abstract and introductory graph model inspected.
+Does not establish: Does not establish current deployment in Google, a universal seed list, or permission to manufacture trust links.
+
+
+==============================================================================
+
+SYNTHETIC PUBLIC JSON-LD EXAMPLE — NOT PRODUCTION
+================================================
+# Example boundaries
+
+synthetic-public-graph.jsonld contains seven hypothetical nodes on example.com.
+It is an instructional fragment, NOT APPROVED FOR PRODUCTION and not a complete rich-result submission.
+It is deliberately not Joseph's real entity graph. No profile, organization, legal name, founding date,
+credential, client result, price, address, review count, or production identity was verified for this example.
+There are no sameAs claims because no matching external identity references were verified.
+
+An @id ending in #person identifies the person; #webpage identifies the biography document.
+The service provider and article publisher are the hypothetical organization, not its Brand or WebSite.
+Only internal ID-reference closure, unique IDs, basic typing, and designated relationship targets are
+checked by the supplied offline tests. There has been no live Rich Results test, full RDF expansion,
+Schema.org vocabulary validator run, webpage comparison, or factual verification of this example.
+
+The claim templates are deliberately unapproved. Completing fields does not create evidence or authority.
+
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://example.com/people/example-author/#person",
+      "@type": "Person",
+      "name": "Example Author",
+      "url": "https://example.com/people/example-author/"
+    },
+    {
+      "@id": "https://example.com/#organization",
+      "@type": "Organization",
+      "name": "Example Studio",
+      "url": "https://example.com/",
+      "brand": {
+        "@id": "https://example.com/#brand"
+      }
+    },
+    {
+      "@id": "https://example.com/#brand",
+      "@type": "Brand",
+      "name": "Example Studio Brand"
+    },
+    {
+      "@id": "https://example.com/#website",
+      "@type": "WebSite",
+      "url": "https://example.com/",
+      "name": "Example Studio website",
+      "publisher": {
+        "@id": "https://example.com/#organization"
+      }
+    },
+    {
+      "@id": "https://example.com/people/example-author/#webpage",
+      "@type": "ProfilePage",
+      "url": "https://example.com/people/example-author/",
+      "name": "About Example Author",
+      "mainEntity": {
+        "@id": "https://example.com/people/example-author/#person"
+      },
+      "isPartOf": {
+        "@id": "https://example.com/#website"
+      }
+    },
+    {
+      "@id": "https://example.com/services/website-design/#service",
+      "@type": "Service",
+      "name": "Website design",
+      "serviceType": "Website design",
+      "url": "https://example.com/services/website-design/",
+      "provider": {
+        "@id": "https://example.com/#organization"
+      }
+    },
+    {
+      "@id": "https://example.com/guides/checking-a-contact-form/#article",
+      "@type": "Article",
+      "headline": "A method for checking a contact form",
+      "url": "https://example.com/guides/checking-a-contact-form/",
+      "author": {
+        "@id": "https://example.com/people/example-author/#person"
+      },
+      "publisher": {
+        "@id": "https://example.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://example.com/#website"
+      }
+    }
+  ]
+}
+
+
+INTERNAL CLAIM TEMPLATE — DELIBERATELY BLOCKED
+============================================
+{
+  "claim_id": "urn:example:claim:001",
+  "subject": "urn:example:person:001",
+  "predicate": "https://schema.org/worksFor",
+  "object": {
+    "kind": "entity",
+    "id": "urn:example:organization:001"
+  },
+  "claim_status": "candidate",
+  "evidence_class": "example",
+  "evidence": [],
+  "effective_from": null,
+  "effective_to": null,
+  "observed_at": null,
+  "confidence": {
+    "level": "not_assessed",
+    "basis": null
+  },
+  "verification": {
+    "status": "unverified",
+    "reviewer": null,
+    "reviewed_at": null
+  },
+  "publication": {
+    "visibility": "private",
+    "approved": false,
+    "approved_by": null,
+    "approved_at": null,
+    "permission_review": "not_reviewed"
+  },
+  "is_example": true,
+  "reviewed_on": null,
+  "graph_ids": [
+    "G01",
+    "G02",
+    "G10"
+  ]
+}
+
+
+LOCAL VALIDATION SUMMARY
+========================
+28 standard-library unit tests passed. Package integrity checks passed.
+The record schema and blocked template validated, and four malformed/publication-conflicting
+variants were rejected using jsonschema 4.26.0. These results describe local artifacts only.
+No website, public profile, search account, rich-result service, or independent external audit was tested.

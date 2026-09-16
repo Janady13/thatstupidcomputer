@@ -1,0 +1,76 @@
+/* ------------------------------------------------------------------
+   Desktop home: the room is the page (2026-09-13).
+   The artwork keeps its own 1648×928 composition, starts below the
+   header so the tabs stay clear, and fills the viewport (cover, floor
+   crops first). The objects are the navigation: invisible hit shapes
+   in .room-hotspots, the object itself lifts and glows on hover, and
+   the computer's caption names it. Nothing floats over the drawing.
+   The heading and introduction follow the scene as visible content,
+   with ordinary links and a clear next step.
+   ------------------------------------------------------------------ */
+.room-overlay { display: contents }
+.room-hotspots { display: none }
+.workshop-stage { height: 100%; }
+@media (min-width: 768px) {
+  .is-home { --room-top: 96px }
+  .is-home .room-art,
+  .is-home .room-overlay {
+    position: absolute;
+    inset: auto;
+    top: var(--room-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: max(100vw, calc((100svh - var(--room-top)) * 1.7759));
+    height: auto;
+    aspect-ratio: 1648 / 928
+  }
+  .is-home.site-shell { height: auto; min-height: 100svh; overflow: clip }
+  .is-home .home-content { height: auto; min-height: 100svh; display: flex; flex-direction: column }
+  .is-home .home-content > .workshop { position: relative; inset: auto; width: 100%; height: 100svh; min-height: max(900px, calc(100vw / 1.7759 + var(--room-top))); overflow: hidden }
+  .is-home .workshop-stage { position: relative; width: 100%; height: 100svh; min-height: max(900px, calc(100vw / 1.7759 + var(--room-top))); overflow: clip; }
+  .is-home .site-footer { position: relative; inset: auto; margin: 0; padding: 22px 40px 26px; pointer-events: auto }
+  .is-home .room-overlay { display: block; z-index: 6; pointer-events: none }
+  .is-home .room-navigation { display: none }
+  .room-hotspots { display: block; position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible }
+  .room-hotspot { cursor: pointer; outline: none }
+  .room-hotspot path, .room-hotspot-computer { fill: transparent; stroke: none; pointer-events: fill }
+  .room-hotspot-computer { cursor: pointer }
+  .room-hotspot:focus-visible path { stroke: var(--rust); stroke-width: 4; stroke-dasharray: 10 8; stroke-linejoin: round }
+  /* The object answers the pointer: a small lift and a warm ink glow, in the drawing itself. */
+  .is-home .office-room [data-object] { transition: translate .22s ease, filter .22s ease }
+  .is-home .workshop[data-focus=bulletin-board] .office-room [data-object=bulletin-board],
+  .is-home .workshop[data-focus=clock] .office-room [data-object=clock],
+  .is-home .workshop[data-focus=coffee-mug] .office-room [data-object=coffee-mug],
+  .is-home .workshop[data-focus=desk-pedestal] .office-room [data-object=desk-pedestal] {
+    translate: 0 -5px;
+    filter: drop-shadow(0 0 2px #a4432399) drop-shadow(0 6px 10px #a4432355)
+  }
+  .is-home .hero-copy { position: relative; order: 1; left: auto; top: auto; width: 100%; max-width: 1280px; height: auto; margin: 0 auto; padding: 50px clamp(20px, 4vw, 56px) 34px; overflow: visible; clip: auto; white-space: normal; pointer-events: auto; display: grid; grid-template-columns: 1.05fr 1fr; column-gap: clamp(32px, 6vw, 90px); align-items: start }
+  .is-home .hero-copy h1 { grid-column: 1; grid-row: 1 / 4; font-size: clamp(52px, 6vw, 80px); letter-spacing: -.055em; margin: 0; max-width: 600px; line-height: 1.02; text-align: left; }
+  .is-home .hero-copy .hero-intro { grid-column: 2; max-width: 46ch; margin: 0; }
+  .is-home .hero-copy .hero-demo { grid-column: 2; display: inline-flex; justify-self: start; margin-top: 24px; }
+  .is-home .hero-footnote { grid-column: 2; display: block; }
+  .is-home .hero-copy:before,
+  .is-home .hero-copy .eyebrow,
+  .is-home .room-intro,
+  .is-home .home-guide { display: none }
+}
+@media (min-width: 768px) and (min-height: 900px) and (max-aspect-ratio: 33/20) and (prefers-reduced-motion: no-preference) {
+  .is-home .home-content > .workshop[data-attention-scroll="pinned"] { height: calc(100svh + min(65svh, 650px)); overflow: visible; }
+  .is-home .workshop[data-attention-scroll="pinned"] > .workshop-stage { position: sticky; top: 0; min-height: 0; }
+}
+@media (max-width: 767px) { .is-home .workshop-stage { position: relative; display: flow-root; height: auto; } }
+@media (min-width: 768px) and (max-height: 760px) {
+  .is-home { --room-top: 84px }
+}
+@media (prefers-reduced-motion: reduce) {
+  .is-home .office-room [data-object] { transition: none }
+}
+
+/* The same sections the quick-tour panel used to hide are ordinary page content under the room. */
+.home-overview { order: 2; position: relative; z-index: 4; width: 100%; max-width: 1280px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 44px; pointer-events: auto }
+.home-overview .content-sections { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px }
+.home-overview .content-section { min-width: 0; border-top: 1px solid var(--line); border-bottom: 0; padding: 24px 0 0 }
+.home-overview .content-section h2 { font-size: 25px; line-height: 1.2; letter-spacing: -.5px }
+@media (max-width: 900px) { .home-overview .content-sections { grid-template-columns: 1fr; gap: 24px } }
+@media (max-width: 767px) { .home-overview { padding: 8px 23px 36px } }

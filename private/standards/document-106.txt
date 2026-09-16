@@ -1,0 +1,68 @@
+DOCUMENT 106 OF 135
+Title: R23 public-content brief — How do you choose technical website topics that attract the right service inquiries?
+Path: Publishing/Briefs/R23-product-marketing-research.md
+Group: briefs
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# R23 public-content brief — How do you choose technical website topics that attract the right service inquiries?
+
+**State:** NOT_APPROVED_FOR_PUBLICATION. **Type:** evidence-led article/service-support brief. **Primary specialist:** R23. **Proposed author:** Joseph, subject to his review and approval; do not insert unverified credentials. This is not completed client work.
+
+## Reader and purpose
+
+A business owner or practitioner facing this specific problem needs a diagnosis and a way to evaluate professional help. The article should answer: **How do you choose technical website topics that attract the right service inquiries?**
+
+**Distinct contribution:** A buyer-problem map linking demand evidence, actual capability, proof and an appropriate service action.
+
+## Candidate search questions — hypotheses, not measured demand
+
+- technical service website positioning
+- buyer intent website content strategy
+- website troubleshooting service demand
+
+No keyword volumes, ranking difficulty, expected traffic, citation probability or sales forecast have been measured for these suggestions. R23 validates commercial relevance from real inquiries or authorized search data; R10 checks answer relevance. Merge with an existing page when its task is already answered well.
+
+## Proposed outline
+
+1. Define the buyer problem
+2. Separate evidence from assumptions
+3. Match offer to capacity
+4. Prioritize useful proof-led topics
+
+Open with a direct bounded answer. Explain the observable distinction that matters, demonstrate the method with an authorized artifact or an explicitly hypothetical example, and close with practical limitations. Do not clone this outline across 26 pages by changing only role names.
+
+## Evidence needed before making an expertise or results claim
+
+- Audience/problem/alternative map
+- Observed-language and demand evidence register
+- Positioning hypothesis with disconfirmation conditions
+
+These artifacts are requirements, not supplied project results. A methods article can explain documented principles without claiming that a customer implementation exists. A case study additionally needs a real scoped engagement, permission, original before/after artifacts, known confounders, dates and approved result wording. An unmeasured benefit must remain a hypothesis.
+
+## Proposed public route and internal relationships
+
+Suggested route, pending canonical-host approval: `/expertise/product-marketing-research/`. This is a planning path, not a deployed URL. Choose one canonical home before publication; do not duplicate the same article on both ThatDevPro and ThatDeveloperGuy.
+
+Link contextually from the relevant real service page and the discipline hub. Link to the next diagnostic step, an original proof artifact that is safe to publish, and a working contact path. The page must be useful without those links; link counts are not acceptance criteria.
+
+## Conversion and measurement contract
+
+Suggested action: request a scoped review of this problem, **only if that service is actually available**. Do not advertise 26 staffed departments. A practical single-author description is “A multidisciplinary review process with defined specialist responsibilities,” subject to the owner's approval.
+
+Measure the canonical page's observed search/citation exposure separately from referral sessions and qualified inquiries. Record page/source/window and event definitions with R16. The mere addition of this brief to a private library cannot create search exposure.
+
+## Publication gate
+
+R13 checks usefulness and distinction; R14 checks factual claims, author identity and any credentials; R20 approves sanitization and privacy; R11 checks truthful entity markup; R08 checks the chosen public URL; R25 coordinates publication and R26 performs the agreed independent checks where required. Missing evidence remains BLOCKED. A drafted byline is not author approval.
+
+No rankings, model recommendations or “recognized expert” status are promised. The intended path is demonstrated useful work, accurate attribution, accessible publication, independent corroboration and measured outcomes.
+
+## Research references
+
+- [D21 — Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content): Original value, sources, authorship and first-hand expertise; not a points-based ranking formula.
+- [D25 — Advertising FAQs: A guide for small business](https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business): US advertising substantiation principles; context-specific legal review may still be needed.
+- [D47 — Plan your business](https://www.sba.gov/counseling/plan-your-business/): Market/business planning overview; query demand and commercial fit require local evidence.
+
+==============================================================================

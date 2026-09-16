@@ -1,0 +1,61 @@
+DOCUMENT 079 OF 135
+Title: Improve measured performance without damaging the website
+Path: Library/Playbooks/05-PERFORMANCE-WITHOUT-REGRESSIONS.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Improve measured performance without damaging the website
+
+**Lead:** R06. **Consulted roles:** R01, R03, R04, R05, R06, R07, R08, R16, R20, R21, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+A measured field or lab bottleneck affects representative customer journeys. The goal is not an isolated score improvement at any cost.
+
+## Sequence and ownership
+
+### 1. Define the baseline
+
+R06 separates field and lab data, records routes/templates, windows, devices and tool versions. Missing field data is unknown, not a passing metric.
+
+### 2. Find the dominant cause
+
+Inspect primary-content delivery, interaction blocking, layout movement, fonts, images, scripts and cache behavior using actual traces.
+
+### 3. Review interfaces
+
+R01 reviews runtime/cache changes; R20 checks private response exposure; R08 checks meaningful content and directives; R04/R07/R05 protect actual interactions.
+
+### 4. Change one controlled unit
+
+Use a minimal reversible proposal. Record baseline and candidate under comparable conditions. R21 executes critical journey regressions; R16 checks event integrity.
+
+### 5. Release and observe
+
+R25 sequences the authorized change; R26 checks the declared build. Report immediate lab results separately from later sufficiently sampled field results.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- The claimed improvement matches a reproducible method
+- No inquiry, accessibility, privacy, browser or URL-policy regression
+- Field claims use available appropriate field evidence
+
+## Stop or block
+
+Do not cache personal API responses, remove essential content, defer critical behavior or claim conversion uplift from a lab score. If the historical field window is incomplete, state that explicitly.
+
+## Role and source references
+
+- [R01 — Site Reliability Engineer](../Disciplines/R01-site-reliability.md)
+- [R06 — Web Performance Engineer](../Disciplines/R06-web-performance.md)
+- [R20 — Application Security/Privacy Engineer](../Disciplines/R20-application-security-privacy.md)
+
+Primary-source IDs: D09, D10, D05, D11. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

@@ -1,0 +1,51 @@
+DOCUMENT 073 OF 135
+Title: Search spam policy — scoped interpretation and operational controls
+Path: Library/Framework/framework-spampolicies.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Search spam policy — scoped interpretation and operational controls
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S18 S42 S22 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-spampolicies.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Read the current policy, not a copied quota
+
+Google's spam rules cover manipulative practices including doorway pages, scaled-content abuse, hidden-content abuse and site-reputation abuse. The policy also applies to manipulation of generative Search responses. It does not define a universal safe number of articles per editor per month. [S18]
+
+An agency may set production-capacity limits for quality control, but those must be labeled internal operating limits. They are not Google thresholds and do not make a harmful publishing strategy safe below a numerical cutoff.
+
+## Content review
+
+Evaluate purpose, factual accuracy, genuine utility and the user's experience. Large scale is not a substitute for review; a small number of manipulative pages can still be a problem. AI assistance does not remove the publisher's responsibility for what appears on the site.
+
+Legitimate interface elements such as accordions and accessibility text are not automatically hidden-text abuse. Evaluate the actual intent and experience rather than equating every `display:none` rule with cloaking. [S18]
+
+## Third-party and reputation risk
+
+Do not treat host editorial oversight as an automatic safe harbor. Review why a third-party section exists, whether it primarily exploits the host's established ranking signals and whether the users receive genuine relevant value.
+
+The August 2026 update introduces regional treatment differences starting August 30. Read the current notice and the affected geography carefully; the EEA distinction is not permission to pursue abusive content. [S42]
+
+## Operational workflow
+
+Create a risk register for sponsored content, affiliates, syndicated material, user-generated pages, geographic expansion, outsourced editorial sections and reputation-sensitive claims. Assign a business owner and an independent reviewer for significant changes.
+
+Keep supporting records for author identity, permissions, claims and review authenticity. Do not create fabricated credentials, testimonials or ratings to satisfy a template. Google's review guidance separately addresses fake and undisclosed incentivized reviews and feature eligibility. [S22]
+
+## Incident response
+
+Preserve the exact notice, property, affected scope and observed dates. Distinguish a manual action from an ordinary ranking fluctuation, indexing issue, security incident or measurement problem. Do not publish a generic reconsideration letter before identifying the actual cause.
+
+Document the corrective action and supporting evidence. Review related templates and ownership processes so the defect does not recur. Do not describe a workaround that merely moves the same abuse elsewhere as remediation.
+
+## Acceptance and limitations
+
+A policy review can establish that the agreed checks were performed and identified issues were corrected. It cannot certify that an engine will never take action. Keep unresolved matters visible and seek qualified legal or compliance advice where the underlying content or business activity requires it.
+
+Use [location evidence](framework-location-evidence.md), [regional eligibility](framework-regional-search-eligibility.md), [source provenance](framework-source-provenance.md) and [client acceptance](framework-client-scope-acceptance.md) for implementation. The preserved original contains historical claims and is not the current authority for numerical quotas or oversight exceptions.
+
+==============================================================================

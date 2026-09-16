@@ -1,0 +1,46 @@
+DOCUMENT 039 OF 135
+Title: Universal Search Delivery Framework — not a ranking formula
+Path: Library/Framework/UNIVERSAL-RANKING-FRAMEWORK.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Universal Search Delivery Framework — not a ranking formula
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Cross-stack decision sequence and missing legacy entry-point repair  
+**Evidence:** S02, S14, S15, S18, S20 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Why this file exists
+
+The original library linked to this filename without supplying the document. This edition creates a real decision framework while rejecting the implication that a universal ranking algorithm is available. The filename is retained for compatibility; the content defines work under the agency's control.
+
+## Layer 1: business truth
+
+Establish the real customer need, page purpose, factual source and permitted public claims. Confirm that the business can deliver the service or product. Resolve inaccurate identity, offer and contact information before adding technical signals.
+
+## Layer 2: accessible delivery
+
+Identify the consumers that must retrieve the page, the required initial/rendered content and the appropriate response behavior. Test the real deployment path. Google can render JavaScript, but delivery decisions still depend on the consumers and route purpose. [S14]
+
+## Layer 3: coherent URL and policy state
+
+Define canonical relationships, index/snippet intent, crawl access and private-resource protection separately. Choose a URL lifecycle action from evidence, not from a universal “thin page” deletion rule. Canonicalization is a signal and policy compliance remains independent. [S15, S18]
+
+## Layer 4: useful presentation and structured data
+
+Give customers clear answers, relevant detail and working actions. Add structured data only when it accurately represents the visible content and serves a supported purpose. Passing syntax validation does not guarantee a search appearance. [S20]
+
+## Layer 5: measurement and iteration
+
+Observe access, indexing, impressions, citations, visits and qualified outcomes as separate layers. Choose the correct current reports and document missing fields. Prioritize a change by business importance, implementation risk and the strength of its evidence; do not claim an internal agency priority score is an engine's ranking score.
+
+## Release gate
+
+A production job is ready when its agreed technical and business contracts pass, evidence is retained, and unresolved risks have an owner. A technically sound page can still be unselected for a particular query. Google's AI guidance does not add a special file-based route to guaranteed inclusion. [S02]
+
+Use [SEO-BUILD-REFERENCE.md](SEO-BUILD-REFERENCE.md) for the implementation sequence and [framework-seo-release-contracts.md](framework-seo-release-contracts.md) for test design. Keep specialized modules as the canonical owners of their subjects rather than copying their rules into every tier.
+
+==============================================================================

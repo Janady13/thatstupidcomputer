@@ -1,0 +1,65 @@
+DOCUMENT 037 OF 135
+Title: The 26-discipline operating library
+Path: Library/Disciplines/README.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# The 26-discipline operating library
+
+Version 2026.09.09-d26 · Prepared for Joseph · 9 September 2026.
+
+This expansion treats website reliability, networking, engineering, accessibility, SEO, AI-search visibility, content, measurement and release assurance as distinct responsibilities within one coherent delivery process. The numbering preserves the user's exact 26 roles. These are **accountabilities and review lenses**, not an assertion that 26 separate employees or professional credentials exist.
+
+Google describes AEO/GEO work for its own generative Search as part of core SEO, not a completely isolated replacement discipline. Other providers have their own crawler and reporting controls. This operating model separates specialist work where that prevents mistakes while preserving shared foundations. [Google's AI optimization guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
+
+## Start here
+
+1. Read the [operating model](00-OPERATING-MODEL.md) and [routing protocol](01-MASTER-ROUTER.md).
+2. Fill the [site facts template](../../Templates/Disciplines/site-facts.template.json) with verified facts; unknowns remain null.
+3. Select one lead and the necessary consulted roles. Read their charters and the linked current framework modules.
+4. Diagnose read-only, record evidence and route ownership conflicts to R24. Use the [handoff contract](02-HANDOFF-CONTRACTS.md).
+5. Apply the [acceptance and independence rules](03-ACCEPTANCE-AND-INDEPENDENCE.md) before any production or publication claim.
+6. Build public expertise from the [publishing model](04-SEARCH-EXPERTISE-PUBLISHING.md), not from internal role titles.
+
+The [integration guide](05-INTEGRATION-GUIDE.md) explains how to put these instructions in the actual project used by Codex. Downloading this package alone changes no external repository, site or account.
+
+## Exact role directory
+
+| ID | Accountable specialist | Public-content brief |
+| --- | --- | --- |
+| R01 | [Site Reliability Engineer](R01-site-reliability.md) | [Evidence-led brief](../../Publishing/Briefs/R01-site-reliability.md) |
+| R02 | [Network/DNS Engineer](R02-network-dns.md) | [Evidence-led brief](../../Publishing/Briefs/R02-network-dns.md) |
+| R03 | [Backend Web Engineer](R03-backend-web.md) | [Evidence-led brief](../../Publishing/Briefs/R03-backend-web.md) |
+| R04 | [Frontend Web Engineer](R04-frontend-web.md) | [Evidence-led brief](../../Publishing/Briefs/R04-frontend-web.md) |
+| R05 | [Browser Compatibility Engineer](R05-browser-compatibility.md) | [Evidence-led brief](../../Publishing/Briefs/R05-browser-compatibility.md) |
+| R06 | [Web Performance Engineer](R06-web-performance.md) | [Evidence-led brief](../../Publishing/Briefs/R06-web-performance.md) |
+| R07 | [Accessibility Specialist](R07-accessibility.md) | [Evidence-led brief](../../Publishing/Briefs/R07-accessibility.md) |
+| R08 | [Technical SEO Engineer](R08-technical-seo.md) | [Evidence-led brief](../../Publishing/Briefs/R08-technical-seo.md) |
+| R09 | [Information Architect](R09-information-architecture.md) | [Evidence-led brief](../../Publishing/Briefs/R09-information-architecture.md) |
+| R10 | [Search Relevance/IR Engineer](R10-search-relevance-ir.md) | [Evidence-led brief](../../Publishing/Briefs/R10-search-relevance-ir.md) |
+| R11 | [Structured Data/Knowledge Graph Engineer](R11-structured-data-knowledge-graph.md) | [Evidence-led brief](../../Publishing/Briefs/R11-structured-data-knowledge-graph.md) |
+| R12 | [AEO/AIO/GEO Engineer](R12-aeo-aio-geo.md) | [Evidence-led brief](../../Publishing/Briefs/R12-aeo-aio-geo.md) |
+| R13 | [Content Strategist/SEO Editor](R13-content-strategy-seo-editor.md) | [Evidence-led brief](../../Publishing/Briefs/R13-content-strategy-seo-editor.md) |
+| R14 | [Fact-Checker/Claims Auditor](R14-claims-auditor.md) | [Evidence-led brief](../../Publishing/Briefs/R14-claims-auditor.md) |
+| R15 | [Conversion-Rate Optimization Specialist](R15-conversion-rate-optimization.md) | [Evidence-led brief](../../Publishing/Briefs/R15-conversion-rate-optimization.md) |
+| R16 | [Analytics/Measurement Engineer](R16-analytics-measurement.md) | [Evidence-led brief](../../Publishing/Briefs/R16-analytics-measurement.md) |
+| R17 | [Email Deliverability Engineer](R17-email-deliverability.md) | [Evidence-led brief](../../Publishing/Briefs/R17-email-deliverability.md) |
+| R18 | [Local SEO/GBP Specialist](R18-local-seo-gbp.md) | [Evidence-led brief](../../Publishing/Briefs/R18-local-seo-gbp.md) |
+| R19 | [Digital PR/Authority Specialist](R19-digital-pr-authority.md) | [Evidence-led brief](../../Publishing/Briefs/R19-digital-pr-authority.md) |
+| R20 | [Application Security/Privacy Engineer](R20-application-security-privacy.md) | [Evidence-led brief](../../Publishing/Briefs/R20-application-security-privacy.md) |
+| R21 | [QA/SDET Engineer](R21-qa-sdet.md) | [Evidence-led brief](../../Publishing/Briefs/R21-qa-sdet.md) |
+| R22 | [Adversarial/Red-Team Reviewer](R22-adversarial-red-team.md) | [Evidence-led brief](../../Publishing/Briefs/R22-adversarial-red-team.md) |
+| R23 | [Product Marketing/Market Researcher](R23-product-marketing-research.md) | [Evidence-led brief](../../Publishing/Briefs/R23-product-marketing-research.md) |
+| R24 | [Solutions Architect/Integrator](R24-solutions-architecture.md) | [Evidence-led brief](../../Publishing/Briefs/R24-solutions-architecture.md) |
+| R25 | [Release/Change Manager](R25-release-change-management.md) | [Evidence-led brief](../../Publishing/Briefs/R25-release-change-management.md) |
+| R26 | [Independent Acceptance Engineer](R26-independent-acceptance.md) | [Evidence-led brief](../../Publishing/Briefs/R26-independent-acceptance.md) |
+
+## Boundary and compatibility
+
+Existing commercial SEO tiers, pricing and names are unchanged. **Tier 13 remains retired; R13 is an editorial role, not a tier.** All 146 unique historical originals remain intact. Baseline legacy documents remain labeled as not fully fact-checked. New source-linked procedures do not certify every inherited sentence or code example.
+
+See the [expansion report](../../Research/DISCIPLINE-EXPANSION-REPORT.md), [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) and [tools guide](../../Tools/DISCIPLINES-README.md) for exact changes, provenance and validation boundaries.
+
+==============================================================================

@@ -1,0 +1,31 @@
+DOCUMENT 120 OF 135
+Title: Executed validation — 2026.09.09
+Path: Reports/VALIDATION.md
+Group: baseline
+Label: BASELINE · historical report
+Review status: scope_stated_in_document
+==============================================================================
+
+# Executed validation — 2026.09.09
+
+## New utility tests
+
+All 24 unit tests passed locally. Exact output is in [unit-tests.txt](unit-tests.txt). Tests exercise the four new utilities, including deliberately invalid inputs; they do not execute the preserved original script or legacy code examples.
+
+## Release integrity
+
+The [library audit result](library-audit.json) reports the final tested file counts and errors. It checks declared local Markdown file targets, release JSON syntax, catalog source references and SHA-256 preservation of all 146 unique originals. Historical text is not altered merely to make its old links pass.
+
+The check does not test external URL availability, Markdown fragment anchors, factual entailment, live indexing, application execution or rich-result eligibility.
+
+## Browser behavior
+
+The [browser QA result](browser-qa.json) records nine passed checks: initial report display, current/all/legacy filters, title search, internal navigation, full-text search, legacy warnings, portable-report source links and narrow-screen layout. There were no JavaScript errors or external HTTP(S) requests in the tested interactions.
+
+The environment blocked direct file-URL navigation. The generated HTML was therefore loaded into Chromium using Playwright `set_content`; direct launch from the local filesystem was not tested here. The browser uses embedded document data, no fetch-based document loading and no required remote fonts or scripts. Keeping the extracted folder intact is necessary for links to raw companion files.
+
+## Manifest scope
+
+`SHA256SUMS.txt` records final release-file hashes except its own. It is a change-detection aid, not a signed authenticity assertion. The original upload's hash and release inventory counts are in `Research/release-manifest.json`. No production website or external account was changed.
+
+==============================================================================

@@ -1,0 +1,63 @@
+DOCUMENT 115 OF 135
+Title: Independent acceptance is more than another green check
+Path: Publishing/Drafts/06-INDEPENDENT-ACCEPTANCE.md
+Group: drafts
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Independent acceptance is more than another green check
+
+*Why fresh execution, a fixed contract and an honest reviewer relationship matter before declaring a website finished.*
+
+> Editorial workbench: this is an unpublished methodology draft. No client results, credentials, real site test outcomes or owner approval are asserted. Remove this editorial note only after the actual publication review; do not publish the private library.
+
+A builder’s tests are valuable. They are also bounded by the builder’s assumptions, fixtures and chosen assertions. Final acceptance asks a different question: does the delivered system satisfy the agreed requirement when someone verifies the actual result?
+
+That distinction becomes especially important when AI assistants perform several tasks. Asking the same assistant to “act as an independent reviewer” may provide a useful second pass, but the role label does not create a separate person, fresh access or genuine independence.
+
+## Freeze what success means
+
+Write the acceptance contract before interpreting the result. Identify the project, build, environment, required journeys, allowed exceptions and evidence needed. A requirement should not be silently weakened because a test failed.
+
+A legitimate scope change can happen, but it needs a recorded reason and renewed approval. The acceptance report should still make the difference visible.
+
+## Declare the review arrangement
+
+A self-review, a separately run AI review, another operator’s test and an external independent assessment are different arrangements. Describe the actual one and any relevant relationship or conflict.
+
+A separate execution run can reduce some kinds of dependence, but different names in a JSON file do not prove different people. Neither do they prove that the reviewer exercised judgment or inspected the evidence. The responsible owner must verify the arrangement rather than treating labels as credentials.
+
+## Re-execute critical outcomes
+
+For a website inquiry journey, fresh acceptance may include an independent public connection, a new synthetic submission, the promised application handling and an authorized controlled-mailbox observation. The exact checks depend on the approved scope.
+
+The verifier should inspect the declared build and environment, not an older local version that happened to pass. Raw artifacts, timestamps and negative-path outcomes matter more than a builder’s summary saying “all fixed.” Production readiness and release engineering practices emphasize controlled requirements and reliable operational transitions; the particular independence policy here is a deliberate operating design. [Production readiness](https://sre.google/sre-book/evolving-sre-engagement-model/), [release engineering](https://sre.google/sre-book/release-engineering/).
+
+## Know what automated evidence checks can prove
+
+A structural gate can detect a missing requirement, an inconsistent build identifier, an artifact that does not exist, a hash mismatch or a timestamp that contradicts the sequence. Those are useful checks.
+
+It cannot prove that the artifact tells the truth, that a mailbox was inspected, that a real iPhone was used, or that a reviewer is independent. A hash establishes byte identity, not the correctness of the statement inside the file. The evidence must still be evaluated by the responsible verifier.
+
+This is why a structural pass should never grant production or publication permission by itself.
+
+## Preserve blocked results
+
+Use a clear distinction between pass, fail, blocked and an explicitly permitted not-applicable result. If the required browser is unavailable or mailbox access has not been provided, that check is blocked. Calling it “probably fine” does not complete it.
+
+The release manager receives the bounded verdict and the unresolved risks. Actual deployment authority and recovery readiness remain separate decisions. If a material required condition is not met, the report should state that the release has not been accepted.
+
+## Make the final claim match the work
+
+A credible completion statement names the tested scope, actual reviewer arrangement, build, environment and limitations. It does not promise the absence of all defects or claim an external audit that never occurred.
+
+For the business owner, this is a practical safeguard: the final “done” corresponds to the customer journey and the approved contract, not merely to a confident builder or another green icon.
+
+---
+
+## Editorial handoff — not public article copy
+
+R13: confirm distinct usefulness and the actual audience. R14: verify current sources and every added result/credential claim. R20: approve any screenshots or proof artifacts for publication. Joseph: substantively review the final article and approve the exact author/byline. R08/R11: approve the actual canonical URL and truthful entity representation. R16: define measurement without implying guaranteed citations or inquiries. The suggested service action is appropriate only if the service is actually offered and its contact path works.
+
+==============================================================================

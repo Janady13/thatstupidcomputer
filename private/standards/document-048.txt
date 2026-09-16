@@ -1,0 +1,51 @@
+DOCUMENT 048 OF 135
+Title: Content delivery first — without false crawler absolutes
+Path: Library/Framework/framework-contentfirst.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Content delivery first — without false crawler absolutes
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S02 S14 S24 S25 S28 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-contentfirst.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## The principle worth retaining
+
+A website should deliver useful content reliably before decorative or interactive complexity obscures its purpose. This is a practical design preference, not a universal law that every bot sees only the first byte or that a particular React architecture guarantees zero citations.
+
+Google's documentation explains JavaScript crawling and rendering. React's documentation describes framework choices supporting different rendering modes. Those facts contradict a blanket claim that all JavaScript-delivered content is necessarily invisible to search. [S14, S24]
+
+## Design by route and consumer
+
+Classify the routes: public informational pages, products, services, localized pages, account areas, internal tools and utility states. Name the retrieval consumers and customer tasks each route must support. Select SSG, SSR, CSR or a hybrid according to those requirements and operational constraints.
+
+For important public content, supplying meaningful initial HTML is often a robust engineering choice because it reduces dependence on client execution. That is a reliability rationale, not evidence that every engine uses the same extractor or that SSR alone earns a citation. Public pages still need truthful content, coherent URL behavior and working user interactions.
+
+## Define the delivery contract
+
+Record what should appear in the initial response, what can arrive through streaming, and what requires interaction. Essential page identity, useful content and navigation should not depend on a failed third-party script. Ensure a route with missing data does not return an attractive but meaningless successful page.
+
+Keep factual fields shared between visible content, metadata and structured data. Avoid duplicate descriptions and conflicting canonicals from multiple frontend or CMS layers. Treat caching and revalidation as correctness concerns, especially where prices, availability or public service information change.
+
+## Test four different things
+
+Capture raw response bytes and headers; inspect the complete initial document; inspect browser-rendered output; and complete the customer's main task. These answer different questions. A command with `-A GPTBot` only simulates a response variant. It neither authenticates a bot nor certifies Google AI eligibility.
+
+Streaming frameworks need a complete-response and consumer-aware test. Metadata missing from the first chunk is not automatically absent from the response. Use the Next.js metadata module when that framework is installed. [S25]
+
+## Content and visual design
+
+Use headings, comparisons, lists, illustrations and interactions because they make the information easier to understand. Do not mechanically convert every answer to a table based on an unverified multiplier. A sophisticated visual experience is compatible with accessible, useful content when it is designed and tested deliberately.
+
+Measure experience with appropriate field and lab evidence. Smaller HTML, fewer scripts or a higher lab score are not substitutes for task completion and accurate delivery. [S28]
+
+## Completion
+
+A page passes when its project-specific delivery and user-task contracts pass, evidence is retained and unresolved risks are documented. Do not use a proprietary “G score,” fixed pillar count or promised cross-engine citation rate as an official acceptance test. Google's AI guidance does not provide such a score. [S02]
+
+See [release contracts](framework-seo-release-contracts.md), [Next.js metadata validation](framework-nextjs-metadata-validation.md), [crawler identity](framework-crawler-identity-observability.md) and [payload budgets](framework-crawl-payload-budgets.md). The old statistical claims are retained for historical review, not authorized as production facts.
+
+==============================================================================

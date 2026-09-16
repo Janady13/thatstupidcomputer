@@ -1,0 +1,45 @@
+DOCUMENT 002 OF 135
+Title: Change log
+Path: CHANGELOG.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# Change log
+
+## 2026.09.09-d26 — Specialist operating and public expertise expansion
+
+Added all 26 user-requested roles with source-linked charters, standalone prompts and distinct publication briefs; a master routing/ownership model; eight cross-discipline playbooks; six unapproved methodology drafts; private evidence/coverage/acceptance templates; a 49-record primary-source supplement; and two executable offline utilities with 60 new unit tests. Integrated AGENTS, the build reference, master navigation and the searchable browser. Expanded integrity checks to include Publishing and the role/source registry.
+
+Preserved all 146 unique original files and the previous release manifest. Existing commercial tiers and prices are unchanged; Tier 13 stays retired. The previous million-word legacy corpus was not recertified. No actual site, repository, Bubbles host, mail account, DNS zone, analytics property or public profile was changed.
+
+The expansion's browser, test and integrity reports describe local artifact validation only. The public drafts are not approved or completed case studies, and role prompts are not credentials or independently executed reviews.
+
+---
+
+## Prior release history
+
+# Change log — 2026.09.09
+
+## Consolidation and preservation
+
+Inventoried 511 content files in four version sets; identified 146 unique contents and 365 duplicate copies by SHA-256. Work 3 and Work 4 had identical content sets. Preserved all 146 unique originals byte-for-byte and retained the 511-path inventory. Chose Work 4 as the canonical hierarchy where available; retained historical-only files separately. The original ZIP was not overwritten.
+
+## Research and revisions
+
+Added 27 researched modules and rewrote nine core guides covering content delivery, Google AI visibility, citations, schema eligibility, ChatGPT Search, spam policy, Search Console, GA4 and Next.js. Regenerated the master index. Applied 14 exact inline safety edits across five additional legacy files. Added review-boundary banners to the remaining active legacy material. Created 28 finding records and a 52-entry primary-source register with scoped observations.
+
+## Navigation
+
+Repaired 157 historically broken local link targets. Some absent specialist chapters are now explicitly labeled links to broader related references; no missing specialist chapter is represented as completed. Created a searchable offline browser, a per-file coverage matrix, a remaining review queue and a tier applicability map. Original tier numbering and names are preserved; Tier 13 remains retired.
+
+## Operating additions
+
+Added 12 example JSON operating templates, four fictional structured-data examples, a generated example robots policy, four offline Python utilities and 24 unit tests. A proposed GitHub Actions workflow is included using official action usage inspected on the release date; it was not installed or executed remotely.
+
+## Validation and limits
+
+Read `Reports/` for actual local test output. Local file-target checks do not validate external URLs or Markdown anchors. The 1,758 embedded legacy URLs were inventoried but not all checked. Structured-data examples were parsed as JSON, not validated against a live rich-result service. This release is not a full factual certification of all original prose or a deployed client website.
+
+==============================================================================

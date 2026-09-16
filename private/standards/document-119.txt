@@ -1,0 +1,48 @@
+DOCUMENT 119 OF 135
+Title: 26-discipline validation — actual local results
+Path: Reports/DISCIPLINE-VALIDATION.md
+Group: expansion
+Label: EXPANSION · local delivery record
+Review status: scope_stated_in_document
+==============================================================================
+
+# 26-discipline validation — actual local results
+
+**Release:** 2026.09.09-d26. These are artifact/tool validation results, not production-site acceptance or an independent external audit.
+
+## Executed results
+
+| Check family | Result | Boundary |
+| --- | --- | --- |
+| Utility unit tests | **84 passed**: 24 baseline + 60 new | Local synthetic fixtures; no real website/account |
+| CLI smoke tests | **6 passed** | Actual local invocation, overwrite rejection, template blocking and malformed-input handling |
+| Browser interaction checks | **23 passed** | Generated HTML rendered in headless Chromium 144.0.7559.96 through `set_content` |
+| Role coverage | **26 exact IDs** with charter, prompt, brief, sources and handoffs | Presence/linkage, not 26 executed specialist audits |
+| Preserved originals | **146 hashes verified** | Original bytes preserved, not all legacy facts validated |
+| Local Markdown file targets | **3892 checked; zero missing/outside targets** | No Markdown-fragment or external-URL completeness claim |
+| Markdown files audited | **267** | Active Library, Publishing, Templates, Tools, Research, Reports and root |
+| JSON files parsed | **60** | Historical originals excluded; parsing is not semantic truth |
+
+The unit tests exercise routing for forms, DNS/tailnet, outages, AI citations, mail policy, explicit overrides and unknown tasks; bounded context packs; gate rejection of missing/blocked/failing checks, absent or changed files, path traversal, symlink escapes, contract/hash/build/run mismatches, reused identities, weak independence declarations, unauthorized exceptions, duplicate IDs/keys, future/naive timestamps, placeholders and publication-review gaps. Synthetic structurally valid fixtures are explicitly not client evidence.
+
+## Browser review
+
+Verified report load, document counts, all 26 role charters, role/full-text search, current DMARC references, internal brief navigation, history restoration, prompt companion paths, legacy boundaries, six draft entries, sanitized article DOM, keyboard-scrollable table regions, no horizontal overflow at a simulated 390-pixel viewport and no automatic external requests or JavaScript runtime errors. Desktop and narrow screenshots were visually inspected for legibility and layout.
+
+Local HTTP navigation was blocked by the environment with `ERR_BLOCKED_BY_ADMINISTRATOR`. The generated HTML was therefore rendered using Chromium `set_content`, not through a hosted live site or a successfully navigated local HTTP origin. Actual Safari, Firefox, branded Chrome, physical iPhone/Android and assistive-technology combinations were **not tested**. These checks do not establish full WCAG 2.2 AA conformance.
+
+## Gate truth boundary
+
+The evidence checker can detect inconsistent records and verify local bytes. It cannot authenticate an approval, a human identity, reviewer independence or the truth of a captured statement. Every structural pass retains `authorization_granted: false`, `external_truth_verified: false` and `identity_or_independence_authenticated: false`. Template acceptance records intentionally fail; no production acceptance record has been fabricated.
+
+## Reports and reproducibility
+
+- [Unit output](discipline-unit-tests.txt)
+- [CLI smoke results](discipline-cli-smoke-tests.json)
+- [Browser results and limits](discipline-browser-qa.json)
+- [Library integrity result](discipline-library-audit.json)
+- [Desktop screenshot](browser-desktop.png) and [simulated narrow screenshot](browser-mobile.png)
+
+Run `python3 -m unittest discover -s Tools/tests -v` and `python3 Tools/library_audit.py .` from the extracted library root. The original legacy reports remain historical baseline snapshots. No external site, Bubbles service, DNS record, mailbox, analytics account, repository or persistent Library folder was changed.
+
+==============================================================================

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.00 -12.00 83.00 85.00" width="83" height="85">
+  <title>Smiley note</title>
+  <g id="board-smile" data-art="board-smile">
+    <g id="board-smile-sheet-motion" data-motion="paper" data-pivot="32,0" data-phase="2">
+      <path id="board-smile-paper" d="M0 0 L64 -4 L60 65 L-3 63 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="board-smile-paper-tint" d="M0 0 L64 -4 L60 65 L-3 63 Z" fill="#C97038" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.16"/>
+      <path id="board-smile-smile-eyes" d="M20 17 l-1 7 M37 15 l-1 7" fill="none" stroke="#29261F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="board-smile-smile-mouth" d="M14 34 C23 54 43 48 47 31" fill="none" stroke="#29261F" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

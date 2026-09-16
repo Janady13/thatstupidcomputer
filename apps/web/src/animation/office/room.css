@@ -1,0 +1,5 @@
+.office-room { display: block; width: 100%; height: auto; aspect-ratio: 1648 / 928; overflow: hidden; }
+/* No selectors animate the same attribute as the motion controller. */
+.office-room [data-motion] { transform-box: view-box; }
+.office-room [data-computer-art] { overflow: visible; }
+/* Reduced motion is enforced by the controller, not just a CSS animation override. */

@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "visibility": "private",
+  "overrides": [
+    {
+      "id": "OV-REACT",
+      "origin": "User handoff line 172",
+      "supersedes": "Next.js scaffold and framework-specific APIs",
+      "resolution": "React website with its actual chosen build adapter; apply transferable delivery/metadata contracts."
+    },
+    {
+      "id": "OV-NO-PYTHON",
+      "origin": "User handoff lines 288 and 340",
+      "supersedes": "Python utilities and scripting examples throughout source library",
+      "resolution": "No Python execution; private structural inventory implemented in Node/TypeScript."
+    },
+    {
+      "id": "OV-NO-DB",
+      "origin": "User handoff lines 354, 387 and 412",
+      "supersedes": "PostgreSQL, persistence/outbox/CRM examples where presented as necessary",
+      "resolution": "Direct email backend; no lead database, provider acceptance and mailbox observation kept distinct."
+    },
+    {
+      "id": "OV-TRUTH",
+      "origin": "User handoff lines 246 and 372",
+      "supersedes": "New person/organization registry or synthetic identities from neutral library examples",
+      "resolution": "Existing unified canonical source is authoritative; exact public projection integration is gated on actual source retrieval."
+    },
+    {
+      "id": "OV-LOCAL",
+      "origin": "Current user direction relayed by root: build entire site locally and hand to Claude Code for transfer",
+      "supersedes": "Network access as a blocker to local implementation",
+      "resolution": "Complete local code/assets/docs/tests; only actual remote deployment/account/receipt observations remain external gates."
+    },
+    {
+      "id": "OV-WHOLE",
+      "origin": "User handoff lines 372, 472 and 519",
+      "supersedes": "Selective SEO snippets treated only as reference/governance",
+      "resolution": "Every supplied document, role and graph receives a meaningful application decision; avoid unneeded products explicitly described as optional in the library."
+    },
+    {
+      "id": "OV-DESKTOP-V3",
+      "origin": "Current user direction relayed by root: expand the original CRT moods/attitude and demo journey in a separate v3 delivery",
+      "supersedes": "Treating the mobile-v2 upgrade as the completed original-desktop request or copying a full older website over ongoing operator edits",
+      "resolution": "Preserve original CRT geometry, gate rude gestures, connect finite buyer choices to the unchanged direct-email form, and deliver a hash-guarded addon supporting exact v1 and v2 baselines."
+    },
+    {
+      "id": "OV-WORKSHOP-V4",
+      "origin": "User correction: remove screen tabs and sloppy pop-ups; screenshots show newer operator full-room layout",
+      "supersedes": "Floating room navigation, hover labels and detached computer conversation overlay",
+      "resolution": "Keep navigation in the header, retain the original scene composition and make conversation content flow below the room. Preserve unknown live edits through targeted cleanup and reviewed merges."
+    }
+  ],
+  "conditionalGraphDecisions": [
+    {
+      "id": "G05",
+      "title": "Local business, place, and service-area graph",
+      "disposition": "CONDITIONAL",
+      "reason": "No local branch/address/service-area claims requested or verified. Do not invent locations; activate only after eligible canonical facts and public rights exist."
+    },
+    {
+      "id": "G06",
+      "title": "Product, offer, merchant, and inventory graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "Service demo funnel has no purchasable catalog, stock, cart, merchant feed or price contract."
+    },
+    {
+      "id": "G12",
+      "title": "Reputation, review, and corroboration graph",
+      "disposition": "CONDITIONAL",
+      "reason": "No genuine review/testimonial dataset supplied; omit ratings and fabricated corroboration, retain future provenance/rights requirement."
+    },
+    {
+      "id": "G14",
+      "title": "External web-link graph",
+      "disposition": "CONDITIONAL",
+      "reason": "Existing outward links checked where present; backlink acquisition/complete external link crawl is not requested or available."
+    },
+    {
+      "id": "G15",
+      "title": "Citation, co-citation, and bibliographic-coupling graph",
+      "disposition": "REVIEW_ONLY",
+      "reason": "Source bibliography is retained for dependency review; no citation/co-citation analytical product or authority metric requested."
+    },
+    {
+      "id": "G18",
+      "title": "Hreflang and locale-alternative graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "Only English routes are present; no translated equivalent documents exist to justify hreflang."
+    },
+    {
+      "id": "G22",
+      "title": "SERP observation and competitor-overlap graph",
+      "disposition": "CONDITIONAL",
+      "reason": "Dated observation schema and limits supplied; live SERP/competitor dataset unavailable and no scrape or invented ranks performed."
+    },
+    {
+      "id": "G24",
+      "title": "Entity-mention and co-occurrence graph",
+      "disposition": "REVIEW_ONLY",
+      "reason": "No co-occurrence analytics requested; mention/identity/support distinctions govern imports and source review."
+    },
+    {
+      "id": "G25",
+      "title": "AI answer, grounding, and citation graph",
+      "disposition": "CONDITIONAL",
+      "reason": "Observation/report contract applies; actual answer/citation data and platform exports remain external blocked."
+    },
+    {
+      "id": "G27",
+      "title": "GraphRAG and owned-corpus retrieval graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "No owned-corpus answering feature requested; implementing GraphRAG would add unrelated infrastructure and private-data flow."
+    },
+    {
+      "id": "G28",
+      "title": "Embedding-similarity and nearest-neighbor graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "No vector search feature or embedding corpus requested; HNSW similarity is not a factual identity or SEO requirement."
+    },
+    {
+      "id": "G37",
+      "title": "Social, professional, and interaction graphs",
+      "disposition": "CONDITIONAL",
+      "reason": "Verified profiles may flow from canonical export; no social connections scraped or invented; private contacts excluded."
+    },
+    {
+      "id": "G38",
+      "title": "Scholarly and research graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "Website is a service acquisition funnel, not a scholarly discovery/publication database; source research uses citations without a scholarly product graph."
+    },
+    {
+      "id": "G39",
+      "title": "Event, venue, organizer, and time graph",
+      "disposition": "NOT_APPLICABLE",
+      "reason": "No event listings, tickets, occurrences or venue publishing requested; demo request is not an Event listing."
+    },
+    {
+      "id": "G40",
+      "title": "Learning prerequisite and curriculum graph",
+      "disposition": "REVIEW_ONLY",
+      "reason": "Private handoff teaches prerequisites identity→evidence→markup→observation; no public course, learner records or credential badge requested."
+    }
+  ],
+  "sourceFindingDispositions": [
+    {
+      "id": "F01",
+      "classification": "confirmed inventory error",
+      "disposition": "Regenerate the index from the current filesystem and status catalog.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F02",
+      "classification": "unsafe universal instruction",
+      "disposition": "Require a project-specific URL mapping and tests; no global rewrite by default.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F03",
+      "classification": "unsafe universal instruction",
+      "disposition": "Use per-URL keep, improve, merge, exclude or retire decisions with approval.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F04",
+      "classification": "unsafe universal instruction",
+      "disposition": "Preserve established URLs unless an approved migration justifies changes.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F05",
+      "classification": "heuristic mislabeled as requirement",
+      "disposition": "Treat length as review guidance, not an official limit.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F06",
+      "classification": "heuristic mislabeled as requirement",
+      "disposition": "Use truthful concise copy and flexible preview review.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F07",
+      "classification": "incorrect bot role for goal",
+      "disposition": "Use Claude-SearchBot for the documented search role; review Claude-User and training independently.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F08",
+      "classification": "outdated mixed bot list",
+      "disposition": "Use the engine role matrix and owner-approved policy.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F09",
+      "classification": "unsupported absolute",
+      "disposition": "Replace with route/consumer-specific delivery and measurement contracts.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F10",
+      "classification": "unverified quantitative claim",
+      "disposition": "Remove from authoritative guidance; retain in historical review queue.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F11",
+      "classification": "contradicted blanket rendering claim",
+      "disposition": "Validate actual rendering; do not equate GPTBot simulation with Google AI testing.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F12",
+      "classification": "unverified quantitative claim",
+      "disposition": "Do not use in forecasts or acceptance tests; formatting follows information structure.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F13",
+      "classification": "unverified research attribution",
+      "disposition": "Retain as unverified historical attribution, not a proven rule.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F14",
+      "classification": "overgeneralized research result",
+      "disposition": "Scope research to its engine/model/dataset/outcome.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F15",
+      "classification": "incorrect reporting timeline",
+      "disposition": "Use June 3 announcement and August 31, 2026 rollout note and current help page.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F16",
+      "classification": "obsolete feature list",
+      "disposition": "Use available report fields and current feature lifecycle.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F17",
+      "classification": "superseded workflow requirement",
+      "disposition": "Use current default definitions; custom grouping remains optional for a declared purpose.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F18",
+      "classification": "version specific claim not revalidated",
+      "disposition": "Do not carry forward unsupported session reset assertions; verify actual GA4 scope.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F19",
+      "classification": "outdated safe harbor implication",
+      "disposition": "Use current policy; review purpose and regional treatment rather than an oversight shortcut.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F20",
+      "classification": "unsupported architecture absolute",
+      "disposition": "Use route-specific engineering evidence and official rendering documentation.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F21",
+      "classification": "unsupported redirect absolute",
+      "disposition": "Choose the correct move semantics and validate redirects without claiming automatic leakage.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F22",
+      "classification": "unsupported schema page requirement",
+      "disposition": "Model real places without requiring every geography to have its own indexed page.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F23",
+      "classification": "unsupported universal file requirement",
+      "disposition": "Treat optional files as consumer-specific; no special Google Search requirement.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F24",
+      "classification": "deprecated feature risk",
+      "disposition": "Separate vocabulary validity from feature lifecycle; Google FAQ rich results ended May 7, 2026.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F25",
+      "classification": "unverified quantitative claim",
+      "disposition": "Replace with truth, applicable properties and feature validation.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F26",
+      "classification": "overbroad hidden content rule",
+      "disposition": "Distinguish deceptive intent from accordions, accessibility and normal UI behavior.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F27",
+      "classification": "unverified cross surface equivalence",
+      "disposition": "Use only documented provider roles and product-specific scope.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    },
+    {
+      "id": "F28",
+      "classification": "audit method boundary",
+      "disposition": "Keep the report historical; do not treat it as a quality certificate.",
+      "source": "D126",
+      "status": "SOURCE_DISPOSITION_NOT_PRODUCT_TEST"
+    }
+  ]
+}

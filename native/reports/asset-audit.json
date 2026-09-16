@@ -1,0 +1,752 @@
+{
+  "scope": "Strict XML structure, complete source motion contracts, vectors, and byte-bound native evidence",
+  "passed": 62,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "apps/web/public/animation/desktop/computer.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 244,
+        "paths": 155,
+        "sha256": "be9e898b4d23cf51aaa5b479598a5c8bd81c1ee87ea67040b512d953e38a227a"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/mobile/app-bot/poster.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 349,
+        "paths": 253,
+        "sha256": "4fd205809383668027327117b75d9387ae88ee9d7763cc5a8133b2460e82e48e"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/mobile/flip-phone/poster.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 405,
+        "paths": 270,
+        "sha256": "14ac731177b2b0b3917c6e01b038ea3d55ca1c2dc35353c6dfe33aea9d7e0837"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/mobile/handheld/poster.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 349,
+        "paths": 245,
+        "sha256": "c5afc70ed4bb9a0c26b5e751a8a2d575e3c61c98e261e8df3dd0ba89f8a4d490"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/mobile/pager/poster.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 375,
+        "paths": 282,
+        "sha256": "277b9e957130f465d4a211dcb5916e19d204067a69e6f56289e86022a802f257"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/mobile/smartphone/poster.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 323,
+        "paths": 232,
+        "sha256": "da920ce5d0c44919899b1c6bfe7463bf9461e8fb8a16688c303dd836d686e96b"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/office-room.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 909,
+        "paths": 556,
+        "sha256": "ccd88fbb1a4d78e9a9e453d32af533149f3b72b75ad0f2b4646e6977aac23b24"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/office-with-computer.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 1150,
+        "paths": 711,
+        "sha256": "ae1efb1405c8717d907375cf4af035464a0677b193db38bb597a0cbd56ebc6fc"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/air-dust.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 27,
+        "paths": 0,
+        "sha256": "9d371b2619970900e8a4936a40789ff6ff10be1c8f433a09011c964b42a36c75"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/baseboard.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 7,
+        "paths": 3,
+        "sha256": "4b410b68f9920550813e3e1719c0756d022caa5447fc8681519421827235a23c"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/binders.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 23,
+        "paths": 8,
+        "sha256": "e80e0d782747e95bc6bdcf9529c360dfe3fea91b9e7f5d3ae4e90757556aeaba"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/blinds.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 54,
+        "paths": 38,
+        "sha256": "afe23887a37d8ea5a00f3eb84ae65351cec881e0064384442b813c6a91fe9e03"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/board-blueprint.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 14,
+        "paths": 8,
+        "sha256": "ab3e38a5e7d349eb323d711df8e91f20275e9fe2e6f426840a63a160f8592947"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/board-photo.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 16,
+        "paths": 10,
+        "sha256": "d8030f1fb2d905abfc52bbfde629c93a2bfc945abd856f295ee78aabca715ee1"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/board-reminder.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 16,
+        "paths": 10,
+        "sha256": "56574ea33b3dd40b855568f8e88e765dbab791e168e960ffcee38d67fc2f00ef"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/board-small-note.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 14,
+        "paths": 8,
+        "sha256": "e9ce7a7e8bcf78f79136bdc74ff3677d8d4d08cd6960442b13cf110131a9bd32"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/board-smile.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 8,
+        "paths": 4,
+        "sha256": "74b31a03191fd4da5b0e476c339de2701dc8a13efad99f44ea5d8992e94966f2"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/bulletin-board.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 33,
+        "paths": 30,
+        "sha256": "f27efecd6cc6c07b49de047a9786dab617d463b61162377cde1200543b171cc8"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/cable-reel.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 17,
+        "paths": 13,
+        "sha256": "6f540e1d4dcbd3051c29b18906e52b116fcc1d83510085be77e41ba5c3bfdd94"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/cart-box.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 9,
+        "paths": 6,
+        "sha256": "0d89d72a832451b36c8bf091f5f05e6b8cc95334e8da7a66c24dbedcc46e85c8"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/cart-tool-cup.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 18,
+        "paths": 8,
+        "sha256": "5e1df2179c8617b58910bf3e5a4d012eb2537b9967dfa6c550d72a9ae863ca55"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/clock.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 91,
+        "paths": 64,
+        "sha256": "5984c52277e8792617bffc4f8b3066fcf77fe836b9f3278cfe812019dadc4b6a"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/coffee-mug.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 21,
+        "paths": 11,
+        "sha256": "4ab006e5f6156c69ab50aeb4236b28a266ad68d5ebf111738c59e9eaa0a0c308"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/desk-lamp.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 41,
+        "paths": 24,
+        "sha256": "1852ade3ad31b37d2d9b422a2f5df11d03c6c6517552c390efd751379b9fd82f"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/desk-paper.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 10,
+        "paths": 6,
+        "sha256": "cfc743ec43e44d013f066c7d401df230461d0083ead9ccb244f3b26fb4ca741e"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/desk-pedestal.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 11,
+        "paths": 8,
+        "sha256": "84f55043fcfa4f5013956ab6ac6ac93ec88b163cbfecd9c17a9c639778d0190c"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/desk-plant.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 43,
+        "paths": 29,
+        "sha256": "8834bd2a0f129b1dcf2b6fd5ead30caf3cf6b715584ff80b19aa950c26d00593"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/drawer-bottom.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 14,
+        "paths": 10,
+        "sha256": "ec1ff88265872468da9a12bf4c3ae01936a07334130f7462e30d2f50b726258e"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/drawer-top.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 10,
+        "paths": 6,
+        "sha256": "6903b1c50fb158d555fb9844bad24dfe3fd96ba1eb73e93b2f3fcbf3cf7b8c50"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/filing-cabinet.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 29,
+        "paths": 23,
+        "sha256": "07c595b84784f78a326cfc4e626d55d931c36ee3c239e95b3d3b90f6de98d804"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/floor-box.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 23,
+        "paths": 20,
+        "sha256": "ec583ae3a2c13908d6e7aa02bff0a4769661285608fa05f236bf3738b9fb1892"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/floor.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 8,
+        "paths": 4,
+        "sha256": "52d181b1a786a32eed77c41c901f1958f23566c8962b7f558230db8c49f00235"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/loose-hardware.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 20,
+        "paths": 9,
+        "sha256": "41226e05e9f8405d0bfa6375fa9daf2356ccf1651427d10549e57c37908e1bba"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/outlet.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 11,
+        "paths": 4,
+        "sha256": "ec810b35cffe619e201abffcfd81c7461b6f6f9bda2f67627f81df095396bc7b"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/outside.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 22,
+        "paths": 6,
+        "sha256": "97100d06db7fc12b2da88482915dda98661100303a422bd48b1dd55f0e793719"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/parts-organizer.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 66,
+        "paths": 26,
+        "sha256": "c21b479add09da9d0df54e09732fa983fc1ccef8e12f31e558da0b4024282d23"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/pencil-cup.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 22,
+        "paths": 13,
+        "sha256": "55e880ad24247fe094bebe67cb0b28760cb951372e2966f23e2692533cdde08f"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/screwdriver.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 9,
+        "paths": 6,
+        "sha256": "2026ad7fa6c69b246ab672591f69683c59cb25d1f255c03108f2d0c714494b99"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/shelf-plant.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 70,
+        "paths": 50,
+        "sha256": "383015ed1e1d32f18925b405a9ece9dc651eade038894abacb77ebc42ec9fc67"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/shelf.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 14,
+        "paths": 9,
+        "sha256": "7b83daacaefd34733946314412f3d35ba4bbba522f159c5182ec69e29fd9f8a2"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/soldering-station.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 17,
+        "paths": 9,
+        "sha256": "43798cbb1b5d2bf0c410152583a73bb70dceae323be86ca21d6da5a778c31bbc"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/storage-boxes.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 12,
+        "paths": 9,
+        "sha256": "28b980b7d17986f9946c732b766740400ae3677177d14abf08a2ea70bbcb0454"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/tape-roll.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 7,
+        "paths": 2,
+        "sha256": "c58efe609761ce804b3b971390bbd5e091e390cb07fa69dad9a4e43ac332e31b"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/test-meter.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 24,
+        "paths": 9,
+        "sha256": "fdc6b7d21de660049f2ce45125c1f65a540a70a03e36ed39da96bc3ef28f43e5"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/tool-cart.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 26,
+        "paths": 15,
+        "sha256": "12b4acb2aa7331b135d07e089bbb11652eba5da7b72fe18250a132df61624d15"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/wall.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 7,
+        "paths": 3,
+        "sha256": "8ed9eac5fd1e2d5c31d49e0b69edcf108392116f06f1424c312a6529671d0788"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/window.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 17,
+        "paths": 12,
+        "sha256": "95e42272e7d01add6f1d3c47c1d0d85ac7b9178c9499cf922d201cee0457ee25"
+      }
+    },
+    {
+      "name": "apps/web/public/animation/office/props/workbench.svg",
+      "status": "PASS",
+      "detail": {
+        "elements": 30,
+        "paths": 23,
+        "sha256": "f3ef10f686d0281a71a9b4222f272ae84316937401d8ac9e1d28888b3886a5dc"
+      }
+    },
+    {
+      "name": "smartphone: rig and all performance timelines",
+      "status": "PASS",
+      "detail": {
+        "timelines": 32,
+        "width": 720,
+        "height": 920
+      }
+    },
+    {
+      "name": "smartphone: native RML references",
+      "status": "PASS",
+      "detail": {
+        "animations": [
+          "Angry",
+          "Bow",
+          "Confused",
+          "Excited",
+          "EyeRoll",
+          "Facepalm",
+          "Frustrated",
+          "Happy",
+          "Idle",
+          "Jump",
+          "Land",
+          "Laugh",
+          "PointLeft",
+          "PointRight",
+          "Proud",
+          "Revived",
+          "RudeFlipOff",
+          "RunLeft",
+          "RunRight",
+          "Sad",
+          "Sassy",
+          "Searching",
+          "Shrug",
+          "Shy",
+          "Sleepy",
+          "Startled",
+          "Suspicious",
+          "Think",
+          "WakeUp",
+          "WalkLeft",
+          "WalkRight",
+          "Wave"
+        ],
+        "elements": 37728
+      }
+    },
+    {
+      "name": "flip-phone: rig and all performance timelines",
+      "status": "PASS",
+      "detail": {
+        "timelines": 32,
+        "width": 720,
+        "height": 920
+      }
+    },
+    {
+      "name": "flip-phone: native RML references",
+      "status": "PASS",
+      "detail": {
+        "animations": [
+          "Angry",
+          "Bow",
+          "Confused",
+          "Excited",
+          "EyeRoll",
+          "Facepalm",
+          "Frustrated",
+          "Happy",
+          "Idle",
+          "Jump",
+          "Land",
+          "Laugh",
+          "PointLeft",
+          "PointRight",
+          "Proud",
+          "Revived",
+          "RudeFlipOff",
+          "RunLeft",
+          "RunRight",
+          "Sad",
+          "Sassy",
+          "Searching",
+          "Shrug",
+          "Shy",
+          "Sleepy",
+          "Startled",
+          "Suspicious",
+          "Think",
+          "WakeUp",
+          "WalkLeft",
+          "WalkRight",
+          "Wave"
+        ],
+        "elements": 39944
+      }
+    },
+    {
+      "name": "app-bot: rig and all performance timelines",
+      "status": "PASS",
+      "detail": {
+        "timelines": 32,
+        "width": 720,
+        "height": 920
+      }
+    },
+    {
+      "name": "app-bot: native RML references",
+      "status": "PASS",
+      "detail": {
+        "animations": [
+          "Angry",
+          "Bow",
+          "Confused",
+          "Excited",
+          "EyeRoll",
+          "Facepalm",
+          "Frustrated",
+          "Happy",
+          "Idle",
+          "Jump",
+          "Land",
+          "Laugh",
+          "PointLeft",
+          "PointRight",
+          "Proud",
+          "Revived",
+          "RudeFlipOff",
+          "RunLeft",
+          "RunRight",
+          "Sad",
+          "Sassy",
+          "Searching",
+          "Shrug",
+          "Shy",
+          "Sleepy",
+          "Startled",
+          "Suspicious",
+          "Think",
+          "WakeUp",
+          "WalkLeft",
+          "WalkRight",
+          "Wave"
+        ],
+        "elements": 43564
+      }
+    },
+    {
+      "name": "pager: rig and all performance timelines",
+      "status": "PASS",
+      "detail": {
+        "timelines": 32,
+        "width": 720,
+        "height": 920
+      }
+    },
+    {
+      "name": "pager: native RML references",
+      "status": "PASS",
+      "detail": {
+        "animations": [
+          "Angry",
+          "Bow",
+          "Confused",
+          "Excited",
+          "EyeRoll",
+          "Facepalm",
+          "Frustrated",
+          "Happy",
+          "Idle",
+          "Jump",
+          "Land",
+          "Laugh",
+          "PointLeft",
+          "PointRight",
+          "Proud",
+          "Revived",
+          "RudeFlipOff",
+          "RunLeft",
+          "RunRight",
+          "Sad",
+          "Sassy",
+          "Searching",
+          "Shrug",
+          "Shy",
+          "Sleepy",
+          "Startled",
+          "Suspicious",
+          "Think",
+          "WakeUp",
+          "WalkLeft",
+          "WalkRight",
+          "Wave"
+        ],
+        "elements": 46415
+      }
+    },
+    {
+      "name": "handheld: rig and all performance timelines",
+      "status": "PASS",
+      "detail": {
+        "timelines": 32,
+        "width": 720,
+        "height": 920
+      }
+    },
+    {
+      "name": "handheld: native RML references",
+      "status": "PASS",
+      "detail": {
+        "animations": [
+          "Angry",
+          "Bow",
+          "Confused",
+          "Excited",
+          "EyeRoll",
+          "Facepalm",
+          "Frustrated",
+          "Happy",
+          "Idle",
+          "Jump",
+          "Land",
+          "Laugh",
+          "PointLeft",
+          "PointRight",
+          "Proud",
+          "Revived",
+          "RudeFlipOff",
+          "RunLeft",
+          "RunRight",
+          "Sad",
+          "Sassy",
+          "Searching",
+          "Shrug",
+          "Shy",
+          "Sleepy",
+          "Startled",
+          "Suspicious",
+          "Think",
+          "WakeUp",
+          "WalkLeft",
+          "WalkRight",
+          "Wave"
+        ],
+        "elements": 38261
+      }
+    },
+    {
+      "name": "office: forty independent original props",
+      "status": "PASS",
+      "detail": {
+        "props": 40,
+        "desktopStates": [
+          "idle",
+          "alert",
+          "overheating",
+          "searching",
+          "defeated",
+          "revived",
+          "amused",
+          "skeptical",
+          "sleepy",
+          "proud",
+          "startled",
+          "thinking",
+          "happy",
+          "sad",
+          "angry",
+          "confused",
+          "sassy",
+          "eye-roll",
+          "facepalm",
+          "shrug",
+          "wave",
+          "point-left",
+          "point-right",
+          "beckon",
+          "thumbs-up",
+          "bow",
+          "shush",
+          "raspberry",
+          "rude-flip-off",
+          "double-flip-off",
+          "demo-invite",
+          "demo-success"
+        ]
+      }
+    },
+    {
+      "name": "animation assets contain no distributed fonts",
+      "status": "PASS",
+      "detail": "All character lettering remains outlined vector paths"
+    },
+    {
+      "name": "Canvas runtime evidence matches all shipped native binaries",
+      "status": "PASS",
+      "detail": {
+        "nativeFiles": 5,
+        "timelines": 160,
+        "samples": 960,
+        "browserWebGL": "not executed"
+      }
+    },
+    {
+      "name": "native registry matches files and official runtime evidence",
+      "status": "PASS",
+      "detail": {
+        "promoted": 0
+      }
+    }
+  ]
+}

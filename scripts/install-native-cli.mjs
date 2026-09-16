@@ -1,0 +1,24 @@
+/** Install an official, checksum-verified Rive CLI without running its Python installer. */
+import { createHash } from 'node:crypto';
+import { mkdtempSync, writeFileSync, mkdirSync, copyFileSync, chmodSync, lstatSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
+const root=fileURLToPath(new URL('..',import.meta.url));
+const version='1.0.2',base='https://releases.rive.app/cli';
+const platform=process.platform==='linux'&&process.arch==='x64'?'linux-x64':process.platform==='darwin'&&process.arch==='arm64'?'darwin-arm64':null;
+if(!platform)throw new Error('This installer supports Linux x64 and macOS ARM64. Obtain the official CLI for your platform from Rive.');
+const download=async url=>{const response=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!response.ok)throw new Error(`Download failed ${response.status}: ${url}`);return response;};
+const manifest=await (await download(`${base}/v${version}/manifest.json`)).json();
+const artifact=manifest.artifacts?.[platform];
+if(manifest.version!==version||!artifact||!new RegExp(`^v${version.replaceAll('.','\\.')}/[A-Za-z0-9._-]+\\.tar\\.gz$`).test(artifact.path)||!/^[a-f0-9]{64}$/.test(artifact.sha256))throw new Error('Unexpected official manifest');
+const bytes=Buffer.from(await (await download(`${base}/${artifact.path}`)).arrayBuffer());
+const hash=createHash('sha256').update(bytes).digest('hex');if(hash!==artifact.sha256)throw new Error('Official archive checksum mismatch');
+const temp=mkdtempSync(resolve(tmpdir(),'tsc-rive-')),archive=resolve(temp,'rive.tar.gz');writeFileSync(archive,bytes);
+const list=spawnSync('tar',['-tzf',archive],{encoding:'utf8',timeout:10000});if(list.status!==0||list.stdout.split('\n').some(path=>path.startsWith('/')||path.split('/').includes('..')||path.includes('\\')))throw new Error('Unsafe archive member');
+const unpack=spawnSync('tar',['--no-same-owner','-xzf',archive,'-C',temp,'--','rive','docs'],{encoding:'utf8',timeout:30000});if(unpack.status!==0)throw new Error(unpack.stderr);
+const binary=resolve(temp,'rive');if(!lstatSync(binary).isFile()||lstatSync(binary).isSymbolicLink())throw new Error('Expected regular CLI binary');
+const out=resolve(root,'.tools/rive');mkdirSync(out,{recursive:true});copyFileSync(binary,resolve(out,'rive'));chmodSync(resolve(out,'rive'),0o755);
+mkdirSync(resolve(root,'native/reports'),{recursive:true});writeFileSync(resolve(root,'native/reports/cli-provenance.json'),JSON.stringify({version,platform,url:`${base}/${artifact.path}`,sha256:hash},null,2)+'\n');
+console.log(`Official Rive ${version}: ${resolve(out,'rive')}. On Linux the executable requires libGLESv2.so.2 and the other vendor runtime libraries.`);

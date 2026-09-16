@@ -1,0 +1,44 @@
+DOCUMENT 067 OF 135
+Title: Structured-data lifecycle and feature eligibility
+Path: Library/Framework/framework-schema-lifecycle.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Structured-data lifecycle and feature eligibility
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Every schema template and client deliverable  
+**Evidence:** S01, S20, S21, S22, S23 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Three separate questions
+
+Ask whether the JSON is syntactically valid, whether the vocabulary describes the page truthfully, and whether a named consumer currently supports a related feature. These are separate checks. Passing a generic validator does not establish rich-result eligibility or guarantee appearance. [S20]
+
+Google stopped showing FAQ rich results on May 7, 2026. HowTo rich results were retired in September 2023. This does not make the underlying Schema.org vocabulary invalid, but these Google features must not be sold as current benefits. [S01, S21]
+
+## Registry design
+
+For every template, maintain type, consumer, feature, required properties, recommended properties, page-class applicability, policy constraints, current status, source date, test method and owner. Mark entries as supported, restricted, deprecated, vocabulary-only or unverified. Avoid a single “schema installed” column.
+
+Keep eligibility logic next to the generator. A Product template needs genuine product information and a current offer when it represents a purchasable item; a LocalBusiness template must not manufacture a storefront; an Article must identify its actual content and authorship. Optional ratings should never be filled with invented values simply to satisfy an example.
+
+## Change management
+
+When a feature is retired, search the library, sales scope, QA tests and codebase for the feature name. Update expected outcomes and acceptance criteria. Do not automatically delete useful customer-facing questions or step-by-step instructions because a search decoration disappeared.
+
+If markup still serves another documented consumer, retain it with that consumer and rationale recorded. Otherwise evaluate maintenance cost against actual use. Remove dead code through a tested change, not a blind text replacement across every type name.
+
+## Review integrity
+
+Review and rating markup must reflect genuine visible evidence. Google's review guidance excludes fake or undisclosed incentivized reviews and restricts self-serving LocalBusiness/Organization star eligibility. [S22] Disclosing an incentive is not permission to fabricate an experience or ignore another platform's stricter policy.
+
+## Acceptance evidence
+
+Save representative rendered pages, generated JSON-LD, validator results, policy checklist and source version. For commerce, compare offer values with the live landing page and approved feed. Record known warnings rather than creating fake data to eliminate them. For large deployments, test edge cases such as missing images, unavailable products, absent ratings, multiple authors and multilingual URLs.
+
+The `Schema.org` directory contains small fictional examples and a release checklist. They are intentionally not marked as Google-approved or production-ready. Replace example facts, validate the intended feature and verify the visible page before publishing. The library's schema work is semantic modeling and eligibility engineering, not a promised citation multiplier.
+
+==============================================================================

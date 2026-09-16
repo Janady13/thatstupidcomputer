@@ -1,0 +1,519 @@
+DOCUMENT 126 OF 135
+Title: Findings and dispositions
+Path: Research/FINDINGS.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Findings and dispositions
+
+28 selected finding records. Classifications distinguish confirmed errors, outdated features, unsafe universal instructions, unsupported generalizations, unverified numerical claims and audit-method limits. “Unverified” does not mean proved false. Original line numbers refer to the preserved source before banners and patches, not the revised active file. A resolution in current guidance does not certify every other occurrence in retained legacy prose.
+
+Sources are identified in the [primary-source register](SOURCE-REGISTER.md). Exact machine-readable records are in [findings.json](findings.json).
+
+## F01 — confirmed inventory error
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-masterindex.md`, line 13.
+
+[Inspect preserved source](../99-Originals/Framework/framework-masterindex.md)
+
+**Located wording:**
+
+```
+The library currently contains **56 framework documents** plus this master index. Categorized below.
+```
+
+**Why it matters:** The entry point understates the archive and asserts unreliable navigation.
+
+**Disposition:** Regenerate the index from the current filesystem and status catalog.
+
+**Evidence:** Direct archive inspection / reproducible inventory
+
+## F02 — unsafe universal instruction
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-one.md`, line 27.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-one.md)
+
+**Located wording:**
+
+```
+- Force lowercase URLs in `.htaccess` or `nginx.conf` to prevent case-duplicate indexing
+```
+
+**Why it matters:** Can break case-sensitive routes, assets and signed links.
+
+**Disposition:** Require a project-specific URL mapping and tests; no global rewrite by default.
+
+**Evidence:** S15, S38
+
+## F03 — unsafe universal instruction
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-one.md`, line 29.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-one.md)
+
+**Located wording:**
+
+```
+- 301-redirect or 410 all thin, duplicate, or orphan pages flagged in GSC
+```
+
+**Why it matters:** Can remove useful pages and destroy user paths without diagnosis.
+
+**Disposition:** Use per-URL keep, improve, merge, exclude or retire decisions with approval.
+
+**Evidence:** S15, S16, S38
+
+## F04 — unsafe universal instruction
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-one.md`, line 24.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-one.md)
+
+**Located wording:**
+
+```
+- Set WordPress permalinks to `/%postname%/`; in Next.js use file-based routing with consistent trailing-slash policy (pick one, stick to it sitewide)
+```
+
+**Why it matters:** Changing established URL structure solely for style creates migration risk.
+
+**Disposition:** Preserve established URLs unless an approved migration justifies changes.
+
+**Evidence:** S38
+
+## F05 — heuristic mislabeled as requirement
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-one.md`, line 44.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-one.md)
+
+**Located wording:**
+
+```
+- Write unique `<title>` tag per page, 50–60 characters, primary keyword near the front
+```
+
+**Why it matters:** Editorial guidance is presented as a fixed implementation gate.
+
+**Disposition:** Treat length as review guidance, not an official limit.
+
+**Evidence:** S34
+
+## F06 — heuristic mislabeled as requirement
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-one.md`, line 45.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-one.md)
+
+**Located wording:**
+
+```
+- Write unique `<meta name="description">` per page, 140–160 characters, with active voice and CTA
+```
+
+**Why it matters:** A fixed count does not guarantee snippet selection or display.
+
+**Disposition:** Use truthful concise copy and flexible preview review.
+
+**Evidence:** S35
+
+## F07 — incorrect bot role for goal
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-three.md`, line 182.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-three.md)
+
+**Located wording:**
+
+```
+- **Claude (Anthropic)**: Nuanced, well-reasoned content with clear caveats and sourcing; ensure ClaudeBot is allowed
+```
+
+**Why it matters:** Training permission is conflated with search/citation discovery.
+
+**Disposition:** Use Claude-SearchBot for the documented search role; review Claude-User and training independently.
+
+**Evidence:** S10
+
+## F08 — outdated mixed bot list
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Production Customer Tiers/tier-three.md`, line 170.
+
+[Inspect preserved source](../99-Originals/Production%20Customer%20Tiers/tier-three.md)
+
+**Located wording:**
+
+```
+- Add explicit rules for: GPTBot, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, OAI-SearchBot, anthropic-ai, ChatGPT-User, Applebot-Extended
+```
+
+**Why it matters:** Legacy and current tokens are grouped without purpose or current support.
+
+**Disposition:** Use the engine role matrix and owner-approved policy.
+
+**Evidence:** S08, S10, S11, S12
+
+## F09 — unsupported absolute
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-contentfirst.md`, line 17.
+
+[Inspect preserved source](../99-Originals/Framework/framework-contentfirst.md)
+
+**Located wording:**
+
+```
+The frameworks library cannot defend itself against this failure mode without an explicit doctrine. Individual frameworks contain technical guidance against client side rendering. None of them name the inversion as the build philosophy. Without a doctrine document, a builder (developer or AI assistant) can follow the dependency graph, install every framework in the prescribed order, and ship a beautifully styled React SPA that delivers an empty `<div id="root">` to GPTBot. Every framework was implemented. Zero citations result.
+```
+
+**Why it matters:** Architecture alone does not establish a universal zero-citation outcome.
+
+**Disposition:** Replace with route/consumer-specific delivery and measurement contracts.
+
+**Evidence:** S14, S24
+
+## F10 — unverified quantitative claim
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-contentfirst.md`, line 258.
+
+[Inspect preserved source](../99-Originals/Framework/framework-contentfirst.md)
+
+**Located wording:**
+
+```
+> Pages scoring G ≥ 0.70 with ≥ 12 of the 16 pillars active achieved a **78% cross engine citation rate** (cited by two or more of the three engines studied).
+```
+
+**Why it matters:** A proprietary score and broad outcome are presented without reproduced evidence.
+
+**Disposition:** Remove from authoritative guidance; retain in historical review queue.
+
+**Evidence:** S02, S29
+
+## F11 — contradicted blanket rendering claim
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-aioverviews.md`, line 210.
+
+[Inspect preserved source](../99-Originals/Framework/framework-aioverviews.md)
+
+**Located wording:**
+
+```
+Three implications: server rendered substrate is non negotiable, heading hierarchy carries citation weight (reading mode parses by structure not rendered layout), and JavaScript injected schema is invisible. The deeper tactical treatment of reading mode optimization across all AI engines lives in [framework-aicitations.md](framework-aicitations.md). For AIO, pass the `curl -A "GPTBot"` substrate test (see [framework-contentfirst.md](framework-contentfirst.md) Section 9.1) and reading mode is largely handled.
+```
+
+**Why it matters:** Conflates all consumers and conflicts with Google JavaScript guidance.
+
+**Disposition:** Validate actual rendering; do not equate GPTBot simulation with Google AI testing.
+
+**Evidence:** S14, S03
+
+## F12 — unverified quantitative claim
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-aioverviews.md`, line 250.
+
+[Inspect preserved source](../99-Originals/Framework/framework-aioverviews.md)
+
+**Located wording:**
+
+```
+Heading hierarchy (one H1, logical H2 to H6), descriptive anchor text, semantic sectioning elements (`<article>`, `<section>`, `<main>`, `<nav>`, `<aside>`), and lists where appropriate signal extractability. kime.ai 2026 found 4.2x citation rate for HTML `<table>` over equivalent prose, 2.7x for `<ol>` for sequential content, 1.8x for `<ul>` over prose.
+```
+
+**Why it matters:** An attributed multiplier is promoted as generally reproducible without verified methods.
+
+**Disposition:** Do not use in forecasts or acceptance tests; formatting follows information structure.
+
+**Evidence:** S29
+
+## F13 — unverified research attribution
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-aioverviews.md`, line 258.
+
+[Inspect preserved source](../99-Originals/Framework/framework-aioverviews.md)
+
+**Located wording:**
+
+```
+Princeton GEO study (SIGKDD 2024) found pages with at least three inbound internal links from topically related pages earn higher AIO citation rates than orphan or single linked pages. Internal linking signals topical centrality to the synthesis engine. See [framework-internallinking.md](framework-internallinking.md).
+```
+
+**Why it matters:** A specific internal-link/AIO claim is not established by the inspected primary study.
+
+**Disposition:** Retain as unverified historical attribution, not a proven rule.
+
+**Evidence:** S29
+
+## F14 — overgeneralized research result
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-aioverviews.md`, line 462.
+
+[Inspect preserved source](../99-Originals/Framework/framework-aioverviews.md)
+
+**Located wording:**
+
+```
+Inline outbound citations to authoritative sources boost AIO citation probability by approximately 30 percent per Princeton GEO study (SIGKDD 2024). The pattern: descriptive anchor text linking to .gov, .edu, peer reviewed journals, standards bodies, primary sources. The link itself is the citation. The destination is authoritative.
+```
+
+**Why it matters:** Benchmark metrics are converted to current Google citation probability.
+
+**Disposition:** Scope research to its engine/model/dataset/outcome.
+
+**Evidence:** S29
+
+## F15 — incorrect reporting timeline
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-gscanalysis.md`, line 17.
+
+[Inspect preserved source](../99-Originals/Framework/framework-gscanalysis.md)
+
+**Located wording:**
+
+```
+The 2026 reality: AI Overviews (AIO) appear on roughly 48 percent of all Google searches. The AIO tab in Performance, rolled out Q4 2025, separates AIO impression data for the first time. CWV thresholds moved to INP from FID in March 2024. Bulk Data Export to BigQuery (BDE), generally available since February 2024, removes the 1000 row cap and exposes URL level impression schema the UI never showed.
+```
+
+**Why it matters:** The library claims an old rollout and report structure not supported by current official sources.
+
+**Disposition:** Use June 3 announcement and August 31, 2026 rollout note and current help page.
+
+**Evidence:** S04, S05
+
+## F16 — obsolete feature list
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-gscanalysis.md`, line 198.
+
+[Inspect preserved source](../99-Originals/Framework/framework-gscanalysis.md)
+
+**Located wording:**
+
+```
+Reports valid, warning, error counts per schema type Google detected. Types in 2026: Breadcrumbs, Logos, Sitelinks searchbox, FAQ, HowTo, Product, Review snippet, Video, Job posting, Event, Recipe, Practice problem, Math solver, Dataset, Course, Movie, Software application, Special announcement. A type appears only after Google detects matching schema.
+```
+
+**Why it matters:** Retired features are listed as current report appearances.
+
+**Disposition:** Use available report fields and current feature lifecycle.
+
+**Evidence:** S01, S21
+
+## F17 — superseded workflow requirement
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-ga4.md`, line 557.
+
+[Inspect preserved source](../99-Originals/Framework/framework-ga4.md)
+
+**Located wording:**
+
+```
+### 11.4 Strategy 3: The AI Assistants Custom Channel Grouping
+```
+
+**Why it matters:** Custom grouping is treated as necessary while GA4 now documents an AI Assistant channel.
+
+**Disposition:** Use current default definitions; custom grouping remains optional for a declared purpose.
+
+**Evidence:** S36
+
+## F18 — version specific claim not revalidated
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-ga4.md`, line 531.
+
+[Inspect preserved source](../99-Originals/Framework/framework-ga4.md)
+
+**Located wording:**
+
+```
+GA4 attributes sessions to source / medium at session start. The combination persists for session duration even if the user navigates within the site. New session on session timeout (default 30 min), midnight crossover, or new campaign source. Internal navigation does not start new sessions. The granularity unlocks per channel landing analysis: filter Landing Page by Session Source / Medium for `google / organic`, `bing / organic`, `chatgpt.com / referral`, `perplexity.ai / referral`.
+```
+
+**Why it matters:** Old session semantics are stated as GA4 behavior.
+
+**Disposition:** Do not carry forward unsupported session reset assertions; verify actual GA4 scope.
+
+**Evidence:** S36
+
+## F19 — outdated safe harbor implication
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-spampolicies.md`, line 542.
+
+[Inspect preserved source](../99-Originals/Framework/framework-spampolicies.md)
+
+**Located wording:**
+
+```
+**What it is**: Third-party content published on a host site primarily to take advantage of the host's existing ranking signals, where the third-party content has little oversight from the host site.
+```
+
+**Why it matters:** Oversight is treated as a defining protection against reputation abuse.
+
+**Disposition:** Use current policy; review purpose and regional treatment rather than an oversight shortcut.
+
+**Evidence:** S18, S42
+
+## F20 — unsupported architecture absolute
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-react.md`, line 117.
+
+[Inspect preserved source](../99-Originals/Framework/framework-react.md)
+
+**Located wording:**
+
+```
+Verdict for 2026: pure CSR for any public content surface is malpractice. The only acceptable use cases are dashboards behind authentication, internal tools, and admin panels.
+```
+
+**Why it matters:** A single rendering pattern is categorically condemned regardless of route/consumer requirements.
+
+**Disposition:** Use route-specific engineering evidence and official rendering documentation.
+
+**Evidence:** S14, S24
+
+## F21 — unsupported redirect absolute
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-technicalseo.md`, line 273.
+
+[Inspect preserved source](../99-Originals/Framework/framework-technicalseo.md)
+
+**Located wording:**
+
+```
+| 302 Found | Temporary redirect. Use only for actual temporary moves (A/B tests, seasonal pages). Misused 302s leak link equity. |
+```
+
+**Why it matters:** Temporary/permanent semantics are confused with a guaranteed signal-loss mechanism.
+
+**Disposition:** Choose the correct move semantics and validate redirects without claiming automatic leakage.
+
+**Evidence:** S15, S38
+
+## F22 — unsupported schema page requirement
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/LOCATION-PAGE-FRAMEWORK.md`, line 78.
+
+[Inspect preserved source](../99-Originals/LOCATION-PAGE-FRAMEWORK.md)
+
+**Located wording:**
+
+```
+- Schema graph requires distinct entities (State, AdministrativeArea, City) with `containedInPlace` and `containsPlace` cross references that only work when each tier is its own page.
+```
+
+**Why it matters:** A graph relationship is used to justify mandatory indexed geographic page proliferation.
+
+**Disposition:** Model real places without requiring every geography to have its own indexed page.
+
+**Evidence:** S18, S20
+
+## F23 — unsupported universal file requirement
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-aicitations.md`, line 34.
+
+[Inspect preserved source](../99-Originals/Framework/framework-aicitations.md)
+
+**Located wording:**
+
+```
+4. **Install Sections 5-9** — content patterns, technical infrastructure, llms.txt, RAG-friendly structure
+```
+
+**Why it matters:** Auxiliary AI-file advice lacks an engine-specific authority boundary.
+
+**Disposition:** Treat optional files as consumer-specific; no special Google Search requirement.
+
+**Evidence:** S02
+
+## F24 — deprecated feature risk
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-schema-types-2026.md`, line 5.
+
+[Inspect preserved source](../99-Originals/Framework/framework-schema-types-2026.md)
+
+**Located wording:**
+
+```
+Companion to [framework-schema.md](framework-schema.md). This document inventories the schema types that move citation needles in 2026. The parent framework covers JSON-LD installation, the @id graph pattern, and the foundation schemas every site needs. This framework drills into the type-specific patterns for SoftwareApplication, Course, Event, JobPosting, Recipe, HowTo, FAQPage, QAPage, Review, Product, LocalBusiness subtypes, Person, ProfilePage, ClaimReview, and the broader CreativeWork hierarchy.
+```
+
+**Why it matters:** Legacy schema guidance predates final FAQ rich-result retirement.
+
+**Disposition:** Separate vocabulary validity from feature lifecycle; Google FAQ rich results ended May 7, 2026.
+
+**Evidence:** S01, S20
+
+## F25 — unverified quantitative claim
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-schema-types-2026.md`, line 646.
+
+[Inspect preserved source](../99-Originals/Framework/framework-schema-types-2026.md)
+
+**Located wording:**
+
+```
+The full Product schema stack (Product plus Offer plus AggregateRating plus shippingDetails plus hasMerchantReturnPolicy) is the baseline for Merchant Listings, Shopping graph, and AI shopping citation. Pages with the full stack earn approximately 3.2 times the AI shopping citation rate of pages with Product schema alone (Schema App ecommerce study, October 2025, 6,800 product pages). Cross reference [framework-ecommerceseo.md](framework-ecommerceseo.md) for variant strategy, Merchant Center feed, and Shopping graph optimization.
+```
+
+**Why it matters:** Product schema completeness is linked to a claimed AI citation multiplier.
+
+**Disposition:** Replace with truth, applicable properties and feature validation.
+
+**Evidence:** S20, S23
+
+## F26 — overbroad hidden content rule
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-contentfirst.md`, line 349.
+
+[Inspect preserved source](../99-Originals/Framework/framework-contentfirst.md)
+
+**Located wording:**
+
+```
+> **Forbidden**: `display: none` on content meant to be indexed. Off screen positioning (`position: absolute; left: -9999px`) to hide content visually while keeping it in DOM (treated as cloaking by Google). Tabs and accordions that require JavaScript to reveal content. Carousels where slides 2 through N are not in the DOM until JS rotates them in. Modal overlays that contain primary content only revealed by click.
+```
+
+**Why it matters:** CSS hiding can be confused with manipulative hidden content regardless of legitimate UX.
+
+**Disposition:** Distinguish deceptive intent from accordions, accessibility and normal UI behavior.
+
+**Evidence:** S18
+
+## F27 — unverified cross surface equivalence
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work 4/Framework/framework-searchgpt.md`, line 5.
+
+[Inspect preserved source](../99-Originals/Framework/framework-searchgpt.md)
+
+**Located wording:**
+
+```
+A comprehensive installation and audit reference for winning citation and brand mention on OpenAI's search surface family. ChatGPT Search (browsing inside ChatGPT, launched October 31, 2024 per OpenAI's announcement), the SearchGPT prototype (July 25, 2024 per OpenAI), the ChatGPT agent (integrated July 17, 2025, replacing the Operator preview that shut down August 31, 2025), and ChatGPT Atlas (the OpenAI Chromium based browser, October 21, 2025) share a bot family, an index dependency, and a retrieval pattern, but each surface produces distinct citation behavior. This framework specifies the structural, schema, freshness, entity, and access signals that drive citation on those surfaces, the bot family and how each member behaves, the audit rubric, and the maintenance cadence. Dual purpose: installation manual and audit document.
+```
+
+**Why it matters:** The entry point generalizes shared mechanics across ChatGPT product surfaces.
+
+**Disposition:** Use only documented provider roles and product-specific scope.
+
+**Evidence:** S08, S09
+
+## F28 — audit method boundary
+
+**Original:** `SEO Tiers Version Sets/SEO Tiers For Work/jaccard-ruthless-check-report.md`, line 9.
+
+[Inspect preserved source](../99-Originals/jaccard-ruthless-check-report.md)
+
+**Located wording:**
+
+```
+Ruthless threshold: 0.1000
+```
+
+**Why it matters:** Lexical dissimilarity is not source verification, semantic uniqueness or compliance.
+
+**Disposition:** Keep the report historical; do not treat it as a quality certificate.
+
+**Evidence:** Direct archive inspection / reproducible inventory
+
+==============================================================================

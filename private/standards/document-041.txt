@@ -1,0 +1,42 @@
+DOCUMENT 041 OF 135
+Title: AI answer observation and controlled evaluation
+Path: Library/Framework/framework-ai-observation-protocol.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# AI answer observation and controlled evaluation
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Optional, permission-compliant answer sampling across named engines  
+**Evidence:** S29, S18 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Define the question before sampling
+
+An observation panel is a controlled sample, not a census of every answer an engine gives. Begin with a business question such as whether a factual service page is cited for a defined set of customer needs. Specify the engine, surface, locale, language, account state, model label when available, date, query wording and whether the session is fresh.
+
+Use permitted interfaces and approved access methods. Do not treat this document as permission to scrape services or bypass rate limits, access controls or terms. Google's spam policy explicitly addresses unauthorized machine-generated Search traffic. [S18]
+
+## Observation record
+
+Capture one row per attempt with a stable observation ID, query-set version, run timestamp, engine/surface, request context, response status, response evidence location, brand mention, linked domain, linked URL, citation placement, answer correctness assessment and reviewer. Keep response excerpts only to the extent allowed by rights and retention policy.
+
+Use three distinct outcomes: **observed citation**, **completed answer without the target citation**, and **unavailable observation**. A network failure, blocked request or inaccessible answer is not evidence of no citation. Record the failure separately and retain the attempted-run denominator.
+
+## Calculate only defined metrics
+
+For a declared sample, citation incidence equals completed eligible answers containing at least one target citation divided by all completed eligible answers in that sample. Also report completed answers divided by attempts. Brand-mention incidence is separate. A single answer containing several target links is one cited answer under this definition; citation count is a different metric.
+
+Report numerator and denominator alongside every percentage. Break down heterogeneous engines and countries instead of pooling them into an unexplained score. Repeated answers to the same query are correlated; a naive confidence interval treating every repeat as independent can overstate certainty. For formal analysis, use query-level aggregation or a justified clustered method and document it.
+
+## Experiment design
+
+Preregister the page cohort, outcome, observation schedule, stopping rule and meaningful effect before changing content. Where feasible, compare a treatment cohort with a genuinely comparable unchanged cohort. Record all simultaneous releases. A before-and-after difference alone does not isolate the effect of schema, wording, links or a platform change.
+
+The GEO paper motivates experimental work but does not provide a guaranteed production uplift for every modern engine. [S29] This library therefore contains no promised table, heading, citation-count or internal-link multiplier.
+
+Reject a test that improves a superficial citation metric by degrading factual accuracy, hiding text or manipulating readers. A successful test must preserve user usefulness, source integrity and truthful business representation. The supplied observation template is empty by design; no fabricated client results are included.
+
+==============================================================================

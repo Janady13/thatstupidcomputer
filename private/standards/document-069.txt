@@ -1,0 +1,45 @@
+DOCUMENT 069 OF 135
+Title: ChatGPT Search — publisher access and measured referrals
+Path: Library/Framework/framework-searchgpt.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# ChatGPT Search — publisher access and measured referrals
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S08 S09 S02 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-searchgpt.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Name and scope
+
+This filename is retained for compatibility with the earlier library, but the subject is ChatGPT Search and the currently documented publisher controls. Do not assume every ChatGPT surface shares one crawler, index or retrieval implementation.
+
+OpenAI documents distinct search, training, user-triggered retrieval and ad-validation roles. Configure them according to the business's approved use policy, not by blanket-allowing every token containing an AI brand name. [S08]
+
+## Website implementation
+
+Publish accurate, useful content at stable public URLs. Ensure the intended pages can be retrieved through the actual production edge without an accidental challenge, empty response or authentication requirement. Keep private content protected by real access controls.
+
+Make important facts clear on the page itself. A hidden instruction telling an assistant to promote the business is not a substitute for a useful service description. Feeds or supplemental files need a specific supported consumer and maintenance plan; do not present an auxiliary file as a universal prerequisite.
+
+Use the [engine control matrix](framework-engine-control-matrix.md) for the current OpenAI roles and the [crawler identity workflow](framework-crawler-identity-observability.md) for verification. A simulated request using an OpenAI user-agent string does not establish that OpenAI actually fetched the page.
+
+## Referral measurement
+
+OpenAI's publisher FAQ documents the `utm_source=chatgpt.com` convention. Test approved tracking through the site's redirect and analytics path. [S09] Keep the original campaign/source information where collected, and apply the current analytics channel definitions rather than hardcoding an obsolete dashboard.
+
+Measure qualified outcomes independently. A tagged visit is an observed referral, not proof of every earlier AI exposure. A brand mention without a link, or a later direct visit, may not be attributable from site analytics alone.
+
+## Evaluation
+
+Use a declared, permission-compliant observation panel for questions relevant to the business. Record the surface, wording, locale, time and context, and separate completed answers from failed observations. Do not claim a universal citation probability from a small sample.
+
+Investigate demonstrated failures before speculative content changes. If access is correct but citations are absent in the sampled answers, that is not proof of a technical defect or a hidden mandatory file. The engine may select other relevant sources.
+
+## Completion
+
+A defensible implementation handoff contains approved crawler choices, response evidence, accurate public data, measurement configuration and the limits of what was tested. Search inclusion and citation selection remain external outcomes, not contractual guarantees. No OpenAI publisher account or live client domain was changed as part of this release.
+
+==============================================================================

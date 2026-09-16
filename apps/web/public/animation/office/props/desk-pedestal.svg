@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -9.00 275.00 280.00" width="275" height="280">
+  <title>Desk pedestal / open drawer cavities</title>
+  <g id="desk-pedestal" data-art="desk-pedestal">
+    <path id="desk-pedestal-shell" d="M0 0 L259 -1 L252 249 L2 232 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-left-stile" d="M0 0 L18 2 L17 233 L2 232 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-right-stile" d="M242 0 L259 -1 L252 249 L237 245 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-inside-upper" d="M18 5 L242 4 L240 82 L18 76 Z" fill="#29261F" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-inside-lower" d="M18 94 L241 100 L237 231 L18 216 Z" fill="#29261F" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-drawer-rails" d="M22 109 L233 115 M22 207 L232 223" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.36"/>
+    <path id="desk-pedestal-foot-left" d="M0 232 L18 233 L17 246 L1 245 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="desk-pedestal-foot-right" d="M237 245 L252 249 L251 263 L236 259 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

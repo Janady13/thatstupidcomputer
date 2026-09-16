@@ -1,0 +1,68 @@
+DOCUMENT 089 OF 135
+Title: R06 public-content brief — Why does a good Lighthouse score not prove that real visitors have a fast website?
+Path: Publishing/Briefs/R06-web-performance.md
+Group: briefs
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# R06 public-content brief — Why does a good Lighthouse score not prove that real visitors have a fast website?
+
+**State:** NOT_APPROVED_FOR_PUBLICATION. **Type:** evidence-led article/service-support brief. **Primary specialist:** R06. **Proposed author:** Joseph, subject to his review and approval; do not insert unverified credentials. This is not completed client work.
+
+## Reader and purpose
+
+A business owner or practitioner facing this specific problem needs a diagnosis and a way to evaluate professional help. The article should answer: **Why does a good Lighthouse score not prove that real visitors have a fast website?**
+
+**Distinct contribution:** Paired lab and field reporting with explicit sample/window limits and a documented performance repair.
+
+## Candidate search questions — hypotheses, not measured demand
+
+- Lighthouse versus Core Web Vitals field data
+- business website performance audit
+- improve INP without breaking forms
+
+No keyword volumes, ranking difficulty, expected traffic, citation probability or sales forecast have been measured for these suggestions. R23 validates commercial relevance from real inquiries or authorized search data; R10 checks answer relevance. Merge with an existing page when its task is already answered well.
+
+## Proposed outline
+
+1. Separate diagnostic and audience evidence
+2. Locate the measured bottleneck
+3. Apply a guarded change
+4. Wait for sufficient field evidence without fabricating it
+
+Open with a direct bounded answer. Explain the observable distinction that matters, demonstrate the method with an authorized artifact or an explicitly hypothetical example, and close with practical limitations. Do not clone this outline across 26 pages by changing only role names.
+
+## Evidence needed before making an expertise or results claim
+
+- Field/lab separation and route-level baseline
+- Trace-supported bottleneck and controlled comparison
+- Cache safety and critical-journey regression results
+
+These artifacts are requirements, not supplied project results. A methods article can explain documented principles without claiming that a customer implementation exists. A case study additionally needs a real scoped engagement, permission, original before/after artifacts, known confounders, dates and approved result wording. An unmeasured benefit must remain a hypothesis.
+
+## Proposed public route and internal relationships
+
+Suggested route, pending canonical-host approval: `/expertise/web-performance/`. This is a planning path, not a deployed URL. Choose one canonical home before publication; do not duplicate the same article on both ThatDevPro and ThatDeveloperGuy.
+
+Link contextually from the relevant real service page and the discipline hub. Link to the next diagnostic step, an original proof artifact that is safe to publish, and a working contact path. The page must be useful without those links; link counts are not acceptance criteria.
+
+## Conversion and measurement contract
+
+Suggested action: request a scoped review of this problem, **only if that service is actually available**. Do not advertise 26 staffed departments. A practical single-author description is “A multidisciplinary review process with defined specialist responsibilities,” subject to the owner's approval.
+
+Measure the canonical page's observed search/citation exposure separately from referral sessions and qualified inquiries. Record page/source/window and event definitions with R16. The mere addition of this brief to a private library cannot create search exposure.
+
+## Publication gate
+
+R13 checks usefulness and distinction; R14 checks factual claims, author identity and any credentials; R20 approves sanitization and privacy; R11 checks truthful entity markup; R08 checks the chosen public URL; R25 coordinates publication and R26 performs the agreed independent checks where required. Missing evidence remains BLOCKED. A drafted byline is not author approval.
+
+No rankings, model recommendations or “recognized expert” status are promised. The intended path is demonstrated useful work, accurate attribution, accessible publication, independent corroboration and measured outcomes.
+
+## Research references
+
+- [D05 — HTTP semantics (RFC 9110)](https://www.rfc-editor.org/rfc/rfc9110.html): HTTP method and response semantics; application response does not establish business delivery.
+- [D09 — Web Vitals](https://web.dev/articles/vitals): LCP, INP and CLS; field assessment differs from lab diagnostics.
+- [D10 — Defining the Core Web Vitals thresholds](https://web.dev/articles/defining-core-web-vitals-thresholds): Good thresholds and 75th-percentile aggregation; not a universal conversion or ranking guarantee.
+
+==============================================================================

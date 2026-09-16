@@ -1,0 +1,37 @@
+DOCUMENT 116 OF 135
+Title: Author, business and publication identity plan
+Path: Publishing/ENTITY-AND-PUBLICATION-PLAN.md
+Group: publishing
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Author, business and publication identity plan
+
+## Verified inputs versus open decisions
+
+The user identifies as Joseph, a software developer and graphic designer, and supplies ThatDevPro.com and ThatDeveloperGuy.com as owned brands/domains. This package has not verified current legal business names, addresses, credentials, social profiles, certifications, staffing, live site ownership records, analytics or existing canonical architecture. Leave those fields unknown until authorized review supplies evidence.
+
+**Do not market the role library as 26 employees, 26 certifications or an external accreditation.** A supported description can explain that the workflow assigns specialist responsibilities and independent acceptance requirements. Publish an actual capability statement only after the owner confirms the offered work and evidence.
+
+## Proposed architecture, subject to approval
+
+A provisional option is a service-facing ThatDeveloperGuy site linked to original research/tools on ThatDevPro. This is not a migration recommendation. Inspect existing traffic, backlinks, branded demand, pages and business strategy before selecting a canonical publication home. One original article should have one approved public canonical location; sister-site links should be contextual, not automatic duplicate copies.
+
+Possible content structure: an expertise-methodology hub; distinct problem-solving articles; real service pages; genuine case studies with permission; source/methodology notes; an accurate author page; and a working contact path. Avoid thousands of synthetic role/city/keyword combinations. [Google people-first guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [spam policies](https://developers.google.com/search/docs/essentials/spam-policies).
+
+## Entity model
+
+Represent Joseph as a Person only with approved factual properties. Represent each actual business/organization distinctly; do not guess whether a domain is a legal entity, brand or trading name. Model each technical article as a document with real headline, author, publisher where appropriate, canonical page and actual dates. `TechArticle` is a vocabulary option, not a promise of a special search feature. [Schema.org Person](https://schema.org/Person), [Organization](https://schema.org/Organization), [TechArticle](https://schema.org/TechArticle).
+
+Stable proposed patterns, **not production IDs**, are `{approved_origin}/about/joseph/#person`, `{approved_origin}/#organization` and `{canonical_article_url}#article`. Do not deploy braces or placeholders. An organization ID may belong on a different approved canonical domain from the person or article; the relationship must reflect the actual publication arrangement.
+
+Only add `sameAs` for verified profiles of that exact entity. Do not use role reference pages, general Wikipedia subjects, programming-language pages or a made-up Wikidata identifier as identity links. Do not mark internal AI personas as authors or employees. Validate visible facts and graph consistency in addition to JSON syntax. [Google structured-data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
+
+## Review record
+
+For each public artifact record owner approval, approved author name, exact bio/credential wording, canonical origin/path, distinct page purpose, evidence/source register, private-data review, actual publication date, modification date reason, schema decision, contact destination and measurement scope. The publication contract is blocked until those decisions are made.
+
+Independent corroboration can be a real editorial citation, a truthful authorized testimonial, an original contribution others reference or a verified professional profile. Label owned, paid and earned mentions separately; never fabricate them to complete a graph.
+
+==============================================================================

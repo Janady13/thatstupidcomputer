@@ -1,0 +1,42 @@
+DOCUMENT 056 OF 135
+Title: Google generative AI performance: current reporting contract
+Path: Library/Framework/framework-google-ai-performance-2026.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Google generative AI performance: current reporting contract
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Google Search Console, AI Overviews and AI Mode  
+**Evidence:** S04, S05, S03 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Current feature boundary
+
+Google announced dedicated generative AI performance reporting on June 3, 2026 and states that rollout reached websites worldwide on August 31. The Search report covers AI Overviews and AI Mode impressions, with page, country, device and date views. Insufficient impression volume can prevent a useful report from appearing. Search Labs experiments are excluded. [S04, S05]
+
+Do not describe this as a Q4 2025 AI Overview tab, and do not assume dedicated clicks, CTR, raw prompts or separate AI Overview-versus-AI Mode dimensions. Use only fields exposed and documented for the property. The older guidance that AI activity contributes to overall Search reporting remains relevant, but is not evidence that dedicated impressions are unavailable. [S03, S04]
+
+## Property setup and evidence capture
+
+Confirm the site/property scope and permissions. Record the canonical host, domain versus URL-prefix property, timezone, available reports and earliest usable date. A rollout announcement is not a substitute for checking the client's property. Capture the report name and its visible dimensions before writing an export transformation.
+
+Create a monthly snapshot with the period, comparison period, filters, data freshness, metric definition, export timestamp and excluded dates. Keep the unmodified export beside a normalized table. Retain the original URL value and a separately derived canonical URL key; do not destroy the source field during normalization.
+
+## Analysis sequence
+
+Start with the property's own distribution rather than a universal prevalence benchmark. Which relevant service, product or reference pages receive impressions? Which geography and device groups are represented? Where do changes coincide with a deployment, topic change or seasonality?
+
+Compare a stable cohort of pages between periods. Separate newly published pages from the unchanged cohort so expansion does not masquerade as improvement to existing pages. Report absolute changes together with percentage changes; a rise from one impression to five is not strong business evidence even though the relative change is large.
+
+Do not add AI impressions to overall impressions when they are already included in the overall report. Do not divide separately scoped analytics sessions by these impressions and label the result a platform CTR. If a field is absent, store `null` and explain that it is unavailable rather than inventing a value or treating it as zero.
+
+## Decision rules
+
+A sharp change first triggers checks for report scope, incomplete dates, URL consolidation, filters and site accessibility. It does not automatically prove an AI algorithm change. Content decisions require page relevance, evidence quality and business utility in addition to visibility.
+
+The client deliverable should distinguish “observed in Google's AI features” from “clicked to the site” and “became a qualified lead.” Use `Templates/metric-contracts.json` and the AI attribution module for the latter layers. No Search Console account was connected or inspected as part of this library release.
+
+==============================================================================

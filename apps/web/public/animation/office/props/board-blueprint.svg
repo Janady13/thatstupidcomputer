@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.00 -18.00 204.00 197.00" width="204" height="197">
+  <title>Pinned technical drawing</title>
+  <g id="board-blueprint" data-art="board-blueprint">
+    <g id="board-blueprint-sheet-motion" data-motion="paper" data-pivot="37,6" data-phase="0.5">
+      <path id="board-blueprint-sheet-shadow" d="M2 7 L184 -8 L185 166 L4 171 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+      <path id="board-blueprint-sheet" d="M-3 4 L181 -10 L183 160 L-2 167 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="board-blueprint-drawing-frame" d="M13 25 L160 15 L164 140 L14 147 Z" fill="none" stroke="#29261F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.64"/>
+      <path id="board-blueprint-plan-walls" d="M44 51 L122 45 124 117 44 122 Z M78 48 L78 91 105 90 105 116 M44 85 L78 82 M109 48 L109 69 124 68 M66 121 L66 104 M45 105 L67 104 M123 92 L113 92" fill="none" stroke="#29261F" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.73"/>
+      <path id="board-blueprint-plan-dimensions" d="M35 45 L35 133 M29 53 L38 53 M29 122 L39 122 M43 36 L123 30 M44 30 L44 40 M123 24 L123 35 M133 47 L136 118 M129 49 L141 49 M131 117 L143 117" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+      <path id="board-blueprint-door-arcs" d="M78 69 Q65 69 65 82 M93 117 Q93 104 106 104 M112 80 Q112 68 124 68" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+      <path id="board-blueprint-technical-notes" d="M24 153 l42 -2 M81 150 l50 -3 M23 157 l21 -1 M140 143 l15 -1" fill="none" stroke="#29261F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    </g>
+    <circle id="board-blueprint-drawing-pin-shadow" cx="35.8" cy="6.6" r="4.3" fill="#29261F" stroke="none" stroke-width="1.5" opacity="0.16"/>
+    <ellipse id="board-blueprint-drawing-pin-body" cx="35" cy="5" rx="3.7" ry="4.2" fill="#C97038" stroke="#29261F" stroke-width="1"/>
+    <path id="board-blueprint-drawing-pin-shine" d="M34 3 q2 -1 3 1" fill="none" stroke="#F4E5C4" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

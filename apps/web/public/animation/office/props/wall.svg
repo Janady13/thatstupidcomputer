@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -8.00 1664.00 944.00" width="1664" height="944">
+  <title>Wall / uninterrupted backing</title>
+  <g id="wall" data-art="wall">
+    <rect id="wall-paint" x="0" y="0" width="1648" height="928" rx="0" fill="#F4E5C4" stroke="none" stroke-width="1.5"/>
+    <path id="wall-left-joint" d="M397 0 L397 635" fill="none" stroke="#29261F" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" opacity="0.22"/>
+    <path id="wall-repair-seam" d="M477 0 L477 170 M477 208 L477 383" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+    <path id="wall-plaster-hairlines" d="M548 18 l-5 17 7 9 -5 26 M1120 407 l9 -5 6 7" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.16"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+DOCUMENT 129 OF 135
+Title: Tier applicability and deliverable map
+Path: Research/TIER-APPLICABILITY-MAP.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Tier applicability and deliverable map
+
+The original 1–14 numbering and names are retained. Tier 13 remains retired. Names such as “AI DOMINATION” and “LOCAL DOMINATION” are legacy packaging labels, not literal promises of platform outcomes. No prices, quotas or contractual terms were changed. Modules are selected by applicability; they are not an instruction to sell every task to every client.
+
+| Tier | Research additions to consult | Required inputs | Completion evidence |
+| --- | --- | --- | --- |
+| 01 — FOUNDATION | URL lifecycle; release contracts; content delivery; crawler identity; field performance | Route inventory, existing URLs, stack, access policy | Approved route behavior and captured pre/post-release checks |
+| 02 — SEARCH VISIBILITY | Canonicalization; metadata; schema lifecycle; Search Console analysis | Target pages, consumer, country, eligible features | Indexability evidence and applicable metadata/schema validation |
+| 03 — AI DOMINATION | Engine control matrix; Google/Bing AI performance; AI observation and attribution | Client permission policy and actual reporting availability | Separate crawl, impression, citation, referral and lead evidence; no visibility guarantee |
+| 04 — ENTITY & AUTHORITY | Source provenance; evidence governance; fact register; organization schema | Verified business facts and source ownership | Consistent entity references and traceable claims; no fabricated authority |
+| 05 — LOCAL DOMINATION | Location evidence; regional eligibility; real-storefront schema boundary | Real staffed locations, service areas and original local evidence | Only justified location pages and eligible business representations |
+| 06 — CONTENT & MULTIMEDIA AUTHORITY | Source provenance; social/video property reporting; publisher preferences | Editorial ownership, original evidence, image/video rights | Attributable content and platform-specific measurement |
+| 07 — SOCIAL & COMMUNITY | Social/video properties; AI referrals; client-scope acceptance | Verified accounts, publication rights and attribution constraints | Measurable platform work without guaranteed backlinks or engagement |
+| 08 — DATA, ANALYTICS & CONVERSION | GA4; metric contracts; AI attribution; observation protocol | Property access, event definitions, consent requirements | Documented denominators, attribution scope and qualified-lead events |
+| 09 — MONITORING & INTELLIGENCE | Research maintenance; crawler observability; source-date conflict handling | Owner, review triggers, permitted logs and retention | Review ledger and alerts defined; scheduling is separate implementation |
+| 10 — WORKFLOW & OPERATIONS | Release contracts; rollback; client scope; agent security; offline tools | Approvals, deployment path, owners and rollback authority | A reproducible release evidence packet and scoped acceptance |
+| 11 — MARKETPLACE & RETAIL | Commerce consistency; merchant schema; URL lifecycle; faceted URLs | SKU/offer facts, feeds, platform and country eligibility | Agreement between visible prices, feeds and structured data |
+| 12 — INTERNATIONAL | Regional Search eligibility; localized URL contracts | Target markets, languages, page equivalence, local expertise | Validated locale mappings and market-specific acceptance |
+| 13 — RETIRED | No reactivation or replacement invented | Existing retirement decision | Retirement preserved |
+| 14 — ADVANCED & IMMERSIVE | Agent-access security; client scope; release contracts; performance | Actual audience need, capability, threat model and budget | Bounded prototypes and tested access, not novelty-based ranking claims |
+
+## Scope rule
+
+Choose a tier only after the project intake and baseline. An existing WordPress business site, a Next.js application, a physical storefront, a service-area business and a multiregional store do not share the same route, schema or account obligations. Deliverable acceptance belongs in the project contract; ranking and citation outcomes belong in a separately defined measurement plan.
+
+Use the [client scope module](../Library/Framework/framework-client-scope-acceptance.md), [project intake example](../Templates/project-intake.example.json) and [release acceptance example](../Templates/release-acceptance.example.json). The older item counts were not re-certified as universally necessary or sufficient.
+
+==============================================================================

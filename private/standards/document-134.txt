@@ -1,0 +1,57 @@
+DOCUMENT 134 OF 135
+Title: Discipline utilities — executable scope and limitations
+Path: Tools/DISCIPLINES-README.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# Discipline utilities — executable scope and limitations
+
+Python 3.10+; standard library only. The existing four baseline utilities remain in place. The two additions are local decision-support tools, not an agent runtime, credential system or deployment service.
+
+## 1. Advisory role router
+
+```
+python3 Tools/discipline_router.py --task "The contact form says sent but no email reaches the mailbox" --intent repair --output /tmp/inquiry-route.json --prompt-output /tmp/inquiry-context.txt
+python3 Tools/discipline_router.py --task "Review the DMARC policy" --role R17
+```
+
+Run from the extracted library root. Choose fresh output filenames: the tool refuses to overwrite existing outputs or its input task file. `--task-file` reads a UTF-8 task file instead of inline text. `--intent` is audit, repair, publish or release; every mode is advisory/read-only. `--role` supplies an explicit accountable lead. `--max-prompt-roles` accepts 1–8 and defaults to 4.
+
+The proposed route includes a lead, consulted roles, matched terms, reading paths and limitations. The context pack includes a bounded set of standalone prompts and names other consultees without claiming they executed. The rules are deterministic phrase/term matching, not semantic diagnosis; they do not understand every synonym, negation or causal relationship. Review and override where necessary. Security-exposure, availability and known critical-path phrases have priority. No shell commands, network requests or model calls are executed.
+
+The complete task is written into the route/context. Treat those outputs as private when task text includes sensitive details; do not upload them to a public directory. The embedded instruction boundary reduces ambiguity but is not a formal proof that an external model resists prompt injection.
+
+## 2. Evidence-record consistency gate
+
+```
+python3 Tools/evidence_gate.py --contract /path/to/approved-contract.json --record /path/to/acceptance-record.json --evidence-root /path/to/private-evidence
+```
+
+Use actual authorized paths. Optional `--output` writes a new JSON result and refuses overwrite. Exit **0** means structural validation passed, **1** means the submitted evidence/contract is blocked or inconsistent, and **2** means invalid invocation or unreadable/malformed input. Duplicate JSON keys and nonobject top-level files are rejected.
+
+The contract requires schema version 1; kind release/publication; meaningful contract/project/build/environment identifiers; an approval declaration and timezone-aware approval time; a minimum independence level; and nonempty required checks. Each check defines ID, owner role, requirement, explicit N/A permission and minimum evidence count. Release contracts require at least a declared separate operator.
+
+The record must match the exact contract SHA-256 and identity fields, include timestamped builder/verifier identity/run declarations and declare actual independence. Separate reviews require distinct runs; separate operators require distinct actor declarations and owner review. Publication records additionally require owner review of the article. These are consistency checks on declarations, not identity authentication.
+
+Each PASS needs method, observed result, verifier execution/run, observation time and sufficient distinct evidence paths. Artifacts are relative to the supplied evidence root, cannot traverse parents or escape through symlinks, and carry SHA-256, build/environment, run ID and capture time. Evidence must be captured after contract approval and no later than the check observation; the observation cannot be later than the record. Future or timezone-less timestamps fail. The utility checks actual local file bytes, with a 256 MB artifact limit and 5 MB JSON limit.
+
+FAIL or BLOCKED required results block validation. NOT_APPLICABLE requires both contract permission, a specific reason and an owner-approved exception declaration. Missing, extra or duplicate check IDs, reused paths, mismatched builds/runs, empty requirements and placeholder values fail. The template pairs deliberately remain blocked.
+
+**A pass always includes `authorization_granted: false`, `external_truth_verified: false` and `identity_or_independence_authenticated: false`.** A human must inspect the evidence, verify the real approval and reviewer arrangement, and make any actual deployment/publication decision. Metadata and hashes cannot prove a website worked or a reviewer was independent. A falsified but self-consistent record can still pass structural checks.
+
+## Evidence artifact shape
+
+A PASS check's evidence item contains `path`, `sha256`, `build_id`, `environment`, `run_id` and `captured_at`. Use an actual local relative path to an authorized artifact and its real digest; do not insert a fabricated value. The synthetic examples used by unit tests are generated in temporary directories and never represent Joseph's systems.
+
+## Testing and integrity
+
+```
+python3 -m unittest discover -s Tools/tests -v
+python3 Tools/library_audit.py .
+```
+
+The current test suite contains 84 tests: the 24 baseline tests plus 60 new router/gate tests. Read `Reports/discipline-unit-tests.txt` and the current validation report for the executed results and boundaries. The modified integrity auditor also covers `Publishing/` and validates all 26 charter/prompt/brief paths, source IDs, handoff IDs and baseline original hashes. Neither command is a live website or account audit.
+
+==============================================================================

@@ -1,0 +1,57 @@
+DOCUMENT 113 OF 135
+Title: Browser coverage without overclaiming
+Path: Publishing/Drafts/04-REAL-BROWSER-EVIDENCE.md
+Group: drafts
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Browser coverage without overclaiming
+
+*How to distinguish browser engines, branded products, device emulation and actual mobile testing.*
+
+> Editorial workbench: this is an unpublished methodology draft. No client results, credentials, real site test outcomes or owner approval are asserted. Remove this editorial note only after the actual publication review; do not publish the private library.
+
+“Tested in all browsers” is not a useful technical statement unless the report says which products, versions, platforms and interactions were actually tested.
+
+A browser engine test, a branded-browser test and an actual mobile-device test can expose different classes of problem. A responsible coverage report keeps those categories visible instead of collapsing them into a single green badge.
+
+## Name exactly what ran
+
+Playwright supports browser engines and specific branded-browser channels, but its WebKit build is not the same as launching the Safari application on a real iPhone. Its browser documentation also distinguishes the environments and binaries it uses. [Playwright browser documentation](https://playwright.dev/docs/browsers).
+
+A coverage row should identify the OS, browser name and version, engine/channel where relevant, device, input mode and test type. An emulated device setting may be useful for viewport and input assumptions, but it does not establish that the corresponding physical device was tested.
+
+## Test a task, not only a screenshot
+
+A page can look correct while its controls fail. Include the actual business journey: navigating to a service, opening contact, entering information, encountering an error, recovering from it and receiving an accurate confirmation.
+
+Native controls, focus, scrolling, viewport changes, file selection and back/forward behavior may matter depending on the application. Record what the user did and what happened. A screenshot is helpful evidence of appearance; it cannot prove that the server persisted a submission.
+
+## Keep accessibility coverage explicit
+
+Accessibility is not identical to visual browser compatibility. Keyboard sequence, focus visibility, names and relationships, error messages and assistive-technology behavior require their own evaluation.
+
+WCAG conformance considers whole pages and complete processes, with criteria that are not all established by automated tooling. A browser regression suite can detect some failures, but an automated score is not a full WCAG 2.2 AA verdict. [W3C conformance guidance](https://www.w3.org/WAI/WCAG22/Understanding/conformance), [WCAG 2.2](https://www.w3.org/TR/WCAG22/).
+
+The agreed matrix should therefore identify actual browser/screen-reader combinations and the manual processes evaluated. If a required combination is unavailable, report that gap rather than inferring a pass from another environment.
+
+## Use automation where it provides repeatability
+
+Automation is valuable for reproducing the same steps after a change, protecting known failures and checking many routes consistently. Its assertions must still match the requirement. “HTTP status is 200” does not prove that a form works or that a dialog can be operated with a keyboard.
+
+Keep provider mocks, synthetic fixtures and real integrations distinct. A reliable test report includes the build identity and enough safe evidence to reproduce failures. Broad automatic retries should not conceal a defect simply because one run eventually passed.
+
+## Accept the original failing case
+
+After the repair, repeat the specific environment and interaction that failed. Then run the relevant regression set to check that the change did not break other supported conditions.
+
+The final statement should describe actual coverage: the named environments passed the named journeys on the recorded build; other rows were not tested or remain blocked. That does not sound as sweeping as “works everywhere,” but it gives a business owner a clear basis for deciding whether the remaining risk is acceptable.
+
+---
+
+## Editorial handoff — not public article copy
+
+R13: confirm distinct usefulness and the actual audience. R14: verify current sources and every added result/credential claim. R20: approve any screenshots or proof artifacts for publication. Joseph: substantively review the final article and approve the exact author/byline. R08/R11: approve the actual canonical URL and truthful entity representation. R16: define measurement without implying guaranteed citations or inquiries. The suggested service action is appropriate only if the service is actually offered and its contact path works.
+
+==============================================================================

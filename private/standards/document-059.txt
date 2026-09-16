@@ -1,0 +1,42 @@
+DOCUMENT 059 OF 135
+Title: Location-page evidence and genuine local utility
+Path: Library/Framework/framework-location-evidence.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Location-page evidence and genuine local utility
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Service-area businesses, real offices and regional landing pages  
+**Evidence:** S18, S32, S33, S20 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## A location is not a keyword permutation
+
+Approve a location page only when it answers a real local customer need and the business can substantiate its relevance. Useful evidence may include actual service coverage, local projects with permission, travel or scheduling constraints, region-specific service details, legitimate contacts and accurate customer-facing information.
+
+Google's doorway policy addresses substantially similar location-targeted pages that funnel users without adequate utility. Business Profile guidance requires accurate real-world representation. A service area does not automatically establish a staffed storefront. [S18, S32, S33]
+
+## Page-creation dossier
+
+Before writing, record the location, offered service, customer question, operational coverage evidence, responsible reviewer and the unique information the page will provide. Identify what is genuinely different from the parent service page. Where there is no meaningful difference, prefer a useful coverage section rather than another indexable page.
+
+Do not invent office addresses, staff, local testimonials, licenses, project photos or business history. Obtain approval to publish customer examples and remove identifying details when necessary. Structured data must match the real business and visible page; it is not a license to manufacture a location. [S20]
+
+A schema graph can describe places and their relationships without requiring a separate indexed page for every state, county and city. Use stable identifiers for genuine entities. Create a hierarchy because it helps people browse, not because a presumed algorithm needs every geographic level.
+
+## Content and layout
+
+Lead with the service and location-specific facts a customer needs to make a decision. Provide clear scope, contact options, constraints and relevant supporting work. Use maps and photographs only when they represent reality. A generic stock image does not become local evidence by changing its alt text.
+
+Avoid mechanically swapping place names through otherwise identical prose. Repeated service facts are not inherently wrong, but the page as a whole must justify its independent existence. Editorial review should compare neighboring pages side by side and ask whether a customer gains useful information from each.
+
+## Acceptance and monitoring
+
+The acceptance package contains the evidence dossier, approved business facts, a comparison with neighboring pages, schema validation scope and the intended index state. Monitor qualified inquiries and incorrect-location contacts as well as visibility; attracting customers in an unserved area can be a failure.
+
+For existing pages, evaluate individually. Consolidation may be sensible where independent utility is absent, but do not delete every low-traffic city page automatically. Preserve genuine customer needs and incoming references through the URL-lifecycle process. No new local addresses or client-specific coverage claims have been invented in this edition.
+
+==============================================================================

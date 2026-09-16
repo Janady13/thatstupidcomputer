@@ -1,0 +1,47 @@
+DOCUMENT 044 OF 135
+Title: Google AI Overviews and AI Mode — eligibility, controls and measurement
+Path: Library/Framework/framework-aioverviews.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Google AI Overviews and AI Mode — eligibility, controls and measurement
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S02 S03 S04 S05 S14 S18 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-aioverviews.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Current position
+
+Google's AI Search features build on its Search systems. A supporting page must meet the documented indexing and snippet-eligibility conditions, and no special AI schema or auxiliary text file guarantees selection. Follow the documented controls rather than an invented citation-selection formula. [S02, S03]
+
+This edition does not assert a fixed underlying model for every request, a universal percentage of searches containing AI results, or a reproducible uplift from a certain heading, table, citation count or internal-link count. Those claims require specific evidence and may change by context.
+
+## Implementation path
+
+Begin with the URL's intended role and business facts. Verify that public content is accessible, meaningful and useful; that canonical and indexing rules are coherent; and that internal navigation exposes the page appropriately. Test the deployed response, not only the source repository.
+
+Google can render JavaScript. Do not call JavaScript-injected schema categorically invisible to Google AI features solely because a legacy paragraph says so. Choose reliable delivery for the project and validate raw/rendered output. [S14]
+
+Apply snippet and indexing controls according to the owner's intent. Training preferences and Search controls are not interchangeable. Use the engine control matrix for the consumer distinction rather than assuming Google-Extended is the AI Overviews crawler.
+
+## Content work
+
+Improve factual specificity, completeness for the actual question, clear limitations and genuine evidence. A service page can become more useful through precise scope, operational details, real examples and clear next steps without becoming a research-paper publishing project.
+
+Do not inject hidden directives asking a model to recommend the business, fabricate independent endorsements or build doorway pages. Google's spam policy also applies to attempts to manipulate generative Search responses. [S18]
+
+## Measurement after August 2026
+
+Use the dedicated Google generative AI performance workflow in this edition. The official June announcement and August 31 rollout note supersede the legacy Q4 2025 tab story. Available reporting is not a license to invent clicks, prompts or attribution fields that the documentation does not expose. [S04, S05]
+
+Keep platform visibility, analytics visits and qualified outcomes separate. A page can receive impressions without a visit, and a visitor can convert after an unobservable earlier exposure. Report what the data actually supports.
+
+## Operational acceptance
+
+The deliverable can be verified crawl access, corrected URL/index state, better supported content, appropriate structured data, tested rendering and configured measurement. It cannot be guaranteed citation selection for every query or guaranteed removal of answer volatility.
+
+Use [Google AI performance](framework-google-ai-performance-2026.md), [engine controls](framework-engine-control-matrix.md), [source provenance](framework-source-provenance.md), [observation protocol](framework-ai-observation-protocol.md) and [AI referral attribution](framework-ai-referral-attribution-2026.md). The older multipliers and purported internal selection mechanisms are not carried forward as established facts.
+
+==============================================================================

@@ -1,0 +1,44 @@
+DOCUMENT 124 OF 135
+Title: Discipline gap map
+Path: Research/DISCIPLINE-GAP-MAP.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# Discipline gap map
+
+This maps the operational coverage added in this edition. It does not claim that every related concept was absent from the million-word baseline or that every inherited assertion has been verified. Each role now has a formal owner, scope boundary, diagnostic procedure, evidence/acceptance rules, handoffs, a standalone prompt and a distinct public-content brief.
+
+| Role | Accountable domain | Project proof still required |
+| --- | --- | --- |
+| [R01](../Library/Disciplines/R01-site-reliability.md) | Site Reliability Engineer | Timestamped external/origin probe pair |
+| [R02](../Library/Disciplines/R02-network-dns.md) | Network/DNS Engineer | Authoritative/recursive answer matrix with timestamps |
+| [R03](../Library/Disciplines/R03-backend-web.md) | Backend Web Engineer | Request-to-persistence trace with synthetic identifier |
+| [R04](../Library/Disciplines/R04-frontend-web.md) | Frontend Web Engineer | State-by-state UI contract |
+| [R05](../Library/Disciplines/R05-browser-compatibility.md) | Browser Compatibility Engineer | Versioned environment matrix |
+| [R06](../Library/Disciplines/R06-web-performance.md) | Web Performance Engineer | Field/lab separation and route-level baseline |
+| [R07](../Library/Disciplines/R07-accessibility.md) | Accessibility Specialist | Criterion-to-finding record |
+| [R08](../Library/Disciplines/R08-technical-seo.md) | Technical SEO Engineer | Per-URL expected/observed contract |
+| [R09](../Library/Disciplines/R09-information-architecture.md) | Information Architect | Page-purpose and parent map |
+| [R10](../Library/Disciplines/R10-search-relevance-ir.md) | Search Relevance/IR Engineer | Query set with observed versus hypothesis labels |
+| [R11](../Library/Disciplines/R11-structured-data-knowledge-graph.md) | Structured Data/Knowledge Graph Engineer | Entity/ID registry and claim provenance |
+| [R12](../Library/Disciplines/R12-aeo-aio-geo.md) | AEO/AIO/GEO Engineer | Engine-control and access matrix |
+| [R13](../Library/Disciplines/R13-content-strategy-seo-editor.md) | Content Strategist/SEO Editor | Purpose/differentiation brief |
+| [R14](../Library/Disciplines/R14-claims-auditor.md) | Fact-Checker/Claims Auditor | Claim ledger with exact allowed wording |
+| [R15](../Library/Disciplines/R15-conversion-rate-optimization.md) | Conversion-Rate Optimization Specialist | Journey/friction record tied to observation |
+| [R16](../Library/Disciplines/R16-analytics-measurement.md) | Analytics/Measurement Engineer | Metric/event contracts |
+| [R17](../Library/Disciplines/R17-email-deliverability.md) | Email Deliverability Engineer | Sender-stream and authentication inventory |
+| [R18](../Library/Disciplines/R18-local-seo-gbp.md) | Local SEO/GBP Specialist | Eligibility and business-fact register |
+| [R19](../Library/Disciplines/R19-digital-pr-authority.md) | Digital PR/Authority Specialist | Evidence-backed asset and outreach rationale |
+| [R20](../Library/Disciplines/R20-application-security-privacy.md) | Application Security/Privacy Engineer | Data-flow/threat model and scoped findings |
+| [R21](../Library/Disciplines/R21-qa-sdet.md) | QA/SDET Engineer | Risk-to-test coverage map |
+| [R22](../Library/Disciplines/R22-adversarial-red-team.md) | Adversarial/Red-Team Reviewer | Authorized scope and stop conditions |
+| [R23](../Library/Disciplines/R23-product-marketing-research.md) | Product Marketing/Market Researcher | Audience/problem/alternative map |
+| [R24](../Library/Disciplines/R24-solutions-architecture.md) | Solutions Architect/Integrator | Task/decision ownership map |
+| [R25](../Library/Disciplines/R25-release-change-management.md) | Release/Change Manager | Authorized change/build and sequencing record |
+| [R26](../Library/Disciplines/R26-independent-acceptance.md) | Independent Acceptance Engineer | Independence declaration and fresh run identity |
+
+Read the machine-readable `discipline-gap-map.json` for links to existing framework references and every new role asset. No role is represented as a completed audit of Bubbles or either live brand website.
+
+==============================================================================

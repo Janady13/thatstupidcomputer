@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40.99 -119.34 92.53 135.34" width="93" height="136">
+  <title>Pencil cup / individual pens</title>
+  <g id="pencil-cup" data-art="pencil-cup">
+    <g id="pencil-cup-pen-1" transform="rotate(-11 -17 0)">
+      <path id="pencil-cup-pen-1-barrel" d="M-19 -3 L-19 -70 Q-17 -77 -14 -70 L-14 -3 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="pencil-cup-pen-1-line" d="M-17 -67 V-6" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pencil-cup-pen-2" transform="rotate(-5 -6 0)">
+      <path id="pencil-cup-pen-2-barrel" d="M-8 -3 L-8 -108 Q-6 -115 -3 -108 L-3 -3 Z" fill="#C97038" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="pencil-cup-pen-2-line" d="M-6 -105 V-6" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pencil-cup-pen-3" transform="rotate(4 7 0)">
+      <path id="pencil-cup-pen-3-barrel" d="M5 -3 L5 -83 Q7 -90 10 -83 L10 -3 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="pencil-cup-pen-3-line" d="M7 -80 V-6" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pencil-cup-pen-4" transform="rotate(8 15 0)">
+      <path id="pencil-cup-pen-4-barrel" d="M13 -3 L13 -107 Q15 -114 18 -107 L18 -3 Z" fill="#C97038" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="pencil-cup-pen-4-line" d="M15 -104 V-6" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="pencil-cup-pen-5" transform="rotate(12 22 0)">
+      <path id="pencil-cup-pen-5-barrel" d="M20 -3 L20 -86 Q22 -93 25 -86 L25 -3 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="pencil-cup-pen-5-line" d="M22 -83 V-6" fill="none" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path id="pencil-cup-cup-body" d="M-24 -56 L24 -54 L25 2 Q0 13 -24 3 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="pencil-cup-cup-tint" d="M9 -55 L24 -54 L25 2 Q20 7 8 8 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"/>
+    <ellipse id="pencil-cup-rim" cx="0" cy="-55" rx="24" ry="5.5" fill="none" stroke="#29261F" stroke-width="1.3"/>
+    <path id="pencil-cup-cup-lines" d="M-17 -48 V0 M-12 -47 V2 M-6 -47 V4 M1 -46 V5" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.38"/>
+  </g>
+</svg>

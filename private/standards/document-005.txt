@@ -1,0 +1,41 @@
+DOCUMENT 005 OF 135
+Title: Handoff contracts — preserve evidence across specialties
+Path: Library/Disciplines/02-HANDOFF-CONTRACTS.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Handoff contracts — preserve evidence across specialties
+
+## Minimum record
+
+A handoff carries a **question to be resolved**, not merely a conclusion. Include task/finding IDs, sender and receiving role, current accountable owner, authorized asset, environment/build, timestamp, user impact, expected/observed behavior, evidence paths, attempted work, competing explanations, requested action and acceptance condition. Secrets, customer messages and unnecessary IP/email details belong outside public records.
+
+The receiving owner explicitly accepts the decision scope or returns the missing evidence. Silence does not transfer ownership. R24 resolves a dispute; R25 records any effect on release sequencing.
+
+## Contact inquiry worked example
+
+**Observed:** a synthetic form submission displays success, but the controlled destination mailbox has no observed message. This does not identify the failing discipline yet.
+
+R04 supplies the submitted UI state and request reference. R03 verifies validation, durable storage/queue state, retries and provider response. A rejected or dropped request remains R03's defect. If the provider accepted the message, R03 hands the provider/message identifier and timestamps to R17—not the statement “mail delivered.” R17 examines authentication, queue/bounce evidence and actual authorized mailbox receipt. R02 is consulted only for a supported DNS change. R16 verifies that the event represents the true application state rather than the thank-you page alone. R21 adds failure regression cases, and R26 repeats the critical journey with fresh synthetic data under the agreed independence contract.
+
+The exact states must match the application: `received`, `validated`, `durably_accepted`, `provider_accepted`, `mailbox_observed`, `qualified_inquiry`. Do not implement a fictional state transition where the system has no observation. [SMTP semantics](https://www.rfc-editor.org/rfc/rfc5321.html) and [sender guidance](https://support.google.com/a/answer/81126?hl=en) support the distinction; the state labels are this library's design.
+
+## URL and AI visibility example
+
+R02 demonstrates public transport for the intended hostname. R08 records status, directives, canonical and engine observations. R12 verifies named AI-consumer access and records source selection observations. R10/R13 evaluate whether the page supplies a useful supported answer. R16 reconciles referrals and outcomes. None of these observations can be substituted for another. A crawler access repair can be complete while citation selection remains unobserved or variable.
+
+## Shared evidence requirements
+
+Prefer immutable artifacts named by task/run/check, with a manifest and SHA-256. Record the original tool/version, environment, collection time and redaction method. Hash the redacted public artifact separately from the private original. Public artifact paths must not reveal secrets or customer identifiers.
+
+A fact may be documented without executing a test, but the record must identify it as source-derived documentation rather than a local observation. A counterexample should include the original failing case so a repair can be retested. When evidence is inaccessible to the recipient, the handoff is BLOCKED—not silently accepted.
+
+## Closing a handoff
+
+The receiving role returns its observed result, scope and the next owner if needed. The integrator updates the dependency graph. The release manager receives one coherent change set, not a pile of conflicting recommendations. Acceptance checks must still correspond to the original business outcome.
+
+Use the [handoff template](../../Templates/Disciplines/handoff.template.json), [finding template](../../Templates/Disciplines/finding.template.json) and [contact-delivery playbook](../Playbooks/02-CONTACT-TO-MAILBOX.md).
+
+==============================================================================

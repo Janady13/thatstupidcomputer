@@ -1,0 +1,15 @@
+# Reference wrapper ONLY. Prefer merging website-server.inc into the actual
+# existing HTTPS vhost rather than adding a second server for the same hostname.
+# Every __TOKEN__ must be replaced with an observed, reviewed host value.
+server {
+    listen 443 ssl;
+    # Add IPv6 listen only if the actual host/address-family checks pass.
+    server_name thatstupidcomputer.com;
+    ssl_certificate __EXISTING_VALID_CERTIFICATE_PATH__;
+    ssl_certificate_key __EXISTING_VALID_PRIVATE_KEY_PATH__;
+    # Preserve reviewed existing TLS protocol/cipher/OCSP/renewal configuration.
+    include __ABSOLUTE_RENDERED_WEBSITE_SERVER_INCLUDE__;
+}
+# Preserve reviewed ACME challenge routes and HTTP-to-HTTPS policy separately.
+# Do not add DNS records, www/staging aliases, certificates or a default_server
+# based on this template. The known prior apex redirect is historical only.

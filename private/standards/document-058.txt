@@ -1,0 +1,40 @@
+DOCUMENT 058 OF 135
+Title: Titles, descriptions and preview copy without false limits
+Path: Library/Framework/framework-html-meta-description.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Titles, descriptions and preview copy without false limits
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Public pages and template-generated search metadata  
+**Evidence:** S34, S35 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Write for the page and reader
+
+Google does not impose a fixed 50–60-character title requirement or a 140–160-character description requirement. Display may be truncated and the search system may choose other text. Use character counts as an editorial review aid, not a technical pass/fail rule. [S34, S35]
+
+Start from the page's actual purpose and the customer's question. Write a distinctive title that identifies the service, product or information. Use a concise description that explains the useful content and any relevant limitation. Do not promise a price, location, qualification or outcome that the page cannot substantiate.
+
+## Template contract
+
+Define how static brand text combines with the page-specific title. Test missing values, long names, multilingual text and characters requiring HTML escaping. Avoid output such as an empty separator, duplicated brand name or a description copied from an unrelated page.
+
+Store the source fields separately from rendered tags. A frontend component, CMS plugin and third-party head manager should not all emit conflicting titles or descriptions. Ensure the completed document contains the intended output for each relevant consumer and rendering path.
+
+## Review process
+
+Compare a sample of neighboring pages side by side. Can a person distinguish them without opening the page? Do they describe genuinely different content? A repeated business name is reasonable; repetitive boilerplate that hides the page's identity is not useful.
+
+Preview likely display widths, but do not shorten necessary meaning simply to satisfy one simulated pixel limit. Search presentation varies by query and device. Keep visible headings and metadata consistent without mechanically forcing every field to contain the same exact phrase.
+
+## Testing and acceptance
+
+Check for an empty title, duplicate title elements, missing descriptions where required by the project, invalid escaping and unresolved placeholders. Treat length outliers as review notes. A correctly implemented description may still not be used by a search engine; acceptance should concern truthful, reliable metadata output rather than a guaranteed snippet.
+
+The supplied HTML smoke tool checks limited saved-document conditions. It does not predict a search snippet or measure click-through rate. Follow actual page performance after release, considering query mix and ranking changes before attributing a CTR movement to copy alone.
+
+==============================================================================

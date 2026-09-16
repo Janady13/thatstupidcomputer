@@ -1,0 +1,42 @@
+DOCUMENT 065 OF 135
+Title: Regional Search eligibility and policy differences
+Path: Library/Framework/framework-regional-search-eligibility.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Regional Search eligibility and policy differences
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** International clients and geographically limited search features  
+**Evidence:** S41, S42, S40 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Keep three geographies separate
+
+Record the business's operating jurisdiction, the content's intended market and the searcher's location. They are not interchangeable. A feature may depend on user geography, language, query category and provider participation even when the website is technically correct.
+
+Google's regional-differences documentation describes feature-specific availability rather than one worldwide Search experience. The August 2026 site-reputation policy update also changes treatment in relation to the EEA. Do not infer that a rule applies everywhere from one local screenshot, or that regional enforcement differences authorize abusive content. [S41, S42]
+
+## Eligibility register
+
+Create one row per proposed feature: engine, feature, content type, target countries, languages, required partner/account participation, required data, evidence source, source date and observed availability. Use `unknown` where a condition has not been verified. Do not market an unavailable feature as part of a guaranteed deliverable.
+
+For international URLs, define the canonical and alternate-language relationships before implementation. Hreflang is for localized alternatives; it is not a substitute for translation quality or a technique for making unrelated pages equivalent. Test reciprocity and URL validity using the selected implementation method. [S40]
+
+## Research and deployment workflow
+
+Begin with the current official feature documentation, then verify the client's actual account and market. Keep compliance review separate from technical eligibility. For example, a technically valid product offer may still need business approval for local terms, currency, tax presentation or availability.
+
+Test representative locale routes without forcing the tester through an irreversible geolocation redirect. Ensure a customer can select the appropriate language/market. Record how the application behaves when location cannot be inferred, a locale is unsupported or a product is unavailable.
+
+## Policy incidents
+
+When a manual action or policy notice appears, preserve its exact text, affected scope, date and property. Analyze the specific issue instead of applying an old universal recovery recipe. An EEA-related enforcement distinction concerns the documented treatment; it is not a promise that an affected section will retain visibility.
+
+Coordinate SEO, operations and qualified legal/compliance review for jurisdiction-specific decisions. This module is a technical research workflow, not legal advice. Do not remove user protections or fabricate editorial independence to chase a regional exception.
+
+Acceptance requires a signed eligibility register, locale test evidence, source dates and a clear distinction between documented availability and observed client access. A globally deployed website is not evidence that every Search feature is globally available.
+
+==============================================================================

@@ -1,0 +1,677 @@
+[
+  {
+    "number": 1,
+    "line": 2863,
+    "header": "DOCUMENT 001 OF 135\nTitle: Instructions for AI-assisted use of this library\nPath: AGENTS.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 2,
+    "line": 2908,
+    "header": "DOCUMENT 002 OF 135\nTitle: Change log\nPath: CHANGELOG.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 3,
+    "line": 2953,
+    "header": "DOCUMENT 003 OF 135\nTitle: Operating model — separate expertise, one accountable system\nPath: Library/Disciplines/00-OPERATING-MODEL.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 4,
+    "line": 3014,
+    "header": "DOCUMENT 004 OF 135\nTitle: Master routing protocol — choose the right specialist before acting\nPath: Library/Disciplines/01-MASTER-ROUTER.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 5,
+    "line": 3080,
+    "header": "DOCUMENT 005 OF 135\nTitle: Handoff contracts — preserve evidence across specialties\nPath: Library/Disciplines/02-HANDOFF-CONTRACTS.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 6,
+    "line": 3121,
+    "header": "DOCUMENT 006 OF 135\nTitle: Acceptance and independence — what a pass actually means\nPath: Library/Disciplines/03-ACCEPTANCE-AND-INDEPENDENCE.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 7,
+    "line": 3171,
+    "header": "DOCUMENT 007 OF 135\nTitle: Build public expertise from the internal discipline library\nPath: Library/Disciplines/04-SEARCH-EXPERTISE-PUBLISHING.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 8,
+    "line": 3224,
+    "header": "DOCUMENT 008 OF 135\nTitle: Integrate the discipline library into an actual AI coding project\nPath: Library/Disciplines/05-INTEGRATION-GUIDE.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 9,
+    "line": 3281,
+    "header": "DOCUMENT 009 OF 135\nTitle: Decision ownership and conflicting-repair matrix\nPath: Library/Disciplines/06-CONFLICT-RESOLUTION.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 10,
+    "line": 3333,
+    "header": "DOCUMENT 010 OF 135\nTitle: Full-audit coverage without launching 26 uncontrolled agents\nPath: Library/Disciplines/07-FULL-AUDIT-COVERAGE.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 11,
+    "line": 3364,
+    "header": "DOCUMENT 011 OF 135\nTitle: R01 — Site Reliability Engineer\nPath: Library/Disciplines/R01-site-reliability.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 12,
+    "line": 3474,
+    "header": "DOCUMENT 012 OF 135\nTitle: R02 — Network/DNS Engineer\nPath: Library/Disciplines/R02-network-dns.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 13,
+    "line": 3582,
+    "header": "DOCUMENT 013 OF 135\nTitle: R03 — Backend Web Engineer\nPath: Library/Disciplines/R03-backend-web.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 14,
+    "line": 3692,
+    "header": "DOCUMENT 014 OF 135\nTitle: R04 — Frontend Web Engineer\nPath: Library/Disciplines/R04-frontend-web.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 15,
+    "line": 3800,
+    "header": "DOCUMENT 015 OF 135\nTitle: R05 — Browser Compatibility Engineer\nPath: Library/Disciplines/R05-browser-compatibility.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 16,
+    "line": 3906,
+    "header": "DOCUMENT 016 OF 135\nTitle: R06 — Web Performance Engineer\nPath: Library/Disciplines/R06-web-performance.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 17,
+    "line": 4015,
+    "header": "DOCUMENT 017 OF 135\nTitle: R07 — Accessibility Specialist\nPath: Library/Disciplines/R07-accessibility.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 18,
+    "line": 4122,
+    "header": "DOCUMENT 018 OF 135\nTitle: R08 — Technical SEO Engineer\nPath: Library/Disciplines/R08-technical-seo.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 19,
+    "line": 4233,
+    "header": "DOCUMENT 019 OF 135\nTitle: R09 — Information Architect\nPath: Library/Disciplines/R09-information-architecture.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 20,
+    "line": 4339,
+    "header": "DOCUMENT 020 OF 135\nTitle: R10 — Search Relevance/IR Engineer\nPath: Library/Disciplines/R10-search-relevance-ir.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 21,
+    "line": 4445,
+    "header": "DOCUMENT 021 OF 135\nTitle: R11 — Structured Data/Knowledge Graph Engineer\nPath: Library/Disciplines/R11-structured-data-knowledge-graph.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 22,
+    "line": 4552,
+    "header": "DOCUMENT 022 OF 135\nTitle: R12 — AEO/AIO/GEO Engineer\nPath: Library/Disciplines/R12-aeo-aio-geo.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 23,
+    "line": 4666,
+    "header": "DOCUMENT 023 OF 135\nTitle: R13 — Content Strategist/SEO Editor\nPath: Library/Disciplines/R13-content-strategy-seo-editor.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 24,
+    "line": 4772,
+    "header": "DOCUMENT 024 OF 135\nTitle: R14 — Fact-Checker/Claims Auditor\nPath: Library/Disciplines/R14-claims-auditor.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 25,
+    "line": 4879,
+    "header": "DOCUMENT 025 OF 135\nTitle: R15 — Conversion-Rate Optimization Specialist\nPath: Library/Disciplines/R15-conversion-rate-optimization.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 26,
+    "line": 4986,
+    "header": "DOCUMENT 026 OF 135\nTitle: R16 — Analytics/Measurement Engineer\nPath: Library/Disciplines/R16-analytics-measurement.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 27,
+    "line": 5096,
+    "header": "DOCUMENT 027 OF 135\nTitle: R17 — Email Deliverability Engineer\nPath: Library/Disciplines/R17-email-deliverability.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 28,
+    "line": 5208,
+    "header": "DOCUMENT 028 OF 135\nTitle: R18 — Local SEO/GBP Specialist\nPath: Library/Disciplines/R18-local-seo-gbp.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 29,
+    "line": 5315,
+    "header": "DOCUMENT 029 OF 135\nTitle: R19 — Digital PR/Authority Specialist\nPath: Library/Disciplines/R19-digital-pr-authority.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 30,
+    "line": 5423,
+    "header": "DOCUMENT 030 OF 135\nTitle: R20 — Application Security/Privacy Engineer\nPath: Library/Disciplines/R20-application-security-privacy.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 31,
+    "line": 5534,
+    "header": "DOCUMENT 031 OF 135\nTitle: R21 — QA/SDET Engineer\nPath: Library/Disciplines/R21-qa-sdet.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 32,
+    "line": 5641,
+    "header": "DOCUMENT 032 OF 135\nTitle: R22 — Adversarial/Red-Team Reviewer\nPath: Library/Disciplines/R22-adversarial-red-team.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 33,
+    "line": 5747,
+    "header": "DOCUMENT 033 OF 135\nTitle: R23 — Product Marketing/Market Researcher\nPath: Library/Disciplines/R23-product-marketing-research.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 34,
+    "line": 5854,
+    "header": "DOCUMENT 034 OF 135\nTitle: R24 — Solutions Architect/Integrator\nPath: Library/Disciplines/R24-solutions-architecture.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 35,
+    "line": 5962,
+    "header": "DOCUMENT 035 OF 135\nTitle: R25 — Release/Change Manager\nPath: Library/Disciplines/R25-release-change-management.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 36,
+    "line": 6069,
+    "header": "DOCUMENT 036 OF 135\nTitle: R26 — Independent Acceptance Engineer\nPath: Library/Disciplines/R26-independent-acceptance.md\nGroup: roles\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 37,
+    "line": 6174,
+    "header": "DOCUMENT 037 OF 135\nTitle: The 26-discipline operating library\nPath: Library/Disciplines/README.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 38,
+    "line": 6239,
+    "header": "DOCUMENT 038 OF 135\nTitle: SEO build reference: intake to production evidence\nPath: Library/Framework/SEO-BUILD-REFERENCE.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 39,
+    "line": 6291,
+    "header": "DOCUMENT 039 OF 135\nTitle: Universal Search Delivery Framework — not a ranking formula\nPath: Library/Framework/UNIVERSAL-RANKING-FRAMEWORK.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 40,
+    "line": 6337,
+    "header": "DOCUMENT 040 OF 135\nTitle: Agent access, MCP and security boundaries\nPath: Library/Framework/framework-agent-access-security.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 41,
+    "line": 6379,
+    "header": "DOCUMENT 041 OF 135\nTitle: AI answer observation and controlled evaluation\nPath: Library/Framework/framework-ai-observation-protocol.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 42,
+    "line": 6421,
+    "header": "DOCUMENT 042 OF 135\nTitle: AI referrals, analytics channels and qualified outcomes\nPath: Library/Framework/framework-ai-referral-attribution-2026.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 43,
+    "line": 6461,
+    "header": "DOCUMENT 043 OF 135\nTitle: AI citation engineering — controllable inputs and observable outcomes\nPath: Library/Framework/framework-aicitations.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 44,
+    "line": 6508,
+    "header": "DOCUMENT 044 OF 135\nTitle: Google AI Overviews and AI Mode — eligibility, controls and measurement\nPath: Library/Framework/framework-aioverviews.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 45,
+    "line": 6555,
+    "header": "DOCUMENT 045 OF 135\nTitle: Bing AI Performance and citation-share interpretation\nPath: Library/Framework/framework-bing-ai-performance-2026.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 46,
+    "line": 6595,
+    "header": "DOCUMENT 046 OF 135\nTitle: Client scope, tier applicability and acceptance\nPath: Library/Framework/framework-client-scope-acceptance.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 47,
+    "line": 6639,
+    "header": "DOCUMENT 047 OF 135\nTitle: Commerce data consistency across page, feed and structured data\nPath: Library/Framework/framework-commerce-data-consistency.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 48,
+    "line": 6683,
+    "header": "DOCUMENT 048 OF 135\nTitle: Content delivery first — without false crawler absolutes\nPath: Library/Framework/framework-contentfirst.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 49,
+    "line": 6734,
+    "header": "DOCUMENT 049 OF 135\nTitle: Crawl payload budgets and content delivery\nPath: Library/Framework/framework-crawl-payload-budgets.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 50,
+    "line": 6778,
+    "header": "DOCUMENT 050 OF 135\nTitle: Crawler identity, logs and safe edge access\nPath: Library/Framework/framework-crawler-identity-observability.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 51,
+    "line": 6822,
+    "header": "DOCUMENT 051 OF 135\nTitle: Engine-specific discovery, training and user-access controls\nPath: Library/Framework/framework-engine-control-matrix.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 52,
+    "line": 6871,
+    "header": "DOCUMENT 052 OF 135\nTitle: Evidence governance and claim authorization\nPath: Library/Framework/framework-evidence-governance.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 53,
+    "line": 6913,
+    "header": "DOCUMENT 053 OF 135\nTitle: Faceted navigation and crawl-space control\nPath: Library/Framework/framework-faceted-url-contract.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 54,
+    "line": 6957,
+    "header": "DOCUMENT 054 OF 135\nTitle: Field performance and interaction acceptance\nPath: Library/Framework/framework-field-performance-acceptance.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 55,
+    "line": 7001,
+    "header": "DOCUMENT 055 OF 135\nTitle: GA4 implementation — current AI channels, scopes and outcome quality\nPath: Library/Framework/framework-ga4.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 56,
+    "line": 7048,
+    "header": "DOCUMENT 056 OF 135\nTitle: Google generative AI performance: current reporting contract\nPath: Library/Framework/framework-google-ai-performance-2026.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 57,
+    "line": 7090,
+    "header": "DOCUMENT 057 OF 135\nTitle: Search Console analysis — current reports and defensible diagnostics\nPath: Library/Framework/framework-gscanalysis.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 58,
+    "line": 7137,
+    "header": "DOCUMENT 058 OF 135\nTitle: Titles, descriptions and preview copy without false limits\nPath: Library/Framework/framework-html-meta-description.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 59,
+    "line": 7177,
+    "header": "DOCUMENT 059 OF 135\nTitle: Location-page evidence and genuine local utility\nPath: Library/Framework/framework-location-evidence.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 60,
+    "line": 7219,
+    "header": "DOCUMENT 060 OF 135\nTitle: SEO library — canonical master index\nPath: Library/Framework/framework-masterindex.md\nGroup: baseline\nLabel: REBUILT · navigation\nReview status: regenerated_index\n==============================================================================\n"
+  },
+  {
+    "number": 61,
+    "line": 7458,
+    "header": "DOCUMENT 061 OF 135\nTitle: Migration contract, checkpoints and rollback\nPath: Library/Framework/framework-migration-rollback-contract.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 62,
+    "line": 7502,
+    "header": "DOCUMENT 062 OF 135\nTitle: Next.js metadata, streaming and rendering validation\nPath: Library/Framework/framework-nextjs-metadata-validation.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 63,
+    "line": 7546,
+    "header": "DOCUMENT 063 OF 135\nTitle: Next.js SEO implementation — versioned route contracts\nPath: Library/Framework/framework-nextjs.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 64,
+    "line": 7591,
+    "header": "DOCUMENT 064 OF 135\nTitle: Preferred Sources and publisher relationship design\nPath: Library/Framework/framework-publisher-preferences.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 65,
+    "line": 7633,
+    "header": "DOCUMENT 065 OF 135\nTitle: Regional Search eligibility and policy differences\nPath: Library/Framework/framework-regional-search-eligibility.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 66,
+    "line": 7675,
+    "header": "DOCUMENT 066 OF 135\nTitle: Research maintenance and documentation drift control\nPath: Library/Framework/framework-research-maintenance.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 67,
+    "line": 7721,
+    "header": "DOCUMENT 067 OF 135\nTitle: Structured-data lifecycle and feature eligibility\nPath: Library/Framework/framework-schema-lifecycle.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 68,
+    "line": 7765,
+    "header": "DOCUMENT 068 OF 135\nTitle: Schema types in 2026 — semantic validity versus search features\nPath: Library/Framework/framework-schema-types-2026.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 69,
+    "line": 7816,
+    "header": "DOCUMENT 069 OF 135\nTitle: ChatGPT Search — publisher access and measured referrals\nPath: Library/Framework/framework-searchgpt.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 70,
+    "line": 7861,
+    "header": "DOCUMENT 070 OF 135\nTitle: SEO release contracts and reproducible acceptance tests\nPath: Library/Framework/framework-seo-release-contracts.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 71,
+    "line": 7903,
+    "header": "DOCUMENT 071 OF 135\nTitle: Social and video platform properties in Search Console\nPath: Library/Framework/framework-social-video-properties.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 72,
+    "line": 7947,
+    "header": "DOCUMENT 072 OF 135\nTitle: First-party facts, provenance and reusable evidence\nPath: Library/Framework/framework-source-provenance.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 73,
+    "line": 7991,
+    "header": "DOCUMENT 073 OF 135\nTitle: Search spam policy — scoped interpretation and operational controls\nPath: Library/Framework/framework-spampolicies.md\nGroup: baseline\nLabel: REWRITTEN · researched\nReview status: rewritten_current_guidance\n==============================================================================\n"
+  },
+  {
+    "number": 74,
+    "line": 8042,
+    "header": "DOCUMENT 074 OF 135\nTitle: URL lifecycle, canonical decisions and safe retirement\nPath: Library/Framework/framework-url-lifecycle.md\nGroup: baseline\nLabel: NEW · researched\nReview status: new_researched_module\n==============================================================================\n"
+  },
+  {
+    "number": 75,
+    "line": 8084,
+    "header": "DOCUMENT 075 OF 135\nTitle: Bubbles: outside-in availability and public reachability\nPath: Library/Playbooks/01-BUBBLES-PUBLIC-REACHABILITY.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 76,
+    "line": 8144,
+    "header": "DOCUMENT 076 OF 135\nTitle: Contact form to actual mailbox: an end-to-end evidence chain\nPath: Library/Playbooks/02-CONTACT-TO-MAILBOX.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 77,
+    "line": 8206,
+    "header": "DOCUMENT 077 OF 135\nTitle: From public delivery to useful answers and observed AI citations\nPath: Library/Playbooks/03-DISCOVERY-TO-AI-CITATIONS.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 78,
+    "line": 8267,
+    "header": "DOCUMENT 078 OF 135\nTitle: Browser and accessibility regressions across a complete task\nPath: Library/Playbooks/04-BROWSER-ACCESSIBILITY.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 79,
+    "line": 8328,
+    "header": "DOCUMENT 079 OF 135\nTitle: Improve measured performance without damaging the website\nPath: Library/Playbooks/05-PERFORMANCE-WITHOUT-REGRESSIONS.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 80,
+    "line": 8389,
+    "header": "DOCUMENT 080 OF 135\nTitle: Turn verified work into a public expertise asset\nPath: Library/Playbooks/06-EVIDENCE-TO-PUBLIC-EXPERTISE.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 81,
+    "line": 8451,
+    "header": "DOCUMENT 081 OF 135\nTitle: Coordinate hostname, URL and content migrations\nPath: Library/Playbooks/07-MIGRATION-AND-URL-CHANGES.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 82,
+    "line": 8512,
+    "header": "DOCUMENT 082 OF 135\nTitle: Preflight, controlled release and fresh acceptance\nPath: Library/Playbooks/08-RELEASE-AND-INDEPENDENT-ACCEPTANCE.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 83,
+    "line": 8573,
+    "header": "DOCUMENT 083 OF 135\nTitle: Cross-discipline playbooks\nPath: Library/Playbooks/README.md\nGroup: playbooks\nLabel: EXPANSION · source-linked operating design\nReview status: new_discipline_operating_design\n==============================================================================\n"
+  },
+  {
+    "number": 84,
+    "line": 8595,
+    "header": "DOCUMENT 084 OF 135\nTitle: R01 public-content brief — Why can a website be running on the server but unavailable to customers?\nPath: Publishing/Briefs/R01-site-reliability.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 85,
+    "line": 8664,
+    "header": "DOCUMENT 085 OF 135\nTitle: R02 public-content brief — Why does my website work through Tailscale but not on the public internet?\nPath: Publishing/Briefs/R02-network-dns.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 86,
+    "line": 8732,
+    "header": "DOCUMENT 086 OF 135\nTitle: R03 public-content brief — What does a contact form success message actually prove?\nPath: Publishing/Briefs/R03-backend-web.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 87,
+    "line": 8801,
+    "header": "DOCUMENT 087 OF 135\nTitle: R04 public-content brief — How do you build a website that remains usable when JavaScript fails?\nPath: Publishing/Briefs/R04-frontend-web.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 88,
+    "line": 8869,
+    "header": "DOCUMENT 088 OF 135\nTitle: R05 public-content brief — Is a Playwright WebKit test the same as testing Safari on an iPhone?\nPath: Publishing/Briefs/R05-browser-compatibility.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 89,
+    "line": 8936,
+    "header": "DOCUMENT 089 OF 135\nTitle: R06 public-content brief — Why does a good Lighthouse score not prove that real visitors have a fast website?\nPath: Publishing/Briefs/R06-web-performance.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 90,
+    "line": 9004,
+    "header": "DOCUMENT 090 OF 135\nTitle: R07 public-content brief — What must an accessibility audit test beyond an automated score?\nPath: Publishing/Briefs/R07-accessibility.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 91,
+    "line": 9072,
+    "header": "DOCUMENT 091 OF 135\nTitle: R08 public-content brief — How do you distinguish a crawlability problem from an indexing or relevance problem?\nPath: Publishing/Briefs/R08-technical-seo.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 92,
+    "line": 9141,
+    "header": "DOCUMENT 092 OF 135\nTitle: R09 public-content brief — How do you organize a service website without creating duplicate or orphan pages?\nPath: Publishing/Briefs/R09-information-architecture.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 93,
+    "line": 9209,
+    "header": "DOCUMENT 093 OF 135\nTitle: R10 public-content brief — What makes a page relevant to a customer question rather than merely keyword-rich?\nPath: Publishing/Briefs/R10-search-relevance-ir.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 94,
+    "line": 9277,
+    "header": "DOCUMENT 094 OF 135\nTitle: R11 public-content brief — How do you connect an author, business and technical article without inventing authority?\nPath: Publishing/Briefs/R11-structured-data-knowledge-graph.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 95,
+    "line": 9346,
+    "header": "DOCUMENT 095 OF 135\nTitle: R12 public-content brief — How can a business measure AI search visibility without confusing crawler visits with customers?\nPath: Publishing/Briefs/R12-aeo-aio-geo.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 96,
+    "line": 9417,
+    "header": "DOCUMENT 096 OF 135\nTitle: R13 public-content brief — How do you turn technical troubleshooting into useful evidence-led content?\nPath: Publishing/Briefs/R13-content-strategy-seo-editor.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 97,
+    "line": 9485,
+    "header": "DOCUMENT 097 OF 135\nTitle: R14 public-content brief — What evidence should support a website performance or marketing claim?\nPath: Publishing/Briefs/R14-claims-auditor.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 98,
+    "line": 9553,
+    "header": "DOCUMENT 098 OF 135\nTitle: R15 public-content brief — How do you improve a service inquiry path without mistaking clicks for leads?\nPath: Publishing/Briefs/R15-conversion-rate-optimization.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 99,
+    "line": 9621,
+    "header": "DOCUMENT 099 OF 135\nTitle: R16 public-content brief — How do you reconcile search visibility, AI referrals and qualified website inquiries?\nPath: Publishing/Briefs/R16-analytics-measurement.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 100,
+    "line": 9690,
+    "header": "DOCUMENT 100 OF 135\nTitle: R17 public-content brief — How do you prove that a website inquiry reached your mailbox?\nPath: Publishing/Briefs/R17-email-deliverability.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 101,
+    "line": 9762,
+    "header": "DOCUMENT 101 OF 135\nTitle: R18 public-content brief — How do you improve local visibility without inventing locations or duplicating city pages?\nPath: Publishing/Briefs/R18-local-seo-gbp.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 102,
+    "line": 9830,
+    "header": "DOCUMENT 102 OF 135\nTitle: R19 public-content brief — What makes a backlink or publication mention meaningful evidence of expertise?\nPath: Publishing/Briefs/R19-digital-pr-authority.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 103,
+    "line": 9899,
+    "header": "DOCUMENT 103 OF 135\nTitle: R20 public-content brief — How do you harden a business website without breaking its forms or tracking?\nPath: Publishing/Briefs/R20-application-security-privacy.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 104,
+    "line": 9969,
+    "header": "DOCUMENT 104 OF 135\nTitle: R21 public-content brief — What should a website regression suite prove before deployment?\nPath: Publishing/Briefs/R21-qa-sdet.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 105,
+    "line": 10037,
+    "header": "DOCUMENT 105 OF 135\nTitle: R22 public-content brief — How does an adversarial website review challenge a clean audit report?\nPath: Publishing/Briefs/R22-adversarial-red-team.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 106,
+    "line": 10105,
+    "header": "DOCUMENT 106 OF 135\nTitle: R23 public-content brief — How do you choose technical website topics that attract the right service inquiries?\nPath: Publishing/Briefs/R23-product-marketing-research.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 107,
+    "line": 10173,
+    "header": "DOCUMENT 107 OF 135\nTitle: R24 public-content brief — Who resolves conflicting fixes when SEO, performance and security disagree?\nPath: Publishing/Briefs/R24-solutions-architecture.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 108,
+    "line": 10241,
+    "header": "DOCUMENT 108 OF 135\nTitle: R25 public-content brief — What should a website release plan include beyond clicking deploy?\nPath: Publishing/Briefs/R25-release-change-management.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 109,
+    "line": 10309,
+    "header": "DOCUMENT 109 OF 135\nTitle: R26 public-content brief — What makes website acceptance testing genuinely independent?\nPath: Publishing/Briefs/R26-independent-acceptance.md\nGroup: briefs\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 110,
+    "line": 10377,
+    "header": "DOCUMENT 110 OF 135\nTitle: Why SEO cannot repair a broken inquiry pipeline\nPath: Publishing/Drafts/01-SEO-CANNOT-FIX-BROKEN-INQUIRIES.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 111,
+    "line": 10434,
+    "header": "DOCUMENT 111 OF 135\nTitle: A public website needs a public test\nPath: Publishing/Drafts/02-PUBLIC-REACHABILITY.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 112,
+    "line": 10491,
+    "header": "DOCUMENT 112 OF 135\nTitle: Sent is not the same as received\nPath: Publishing/Drafts/03-INQUIRY-DELIVERY-PROOF.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 113,
+    "line": 10550,
+    "header": "DOCUMENT 113 OF 135\nTitle: Browser coverage without overclaiming\nPath: Publishing/Drafts/04-REAL-BROWSER-EVIDENCE.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 114,
+    "line": 10607,
+    "header": "DOCUMENT 114 OF 135\nTitle: Measure AI visibility without inventing attribution\nPath: Publishing/Drafts/05-AI-VISIBILITY-EVIDENCE.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 115,
+    "line": 10668,
+    "header": "DOCUMENT 115 OF 135\nTitle: Independent acceptance is more than another green check\nPath: Publishing/Drafts/06-INDEPENDENT-ACCEPTANCE.md\nGroup: drafts\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 116,
+    "line": 10731,
+    "header": "DOCUMENT 116 OF 135\nTitle: Author, business and publication identity plan\nPath: Publishing/ENTITY-AND-PUBLICATION-PLAN.md\nGroup: publishing\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 117,
+    "line": 10768,
+    "header": "DOCUMENT 117 OF 135\nTitle: Public expertise layer — briefs and reviewable drafts\nPath: Publishing/README.md\nGroup: publishing\nLabel: PUBLIC WORKBENCH · not approved\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 118,
+    "line": 10798,
+    "header": "DOCUMENT 118 OF 135\nTitle: SEO / AIO Library — 26-Discipline Edition\nPath: README.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 119,
+    "line": 10835,
+    "header": "DOCUMENT 119 OF 135\nTitle: 26-discipline validation — actual local results\nPath: Reports/DISCIPLINE-VALIDATION.md\nGroup: expansion\nLabel: EXPANSION · local delivery record\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 120,
+    "line": 10883,
+    "header": "DOCUMENT 120 OF 135\nTitle: Executed validation — 2026.09.09\nPath: Reports/VALIDATION.md\nGroup: baseline\nLabel: BASELINE · historical report\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 121,
+    "line": 10914,
+    "header": "DOCUMENT 121 OF 135\nTitle: SEO library audit and research update\nPath: Research/AUDIT-REPORT.md\nGroup: baseline\nLabel: BASELINE · historical report\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 122,
+    "line": 11057,
+    "header": "DOCUMENT 122 OF 135\nTitle: Coverage matrix — every unique original\nPath: Research/COVERAGE-MATRIX.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 123,
+    "line": 11219,
+    "header": "DOCUMENT 123 OF 135\nTitle: 26-Discipline Expansion — Research and Delivery Report\nPath: Research/DISCIPLINE-EXPANSION-REPORT.md\nGroup: expansion\nLabel: EXPANSION · local delivery record\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 124,
+    "line": 11300,
+    "header": "DOCUMENT 124 OF 135\nTitle: Discipline gap map\nPath: Research/DISCIPLINE-GAP-MAP.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 125,
+    "line": 11344,
+    "header": "DOCUMENT 125 OF 135\nTitle: Discipline expansion — primary-source register\nPath: Research/DISCIPLINE-SOURCE-REGISTER.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 126,
+    "line": 11651,
+    "header": "DOCUMENT 126 OF 135\nTitle: Findings and dispositions\nPath: Research/FINDINGS.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 127,
+    "line": 12170,
+    "header": "DOCUMENT 127 OF 135\nTitle: Remaining review queue and explicit limits\nPath: Research/REMAINING-REVIEW-QUEUE.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 128,
+    "line": 12203,
+    "header": "DOCUMENT 128 OF 135\nTitle: Primary-source register\nPath: Research/SOURCE-REGISTER.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 129,
+    "line": 12634,
+    "header": "DOCUMENT 129 OF 135\nTitle: Tier applicability and deliverable map\nPath: Research/TIER-APPLICABILITY-MAP.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 130,
+    "line": 12670,
+    "header": "DOCUMENT 130 OF 135\nTitle: Schema examples — fictional, not deployable as supplied\nPath: Schema.org/README.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 131,
+    "line": 12689,
+    "header": "DOCUMENT 131 OF 135\nTitle: Discipline-library integration snippet\nPath: Templates/Agent-Integration/AGENTS.snippet.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 132,
+    "line": 12711,
+    "header": "DOCUMENT 132 OF 135\nTitle: Discipline templates\nPath: Templates/Disciplines/README.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 133,
+    "line": 12730,
+    "header": "DOCUMENT 133 OF 135\nTitle: Implementation templates\nPath: Templates/README.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 134,
+    "line": 12749,
+    "header": "DOCUMENT 134 OF 135\nTitle: Discipline utilities — executable scope and limitations\nPath: Tools/DISCIPLINES-README.md\nGroup: expansion\nLabel: EXPANSION · source-linked operating design\nReview status: scope_stated_in_document\n==============================================================================\n"
+  },
+  {
+    "number": 135,
+    "line": 12806,
+    "header": "DOCUMENT 135 OF 135\nTitle: Offline tools and test scope\nPath: Tools/README.md\nGroup: baseline\nLabel: REFERENCE · scope stated in document\nReview status: scope_stated_in_document\n==============================================================================\n"
+  }
+]

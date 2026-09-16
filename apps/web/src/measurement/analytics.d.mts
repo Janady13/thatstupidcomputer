@@ -1,0 +1,33 @@
+export type ConsentChoice = 'unset' | 'granted' | 'denied';
+export type MeasurementStatus = 'unconfigured' | 'disabled' | 'enabled' | 'blocked';
+export type MeasurementConfig = { ga4MeasurementId?: string; canonicalOrigin?: string; analyticsDebug?: boolean };
+export type SceneId = 'desktop-office' | 'mobile-workshop';
+export type SceneAction = 'services' | 'work' | 'process' | 'about' | 'demo' | 'character' | 'motion_pause' | 'motion_play';
+export type DemoSource = 'hero' | 'navigation' | 'footer' | 'contact' | 'computer';
+export type ComputerStage = 'open' | 'intent_selected' | 'attitude_requested' | 'gesture_requested' | 'mood_selected' | 'back' | 'demo_clicked' | 'dismissed';
+export type ComputerIntent = 'design' | 'rescue' | 'search' | 'care' | 'unsure';
+export type DemoError = 'validation' | 'network' | 'rate_limited' | 'unavailable' | 'server';
+export interface Analytics {
+  configure(value?: MeasurementConfig): boolean;
+  setConsent(choice: Exclude<ConsentChoice, 'unset'>): boolean;
+  getConsent(): ConsentChoice;
+  getStatus(): MeasurementStatus;
+  subscribe(listener: () => void): () => void;
+  pageView(path: string): boolean;
+  sceneInteraction(scene: SceneId, action: SceneAction): boolean;
+  computerInteraction(stage: ComputerStage, intent?: ComputerIntent): boolean;
+  demoStart(source: DemoSource): boolean;
+  demoSubmitError(error: DemoError): boolean;
+  generateLead(acceptance: 'smtp_accepted', requestId: string): boolean;
+}
+export const analytics: Analytics;
+export const CONSENT_KEY: string;
+export const CONSENT_MAX_AGE: number;
+export const DATA_LAYER: string;
+export function validateEvent(name: unknown, payload: unknown): boolean;
+export function safeRoute(value: unknown): string;
+export function validateConfig(value: unknown): Readonly<{ga4MeasurementId: string | null; canonicalOrigin: string | null; analyticsDebug: boolean}>;
+export function parseConsent(raw: string | null, now?: number): ConsentChoice;
+export function safeAttribution(search?: string, referrer?: string): Readonly<{source: string; evidence: string}>;
+export function clearAnalyticsCookies(doc: Document, location: Location): void;
+export function createAnalytics(options?: { getWindow?: () => Window | undefined; getDocument?: () => Document | undefined; loadVitals?: () => Promise<unknown>; now?: () => number }): Analytics;

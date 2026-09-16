@@ -1,0 +1,59 @@
+DOCUMENT 112 OF 135
+Title: Sent is not the same as received
+Path: Publishing/Drafts/03-INQUIRY-DELIVERY-PROOF.md
+Group: drafts
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Sent is not the same as received
+
+*A practical evidence chain for testing website inquiries, SMTP handling and controlled mailbox receipt.*
+
+> Editorial workbench: this is an unpublished methodology draft. No client results, credentials, real site test outcomes or owner approval are asserted. Remove this editorial note only after the actual publication review; do not publish the private library.
+
+A contact form’s success message is a statement made by the website. To interpret it, first determine which event causes the application to display it.
+
+It might mean that the browser accepted the fields, that the server received the request, that a record was persisted, or that a mail provider accepted a message. Those events are not interchangeable. A reliable inquiry process defines them explicitly and avoids promising a later outcome before it has evidence.
+
+## Start with one controlled message
+
+Use authorized synthetic data and a controlled destination mailbox. Assign a correlation reference that can connect the form request, application record, queue entry and provider response without exposing a real customer’s message.
+
+Record the relevant environment, deployed build and timestamps. A production test and a provider mock in a development test suite answer different questions; both can be useful, but they must be labeled accurately.
+
+## Verify the application contract
+
+The backend check should establish authoritative validation, handling of invalid input, durable acceptance where promised, retry behavior and errors. A browser’s client-side validation does not replace server-side controls. A timeout should not be silently converted into “delivered.”
+
+The user interface should describe the state the system actually knows. Depending on the application contract, “Your inquiry has been received for processing” may be more accurate than asserting final email delivery. That wording still needs to match actual durable handling; it is not a substitute for fixing a dropped request.
+
+## Trace the provider handoff
+
+After the application hands a message to a provider, preserve the provider/message identifier and inspect the subsequent evidence. SMTP specifies transport behavior and responses; a successful handoff does not by itself establish the final folder placement in every recipient’s mailbox. [SMTP specification](https://www.rfc-editor.org/rfc/rfc5321.html).
+
+A delivery specialist should distinguish provider acceptance, queue or bounce observations, authentication results and an actual controlled-mailbox observation. The absence of a visible bounce is not a direct observation of receipt.
+
+## Check authentication without damaging legitimate mail
+
+Inventory all legitimate sending streams before changing SPF, DKIM or DMARC policy. The website may not be the only authorized sender for the domain. Enforcement that fixes one path while blocking another is not a successful integrated repair.
+
+The core DMARC specification changed in May 2026: RFC 9989 obsoletes RFCs 7489 and 9091, with aggregate and failure reporting addressed separately by RFCs 9990 and 9991. This is a documentation update to account for, not an instruction to change production DNS blindly. [Current DMARC specification](https://www.rfc-editor.org/rfc/rfc9989.html), [aggregate reporting](https://www.rfc-editor.org/info/rfc9990/), [failure reporting](https://www.rfc-editor.org/info/rfc9991/).
+
+Provider requirements and actual received headers still matter. An authentication pass is not a promise that every message will be desirable to a receiver or placed in the inbox. [Gmail sender guidelines](https://support.google.com/a/answer/81126?hl=en).
+
+## Observe the mailbox and report the boundary
+
+For the tested destination, inspect authorized mailbox evidence and identify whether the synthetic message arrived and where it appeared. Redact sensitive header details before publication. If the reviewer lacks mailbox access or owner-supplied evidence, the receipt check remains blocked.
+
+Finally, reconcile analytics with the real application state. Counting a thank-you panel is not the same as counting a qualified inquiry. A second operator should repeat the agreed critical path when independent acceptance is required.
+
+The strongest defensible conclusion is bounded: this synthetic inquiry, on this build, through this sending path, reached this controlled destination at this time. That is more useful than an unsupported claim of universal “100% deliverability.”
+
+---
+
+## Editorial handoff — not public article copy
+
+R13: confirm distinct usefulness and the actual audience. R14: verify current sources and every added result/credential claim. R20: approve any screenshots or proof artifacts for publication. Joseph: substantively review the final article and approve the exact author/byline. R08/R11: approve the actual canonical URL and truthful entity representation. R16: define measurement without implying guaranteed citations or inquiries. The suggested service action is appropriate only if the service is actually offered and its contact path works.
+
+==============================================================================

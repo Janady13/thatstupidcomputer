@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15.00 -12.20 79.00 97.20" width="79" height="98">
+  <title>Small pinned note</title>
+  <g id="board-small-note" data-art="board-small-note">
+    <g id="board-small-note-sheet-motion" data-motion="paper" data-pivot="28,1" data-phase="3.8">
+      <path id="board-small-note-sheet" d="M-4 1 L54 -3 L56 76 L-7 77 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="board-small-note-note-rule-1" d="M4 20 L45 19" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <path id="board-small-note-note-rule-2" d="M4 28 L45 27" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <path id="board-small-note-note-rule-3" d="M4 36 L45 35" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <path id="board-small-note-note-rule-4" d="M4 44 L45 43" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <path id="board-small-note-note-rule-5" d="M4 52 L45 51" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+      <path id="board-small-note-note-rule-6" d="M4 60 L45 59" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    </g>
+    <circle id="board-small-note-pin-shadow" cx="27.8" cy="1.6" r="4.3" fill="#29261F" stroke="none" stroke-width="1.5" opacity="0.16"/>
+    <ellipse id="board-small-note-pin-body" cx="27" cy="0" rx="3.7" ry="4.2" fill="#C97038" stroke="#29261F" stroke-width="1"/>
+    <path id="board-small-note-pin-shine" d="M26 -2 q2 -1 3 1" fill="none" stroke="#F4E5C4" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

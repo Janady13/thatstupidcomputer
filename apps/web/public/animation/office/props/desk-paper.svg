@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-28.00 -19.00 194.00 66.00" width="194" height="66">
+  <title>Loose desk drawing / curled corner</title>
+  <g id="desk-paper" data-art="desk-paper">
+    <g id="desk-paper-paper-motion" data-motion="desk-paper" data-pivot="10,0" data-phase="1.4">
+      <path id="desk-paper-paper-shadow" d="M-14 5 L120 -8 L158 24 L12 39 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.13"/>
+      <path id="desk-paper-paper" d="M-20 -1 L112 -11 L153 24 L7 33 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="desk-paper-paper-curl" d="M123 26 Q135 19 134 9 L153 24 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="desk-paper-drawing-frame" d="M-3 2 L105 -6 L133 18 L17 25 Z" fill="none" stroke="#29261F" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+      <path id="desk-paper-drawing-plan" d="M15 5 l59 -4 23 16 -62 4 Z M43 3 l12 9 30 -2 M56 12 l-6 9 M22 11 l25 -2 M83 7 l-3 5" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+      <path id="desk-paper-drawing-dimensions" d="M11 4 l-6 5 20 15 M94 -2 l24 20 M6 12 l5 -1 M17 21 l8 -1" fill="none" stroke="#29261F" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

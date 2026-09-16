@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-81.51 -19.14 153.53 310.14" width="154" height="311">
+  <title>Hanging cable / independent coil</title>
+  <g id="cable-reel" data-art="cable-reel">
+    <g id="cable-reel-coil-motion" data-motion="cable-coil" data-pivot="0,0" data-phase="1">
+      <path id="cable-reel-loop-1" d="M-8 0 C-83 -52 -71 91 -73 161 C-82 260 30 191 32 82 C33 10 -7 -16 -14 2" fill="none" stroke="#29261F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-loop-1-edge" d="M-9 0 C-81 -50 -69 91 -72 161 C-80 253 28 188 30 83" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path id="cable-reel-loop-2" d="M0 0 C-75 -52 -63 91 -65 161 C-74 260 38 191 40 82 C41 10 1 -16 -6 2" fill="none" stroke="#29261F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-loop-2-edge" d="M-1 0 C-73 -50 -61 91 -64 161 C-72 253 36 188 38 83" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path id="cable-reel-loop-3" d="M8 0 C-67 -52 -55 91 -57 161 C-66 260 46 191 48 82 C49 10 9 -16 2 2" fill="none" stroke="#29261F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-loop-3-edge" d="M7 0 C-65 -50 -53 91 -56 161 C-64 253 44 188 46 83" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path id="cable-reel-loop-4" d="M16 0 C-59 -52 -47 91 -49 161 C-58 260 54 191 56 82 C57 10 17 -16 10 2" fill="none" stroke="#29261F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-loop-4-edge" d="M15 0 C-57 -50 -45 91 -48 161 C-56 253 52 188 54 83" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path id="cable-reel-loop-5" d="M24 0 C-51 -52 -39 91 -41 161 C-50 260 62 191 64 82 C65 10 25 -16 18 2" fill="none" stroke="#29261F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-loop-5-edge" d="M23 0 C-49 -50 -37 91 -40 161 C-48 253 60 188 62 83" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+      <path id="cable-reel-tie" d="M-13 -3 L26 -9 L28 2 L-14 9 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-tail" d="M-15 174 C-36 207 -36 249 -52 268" fill="none" stroke="#29261F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="cable-reel-tail-plug" d="M-57 264 L-48 266 L-50 283 L-59 279 Z" fill="#29261F" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

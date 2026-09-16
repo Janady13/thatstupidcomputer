@@ -1,0 +1,468 @@
+{
+  "smartphone": {
+    "sha256": "04ea1b6bf955f0b4f0470b64a6f9e151a915558d898995a994fddcb0661797e0",
+    "approved": true,
+    "reviewer": "Codex native-pipeline agent, AI-assisted visual inspection",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "Local official Canvas/source comparison at the authored peak for all 32 actions, with all overview pairs and enlarged actions 17–32 inspected. Approval is limited to these rendered captures.",
+    "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+    "motionSHA256": "c5b9aadf4f2e91d4655d2d77410a797d7554d41efac4b1e55c252219170b9dda",
+    "actionCount": 32,
+    "inspectedSheets": [
+      {
+        "path": "native/reports/smartphone-parity.png",
+        "sha256": "54c22e033754ff1c4ab61f7831304c777c8678f6cb7d75184954b33d2e8bf44f",
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/smartphone-03.png",
+        "sha256": "641936783e1a57c148affc84eaf82d03fb3970a7f53d5a8ec179cbfd32a63b59",
+        "actions": [
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/smartphone-04.png",
+        "sha256": "bb94465697055ea13cb67052186fa7edfd03b6c4d7b9b857eb76aed3f215a46b",
+        "actions": [
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      }
+    ],
+    "observations": [
+      "Native and source silhouettes, expressions, original lettering, hand variants, cable and layered body geometry agree visually.",
+      "Limbs remain joined; Jump is visibly airborne and the inspected poses remain inside the capture.",
+      "No native/source discrepancy requiring motion or adapter changes was observed."
+    ],
+    "additionalReview": {
+      "reviewer": "Codex animation-authoring agent, separate AI-assisted inspection",
+      "scope": "All five 32-pair overviews; enlarged flip-phone/app-bot/pager mood sheets and smartphone/handheld movement sheets.",
+      "result": "Native/source pairs agree visually, original lettering is readable, limbs remain joined, and the authored Jump is visible without clipping; no motion change requested."
+    },
+    "browserWebGLVerified": false,
+    "limitations": [
+      "Peak contact sheets do not independently verify every intermediate frame, state-machine behavior, browser/device rendering or full website accessibility.",
+      "Browser workflow remains BLOCKED; this review does not authorize WebGL promotion."
+    ]
+  },
+  "flip-phone": {
+    "sha256": "2e7725d58d30c64324c72ae2ff3972c8c00fedfaa70a61944ff202d937a196d3",
+    "approved": true,
+    "reviewer": "Codex native-pipeline agent, AI-assisted visual inspection",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "Local official Canvas/source comparison at the authored peak for all 32 actions, with all overview pairs and enlarged actions 17–32 inspected. Approval is limited to these rendered captures.",
+    "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+    "motionSHA256": "6822f7903db16790b13a134e68271881eb90f08aa23abbe87e13f7c5d853eae1",
+    "actionCount": 32,
+    "inspectedSheets": [
+      {
+        "path": "native/reports/flip-phone-parity.png",
+        "sha256": "ac1b1e8968937e1269e36728c30f9d3c020e4e26c464dd98adde777a813c4239",
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/flip-phone-03.png",
+        "sha256": "4618dbdbac06a37f8021c759aa8c8f84c58f6571c8815dcc0a98c81c5bfb34b9",
+        "actions": [
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/flip-phone-04.png",
+        "sha256": "27cd510991fcdaf6280f2f165010308fd75efc74d984719bfa23215958d02f59",
+        "actions": [
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      }
+    ],
+    "observations": [
+      "Native and source silhouettes, expressions, original lettering, hand variants, cable and layered body geometry agree visually.",
+      "Limbs remain joined; Jump is visibly airborne and the inspected poses remain inside the capture.",
+      "No native/source discrepancy requiring motion or adapter changes was observed.",
+      "Facepalm rests at the hinge/lower screen edge because the preserved shoulder is below the head; native and source agree."
+    ],
+    "additionalReview": {
+      "reviewer": "Codex animation-authoring agent, separate AI-assisted inspection",
+      "scope": "All five 32-pair overviews; enlarged flip-phone/app-bot/pager mood sheets and smartphone/handheld movement sheets.",
+      "result": "Native/source pairs agree visually, original lettering is readable, limbs remain joined, and the authored Jump is visible without clipping; no motion change requested."
+    },
+    "browserWebGLVerified": false,
+    "limitations": [
+      "Peak contact sheets do not independently verify every intermediate frame, state-machine behavior, browser/device rendering or full website accessibility.",
+      "Browser workflow remains BLOCKED; this review does not authorize WebGL promotion."
+    ]
+  },
+  "app-bot": {
+    "sha256": "607803b06bdf52ced750ed4fac7eba13a45eef1a6fc1844e7a54b43f73bafff6",
+    "approved": true,
+    "reviewer": "Codex native-pipeline agent, AI-assisted visual inspection",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "Local official Canvas/source comparison at the authored peak for all 32 actions, with all overview pairs and enlarged actions 17–32 inspected. Approval is limited to these rendered captures.",
+    "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+    "motionSHA256": "5bf51eadbb302b2153dffa0599005d0027d36a0fa3b552c14f6938a752352a7d",
+    "actionCount": 32,
+    "inspectedSheets": [
+      {
+        "path": "native/reports/app-bot-parity.png",
+        "sha256": "cd9e4958f24d9e05f741e42b1f207db4d75e87c895343fa4e9eb557fe546afef",
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/app-bot-03.png",
+        "sha256": "e72e171b012507d68a50d10ae792023394f6e1533d822aff08e165d012406fb0",
+        "actions": [
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/app-bot-04.png",
+        "sha256": "d0faed3d0f06a04c43eb0402748f994d60cfe44e9e7c1155a2d043df96f8bbd9",
+        "actions": [
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      }
+    ],
+    "observations": [
+      "Native and source silhouettes, expressions, original lettering, hand variants, cable and layered body geometry agree visually.",
+      "Limbs remain joined; Jump is visibly airborne and the inspected poses remain inside the capture.",
+      "No native/source discrepancy requiring motion or adapter changes was observed."
+    ],
+    "additionalReview": {
+      "reviewer": "Codex animation-authoring agent, separate AI-assisted inspection",
+      "scope": "All five 32-pair overviews; enlarged flip-phone/app-bot/pager mood sheets and smartphone/handheld movement sheets.",
+      "result": "Native/source pairs agree visually, original lettering is readable, limbs remain joined, and the authored Jump is visible without clipping; no motion change requested."
+    },
+    "browserWebGLVerified": false,
+    "limitations": [
+      "Peak contact sheets do not independently verify every intermediate frame, state-machine behavior, browser/device rendering or full website accessibility.",
+      "Browser workflow remains BLOCKED; this review does not authorize WebGL promotion."
+    ]
+  },
+  "pager": {
+    "sha256": "af40fe90fddf608e98c5c5e558fc3f833dab018b2e6aa512a30dd69a1b569f24",
+    "approved": true,
+    "reviewer": "Codex native-pipeline agent, AI-assisted visual inspection",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "Local official Canvas/source comparison at the authored peak for all 32 actions, with all overview pairs and enlarged actions 17–32 inspected. Approval is limited to these rendered captures.",
+    "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+    "motionSHA256": "d128f1ac3dd8d92aa731f8e2206179a84a23ef0fbeec68cdf3a4f5ad203e7ff2",
+    "actionCount": 32,
+    "inspectedSheets": [
+      {
+        "path": "native/reports/pager-parity.png",
+        "sha256": "4f3d8d316c4a2c8d15b6b308a03385eda5cd0ba6c93b86b42766fe9224ca05e4",
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/pager-03.png",
+        "sha256": "9e442068b9b2f51314599b38a90279fedd8aa1e937f984b810fd311f88076f1c",
+        "actions": [
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/pager-04.png",
+        "sha256": "39b0307aabcd09ba3ee90d687c6d373c9d8f76242754c58cde40375894e803c5",
+        "actions": [
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      }
+    ],
+    "observations": [
+      "Native and source silhouettes, expressions, original lettering, hand variants, cable and layered body geometry agree visually.",
+      "Limbs remain joined; Jump is visibly airborne and the inspected poses remain inside the capture.",
+      "No native/source discrepancy requiring motion or adapter changes was observed."
+    ],
+    "additionalReview": {
+      "reviewer": "Codex animation-authoring agent, separate AI-assisted inspection",
+      "scope": "All five 32-pair overviews; enlarged flip-phone/app-bot/pager mood sheets and smartphone/handheld movement sheets.",
+      "result": "Native/source pairs agree visually, original lettering is readable, limbs remain joined, and the authored Jump is visible without clipping; no motion change requested."
+    },
+    "browserWebGLVerified": false,
+    "limitations": [
+      "Peak contact sheets do not independently verify every intermediate frame, state-machine behavior, browser/device rendering or full website accessibility.",
+      "Browser workflow remains BLOCKED; this review does not authorize WebGL promotion."
+    ]
+  },
+  "handheld": {
+    "sha256": "69e2d51e5fab99d6352e30ab0691cbbe7e5a1d2dc928a75b131eb89cf3da927f",
+    "approved": true,
+    "reviewer": "Codex native-pipeline agent, AI-assisted visual inspection",
+    "reviewedAt": "2026-09-13T10:59:26.766Z",
+    "scope": "Local official Canvas/source comparison at the authored peak for all 32 actions, with all overview pairs and enlarged actions 17–32 inspected. Approval is limited to these rendered captures.",
+    "proofSHA256": "d8e7d6bc10c52bbef991fdac2bb151dc85e63a9584ea8ed6e704eaa08770f20f",
+    "motionSHA256": "0a2b8729f47049b0dfd3ef8d25b99507bb36385d78c75d995da25cd7d967ad6c",
+    "actionCount": 32,
+    "inspectedSheets": [
+      {
+        "path": "native/reports/handheld-parity.png",
+        "sha256": "62b7ce4f817bcf9818396442d3a09e0f4e781634f2987390a438f02853e79b04",
+        "actions": [
+          "Idle",
+          "Happy",
+          "Excited",
+          "Sad",
+          "Angry",
+          "Confused",
+          "Searching",
+          "Sassy",
+          "EyeRoll",
+          "RudeFlipOff",
+          "Wave",
+          "Revived",
+          "WalkRight",
+          "WalkLeft",
+          "Laugh",
+          "Proud",
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm",
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/handheld-03.png",
+        "sha256": "37f3b39be9e06071d90b00c056cacf74ae2e7a65ef0fe3ca495b42b776f2cf35",
+        "actions": [
+          "Shy",
+          "Suspicious",
+          "Startled",
+          "Frustrated",
+          "Sleepy",
+          "WakeUp",
+          "Think",
+          "Facepalm"
+        ]
+      },
+      {
+        "path": "native/reports/contact-sheets/handheld-04.png",
+        "sha256": "601462f2679078797db6f5d35c259c23cb7a11b05ccf5fde0667e59e7980f599",
+        "actions": [
+          "Shrug",
+          "PointLeft",
+          "PointRight",
+          "Bow",
+          "Jump",
+          "Land",
+          "RunRight",
+          "RunLeft"
+        ]
+      }
+    ],
+    "observations": [
+      "Native and source silhouettes, expressions, original lettering, hand variants, cable and layered body geometry agree visually.",
+      "Limbs remain joined; Jump is visibly airborne and the inspected poses remain inside the capture.",
+      "No native/source discrepancy requiring motion or adapter changes was observed."
+    ],
+    "additionalReview": {
+      "reviewer": "Codex animation-authoring agent, separate AI-assisted inspection",
+      "scope": "All five 32-pair overviews; enlarged flip-phone/app-bot/pager mood sheets and smartphone/handheld movement sheets.",
+      "result": "Native/source pairs agree visually, original lettering is readable, limbs remain joined, and the authored Jump is visible without clipping; no motion change requested."
+    },
+    "browserWebGLVerified": false,
+    "limitations": [
+      "Peak contact sheets do not independently verify every intermediate frame, state-machine behavior, browser/device rendering or full website accessibility.",
+      "Browser workflow remains BLOCKED; this review does not authorize WebGL promotion."
+    ]
+  }
+}

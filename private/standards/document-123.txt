@@ -1,0 +1,81 @@
+DOCUMENT 123 OF 135
+Title: 26-Discipline Expansion — Research and Delivery Report
+Path: Research/DISCIPLINE-EXPANSION-REPORT.md
+Group: expansion
+Label: EXPANSION · local delivery record
+Review status: scope_stated_in_document
+==============================================================================
+
+# 26-Discipline Expansion — Research and Delivery Report
+
+**Release:** 2026.09.09-d26 · **Date:** 9 September 2026 · **Prepared for:** Joseph.
+
+## Delivered scope
+
+The updated SEO library now contains all **26 user-requested professional responsibilities**, with the original numbering preserved. Each role has a distinct accountable scope, exclusions, activation signals, minimum inputs, a practical diagnostic sequence, evidence requirements, acceptance conditions, failure modes, named handoffs, current source references, a standalone AI prompt and a public-content brief.
+
+The expansion separates two goals: making an AI assistant perform the right specialist workflow, and creating useful public evidence of actual expertise. A private prompt library cannot itself produce public search exposure. The role taxonomy is a custom operating design, not a claim of 26 employees, credentials or universally separate regulated professions.
+
+## Added assets
+
+| Asset | Count | Purpose |
+| --- | --- | --- |
+| Detailed role charters | 26 | Accountable specialist procedures and scope boundaries |
+| Standalone specialist prompts | 26 | Explicit task assignment and evidence/permission rules |
+| Cross-discipline playbooks | 8 | Critical-path ownership, evidence and acceptance |
+| New active Library Markdown documents | 44 | Charters, operating model, navigation and playbooks |
+| Evidence-led publication briefs | 26 | Distinct buyer questions, proof and review requirements |
+| Methodology article drafts | 6 | Substantial sourced drafts; no invented client case studies |
+| New discipline JSON templates | 13 | Private intake, facts, findings, handoffs, coverage and acceptance |
+| Primary-source supplement records | 49 | Current standards and official product/engine documentation |
+| New executable offline utilities | 2 | Advisory routing and evidence-record consistency |
+| New utility unit tests | 60 | Positive and failure-path behavior |
+| Total utility tests executed | 84 | Includes the previous edition's 24 tests |
+
+The six article bodies contain approximately **3,344 words**, excluding editorial handoff notes. They remain unpublished, unapproved methodology drafts. The 26 briefs are not instructions to mass-publish nearly identical role pages; each has a distinct reader problem and proof requirement.
+
+## Major ownership corrections
+
+**Inquiry handling:** R03 proves application validation/persistence/provider handoff; R17 investigates authentication and mailbox observation; R16 tests the truth of the event definition. R02 reviews supported DNS changes. Provider acceptance is not automatically mailbox receipt.
+
+**Public reachability:** R02 distinguishes authoritative DNS, address families, TLS and private/public test vantages; R01 handles serving processes and upstreams. Bubbles configuration is not assumed from its name.
+
+**Browser and accessibility evidence:** R05 labels engines, branded products, emulation and real devices accurately. R07 keeps manual complete-process assessment separate from automated checks. [Playwright](https://playwright.dev/docs/browsers), [W3C conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance).
+
+**Search/AI work:** R08 owns general URL/indexing contracts; R12 adds engine-specific discovery and citation observation; R10/R13 own relevance and useful answers; R16 owns attribution. Google describes its AI Search optimization on core SEO foundations rather than special-file requirements. [Google guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
+
+**Independent acceptance:** R26 must disclose actual reviewer relationship and fresh execution. A model switching persona does not become an independent professional. The evidence gate validates metadata/artifact consistency, not identity, truth or production readiness.
+
+## Currentness findings incorporated
+
+The email charter uses **RFC 9989, May 2026**, which obsoletes core DMARC RFCs 7489 and 9091, and references separate reporting specifications RFCs 9990/9991. This does not justify blind production policy changes; legitimate senders, alignment and receiver behavior still require actual inspection. [Current DMARC](https://www.rfc-editor.org/rfc/rfc9989.html).
+
+The measurement charter uses current GA4 channel distinctions, including the documented AI Assistant channel and the separate classification of Google AI Overviews/AI Mode under Organic Search. Citation and referral measurements remain separate from qualified inquiries. [GA4 channel definitions](https://support.google.com/analytics/answer/9756891?hl=en).
+
+Security guidance distinguishes the final NIST SSDF 1.1 publication from draft revisions and CSP report-only observation from enforcement. Source register notes identify working-draft and foundational specifications rather than mislabeling every reference as a new final standard. [NIST SSDF](https://csrc.nist.gov/pubs/sp/800/218/final), [CSP](https://www.w3.org/TR/CSP3/).
+
+## AI integration and executable behavior
+
+The root [AGENTS.md](../AGENTS.md), [build reference](../Library/Framework/SEO-BUILD-REFERENCE.md), [master index](../Library/Framework/framework-masterindex.md) and document catalog include the expansion. `CODEX-START-HERE.txt` and an integration snippet explain how to merge instructions into the **actual** project without overwriting its existing rules. No external repository has been changed. [Official instruction discovery](https://developers.openai.com/codex/guides/agents-md).
+
+The router proposes a lead, consultees and bounded prompt pack using deterministic rules. It is not a semantic diagnosis or an agent runtime. The evidence gate checks a separately approved contract, hashes, paths, run/build consistency, timestamps, required checks and declared independence. A structural pass always states that authorization is not granted and external truth/identity have not been verified.
+
+## Public expertise path
+
+Use the [public workbench](../Publishing/README.md) to turn documented principles or actual authorized work into useful articles. Approve truthful authorship and any credentials; redact proof; choose a canonical publication home; check a working service/inquiry path; and measure outcomes. ThatDevPro as a research home and ThatDeveloperGuy as a service site is only a provisional option, not a domain migration decision.
+
+No biography, professional qualification, staff size, customer result, testimonial, traffic estimate, keyword volume, backlink placement or AI recommendation was invented to complete the framework. The publishing templates remain blocked until the required facts and owner review exist.
+
+## Compatibility and preservation
+
+All **146 unique original files** remain hash-identical. The previous edition's manifest is preserved as `Research/baseline-release-manifest.json`; prior reports remain historical records. Existing commercial tiers, names and pricing are unchanged; Tier 13 remains retired. Role R13 is the content/editorial responsibility.
+
+The prior corpus remains partly unverified. This extension is a source-linked operational expansion and structural integration, not a new sentence-by-sentence certification of the inherited library. Source supplement records overlap some baseline references; 49 + 52 is not a count of 101 unique sources.
+
+## Validation and limits
+
+The [current validation report](../Reports/DISCIPLINE-VALIDATION.md) contains the final local test, integrity and browser results. Unit fixtures are synthetic and run in temporary directories. No real Bubbles uptime, DNS, form, mailbox, Safari/iPhone, analytics property or live search performance was tested by these local utilities. No live site, account, public profile, repository or persistent Library folder was changed.
+
+See the [gap map](DISCIPLINE-GAP-MAP.md), [primary-source register](DISCIPLINE-SOURCE-REGISTER.md), [tools guide](../Tools/DISCIPLINES-README.md) and [discipline directory](../Library/Disciplines/README.md) for the exact procedures and boundaries.
+
+==============================================================================

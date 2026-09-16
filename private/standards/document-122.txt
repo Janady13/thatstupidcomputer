@@ -1,0 +1,162 @@
+DOCUMENT 122 OF 135
+Title: Coverage matrix — every unique original
+Path: Research/COVERAGE-MATRIX.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Coverage matrix — every unique original
+
+This is a coverage disclosure, not a pass/fail score. Complete structural inventory and hash preservation apply to all 146 unique originals. Factual review was targeted, not exhaustive. Nine guides were rewritten; one index regenerated; five additional guides received targeted inline safety patches. The remaining 127 active legacy files are explicitly labeled as not fully fact-checked. Four historical audit artifacts remain outside the active library.
+
+| Original unique file | Current treatment | Active document | Preserved original |
+| --- | --- | --- | --- |
+| `EO-COPY-PASTE-PLAYBOOK.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/EO-COPY-PASTE-PLAYBOOK.md) | [Original](../99-Originals/Production%20Customer%20Tiers/EO-COPY-PASTE-PLAYBOOK.md) |
+| `LOCATION-PAGE-FRAMEWORK.md` | PATCHED · legacy remainder | [Open](../Library/LOCATION-PAGE-FRAMEWORK.md) | [Original](../99-Originals/LOCATION-PAGE-FRAMEWORK.md) |
+| `SEO-Search-Appearance.md` | LEGACY · not fully verified | [Open](../Library/Framework/SEO-Search-Appearance.md) | [Original](../99-Originals/Framework/SEO-Search-Appearance.md) |
+| `SERP-Optimization.md` | LEGACY · not fully verified | [Open](../Library/Framework/SERP-Optimization.md) | [Original](../99-Originals/Framework/SERP-Optimization.md) |
+| `audit-baseline-manifest.txt` | HISTORY · not active | Historical only | [Original](../99-Originals/Framework/audit-baseline-manifest.txt) |
+| `build-log.md` | LEGACY · not fully verified | [Open](../Library/Framework/build-log.md) | [Original](../99-Originals/Framework/build-log.md) |
+| `framework-11ty.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-11ty.md) | [Original](../99-Originals/Framework/framework-11ty.md) |
+| `framework-accessibility.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-accessibility.md) | [Original](../99-Originals/Framework/framework-accessibility.md) |
+| `framework-agenticaisearch.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-agenticaisearch.md) | [Original](../99-Originals/Framework/framework-agenticaisearch.md) |
+| `framework-ai-content-workflow.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-ai-content-workflow.md) | [Original](../99-Originals/Framework/framework-ai-content-workflow.md) |
+| `framework-aicitations.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-aicitations.md) | [Original](../99-Originals/Framework/framework-aicitations.md) |
+| `framework-aioverviews.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-aioverviews.md) | [Original](../99-Originals/Framework/framework-aioverviews.md) |
+| `framework-aioverviews.outline.md` | LEGACY · not fully verified | [Open](../Library/Framework/outlines/framework-aioverviews.outline.md) | [Original](../99-Originals/Framework/outlines/framework-aioverviews.outline.md) |
+| `framework-aso.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-aso.md) | [Original](../99-Originals/Framework/framework-aso.md) |
+| `framework-astro.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-astro.md) | [Original](../99-Originals/Framework/framework-astro.md) |
+| `framework-astrohugo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-astrohugo.md) | [Original](../99-Originals/Framework/framework-astrohugo.md) |
+| `framework-attribution.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-attribution.md) | [Original](../99-Originals/Framework/framework-attribution.md) |
+| `framework-bigcommerce.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-bigcommerce.md) | [Original](../99-Originals/Framework/framework-bigcommerce.md) |
+| `framework-boundaries.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-boundaries.md) | [Original](../99-Originals/Framework/framework-boundaries.md) |
+| `framework-brandvoice.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-brandvoice.md) | [Original](../99-Originals/Framework/framework-brandvoice.md) |
+| `framework-clientonboarding.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-clientonboarding.md) | [Original](../99-Originals/Framework/framework-clientonboarding.md) |
+| `framework-competitoraudit.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-competitoraudit.md) | [Original](../99-Originals/Framework/framework-competitoraudit.md) |
+| `framework-contentaudit.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-contentaudit.md) | [Original](../99-Originals/Framework/framework-contentaudit.md) |
+| `framework-contentbriefs.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-contentbriefs.md) | [Original](../99-Originals/Framework/framework-contentbriefs.md) |
+| `framework-contentfirst.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-contentfirst.md) | [Original](../99-Originals/Framework/framework-contentfirst.md) |
+| `framework-contentrefresh.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-contentrefresh.md) | [Original](../99-Originals/Framework/framework-contentrefresh.md) |
+| `framework-coreupdates.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-coreupdates.md) | [Original](../99-Originals/Framework/framework-coreupdates.md) |
+| `framework-cro.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-cro.md) | [Original](../99-Originals/Framework/framework-cro.md) |
+| `framework-cross-stack-implementation.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-cross-stack-implementation.md) | [Original](../99-Originals/Framework/framework-cross-stack-implementation.md) |
+| `framework-digitalpr.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-digitalpr.md) | [Original](../99-Originals/Framework/framework-digitalpr.md) |
+| `framework-drupal.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-drupal.md) | [Original](../99-Originals/Framework/framework-drupal.md) |
+| `framework-ecommerceseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-ecommerceseo.md) | [Original](../99-Originals/Framework/framework-ecommerceseo.md) |
+| `framework-eeat.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-eeat.md) | [Original](../99-Originals/Framework/framework-eeat.md) |
+| `framework-entitysalience.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-entitysalience.md) | [Original](../99-Originals/Framework/framework-entitysalience.md) |
+| `framework-featuredsnippets.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-featuredsnippets.md) | [Original](../99-Originals/Framework/framework-featuredsnippets.md) |
+| `framework-finance-seo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-finance-seo.md) | [Original](../99-Originals/Framework/framework-finance-seo.md) |
+| `framework-formoptimization.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-formoptimization.md) | [Original](../99-Originals/Framework/framework-formoptimization.md) |
+| `framework-ga4.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-ga4.md) | [Original](../99-Originals/Framework/framework-ga4.md) |
+| `framework-gscanalysis.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-gscanalysis.md) | [Original](../99-Originals/Framework/framework-gscanalysis.md) |
+| `framework-hcs.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-hcs.md) | [Original](../99-Originals/Framework/framework-hcs.md) |
+| `framework-headless.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-headless.md) | [Original](../99-Originals/Framework/framework-headless.md) |
+| `framework-healthcare-seo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-healthcare-seo.md) | [Original](../99-Originals/Framework/framework-healthcare-seo.md) |
+| `framework-hreflang.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-hreflang.md) | [Original](../99-Originals/Framework/framework-hreflang.md) |
+| `framework-html-app-pwa-meta.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-app-pwa-meta.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-app-pwa-meta.md) |
+| `framework-html-canonical-alternate.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-canonical-alternate.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-canonical-alternate.md) |
+| `framework-html-favicon-icons.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-favicon-icons.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-favicon-icons.md) |
+| `framework-html-meta-author.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-author.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-author.md) |
+| `framework-html-meta-charset.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-charset.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-charset.md) |
+| `framework-html-meta-color-scheme.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-color-scheme.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-color-scheme.md) |
+| `framework-html-meta-content-language.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-content-language.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-content-language.md) |
+| `framework-html-meta-copyright.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-copyright.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-copyright.md) |
+| `framework-html-meta-generator.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-generator.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-generator.md) |
+| `framework-html-meta-keywords.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-keywords.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-keywords.md) |
+| `framework-html-meta-referrer.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-referrer.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-referrer.md) |
+| `framework-html-meta-refresh.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-refresh.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-refresh.md) |
+| `framework-html-meta-robots.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-robots.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-robots.md) |
+| `framework-html-meta-theme-color.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-theme-color.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-theme-color.md) |
+| `framework-html-meta-viewport.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-viewport.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-viewport.md) |
+| `framework-html-open-graph.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-open-graph.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-open-graph.md) |
+| `framework-html-search-engine-verification.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-search-engine-verification.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-search-engine-verification.md) |
+| `framework-html-twitter-cards.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-twitter-cards.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-twitter-cards.md) |
+| `framework-http-2xx-status-codes.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-2xx-status-codes.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-2xx-status-codes.md) |
+| `framework-http-3xx-status-codes.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-3xx-status-codes.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-3xx-status-codes.md) |
+| `framework-http-4xx-status-codes.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-4xx-status-codes.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-4xx-status-codes.md) |
+| `framework-http-5xx-status-codes.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-5xx-status-codes.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-5xx-status-codes.md) |
+| `framework-http-caching-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-caching-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-caching-headers.md) |
+| `framework-http-content-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-content-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-content-headers.md) |
+| `framework-http-cors-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-cors-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-cors-headers.md) |
+| `framework-http-performance-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-performance-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-performance-headers.md) |
+| `framework-http-rate-control-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-rate-control-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-rate-control-headers.md) |
+| `framework-http-request-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-request-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-request-headers.md) |
+| `framework-http-security-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-security-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-security-headers.md) |
+| `framework-http-seo-headers.md` | LEGACY · not fully verified | [Open](../Library/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-seo-headers.md) | [Original](../99-Originals/Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-seo-headers.md) |
+| `framework-hugo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-hugo.md) | [Original](../99-Originals/Framework/framework-hugo.md) |
+| `framework-hydrogen.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-hydrogen.md) | [Original](../99-Originals/Framework/framework-hydrogen.md) |
+| `framework-imageseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-imageseo.md) | [Original](../99-Originals/Framework/framework-imageseo.md) |
+| `framework-infogain.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-infogain.md) | [Original](../99-Originals/Framework/framework-infogain.md) |
+| `framework-initialaudit.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-initialaudit.md) | [Original](../99-Originals/Framework/framework-initialaudit.md) |
+| `framework-internallinking.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-internallinking.md) | [Original](../99-Originals/Framework/framework-internallinking.md) |
+| `framework-international.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-international.md) | [Original](../99-Originals/Framework/framework-international.md) |
+| `framework-jekyll.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-jekyll.md) | [Original](../99-Originals/Framework/framework-jekyll.md) |
+| `framework-keywordresearch.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-keywordresearch.md) | [Original](../99-Originals/Framework/framework-keywordresearch.md) |
+| `framework-knowledgegraph.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-knowledgegraph.md) | [Original](../99-Originals/Framework/framework-knowledgegraph.md) |
+| `framework-legal-seo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-legal-seo.md) | [Original](../99-Originals/Framework/framework-legal-seo.md) |
+| `framework-linkbuilding.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-linkbuilding.md) | [Original](../99-Originals/Framework/framework-linkbuilding.md) |
+| `framework-localseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-localseo.md) | [Original](../99-Originals/Framework/framework-localseo.md) |
+| `framework-magento.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-magento.md) | [Original](../99-Originals/Framework/framework-magento.md) |
+| `framework-masterindex.md` | REBUILT · navigation | [Open](../Library/Framework/framework-masterindex.md) | [Original](../99-Originals/Framework/framework-masterindex.md) |
+| `framework-mcp.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-mcp.md) | [Original](../99-Originals/Framework/framework-mcp.md) |
+| `framework-migration.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-migration.md) | [Original](../99-Originals/Framework/framework-migration.md) |
+| `framework-mobileseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-mobileseo.md) | [Original](../99-Originals/Framework/framework-mobileseo.md) |
+| `framework-multiengine-tradeoffs.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-multiengine-tradeoffs.md) | [Original](../99-Originals/Framework/framework-multiengine-tradeoffs.md) |
+| `framework-multimodalsearch.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-multimodalsearch.md) | [Original](../99-Originals/Framework/framework-multimodalsearch.md) |
+| `framework-newsseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-newsseo.md) | [Original](../99-Originals/Framework/framework-newsseo.md) |
+| `framework-nextjs.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-nextjs.md) | [Original](../99-Originals/Framework/framework-nextjs.md) |
+| `framework-nuxt.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-nuxt.md) | [Original](../99-Originals/Framework/framework-nuxt.md) |
+| `framework-ongoingaudit.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-ongoingaudit.md) | [Original](../99-Originals/Framework/framework-ongoingaudit.md) |
+| `framework-pageexperience.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-pageexperience.md) | [Original](../99-Originals/Framework/framework-pageexperience.md) |
+| `framework-performance.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-performance.md) | [Original](../99-Originals/Framework/framework-performance.md) |
+| `framework-perplexityspaces.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-perplexityspaces.md) | [Original](../99-Originals/Framework/framework-perplexityspaces.md) |
+| `framework-ppc-seo-coordination.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-ppc-seo-coordination.md) | [Original](../99-Originals/Framework/framework-ppc-seo-coordination.md) |
+| `framework-pricing.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-pricing.md) | [Original](../99-Originals/Framework/framework-pricing.md) |
+| `framework-react.md` | PATCHED · legacy remainder | [Open](../Library/Framework/framework-react.md) | [Original](../99-Originals/Framework/framework-react.md) |
+| `framework-realestate-seo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-realestate-seo.md) | [Original](../99-Originals/Framework/framework-realestate-seo.md) |
+| `framework-remix.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-remix.md) | [Original](../99-Originals/Framework/framework-remix.md) |
+| `framework-reporting.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-reporting.md) | [Original](../99-Originals/Framework/framework-reporting.md) |
+| `framework-robotstxt-crawlbudget.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-robotstxt-crawlbudget.md) | [Original](../99-Originals/Framework/framework-robotstxt-crawlbudget.md) |
+| `framework-saas-seo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-saas-seo.md) | [Original](../99-Originals/Framework/framework-saas-seo.md) |
+| `framework-saas-website-builders.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-saas-website-builders.md) | [Original](../99-Originals/Framework/framework-saas-website-builders.md) |
+| `framework-schema-types-2026.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-schema-types-2026.md) | [Original](../99-Originals/Framework/framework-schema-types-2026.md) |
+| `framework-schema.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-schema.md) | [Original](../99-Originals/Framework/framework-schema.md) |
+| `framework-searchgpt.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-searchgpt.md) | [Original](../99-Originals/Framework/framework-searchgpt.md) |
+| `framework-security.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-security.md) | [Original](../99-Originals/Framework/framework-security.md) |
+| `framework-shopify.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-shopify.md) | [Original](../99-Originals/Framework/framework-shopify.md) |
+| `framework-spampolicies.md` | REWRITTEN · researched | [Open](../Library/Framework/framework-spampolicies.md) | [Original](../99-Originals/Framework/framework-spampolicies.md) |
+| `framework-sqrg.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-sqrg.md) | [Original](../99-Originals/Framework/framework-sqrg.md) |
+| `framework-sveltekit.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-sveltekit.md) | [Original](../99-Originals/Framework/framework-sveltekit.md) |
+| `framework-tailwind.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-tailwind.md) | [Original](../99-Originals/Framework/framework-tailwind.md) |
+| `framework-technicalseo.md` | PATCHED · legacy remainder | [Open](../Library/Framework/framework-technicalseo.md) | [Original](../99-Originals/Framework/framework-technicalseo.md) |
+| `framework-topicalauthority.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-topicalauthority.md) | [Original](../99-Originals/Framework/framework-topicalauthority.md) |
+| `framework-trustsignals.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-trustsignals.md) | [Original](../99-Originals/Framework/framework-trustsignals.md) |
+| `framework-uxseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-uxseo.md) | [Original](../99-Originals/Framework/framework-uxseo.md) |
+| `framework-videoseo.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-videoseo.md) | [Original](../99-Originals/Framework/framework-videoseo.md) |
+| `framework-visualsearch.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-visualsearch.md) | [Original](../99-Originals/Framework/framework-visualsearch.md) |
+| `framework-voicesearch.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-voicesearch.md) | [Original](../99-Originals/Framework/framework-voicesearch.md) |
+| `framework-webflow.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-webflow.md) | [Original](../99-Originals/Framework/framework-webflow.md) |
+| `framework-wordpress.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-wordpress.md) | [Original](../99-Originals/Framework/framework-wordpress.md) |
+| `framework-ymyl.md` | LEGACY · not fully verified | [Open](../Library/Framework/framework-ymyl.md) | [Original](../99-Originals/Framework/framework-ymyl.md) |
+| `growing-search-console-impressions-2026 (1).md` | LEGACY · not fully verified | [Open](../Library/growing-search-console-impressions-2026%20%281%29.md) | [Original](../99-Originals/growing-search-console-impressions-2026%20%281%29.md) |
+| `jaccard-ruthless-check-data.json` | HISTORY · not active | Historical only | [Original](../99-Originals/jaccard-ruthless-check-data.json) |
+| `jaccard-ruthless-check-report.md` | HISTORY · not active | Historical only | [Original](../99-Originals/jaccard-ruthless-check-report.md) |
+| `jaccard-ruthless-check.py` | HISTORY · not active | Historical only | [Original](../99-Originals/jaccard-ruthless-check.py) |
+| `tier-eight.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-eight.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-eight.md) |
+| `tier-eleven.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-eleven.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-eleven.md) |
+| `tier-five.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-five.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-five.md) |
+| `tier-four.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-four.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-four.md) |
+| `tier-fourteen.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-fourteen.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-fourteen.md) |
+| `tier-nine.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-nine.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-nine.md) |
+| `tier-one.md` | PATCHED · legacy remainder | [Open](../Library/Production%20Customer%20Tiers/tier-one.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-one.md) |
+| `tier-seven.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-seven.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-seven.md) |
+| `tier-six.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-six.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-six.md) |
+| `tier-ten.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-ten.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-ten.md) |
+| `tier-thirteen.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-thirteen.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-thirteen.md) |
+| `tier-three.md` | PATCHED · legacy remainder | [Open](../Library/Production%20Customer%20Tiers/tier-three.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-three.md) |
+| `tier-twelve.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-twelve.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-twelve.md) |
+| `tier-two.md` | LEGACY · not fully verified | [Open](../Library/Production%20Customer%20Tiers/tier-two.md) | [Original](../99-Originals/Production%20Customer%20Tiers/tier-two.md) |
+
+==============================================================================

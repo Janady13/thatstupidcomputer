@@ -1,0 +1,45 @@
+DOCUMENT 063 OF 135
+Title: Next.js SEO implementation — versioned route contracts
+Path: Library/Framework/framework-nextjs.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Next.js SEO implementation — versioned route contracts
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S14 S24 S25 S26 S27 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-nextjs.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Record the environment before writing code
+
+Capture the installed Next.js/React versions, App versus Pages Router, runtime, deployment adapter and caching strategy. An older nginx/PM2 example is not a requirement for every Next.js deployment. Choose the project's actual supported hosting path.
+
+Use the framework's current APIs for the pinned release. A snippet that compiles against another major version is not ready merely because its comments say “2026.” Check route parameters, data fetching, metadata behavior and error handling against the installed version.
+
+## Public route contract
+
+For each route class define the source record, meaningful content, canonical, indexing intent, social metadata, structured data and user action. Use static generation or server rendering where it provides the required delivery reliability; use client interaction where it serves the task. React itself supports multiple rendering approaches through frameworks. [S24]
+
+Missing records need the intended not-found behavior, not an empty successful template. Redirects must follow the approved URL map. Do not emit a staging domain, unresolved slug or default product name as production metadata.
+
+## Metadata and streaming
+
+Next.js documents metadata streaming and limited-bot handling. The `htmlLimitedBots` option, introduced in 15.2, replaces the default list when customized. Do not blindly add a partial regex and assume the framework keeps all existing matches. [S25–S27]
+
+Use [Next.js metadata validation](framework-nextjs-metadata-validation.md) for complete-response captures and consumer-specific tests. A first-byte grep is not a sufficient streaming test. Disabling streaming globally is an advanced tradeoff requiring evidence, not a mandatory SEO improvement.
+
+## Structured data and content
+
+Generate public JSON-LD from the same approved record as the visible page. Serialize safely, including escaping `<` when embedding untrusted text in a script element. Avoid duplicating a graph across CMS and application layers with conflicting identities.
+
+Google can render JavaScript; this does not prove every consumer will execute the same code or see the same output. Test the actual route against its required consumers and preserve useful content when nonessential scripts fail. [S14]
+
+## Caching and release
+
+Identify which content can be cached, what invalidates it and how changes reach page HTML, metadata and feeds. Test stale data, missing data and failed upstream requests. Do not apply `no-store` to every page by default or cache personalized content publicly because a generic guide says caching helps SEO.
+
+Run route, accessibility, business-function and live-edge checks before accepting the release. The package's offline tools inspect saved artifacts only; they do not execute a Next.js build. Client-specific implementation remains a separate step grounded in the actual codebase and installed dependencies.
+
+==============================================================================

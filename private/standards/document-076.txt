@@ -1,0 +1,62 @@
+DOCUMENT 076 OF 135
+Title: Contact form to actual mailbox: an end-to-end evidence chain
+Path: Library/Playbooks/02-CONTACT-TO-MAILBOX.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Contact form to actual mailbox: an end-to-end evidence chain
+
+**Lead:** R03 until application/provider handoff is established, then R17 for downstream delivery. **Consulted roles:** R03, R04, R05, R07, R16, R17, R20, R21, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+A user sees form success but there is no confirmed inquiry. Use synthetic data and an authorized controlled recipient; this playbook grants no permission to email real customers.
+
+## Sequence and ownership
+
+### 1. Define success states
+
+Agree which states the system can observe: request received, validated, durably accepted, provider accepted, mailbox observed and business qualified. Do not promise later states from earlier evidence.
+
+### 2. Trace the application
+
+R04 records the UI/request; R03 validates server handling, persistence, retries, queue and provider outcomes using one correlation ID. Exercise failure cases in a safe environment.
+
+### 3. Trace delivery
+
+R17 uses the same message/provider ID to inspect bounce/queue and actual authorized mailbox evidence. Review SPF/DKIM/DMARC alignment and legitimate sending streams before proposing a DNS change through R02.
+
+### 4. Check cross-cutting behavior
+
+R05 tests required actual browsers; R07 tests keyboard, labels and error recovery; R16 compares emitted events with real states. R20 checks sensitive-data handling and abuse controls.
+
+### 5. Verify the repair
+
+R21 retains negative and duplicate-request cases. R25 sequences the approved change. R26 re-executes the inquiry with fresh data and reports actual mailbox observation or BLOCKED.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- User messages match observed application states
+- The scoped synthetic inquiry is durably handled as contracted
+- Required mailbox receipt is directly observed
+- Analytics does not count failed/duplicate submissions as qualified inquiries
+
+## Stop or block
+
+Provider acceptance without mailbox access supports only provider acceptance. Do not falsify a receipt record, publish customer messages, or enforce a mail policy that has not been reviewed against legitimate senders.
+
+## Role and source references
+
+- [R03 — Backend Web Engineer](../Disciplines/R03-backend-web.md)
+- [R16 — Analytics/Measurement Engineer](../Disciplines/R16-analytics-measurement.md)
+- [R17 — Email Deliverability Engineer](../Disciplines/R17-email-deliverability.md)
+
+Primary-source IDs: D07, D28, D32, D33, D36. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

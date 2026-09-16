@@ -1,0 +1,56 @@
+{
+  "schema": "tsc-local-verification/v1",
+  "startedAt": "2026-09-13T10:30:38.349Z",
+  "finishedAt": "2026-09-13T10:30:43.740Z",
+  "node": "v24.19.0",
+  "lockSha256": "818f0012c01844dc38517611b18166b0229098dd4e348db206739b8c8a8c6c69",
+  "result": "FAIL",
+  "results": [
+    {
+      "id": "typecheck",
+      "command": "npm run typecheck",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1596,
+      "log": ".build/verification/typecheck.log",
+      "logSha256": "89bce3ee6970c67f7c16f5fd0aea6a69b1f75cdee228360418735a8ac09f11a8"
+    },
+    {
+      "id": "application-tests",
+      "command": "npm test",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1044,
+      "log": ".build/verification/application-tests.log",
+      "logSha256": "c6275a182f1a89b86ed4d97594d2948b9e2a94959fe060f8eed53d1937649a60"
+    },
+    {
+      "id": "build",
+      "command": "npm run build",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1437,
+      "log": ".build/verification/build.log",
+      "logSha256": "228babff4b28df04d6127554aa1f25f348ce63303837ac7482398d4424613daf"
+    },
+    {
+      "id": "assets",
+      "command": "npm run test:assets",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 981,
+      "log": ".build/verification/assets.log",
+      "logSha256": "14e9d75a75d68c1cca043ee100752414827158e0d22de64a2847bd84f6e6769b"
+    },
+    {
+      "id": "standards",
+      "command": "npm run test:standards",
+      "status": "FAIL",
+      "exitCode": 1,
+      "durationMs": 330,
+      "log": ".build/verification/standards.log",
+      "logSha256": "22e0851dcced44700b5db73055a4c594affcf7b884d6730509b6d5aceaa4e8ee"
+    }
+  ],
+  "scope": "Local source/build/HTTP injection only. No browser, live SMTP, external account, device or production deployment result is inferred."
+}

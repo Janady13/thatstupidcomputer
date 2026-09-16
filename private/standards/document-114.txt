@@ -1,0 +1,61 @@
+DOCUMENT 114 OF 135
+Title: Measure AI visibility without inventing attribution
+Path: Publishing/Drafts/05-AI-VISIBILITY-EVIDENCE.md
+Group: drafts
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Measure AI visibility without inventing attribution
+
+*A clear separation between crawler access, search presence, citations, referrals and qualified inquiries.*
+
+> Editorial workbench: this is an unpublished methodology draft. No client results, credentials, real site test outcomes or owner approval are asserted. Remove this editorial note only after the actual publication review; do not publish the private library.
+
+AI visibility is not a single event. A crawler can request a page without the page becoming a cited source. An answer can cite a source without a reader visiting it. A referral visit can occur without a qualified inquiry.
+
+A useful measurement system keeps those observations separate and explains how each was obtained.
+
+## Name the engine and surface
+
+Start with the actual product being evaluated. A Google AI Search result, a Bing Webmaster Tools citation report and a ChatGPT search answer are not automatically interchangeable datasets. Record the query or prompt, surface, date, locale and any model or account context that the product exposes.
+
+When a field is not exposed, say so. Do not invent a model version or assume that one account’s answer represents every user.
+
+## Distinguish crawler purposes
+
+Providers document different bots and fetching mechanisms. OpenAI, for example, distinguishes OAI-SearchBot, GPTBot and ChatGPT-User; search crawling, training and user-triggered fetching are not the same function. Policies must be chosen for the intended consumer rather than copied universally. [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots).
+
+A log entry should also be interpreted carefully: a claimed user-agent string alone is not sufficient identity proof. Access evidence supports an access claim. It does not establish a recommendation, model memory or lead.
+
+## Make the source useful before optimizing its packaging
+
+Google’s AI guidance places its generative Search on core SEO foundations and does not require a special AI file or special schema. The practical content goal is a useful supported answer that can be understood in context—not a collection of artificial pages designed only to trigger prompts. [Google AI optimization guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
+
+For a technical service business, that may mean a documented troubleshooting method, a safe original example or an authorized case study with clear limits. A truthful author and a defensible source trail help readers assess the work. They do not guarantee selection by any engine.
+
+## Use an evidence ladder
+
+Keep at least these categories distinct: public delivery/access; observed indexing or search exposure; observed answer citation; referral session; qualified inquiry; and attributed revenue where the data supports it.
+
+Each category needs a source, date window, unit and scope. An observation of one answer should preserve the actual cited URL and enough context to reproduce the query. Counterexamples and missing citations belong in the record, too. Repeating only favorable prompts would distort the report.
+
+## Reconcile analytics carefully
+
+GA4’s current default-channel documentation includes an AI Assistant channel. Google AI Overviews and AI Mode remain classified under Organic Search. That distinction should be checked before building a custom reporting category and should not be mistaken for complete attribution of every AI-influenced visit. [GA4 channel definitions](https://support.google.com/analytics/answer/9756891?hl=en).
+
+Bing’s AI visibility reporting also has its own documented measures and surfaces. Citation measurements are useful visibility evidence, not a substitute for website or CRM outcomes. [Bing reporting documentation](https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare).
+
+## Report observations, not inevitability
+
+The right conclusion identifies what improved, where it was observed and what remains uncertain. Public source quality, technical eligibility and clear measurement can all be improved without claiming that every model must recommend the business.
+
+For a business owner, the important question is not simply whether an AI mentioned the company. It is whether the work created useful discoverability and, when measurable, relevant opportunities—without confusing visibility with revenue.
+
+---
+
+## Editorial handoff — not public article copy
+
+R13: confirm distinct usefulness and the actual audience. R14: verify current sources and every added result/credential claim. R20: approve any screenshots or proof artifacts for publication. Joseph: substantively review the final article and approve the exact author/byline. R08/R11: approve the actual canonical URL and truthful entity representation. R16: define measurement without implying guaranteed citations or inquiries. The suggested service action is appropriate only if the service is actually offered and its contact path works.
+
+==============================================================================

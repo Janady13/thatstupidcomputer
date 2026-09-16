@@ -1,0 +1,42 @@
+DOCUMENT 052 OF 135
+Title: Evidence governance and claim authorization
+Path: Library/Framework/framework-evidence-governance.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Evidence governance and claim authorization
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Every strategy, checklist, code example, sales statement and AI-assisted answer  
+**Evidence:** S01, S02, S19, S29 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## One claim, one support record
+
+The old library mixes engine requirements, useful house style, experiments and confident predictions. This edition uses separate evidence classes. **Official requirement** means a documented condition for a named feature. **Official recommendation** is guidance, not a promised result. **Primary research** is conditional on its experimental setup. **First-party observation** is a result from a specified client dataset. **Engineering judgment** is a proposed design decision. **Unverified legacy claim** is not authorized as client-facing fact.
+
+Give every consequential rule a claim ID. Record the exact wording, intended consumer, affected page types, primary source, source date, retrieval date, confidence, implementation test, owner and conditions under which the claim would be withdrawn. A URL alone is insufficient: the cited passage must support the actual assertion. A requirement for a shopping result cannot be transferred to every service page.
+
+## Review a numerical claim before using it
+
+Extract the numerator, denominator, sample selection, date range, engine/model, geography, query mix, comparison method and uncertainty. Separate relative improvement from percentage-point improvement. Ask whether the observation measures citations, visible words, impressions, clicks or revenue. Missing denominators or inaccessible underlying evidence make a claim unverified; they do not establish that it is false.
+
+The GEO paper is legitimate research, but its benchmark and deployed-engine experiments are not a universal 2026 commercial-search formula. Its results must remain tied to the tested setup and metrics. A patent describes an invention, not proof that a production system uses it. [S29]
+
+## Conflict resolution
+
+Prefer the most specific current official source for the exact product behavior. Preserve older sources when they explain history. Record why one source supersedes another rather than quietly changing dates. This release resolves the Google AI reporting conflict in favor of the June announcement and August rollout note, while retaining the earlier AI-features page for eligibility.
+
+For competing independent studies, preserve both methods and do not average incompatible metrics. For company documentation versus logs, describe the documentation as stated behavior and logs as observed behavior; investigate identity, scope and timing before declaring a contradiction.
+
+## Publication gate
+
+A reviewer should be able to reproduce the reasoning without trusting the writer's authority. Replace unsupported absolutes such as “always,” “invisible,” “guaranteed,” and “exact algorithm” with a sourced scope or a testable hypothesis. Do not merely add “may” to a claim that has no supporting evidence.
+
+An approved operational record contains a project-specific decision and acceptance test. Example: “SSR is selected for public service routes because the named retrieval clients need useful initial HTML; compare raw and rendered captures before release.” This is stronger engineering than pretending every crawler has identical rendering capabilities.
+
+Use `Templates/claim-register.example.json` as the data contract. No automated score in this package certifies truth, ranking eligibility or legal compliance. Human review remains necessary for the claim itself.
+
+==============================================================================

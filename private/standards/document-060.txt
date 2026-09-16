@@ -1,0 +1,239 @@
+DOCUMENT 060 OF 135
+Title: SEO library — canonical master index
+Path: Library/Framework/framework-masterindex.md
+Group: baseline
+Label: REBUILT · navigation
+Review status: regenerated_index
+==============================================================================
+
+# SEO library — canonical master index
+
+> **26-discipline expansion — 2026.09.09-d26:** Route engineering, SEO, AI visibility and publication work through the [discipline operating library](../Disciplines/README.md). Read the [master router](../Disciplines/01-MASTER-ROUTER.md), [cross-discipline playbooks](../Playbooks/README.md) and [public expertise layer](../../Publishing/README.md). New role IDs do not change commercial tiers, pricing or the retirement of Tier 13. Baseline legacy review boundaries remain in force.
+
+**Edition 2026.09.09 · Generated navigation, not a certification of every legacy claim.**
+
+169 active Markdown documents: 27 new researched modules, nine rewritten core guides, this regenerated index, five targeted-patch legacy guides and 127 other retained legacy documents. The 146 unique original files are preserved separately with hashes. Tier 13 stays retired; no tiers were renumbered.
+
+Start with the [build reference](SEO-BUILD-REFERENCE.md), [evidence rules](framework-evidence-governance.md) and [audit report](../../Research/AUDIT-REPORT.md). Current researched guidance overrides conflicting legacy material. A legacy file is useful background, not an instruction to deploy its code or accept its statistics.
+
+## New researched modules
+
+[Evidence governance and claim authorization](framework-evidence-governance.md)
+[Engine-specific discovery, training and user-access controls](framework-engine-control-matrix.md)
+[Google generative AI performance: current reporting contract](framework-google-ai-performance-2026.md)
+[Bing AI Performance and citation-share interpretation](framework-bing-ai-performance-2026.md)
+[AI answer observation and controlled evaluation](framework-ai-observation-protocol.md)
+[AI referrals, analytics channels and qualified outcomes](framework-ai-referral-attribution-2026.md)
+[SEO release contracts and reproducible acceptance tests](framework-seo-release-contracts.md)
+[URL lifecycle, canonical decisions and safe retirement](framework-url-lifecycle.md)
+[Location-page evidence and genuine local utility](framework-location-evidence.md)
+[Regional Search eligibility and policy differences](framework-regional-search-eligibility.md)
+[Structured-data lifecycle and feature eligibility](framework-schema-lifecycle.md)
+[Commerce data consistency across page, feed and structured data](framework-commerce-data-consistency.md)
+[Next.js metadata, streaming and rendering validation](framework-nextjs-metadata-validation.md)
+[Crawler identity, logs and safe edge access](framework-crawler-identity-observability.md)
+[Crawl payload budgets and content delivery](framework-crawl-payload-budgets.md)
+[Field performance and interaction acceptance](framework-field-performance-acceptance.md)
+[First-party facts, provenance and reusable evidence](framework-source-provenance.md)
+[Agent access, MCP and security boundaries](framework-agent-access-security.md)
+[Social and video platform properties in Search Console](framework-social-video-properties.md)
+[Migration contract, checkpoints and rollback](framework-migration-rollback-contract.md)
+[Research maintenance and documentation drift control](framework-research-maintenance.md)
+[Client scope, tier applicability and acceptance](framework-client-scope-acceptance.md)
+[Faceted navigation and crawl-space control](framework-faceted-url-contract.md)
+[Preferred Sources and publisher relationship design](framework-publisher-preferences.md)
+[Titles, descriptions and preview copy without false limits](framework-html-meta-description.md)
+[Universal Search Delivery Framework — not a ranking formula](UNIVERSAL-RANKING-FRAMEWORK.md)
+[SEO build reference: intake to production evidence](SEO-BUILD-REFERENCE.md)
+
+## Rewritten core guides
+
+[Content delivery first — without false crawler absolutes](framework-contentfirst.md)
+[Google AI Overviews and AI Mode — eligibility, controls and measurement](framework-aioverviews.md)
+[AI citation engineering — controllable inputs and observable outcomes](framework-aicitations.md)
+[Schema types in 2026 — semantic validity versus search features](framework-schema-types-2026.md)
+[ChatGPT Search — publisher access and measured referrals](framework-searchgpt.md)
+[Search spam policy — scoped interpretation and operational controls](framework-spampolicies.md)
+[Search Console analysis — current reports and defensible diagnostics](framework-gscanalysis.md)
+[GA4 implementation — current AI channels, scopes and outcome quality](framework-ga4.md)
+[Next.js SEO implementation — versioned route contracts](framework-nextjs.md)
+
+## Complete active-file directory
+
+| Document | Review boundary |
+| --- | --- |
+| [framework-html-app-pwa-meta.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-app-pwa-meta.md) | LEGACY · not fully verified |
+| [framework-html-canonical-alternate.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-canonical-alternate.md) | LEGACY · not fully verified |
+| [framework-html-favicon-icons.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-favicon-icons.md) | LEGACY · not fully verified |
+| [framework-html-meta-author.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-author.md) | LEGACY · not fully verified |
+| [framework-html-meta-charset.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-charset.md) | LEGACY · not fully verified |
+| [framework-html-meta-color-scheme.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-color-scheme.md) | LEGACY · not fully verified |
+| [framework-html-meta-content-language.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-content-language.md) | LEGACY · not fully verified |
+| [framework-html-meta-copyright.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-copyright.md) | LEGACY · not fully verified |
+| [framework-html-meta-generator.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-generator.md) | LEGACY · not fully verified |
+| [framework-html-meta-keywords.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-keywords.md) | LEGACY · not fully verified |
+| [framework-html-meta-referrer.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-referrer.md) | LEGACY · not fully verified |
+| [framework-html-meta-refresh.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-refresh.md) | LEGACY · not fully verified |
+| [framework-html-meta-robots.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-robots.md) | LEGACY · not fully verified |
+| [framework-html-meta-theme-color.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-theme-color.md) | LEGACY · not fully verified |
+| [framework-html-meta-viewport.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-meta-viewport.md) | LEGACY · not fully verified |
+| [framework-html-open-graph.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-open-graph.md) | LEGACY · not fully verified |
+| [framework-html-search-engine-verification.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-search-engine-verification.md) | LEGACY · not fully verified |
+| [framework-html-twitter-cards.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-html-twitter-cards.md) | LEGACY · not fully verified |
+| [framework-http-2xx-status-codes.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-2xx-status-codes.md) | LEGACY · not fully verified |
+| [framework-http-3xx-status-codes.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-3xx-status-codes.md) | LEGACY · not fully verified |
+| [framework-http-4xx-status-codes.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-4xx-status-codes.md) | LEGACY · not fully verified |
+| [framework-http-5xx-status-codes.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-5xx-status-codes.md) | LEGACY · not fully verified |
+| [framework-http-caching-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-caching-headers.md) | LEGACY · not fully verified |
+| [framework-http-content-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-content-headers.md) | LEGACY · not fully verified |
+| [framework-http-cors-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-cors-headers.md) | LEGACY · not fully verified |
+| [framework-http-performance-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-performance-headers.md) | LEGACY · not fully verified |
+| [framework-http-rate-control-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-rate-control-headers.md) | LEGACY · not fully verified |
+| [framework-http-request-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-request-headers.md) | LEGACY · not fully verified |
+| [framework-http-security-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-security-headers.md) | LEGACY · not fully verified |
+| [framework-http-seo-headers.md](../Crawler%20Signal%20Refrence%20for%20troubleshooting/framework-http-seo-headers.md) | LEGACY · not fully verified |
+| [SEO build reference: intake to production evidence](SEO-BUILD-REFERENCE.md) | NEW · researched |
+| [Framework: SEO and Search Appearance Optimization](SEO-Search-Appearance.md) | LEGACY · not fully verified |
+| [Framework: SERP Optimization](SERP-Optimization.md) | LEGACY · not fully verified |
+| [Universal Search Delivery Framework — not a ranking formula](UNIVERSAL-RANKING-FRAMEWORK.md) | NEW · researched |
+| [SEO Library Completion Build Log](build-log.md) | LEGACY · not fully verified |
+| [Framework: Eleventy (11ty) SEO Implementation](framework-11ty.md) | LEGACY · not fully verified |
+| [Framework: Accessibility (a11y) for SEO and AEO](framework-accessibility.md) | LEGACY · not fully verified |
+| [Agent access, MCP and security boundaries](framework-agent-access-security.md) | NEW · researched |
+| [Framework: Agentic AI Search](framework-agenticaisearch.md) | LEGACY · not fully verified |
+| [Framework: AI-Assisted Content Workflow](framework-ai-content-workflow.md) | LEGACY · not fully verified |
+| [AI answer observation and controlled evaluation](framework-ai-observation-protocol.md) | NEW · researched |
+| [AI referrals, analytics channels and qualified outcomes](framework-ai-referral-attribution-2026.md) | NEW · researched |
+| [AI citation engineering — controllable inputs and observable outcomes](framework-aicitations.md) | REWRITTEN · researched |
+| [Google AI Overviews and AI Mode — eligibility, controls and measurement](framework-aioverviews.md) | REWRITTEN · researched |
+| [Framework: App Store Optimization (ASO)](framework-aso.md) | LEGACY · not fully verified |
+| [Framework: Astro SEO Implementation](framework-astro.md) | LEGACY · not fully verified |
+| [Framework: Astro & Hugo (Split into Individual References)](framework-astrohugo.md) | LEGACY · not fully verified |
+| [Framework: SEO Attribution Modeling](framework-attribution.md) | LEGACY · not fully verified |
+| [Framework: BigCommerce SEO Implementation](framework-bigcommerce.md) | LEGACY · not fully verified |
+| [Bing AI Performance and citation-share interpretation](framework-bing-ai-performance-2026.md) | NEW · researched |
+| [Framework: Library Ownership Boundaries](framework-boundaries.md) | LEGACY · not fully verified |
+| [Framework: Brand Voice and Content Style Guide](framework-brandvoice.md) | LEGACY · not fully verified |
+| [Client scope, tier applicability and acceptance](framework-client-scope-acceptance.md) | NEW · researched |
+| [Framework: Client Onboarding](framework-clientonboarding.md) | LEGACY · not fully verified |
+| [Commerce data consistency across page, feed and structured data](framework-commerce-data-consistency.md) | NEW · researched |
+| [Framework: Competitor Audit Methodology](framework-competitoraudit.md) | LEGACY · not fully verified |
+| [Framework: Content Audit Methodology](framework-contentaudit.md) | LEGACY · not fully verified |
+| [Framework: Content Briefs and Strategic Planning](framework-contentbriefs.md) | LEGACY · not fully verified |
+| [Content delivery first — without false crawler absolutes](framework-contentfirst.md) | REWRITTEN · researched |
+| [Framework: Content Refresh Workflows](framework-contentrefresh.md) | LEGACY · not fully verified |
+| [Framework: Core Updates](framework-coreupdates.md) | LEGACY · not fully verified |
+| [Crawl payload budgets and content delivery](framework-crawl-payload-budgets.md) | NEW · researched |
+| [Crawler identity, logs and safe edge access](framework-crawler-identity-observability.md) | NEW · researched |
+| [Framework: Conversion Rate Optimization](framework-cro.md) | LEGACY · not fully verified |
+| [Cross-Stack SEO Implementation Framework](framework-cross-stack-implementation.md) | LEGACY · not fully verified |
+| [Framework: Digital PR](framework-digitalpr.md) | LEGACY · not fully verified |
+| [Framework: Drupal SEO Implementation](framework-drupal.md) | LEGACY · not fully verified |
+| [Framework: E-commerce SEO](framework-ecommerceseo.md) | LEGACY · not fully verified |
+| [Framework: E-E-A-T](framework-eeat.md) | LEGACY · not fully verified |
+| [Engine-specific discovery, training and user-access controls](framework-engine-control-matrix.md) | NEW · researched |
+| [Framework: Entity Salience](framework-entitysalience.md) | LEGACY · not fully verified |
+| [Evidence governance and claim authorization](framework-evidence-governance.md) | NEW · researched |
+| [Faceted navigation and crawl-space control](framework-faceted-url-contract.md) | NEW · researched |
+| [Framework: Featured Snippets & AI Overviews](framework-featuredsnippets.md) | LEGACY · not fully verified |
+| [Field performance and interaction acceptance](framework-field-performance-acceptance.md) | NEW · researched |
+| [Framework: Finance SEO](framework-finance-seo.md) | LEGACY · not fully verified |
+| [Framework: Form Optimization](framework-formoptimization.md) | LEGACY · not fully verified |
+| [GA4 implementation — current AI channels, scopes and outcome quality](framework-ga4.md) | REWRITTEN · researched |
+| [Google generative AI performance: current reporting contract](framework-google-ai-performance-2026.md) | NEW · researched |
+| [Search Console analysis — current reports and defensible diagnostics](framework-gscanalysis.md) | REWRITTEN · researched |
+| [Framework: HCS (Helpful Content System)](framework-hcs.md) | LEGACY · not fully verified |
+| [Framework: Headless CMS SEO Implementation](framework-headless.md) | LEGACY · not fully verified |
+| [Framework: Healthcare SEO](framework-healthcare-seo.md) | LEGACY · not fully verified |
+| [Framework: Hreflang and International URL Strategy](framework-hreflang.md) | LEGACY · not fully verified |
+| [Titles, descriptions and preview copy without false limits](framework-html-meta-description.md) | NEW · researched |
+| [Framework: Hugo SEO Implementation](framework-hugo.md) | LEGACY · not fully verified |
+| [Framework: Shopify Hydrogen SEO Implementation](framework-hydrogen.md) | LEGACY · not fully verified |
+| [Framework: Image SEO](framework-imageseo.md) | LEGACY · not fully verified |
+| [Framework: Information Gain](framework-infogain.md) | LEGACY · not fully verified |
+| [Framework: Initial Client Audit Methodology](framework-initialaudit.md) | LEGACY · not fully verified |
+| [Framework: Internal Linking](framework-internallinking.md) | LEGACY · not fully verified |
+| [Framework: International SEO](framework-international.md) | LEGACY · not fully verified |
+| [Framework: Jekyll SEO Implementation](framework-jekyll.md) | LEGACY · not fully verified |
+| [Framework: Keyword Research & Search Intent](framework-keywordresearch.md) | LEGACY · not fully verified |
+| [Framework: Knowledge Graph](framework-knowledgegraph.md) | LEGACY · not fully verified |
+| [Framework: Legal SEO](framework-legal-seo.md) | LEGACY · not fully verified |
+| [Framework: Link Building](framework-linkbuilding.md) | LEGACY · not fully verified |
+| [Framework: Local SEO](framework-localseo.md) | LEGACY · not fully verified |
+| [Location-page evidence and genuine local utility](framework-location-evidence.md) | NEW · researched |
+| [Framework: Magento and Adobe Commerce SEO Implementation](framework-magento.md) | LEGACY · not fully verified |
+| [Master Index & Implementation Roadmap](framework-masterindex.md) | REBUILT · navigation |
+| [Framework: Model Context Protocol (MCP) for Websites](framework-mcp.md) | LEGACY · not fully verified |
+| [Migration contract, checkpoints and rollback](framework-migration-rollback-contract.md) | NEW · researched |
+| [Framework: Site Migration](framework-migration.md) | LEGACY · not fully verified |
+| [Framework: Mobile SEO](framework-mobileseo.md) | LEGACY · not fully verified |
+| [Framework: Multi Engine Citation Tradeoffs](framework-multiengine-tradeoffs.md) | LEGACY · not fully verified |
+| [Framework: Multimodal Search](framework-multimodalsearch.md) | LEGACY · not fully verified |
+| [Framework: News SEO](framework-newsseo.md) | LEGACY · not fully verified |
+| [Next.js metadata, streaming and rendering validation](framework-nextjs-metadata-validation.md) | NEW · researched |
+| [Next.js SEO implementation — versioned route contracts](framework-nextjs.md) | REWRITTEN · researched |
+| [Framework: Nuxt SEO Implementation](framework-nuxt.md) | LEGACY · not fully verified |
+| [Framework: Ongoing Audit Methodology](framework-ongoingaudit.md) | LEGACY · not fully verified |
+| [Framework: Page Experience](framework-pageexperience.md) | LEGACY · not fully verified |
+| [Framework: Performance Optimization](framework-performance.md) | LEGACY · not fully verified |
+| [Framework: Perplexity Spaces, Pages, and Comet Optimization](framework-perplexityspaces.md) | LEGACY · not fully verified |
+| [Framework: PPC and SEO Coordination](framework-ppc-seo-coordination.md) | LEGACY · not fully verified |
+| [Framework: Pricing and Packaging](framework-pricing.md) | LEGACY · not fully verified |
+| [Preferred Sources and publisher relationship design](framework-publisher-preferences.md) | NEW · researched |
+| [Framework: React SEO/AEO/AIO](framework-react.md) | PATCHED · legacy remainder |
+| [Framework: Real Estate SEO](framework-realestate-seo.md) | LEGACY · not fully verified |
+| [Regional Search eligibility and policy differences](framework-regional-search-eligibility.md) | NEW · researched |
+| [Framework: Remix SEO/AEO/AIO](framework-remix.md) | LEGACY · not fully verified |
+| [Framework: Client Reporting](framework-reporting.md) | LEGACY · not fully verified |
+| [Research maintenance and documentation drift control](framework-research-maintenance.md) | NEW · researched |
+| [Framework: Robots.txt and Crawl Budget](framework-robotstxt-crawlbudget.md) | LEGACY · not fully verified |
+| [Framework: SaaS and B2B Lead-Gen SEO](framework-saas-seo.md) | LEGACY · not fully verified |
+| [Framework: SaaS Website Builder SEO Implementation](framework-saas-website-builders.md) | LEGACY · not fully verified |
+| [Structured-data lifecycle and feature eligibility](framework-schema-lifecycle.md) | NEW · researched |
+| [Schema types in 2026 — semantic validity versus search features](framework-schema-types-2026.md) | REWRITTEN · researched |
+| [Framework: Schema & Structured Data](framework-schema.md) | LEGACY · not fully verified |
+| [ChatGPT Search — publisher access and measured referrals](framework-searchgpt.md) | REWRITTEN · researched |
+| [Framework: Web Security](framework-security.md) | LEGACY · not fully verified |
+| [SEO release contracts and reproducible acceptance tests](framework-seo-release-contracts.md) | NEW · researched |
+| [Framework: Shopify SEO Implementation](framework-shopify.md) | LEGACY · not fully verified |
+| [Social and video platform properties in Search Console](framework-social-video-properties.md) | NEW · researched |
+| [First-party facts, provenance and reusable evidence](framework-source-provenance.md) | NEW · researched |
+| [Search spam policy — scoped interpretation and operational controls](framework-spampolicies.md) | REWRITTEN · researched |
+| [Framework: SQRG (Search Quality Rater Guidelines)](framework-sqrg.md) | LEGACY · not fully verified |
+| [Framework: SvelteKit SEO Implementation](framework-sveltekit.md) | LEGACY · not fully verified |
+| [Framework: Tailwind CSS](framework-tailwind.md) | LEGACY · not fully verified |
+| [Framework: Technical SEO](framework-technicalseo.md) | PATCHED · legacy remainder |
+| [Framework: Topical Authority Architecture](framework-topicalauthority.md) | LEGACY · not fully verified |
+| [Framework: Trust Signals](framework-trustsignals.md) | LEGACY · not fully verified |
+| [URL lifecycle, canonical decisions and safe retirement](framework-url-lifecycle.md) | NEW · researched |
+| [Framework: UX for SEO](framework-uxseo.md) | LEGACY · not fully verified |
+| [Framework: Video SEO](framework-videoseo.md) | LEGACY · not fully verified |
+| [Framework: Visual Search Optimization](framework-visualsearch.md) | LEGACY · not fully verified |
+| [Framework: Voice Search Optimization](framework-voicesearch.md) | LEGACY · not fully verified |
+| [Framework: Webflow SEO Implementation](framework-webflow.md) | LEGACY · not fully verified |
+| [Framework: WordPress SEO Implementation](framework-wordpress.md) | LEGACY · not fully verified |
+| [Framework: YMYL](framework-ymyl.md) | LEGACY · not fully verified |
+| [Outline: framework-aioverviews.md](outlines/framework-aioverviews.outline.md) | LEGACY · not fully verified |
+| [LOCATION PAGE FRAMEWORK](../LOCATION-PAGE-FRAMEWORK.md) | PATCHED · legacy remainder |
+| [ENGINE OPTIMIZATION COPY AND PASTE PLAYBOOK](../Production%20Customer%20Tiers/EO-COPY-PASTE-PLAYBOOK.md) | LEGACY · not fully verified |
+| [Tier 8 — DATA, ANALYTICS & CONVERSION (18 items)](../Production%20Customer%20Tiers/tier-eight.md) | LEGACY · not fully verified |
+| [Tier 11 — MARKETPLACE & RETAIL (10 items)](../Production%20Customer%20Tiers/tier-eleven.md) | LEGACY · not fully verified |
+| [Tier 5 — LOCAL DOMINATION (16 items)](../Production%20Customer%20Tiers/tier-five.md) | LEGACY · not fully verified |
+| [Tier 4 — ENTITY & AUTHORITY (14 items)](../Production%20Customer%20Tiers/tier-four.md) | LEGACY · not fully verified |
+| [Tier 14 — ADVANCED & IMMERSIVE (8 items)](../Production%20Customer%20Tiers/tier-fourteen.md) | LEGACY · not fully verified |
+| [Tier 9 — MONITORING & INTELLIGENCE (12 items)](../Production%20Customer%20Tiers/tier-nine.md) | LEGACY · not fully verified |
+| [Tier 1 — FOUNDATION (28 items)](../Production%20Customer%20Tiers/tier-one.md) | PATCHED · legacy remainder |
+| [Tier 7 — SOCIAL & COMMUNITY (16 items)](../Production%20Customer%20Tiers/tier-seven.md) | LEGACY · not fully verified |
+| [Tier 6 — CONTENT & MULTIMEDIA AUTHORITY (15 items)](../Production%20Customer%20Tiers/tier-six.md) | LEGACY · not fully verified |
+| [Tier 10 — WORKFLOW & OPERATIONS (10 items)](../Production%20Customer%20Tiers/tier-ten.md) | LEGACY · not fully verified |
+| [Tier 13 — RETIRED](../Production%20Customer%20Tiers/tier-thirteen.md) | LEGACY · not fully verified |
+| [Tier 3 — AI DOMINATION (20 items)](../Production%20Customer%20Tiers/tier-three.md) | PATCHED · legacy remainder |
+| [Tier 12 — INTERNATIONAL (8 items)](../Production%20Customer%20Tiers/tier-twelve.md) | LEGACY · not fully verified |
+| [Tier 2 — SEARCH VISIBILITY (28 items)](../Production%20Customer%20Tiers/tier-two.md) | LEGACY · not fully verified |
+| [Growing Impressions in Google Search Console](../growing-search-console-impressions-2026%20%281%29.md) | LEGACY · not fully verified |
+
+## Audit and operating assets
+
+[Source register](../../Research/SOURCE-REGISTER.md) · [Finding records](../../Research/FINDINGS.md) · [Coverage matrix](../../Research/COVERAGE-MATRIX.md) · [Tier applicability](../../Research/TIER-APPLICABILITY-MAP.md) · [Templates](../../Templates/README.md) · [Schema examples](../../Schema.org/README.md) · [Tools](../../Tools/README.md)
+
+==============================================================================

@@ -1,0 +1,31 @@
+DOCUMENT 010 OF 135
+Title: Full-audit coverage without launching 26 uncontrolled agents
+Path: Library/Disciplines/07-FULL-AUDIT-COVERAGE.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Full-audit coverage without launching 26 uncontrolled agents
+
+A scoped task activates only the necessary specialists. A comprehensive website audit accounts for **all 26** roles by marking each active, review-only, not applicable with a reason, or blocked. This makes omissions visible without requiring an arbitrary number of simultaneous agents.
+
+## Audit sequence
+
+Start with the actual business outcome and authorization. R24 inventories the system and assigns decision owners. R01/R02 establish runtime and public transport; R20 flags urgent exposure. R03/R04/R05/R07/R17 prove the critical customer journey. R06 measures performance without breaking it. R08/R09/R10/R11/R12 assess discovery and useful information. R13/R14/R18/R19/R23 assess content, claims, local facts, corroboration and market fit. R15/R16 assess conversion and measurement. R21/R22 test contracts and counterexamples. R25 plans any change, and R26 performs the required independent acceptance.
+
+This is a dependency-oriented starting order, not a universal waterfall. Discovery may run concurrently where reads are safe; write conflicts still need a single owner. A security incident or unavailable inquiry path changes priority.
+
+## Coverage fields
+
+For each role record: applicability state, reason, accountable operator, actual access, relevant assets, existing evidence, checks executed, checks blocked, findings and next handoff. Do not set every role PASS because a general website scan succeeded. “Not applicable” needs a concrete scope reason—for example, an informational site that genuinely has no sending service—not a lack of access to mail configuration.
+
+The [coverage template](../../Templates/Disciplines/audit-coverage.template.json) contains all 26 role IDs, initially `unassessed`. R24 approves the scope map before the audit is described as comprehensive. The expansion validator checks that all IDs exist, not that anyone actually performed those audits.
+
+## Deliverable to the business owner
+
+Summarize user impact first: unavailable site, lost inquiry risk, false analytics, inaccessible task, discovery defect or unsupported public claim. Group duplicate symptoms across roles into one integrated finding with one owner. Provide the exact scope, evidence, priority, proposed repair, dependencies, rollback and acceptance test. Retain a list of untested systems and unavailable access.
+
+Do not confuse this discipline coverage with the existing commercial tier promises. Adding a role does not silently change pricing, guarantees or signed scope. Any service expansion requires the owner's actual capability and contract decisions.
+
+==============================================================================

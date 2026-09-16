@@ -1,0 +1,51 @@
+DOCUMENT 068 OF 135
+Title: Schema types in 2026 — semantic validity versus search features
+Path: Library/Framework/framework-schema-types-2026.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Schema types in 2026 — semantic validity versus search features
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S01 S20 S21 S22 S23 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-schema-types-2026.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## A type catalog is not a benefit catalog
+
+Schema.org vocabulary and search-engine feature support are separate layers. A valid type can describe content even when Google does not offer a corresponding rich result. Feature eligibility additionally depends on required properties, policy, content and availability. Appearance is not guaranteed. [S20]
+
+## Current planning matrix
+
+| Family | Use in this library | Acceptance boundary |
+| --- | --- | --- |
+| Organization / WebSite | Model genuine identity and site relationships | Real identifiers and visible business facts; no knowledge-panel promise. |
+| Article / Person | Model actual editorial content and authorship | Real author/content relationship; no fabricated credentials. |
+| BreadcrumbList | Describe the real navigational hierarchy | Match meaningful navigation and valid URLs. |
+| Product / Offer | Describe a genuine product and commercial offer | Follow the current feature guide and reconcile page, feed and checkout. |
+| LocalBusiness | Describe a legitimate applicable business entity | No invented storefronts, addresses or local staff. |
+| Review / AggregateRating | Describe authentic qualifying reviews | Apply current feature policy; no placeholder ratings. |
+| FAQPage | Optional vocabulary where justified | Google FAQ rich results retired May 7, 2026. |
+| HowTo | Optional vocabulary for genuine instructions | Google HowTo rich results retired September 2023. |
+| Other types | Evaluate individually | Consult the current specific consumer guide before promising a feature. |
+
+FAQ and HowTo lifecycle facts are from S01 and S21. Do not copy an old rich-result checklist into a 2026 proposal. Do not assume that removal of one type implies every neighboring feature, such as all book-related integrations, is also retired.
+
+## Model only supported facts
+
+Use the most accurate applicable type without inventing a subtype to appear sophisticated. Populate properties from controlled records. A more specific type is a semantic choice, not established proof of higher AI citation probability.
+
+For commerce, optional ratings are not mandatory filler. Keep prices, currency and availability current. Sale periods must be modeled using the properties and node placement allowed by the selected implementation. [S23]
+
+For reviews, apply genuine-experience and disclosure requirements and the self-serving LocalBusiness/Organization restriction. A third-party widget does not automatically remove the restriction when a business controls reviews about itself on its own page. [S22]
+
+## Generation and testing
+
+Generate JSON using a serializer rather than string concatenation. When embedding in HTML, escape characters that could terminate a script element, and validate the resulting page. Never expose secrets or private catalog fields in a public graph.
+
+Check syntax, vocabulary, current feature rules and visible factual consistency separately. Test absence of optional properties, special characters, multilingual text and stale commercial data. Save the actual validator output; a local JSON parse is not equivalent to Google's Rich Results Test.
+
+The example graphs in `Schema.org` contain fictional data and do not claim feature approval. Use [schema lifecycle](framework-schema-lifecycle.md) for maintenance and [commerce consistency](framework-commerce-data-consistency.md) for product pipelines. Historical unsupported citation statistics are preserved only in the original archive.
+
+==============================================================================

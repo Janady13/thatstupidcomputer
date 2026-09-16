@@ -1,0 +1,44 @@
+DOCUMENT 053 OF 135
+Title: Faceted navigation and crawl-space control
+Path: Library/Framework/framework-faceted-url-contract.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Faceted navigation and crawl-space control
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Commerce filters, internal search, sorting and parameterized pages  
+**Evidence:** S39, S15, S16 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Define which combinations deserve an independent page
+
+Inventory filter dimensions, sorting modes, pagination, tracking parameters and variant selection. Estimate the generated URL space from actual application behavior, not only from links found in one crawl. Decide which combinations provide genuine search value and which exist only to help an on-site task.
+
+Google's faceted-navigation guidance distinguishes cases where filtered URLs need search visibility from cases where unnecessary crawling should be prevented. Canonicals and indexing directives have separate roles and should not be used interchangeably. [S39, S15, S16]
+
+## URL contract
+
+For each parameter, record its meaning, allowed values, whether order matters, whether it changes content, intended index state and canonical rule. Reject impossible combinations gracefully. Prevent infinite calendars, repeating parameters and unbounded sort/filter permutations from producing apparently unique content indefinitely.
+
+Do not erase parameters that control a legitimate user choice merely because they resemble tracking. Do not canonicalize every filtered page to a category if a selected subset is intentionally meant to be a distinct, useful search landing page. Conversely, do not index every possible permutation because it can be generated.
+
+## Navigation and delivery
+
+Keep important category and product discovery routes accessible through useful links. Ensure filter interactions work without trapping users or producing misleading back-button behavior. Preserve the selected state when appropriate and test empty-result states.
+
+For desired indexable facets, provide stable URLs, useful visible content and clear internal placement. For utility-only states, implement the chosen control without hiding public value or blocking resources necessary to understand the page. A crawl exclusion does not authenticate the content or automatically remove an already indexed URL.
+
+## Test fixtures
+
+Include a normal category, one approved facet, a utility sort, a tracking parameter, invalid value, duplicate parameter, empty result and deep pagination. Verify status, canonical, links and intended index state. Test parameter ordering and encoding rather than assuming string-equivalent URLs always represent the same resource.
+
+## Monitoring and rollback
+
+Track growth in discovered parameter URLs, verified crawler load, error rates and useful landing-page performance. A rising URL count without added customer value can indicate a regression. Keep configuration changes reversible and preserve the old parameter contract for incident review.
+
+Acceptance is a documented, bounded crawl space and correct behavior for intended page classes. It is not a promise that every allowed facet will be indexed or ranked. This module supplies the decision model; the actual rule set must be built from the client's application.
+
+==============================================================================

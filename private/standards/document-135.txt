@@ -1,0 +1,34 @@
+DOCUMENT 135 OF 135
+Title: Offline tools and test scope
+Path: Tools/README.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Offline tools and test scope
+
+Python 3.10 or newer, standard library only. These tools make no network requests, do not execute uploaded historical scripts and do not change a website or account. Run from the release root:
+
+```
+python3 -m unittest discover -s Tools/tests -v
+python3 Tools/library_audit.py . --output Reports/library-audit.json
+python3 Tools/seo_html_check.py saved-complete-page.html --expect index
+python3 Tools/seo_html_check.py saved-complete-page.html --canonical https://example.com/service/
+python3 Tools/robots_policy.py Templates/engine-policy.example.json --allow-example --output Templates/robots.EXAMPLE.txt
+python3 Tools/jsonld_embed.py Schema.org/article-person.example.json --output article-example.html
+```
+
+`seo_html_check.py` evaluates a saved complete document, including title presence, duplicate canonicals, an explicit canonical contract, general/Googlebot meta noindex and JSON-LD syntax. It does not fetch headers, execute JavaScript, check real bot identity, determine CSS visibility or certify structured-data eligibility. Header-only noindex needs a separate live-response test. Length outliers and missing canonical markup are not treated as universal Google errors.
+
+`robots_policy.py` rejects unapproved policies unless example mode is explicit. Marking a JSON field approved does not obtain real owner authorization. The generator repeats private-path crawl exclusions in specific allowing groups, validates tokens and requires a same-host sitemap in this implementation. It is not a complete robots parser or comprehensive opt-out from every unlisted consumer. Authentication must protect private resources.
+
+`jsonld_embed.py` serializes JSON safely for a script element, including script-breakout protection. It does not check that the facts are true, that a feature supports the graph or that fictional example values have been replaced.
+
+`library_audit.py` checks scoped local Markdown file targets, release JSON syntax, registered source IDs and the 146 preserved original hashes. It does not validate fragments, arbitrary HTML links, external URL availability, source truth or code embedded in legacy documents.
+
+The test suite uses synthetic fixtures. Passing results are evidence for those implemented checks, not end-to-end production validation. The original Jaccard script is preserved under `99-Originals` and was not run.
+
+## 26-discipline extension
+
+See [Discipline utilities](DISCIPLINES-README.md) for the advisory router and strict evidence-record checker, their CLI usage, test scope and limitations. These additions do not execute projects or authorize releases.

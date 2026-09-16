@@ -1,0 +1,7 @@
+{
+  "version": "1.0.2",
+  "platform": "linux-x64",
+  "url": "https://releases.rive.app/cli/v1.0.2/rive-linux-x64.tar.gz",
+  "sha256": "9c8adbabf7ae6457bc01ea7d75a1f145ba51a99b67a69d9ac2bdcc6cf5363710",
+  "installation": "Extracted verified official archive; supplied missing libGLESv2 via local Ubuntu package extraction; no system package changes."
+}

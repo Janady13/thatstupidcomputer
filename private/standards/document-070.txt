@@ -1,0 +1,42 @@
+DOCUMENT 070 OF 135
+Title: SEO release contracts and reproducible acceptance tests
+Path: Library/Framework/framework-seo-release-contracts.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# SEO release contracts and reproducible acceptance tests
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** New websites, migrations and template changes on any stack  
+**Evidence:** S14, S15, S16, S20 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Replace vague completion with evidence
+
+“SEO installed” is not a release criterion. Define contracts for each page class: public service, product, article, location, search/filter, account, error and retired URL. Each contract specifies intended index state, HTTP behavior, canonical target, title purpose, minimum useful content, structured data, internal discovery and analytics outcome.
+
+The underlying controls have different functions: rendering affects what a consumer receives, canonicalization expresses consolidation preferences, and indexing/snippet directives control eligible use. Structured data has its own feature-specific rules. [S14–S16, S20]
+
+## Test matrix
+
+For every template, include at least one normal route, one boundary case and one failure case. Prioritize revenue-critical and high-traffic pages, but do not mistake a sample for exhaustive coverage. Record sample selection in the evidence package.
+
+Capture status and headers from the actual response. Save initial HTML and browser-rendered HTML separately. Compare meaningful text, links, canonical and metadata. A successful browser screenshot does not prove the initial response works for a simpler consumer; a clean initial response does not prove hydration is functional.
+
+Run the supplied offline HTML smoke checker against saved files. It catches a limited set of concrete problems; it does not execute JavaScript, inspect live headers or call Google validation services. A passing result is evidence only for the checks performed. Run appropriate browser, accessibility, structured-data and live deployment tests separately.
+
+## Blocking defects versus advisory findings
+
+For an intended public page, accidental `noindex`, an unexpected redirect, an empty title or a broken canonical may block the project release under the agreed contract. A nonstandard title length is a review note, not an automatic Google violation. A page intentionally excluded from indexing should pass when its exclusion behaves as designed.
+
+Require sign-off for destructive changes: bulk redirects, noindex rules, URL-case normalization, sitemap removal and deletion. Keep an old/new mapping and rollback plan. Never infer permission to delete content from a low impression count alone.
+
+## Release evidence
+
+Store the commit identifier, build/runtime version, environment, test time, URL sample, raw captures, automated output, manual reviewer and unresolved exceptions. An exception needs an owner, reason and expiration date. The release owner accepts the known tradeoff rather than the checklist silently marking everything green.
+
+After deployment, repeat the same critical-route tests against production. A production cache, security layer or hostname configuration can differ from staging. Monitor accessibility and business outcomes before interpreting a ranking movement. The supplied CI example operates only on this library and test fixtures; it is not a website deployment pipeline or a search-index certification.
+
+==============================================================================

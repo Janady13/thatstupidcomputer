@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -8.00 129.00 187.00" width="129" height="187">
+  <title>Shelf binders / blank spines</title>
+  <g id="binders" data-art="binders">
+    <g id="binders-binder-1">
+      <path id="binders-binder-1-spine" d="M0 8 L26 6 L26 168 L0 171 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="binders-binder-1-label" x="5" y="27" width="16" height="45" rx="0" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8"/>
+      <circle id="binders-binder-1-ring" cx="13.0" cy="129" r="4.1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="binders-binder-1-foot" d="M4 157 L23 156" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="binders-binder-2">
+      <path id="binders-binder-2-spine" d="M29 2 L53 0 L53 168 L29 171 Z" fill="#29261F" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="binders-binder-2-label" x="34" y="27" width="14" height="45" rx="0" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8"/>
+      <circle id="binders-binder-2-ring" cx="41.0" cy="129" r="4.1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="binders-binder-2-foot" d="M33 157 L50 156" fill="none" stroke="#F4E5C4" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="binders-binder-3">
+      <path id="binders-binder-3-spine" d="M58 13 L86 11 L86 168 L58 171 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="binders-binder-3-label" x="63" y="27" width="18" height="45" rx="0" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8"/>
+      <circle id="binders-binder-3-ring" cx="72.0" cy="129" r="4.1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="binders-binder-3-foot" d="M62 157 L83 156" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="binders-binder-4">
+      <path id="binders-binder-4-spine" d="M90 5 L113 3 L113 168 L90 171 Z" fill="#C97038" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="binders-binder-4-label" x="95" y="27" width="13" height="45" rx="0" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8"/>
+      <circle id="binders-binder-4-ring" cx="101.5" cy="129" r="4.1" fill="#F4E5C4" stroke="#29261F" stroke-width="1"/>
+      <path id="binders-binder-4-foot" d="M94 157 L110 156" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

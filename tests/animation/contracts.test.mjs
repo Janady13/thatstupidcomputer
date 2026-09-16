@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import * as core from '../../apps/web/src/animation/core/contracts.mjs';
+import { sampleClip, keyValue } from '../../apps/web/src/animation/mobile/character-controller.mjs';
+const read=p=>JSON.parse(readFileSync(new URL('../../apps/web/'+p,import.meta.url),'utf8'));
+const initial=()=>({...core.INITIAL_STATE});
+test('initial state is safe and immutable',()=>{assert.equal(initial().attitude,false);assert.equal(initial().action,'Idle');assert(Object.isFrozen(core.INITIAL_STATE));});
+test('responsive scene distinguishes mobile and office',()=>{assert.equal(core.selectScene('auto',375),'mobile');assert.equal(core.selectScene('auto',1440),'office');assert.equal(core.selectScene('desktop',375),'desktop');assert.throws(()=>core.selectScene('fake',100));});
+test('explicit attitude permission is required',()=>{assert.equal(core.safeAction('RudeFlipOff',false),'EyeRoll');assert.equal(core.safeAction('RudeFlipOff',true),'RudeFlipOff');});
+test('revocation removes the active gesture',()=>{let s=core.transition(initial(),{type:'ATTITUDE',enabled:true});s=core.transition(s,{type:'PERFORM',action:'RudeFlipOff'});assert.equal(s.action,'RudeFlipOff');s=core.transition(s,{type:'ATTITUDE',enabled:false});assert.equal(s.action,'Idle');});
+test('pause persists through cues and performance selection',()=>{let s=core.transition(initial(),{type:'PAUSE'});s=core.transition(s,{type:'CUE',cue:'inquiry.accepted'});assert.equal(s.action,'Revived');assert(s.paused);s=core.transition(s,{type:'PERFORM',action:'Wave'});assert(s.paused);});
+test('unknown events, characters and states are rejected',()=>{for(const e of [{type:'UNKNOWN'},{type:'SELECT',character:'invented'},{type:'DESKTOP',state:'invented'},{type:'CUE',cue:'invented'},{type:'PERFORM',action:'invented'}])assert.throws(()=>core.transition(initial(),e));});
+test('every declared site cue resolves to valid performances',()=>{for(const cue of Object.keys(core.CUES)){const state=core.transition(initial(),{type:'CUE',cue});assert(core.MOBILE_ACTIONS.includes(state.action));assert(core.DESKTOP_STATES.includes(state.desktop));}});
+test('replay increments a discrete counter without changing content',()=>{const s=initial();const next=core.transition(s,{type:'REPLAY'});assert.equal(next.replay,1);assert.equal(next.action,s.action);assert.equal(s.replay,0);});
+test('asset references cannot traverse or inject another scheme',()=>{assert.equal(core.assetURL('/animation/','mobile/smartphone/scene.json'),'/animation/mobile/smartphone/scene.json');for(const s of ['../secret','/secret','javascript:alert(1)','https://bad.invalid/asset'])assert.throws(()=>core.assetURL('/animation',s));});
+test('travel bounces exactly at boundaries',()=>{assert.deepEqual(core.advanceTravel(90,1,.2,100,100),{x:90,direction:-1});assert.deepEqual(core.advanceTravel(10,-1,.2,100,100),{x:10,direction:1});});
+test('oversized actors and zero-width stages do not travel out of bounds',()=>{assert.equal(core.advanceTravel(10,1,1,100,-50).x,0);assert.equal(core.advanceTravel(10,-1,1,100,0).x,0);});
+test('travel handles many complete crossings',()=>{let p={x:0,direction:1};for(let i=0;i<10000;i++){p=core.advanceTravel(p.x,p.direction,.08,94,271);assert(p.x>=0&&p.x<=271);}assert(Number.isFinite(p.x));});
+test('travel rejects invalid deltas and speeds',()=>{for(const x of [NaN,Infinity,-1]){assert.throws(()=>core.advanceTravel(0,1,x,2,3));assert.throws(()=>core.advanceTravel(0,1,1,x,3));}});
+test('linear and hold keys preserve their own interpolation',()=>{const keys=[[0,0],[10,10],[20,0]];assert.equal(keyValue(keys,5),5);assert.equal(keyValue(keys,5,true),0);assert.equal(keyValue(keys,10,true),10);assert.equal(keyValue(keys,50),0);});
+test('looping sample wraps; nonlooping sample clamps',()=>{const c={fps:10,duration:10,loop:true,tracks:[{target:'x',property:'x',interpolation:'linear',keys:[[0,0],[10,10]]}]};assert.equal(sampleClip(c,1.5).x.x,5);assert.equal(sampleClip({...c,loop:false},5).x.x,10);});
+for(const slug of core.CHARACTER_IDS){
+ const model=read(`public/animation/mobile/${slug}/scene.json`), clips=read(`public/animation/mobile/${slug}/motion.json`);
+ test(`${slug}: complete asset contract and all unique timelines`,()=>{core.validateCharacter(model,clips);assert.equal(clips.length,core.MOBILE_ACTIONS.length);});
+ test(`${slug}: all sampled performance values stay finite`,()=>{for(const c of clips)for(const t of [0,.1,.7,1.1,1.55,c.seconds-.001,c.seconds,c.seconds+1])for(const values of Object.values(sampleClip(c,t)))for(const v of Object.values(values))assert(Number.isFinite(v));});
+ test(`${slug}: common target set resets every performance`,()=>{const target=c=>c.tracks.map(t=>t.target+':'+t.property).sort();for(const c of clips)assert.deepEqual(target(c),target(clips[0]));});
+ test(`${slug}: vector source cannot embed scripts or image nodes`,()=>{const scan=n=>{assert(['group','path'].includes(n.type));assert(!n.href&&!n.script);for(const c of n.children||[])scan(c)};scan(model.root);});
+ test(`${slug}: malformed timeline and duplicate IDs are rejected`,()=>{const bad=structuredClone(clips);bad[0].tracks[0].target='missing';assert.throws(()=>core.validateCharacter(model,bad));const badModel=structuredClone(model);badModel.root.children.push(structuredClone(badModel.root.children[0]));assert.throws(()=>core.validateCharacter(badModel,clips));});
+}
+test('forty office props have unique identities and valid parent references',()=>{const room=read('public/animation/office/room-manifest.json');assert.equal(room.objects.length,40);const ids=new Set(room.objects.map(o=>o.id));assert.equal(ids.size,40);for(const o of room.objects){assert(o.parent===null||ids.has(o.parent));let current=o,seen=new Set();while(current.parent){assert(!seen.has(current.id));seen.add(current.id);current=room.objects.find(item=>item.id===current.parent);}}});
+test('native promotion records require byte-bound runtime evidence',()=>{const registry=read('src/animation/rive/verified-assets.json');for(const [slug,asset] of Object.entries(registry)){assert(core.CHARACTER_IDS.includes(slug));assert.equal(asset.status,'runtime-verified');assert.match(asset.sha256,/^[a-f0-9]{64}$/);assert.deepEqual([...asset.animations].sort(),[...core.MOBILE_ACTIONS].sort());assert(asset.runtimeVersion);assert(asset.reviewedAt);}});

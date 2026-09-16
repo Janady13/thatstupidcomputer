@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-91.00 -41.00 174.00 163.00" width="174" height="163">
+  <title>Cart storage box</title>
+  <g id="cart-box" data-art="cart-box">
+    <path id="cart-box-body" d="M-73 -9 L61 -25 L68 90 L-79 114 Z" fill="#C97038" stroke="#29261F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cart-box-lid" d="M-78 -16 L65 -33 L75 -21 L-83 -2 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cart-box-lid-shadow" d="M-83 -2 L75 -21 L74 -13 L-82 7 Z" fill="#29261F" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cart-box-label-frame" d="M12 4 L50 -1 L50 20 L12 26 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cart-box-label-paper" d="M17 8 L45 5 L45 16 L17 21 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="cart-box-corner-band" d="M-76 10 L-67 10 L-70 107 L-79 108 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+  </g>
+</svg>

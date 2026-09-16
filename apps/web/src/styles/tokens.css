@@ -1,0 +1,13 @@
+:root {
+  font-family: Arial,Helvetica,sans-serif;
+  color: #29261f;
+  background: #f4e5c4;
+  font-synthesis: none;
+  --paper: #f4e5c4;
+  --paper-light: #fbf5e6;
+  --ink: #29261f;
+  --rust: #a44323;
+  --line: rgba(41,38,31,.2);
+  --muted: #655d4d;
+  font-weight: 400
+}

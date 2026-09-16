@@ -1,0 +1,61 @@
+DOCUMENT 081 OF 135
+Title: Coordinate hostname, URL and content migrations
+Path: Library/Playbooks/07-MIGRATION-AND-URL-CHANGES.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Coordinate hostname, URL and content migrations
+
+**Lead:** R25 for release sequencing; R24 for integrated architecture. **Consulted roles:** R01, R02, R03, R08, R09, R11, R12, R16, R17, R20, R21, R24, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+An approved migration changes hosting, hostname, routes, content relationships or identity references. Do not initiate a domain consolidation merely because two brands exist.
+
+## Sequence and ownership
+
+### 1. Inventory the current state
+
+Preserve route/status/canonical maps, important entry points, forms, mail/DNS dependencies, tracking identities and recoverable configuration.
+
+### 2. Design target contracts
+
+R09 establishes page purposes; R08 owns URL/redirect policy; R11 updates entity IDs consistently; R02 reviews hostname/DNS/TLS; R03/R17 preserve inquiry handling.
+
+### 3. Plan rollback and sequence
+
+R24 resolves dependencies. R01 verifies recovery readiness. R25 records exact steps, owners and abort criteria, including forward repair for nonreversible data changes.
+
+### 4. Test before exposure
+
+R21 checks representative redirects, loops, content, forms and analytics on the declared candidate. R20 reviews exposure and sensitive data. No blanket redirect-to-homepage shortcut.
+
+### 5. Accept and monitor
+
+R26 repeats critical public journeys; R16 records measurement annotations; R08/R12 monitor engine outcomes over their actual reporting windows without guaranteeing instant indexing.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Approved old-to-new URL contracts are implemented
+- Inquiry and identity/measurement dependencies remain valid
+- Recovery and postchange critical journeys are observed
+
+## Stop or block
+
+Do not rewrite both brand domains or delete legacy routes without a real inventory and authorization. A sitemap submission cannot substitute for functional migration acceptance.
+
+## Role and source references
+
+- [R08 — Technical SEO Engineer](../Disciplines/R08-technical-seo.md)
+- [R24 — Solutions Architect/Integrator](../Disciplines/R24-solutions-architecture.md)
+- [R25 — Release/Change Manager](../Disciplines/R25-release-change-management.md)
+
+Primary-source IDs: D04, D13, D14, D19, D45. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

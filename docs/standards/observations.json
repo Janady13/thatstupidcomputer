@@ -1,0 +1,853 @@
+{
+  "schemaVersion": 1,
+  "visibility": "PRIVATE_NOT_WEB_CONTENT",
+  "reviewer": {
+    "role": "R26 separate AI task worker",
+    "relationship": "Separate source/code reviewer with shared task context and filesystem; not independent human/external audit.",
+    "scope": "Supplied135-document corpus/40-graph expansion mapped; code reviewed across API, content/truth/search, measurement, React form/navigation and animation integration. Browser/runtime/account/host observations remain limited as recorded."
+  },
+  "checks": [
+    {
+      "id": "LOCAL-UNIT-96",
+      "status": "PASS",
+      "requirements": [
+        "MAIL_API",
+        "SECURITY",
+        "PRIVACY",
+        "EVENTS",
+        "URLS",
+        "TRUTH",
+        "SCHEMA",
+        "CRAWL_POLICY",
+        "ANIMATION",
+        "EVIDENCE"
+      ],
+      "command": "node scripts/test.mjs",
+      "startedAt": "2026-09-13T10:30:38.469Z",
+      "endedAt": "2026-09-13T10:30:39.676Z",
+      "exitCode": 0,
+      "tests": 96,
+      "passed": 96,
+      "failed": 0,
+      "environment": {
+        "node": "v24.19.0",
+        "platform": "linux",
+        "arch": "x64"
+      },
+      "sourceUnchangedDuringRun": true,
+      "evidence": "docs/standards/unit-tests.log",
+      "evidenceSha256": "71a839fd44600285b8688711250e75911bfdad3ccb472342b000113dfb66d707",
+      "sourceSnapshot": [
+        {
+          "path": "apps/api/src/app.ts",
+          "sha256": "381c98ac1a52cecf35c5358eff21e77030ef0f44027e9dab2eed069bb230fff2"
+        },
+        {
+          "path": "apps/api/src/config.ts",
+          "sha256": "03dc889448a3ed69bc8bb8b204a199bd05de884165a40eebeaf1e6311cd71086"
+        },
+        {
+          "path": "apps/api/src/index.ts",
+          "sha256": "766c57270e0f7d9cd43a230b5d0e302e1a8b6a65d4564e4749b41e3cc989aa04"
+        },
+        {
+          "path": "apps/api/src/mail.ts",
+          "sha256": "b062109dc2fe8081370fb3410a6c7e445904ccb391c72922c600f643dbe69134"
+        },
+        {
+          "path": "apps/api/src/responses.ts",
+          "sha256": "4ce6cff9eb144c34d2d2513e65ab23173eb5fdbb5a7d84197b9becb41e68db4c"
+        },
+        {
+          "path": "apps/api/src/static.ts",
+          "sha256": "bbbbd461f0b36cdd127a0c96dae2fe20cf5c34e67a32be7be244a0d503b5d51f"
+        },
+        {
+          "path": "apps/api/src/validation.ts",
+          "sha256": "394038b550d5d91150824770a47f10f0512198a52c38bd46976c21c4f626966e"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/app-bot/motion.json",
+          "sha256": "46ceb1e1c25bc09d97119e6ff3eac736387d6ce6a9919472c4010175d1d750a7"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/app-bot/pivots.json",
+          "sha256": "8a2aec9da7eb635879a1b4d20a980a25270b8f51163b39255c83a288e62486d2"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/app-bot/poster.svg",
+          "sha256": "4fd205809383668027327117b75d9387ae88ee9d7763cc5a8133b2460e82e48e"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/app-bot/scene.json",
+          "sha256": "f34e060674f32328801fe1b25be9bc553c79dd1fbd02f24910a99e6841a6a430"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/flip-phone/motion.json",
+          "sha256": "7461c5731be4062589a962d7de0b900eddcafa061495cb3895e2f7e404b93bd7"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/flip-phone/pivots.json",
+          "sha256": "7cda954eb2ead3cbaba7fb797d4c49934ede5f27ea49fd9181204825e5331a2e"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/flip-phone/poster.svg",
+          "sha256": "14ac731177b2b0b3917c6e01b038ea3d55ca1c2dc35353c6dfe33aea9d7e0837"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/flip-phone/scene.json",
+          "sha256": "1df4c3afea2b29baedd9b8896e5561de526f62d1b7e4d15eec3b332e9553db52"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/handheld/motion.json",
+          "sha256": "47000a342d3a40b0e9e1fc369c807e0fb31f9ce5521ce390390556b81584bedb"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/handheld/pivots.json",
+          "sha256": "819973f21dd4203a03cdb1d98fb97e3f6207969f33eec0b64df19ec68d1570c4"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/handheld/poster.svg",
+          "sha256": "c5afc70ed4bb9a0c26b5e751a8a2d575e3c61c98e261e8df3dd0ba89f8a4d490"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/handheld/scene.json",
+          "sha256": "906e12056995b6eb226281b2871de62955b2b23ba88d27f93ff39bdbbb4de849"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/pager/motion.json",
+          "sha256": "90620d1c51828efbb33e1663018730633713dcc6a1d6a71aa4f9acc84db7d8f5"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/pager/pivots.json",
+          "sha256": "548117a5d8e978465b0cd635e3e7a76fa08d6cf113d51695f49d3a9cceb3937a"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/pager/poster.svg",
+          "sha256": "277b9e957130f465d4a211dcb5916e19d204067a69e6f56289e86022a802f257"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/pager/scene.json",
+          "sha256": "b8617ae5fa4d677a026ba88b3a5c881689202c61d4a37ea1480c689b36908549"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/smartphone/motion.json",
+          "sha256": "13400c6e726245ebddc07fc74c1512ebc1a11244c0b7ef64265d3797545a9117"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/smartphone/pivots.json",
+          "sha256": "e9c11012dffabd7a4f85c83fbb50a9a54a6cf44aab3e57d404a8f87053f74485"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/smartphone/poster.svg",
+          "sha256": "da920ce5d0c44919899b1c6bfe7463bf9461e8fb8a16688c303dd836d686e96b"
+        },
+        {
+          "path": "apps/web/public/animation/mobile/smartphone/scene.json",
+          "sha256": "69d5e0795888558649a943be96cc1096079f390404fb4622f19956cd219d1471"
+        },
+        {
+          "path": "apps/web/public/animation/office/room-manifest.json",
+          "sha256": "bbe8e9648fec21e2d742ff72ab62dac0b7c0d6e9efd112fc382bf0f61c569c38"
+        },
+        {
+          "path": "apps/web/src/App.tsx",
+          "sha256": "a82e7b1fe675de1360f61ffcda1292fbd1b7ed9c114dd212904f664c8bfae993"
+        },
+        {
+          "path": "apps/web/src/animation/AdaptiveScene.tsx",
+          "sha256": "553f3690704bab6895535191d4d1a76c2a0480ea1e6fbfb05a6bcee235886bcb"
+        },
+        {
+          "path": "apps/web/src/animation/animation.css",
+          "sha256": "b90c7a0bdd8135f3379187db6f595b1c59dbf35ce188b585bbe3817d5c6bef13"
+        },
+        {
+          "path": "apps/web/src/animation/choreography/usePageChoreography.ts",
+          "sha256": "a3967ad666dee6c4c11a33286f3be3cf7032a525d98a1e0b287fe3926a1208af"
+        },
+        {
+          "path": "apps/web/src/animation/choreography/useSmoothScroll.ts",
+          "sha256": "f0551db7e8d532905d82ee52fc51c000b171249399c60c9d6611a11524f2d8f4"
+        },
+        {
+          "path": "apps/web/src/animation/core/AnimationBoundary.tsx",
+          "sha256": "d665fe61882ed09bf1933f243ffccc14356f3892bc3ba53a6884c20c9b2a57d9"
+        },
+        {
+          "path": "apps/web/src/animation/core/contracts.d.mts",
+          "sha256": "972a2f21b31520b9b518535d316c7ad4a6bd478fab942419dff9e5364ef0c533"
+        },
+        {
+          "path": "apps/web/src/animation/core/contracts.mjs",
+          "sha256": "5249ef0142760cddcb2ba38920a0519bf8812d9b54386da31d13914ef41597d4"
+        },
+        {
+          "path": "apps/web/src/animation/core/geometry.mjs",
+          "sha256": "00f9868f124c22aa6e92db447bf4ea25a328339e63ef2a1462c07d7cda92384d"
+        },
+        {
+          "path": "apps/web/src/animation/core/useMedia.ts",
+          "sha256": "a1dbdb4a9299c681b2c94d917f4f0e2ba958339aacc90b2803dad202f73d2c68"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/ComputerActor.tsx",
+          "sha256": "9c010448b0f761f88196d904be1b9772bafd6c8f6979ba833a2b6f250563de2e"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/ComputerGeometry.tsx",
+          "sha256": "cbc0bd3c93c984c4282fab74522d167fcff18c9dd5118e24ab00a6d45811ef08"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/DesktopCharacter.tsx",
+          "sha256": "d3bbf8bba7e06451181e7c24cf3d45b2f28024d3a978564085b5a3498722cbc4"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/cable-poses.json",
+          "sha256": "13449fa4252f07ef859df962d47e50b80189c1341ddb79a2b3f5f879663d8cbb"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/computer-motion.d.mts",
+          "sha256": "8720f2c2591a6b9a111ebdc14f881cc4e1a4c49c695a7e4db8953eca850c9641"
+        },
+        {
+          "path": "apps/web/src/animation/desktop/computer-motion.mjs",
+          "sha256": "271f1ee733c4e3c882ae71c6afd011d27a005f0169975c428e469cd1563f721b"
+        },
+        {
+          "path": "apps/web/src/animation/index.ts",
+          "sha256": "43e11b77401752b918c07e2d29e1748d7b43d8cb73632f0c4cbc775feaa6c246"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/CharacterArt.tsx",
+          "sha256": "775e0592aac067d2a641facaee6664db6ff634c917a95884b4e9a58f9b0a4609"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/MobileCharacter.tsx",
+          "sha256": "f42a51d9fd61636ea29daaf929250f9f4aaebf635018316e1f6e4ee715e0b60b"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/cast.ts",
+          "sha256": "081c54a9a7efac6c88b6bbc8b0588016a896d0ff8b29f3032f74433d24cb2cf3"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/character-controller.d.mts",
+          "sha256": "4c007d95c335439481a53753cc79436fe8a9a2788e0efc0c14caa490616eee51"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/character-controller.mjs",
+          "sha256": "5240184133596cc82bf9bd3b2300e9700b85708e50664031cc750905013d94eb"
+        },
+        {
+          "path": "apps/web/src/animation/mobile/types.ts",
+          "sha256": "020cd62cf58aff7e4a934932b14e9440e1a91a6fe9abdfcb819680fc5dd10587"
+        },
+        {
+          "path": "apps/web/src/animation/office/RoomObject.tsx",
+          "sha256": "e4bd6be7120b4b2dcd0ce8d2b5351cb66549581e5a2fbd150810c51bf44dba68"
+        },
+        {
+          "path": "apps/web/src/animation/office/RoomScene.tsx",
+          "sha256": "10f3852a2d96b50910e74e9de0d8dda04492ac4aab9a70d85f4292689d98c253"
+        },
+        {
+          "path": "apps/web/src/animation/office/catalog.ts",
+          "sha256": "c6ad07925b37fbfb213ecb451ecf701ea8ea40fa2f4d01e1f3437b480f4ff18b"
+        },
+        {
+          "path": "apps/web/src/animation/office/index.ts",
+          "sha256": "e84c87bf9dc56279b27a24435ae78772d054d9558446ac606e5f01b99fceb814"
+        },
+        {
+          "path": "apps/web/src/animation/office/model.ts",
+          "sha256": "1c46d5ebe3a75dac48ea12cef9e5b4b1b6adc646f35c6f065325aa4f6d54fc7e"
+        },
+        {
+          "path": "apps/web/src/animation/office/motion/room-motion.d.mts",
+          "sha256": "91e8f3bec106440c937bf5882bdb44c7a4a3c3a3b28afcc073efe929b3d5d761"
+        },
+        {
+          "path": "apps/web/src/animation/office/motion/room-motion.mjs",
+          "sha256": "0cf28c719de711f57e5a9d40b5738658e5006adff7b7b1d3e19678cd0d55b9aa"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/AirDust.tsx",
+          "sha256": "00b7b7fd3c65e12c90a0e8b0bed76eef69132722f7947c243de9773dabbc0c09"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Baseboard.tsx",
+          "sha256": "8ebbc2a61138f5b5611b714b363838580814da196bdab918e4909a08efe49d94"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Binders.tsx",
+          "sha256": "2b882596c1245f73ff4c5cca201d709175a267a8a9f937f527f814e59f93070a"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Blinds.tsx",
+          "sha256": "1408dd2cc3a0a19cafaff67898dbe1aabfd4e89394caefc99737bc3f11098a2a"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BoardBlueprint.tsx",
+          "sha256": "28b2e0fc2a8306f9c1cb38e7bfc92b2a429e50a446ea23fe7b15632129a3cb1b"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BoardPhoto.tsx",
+          "sha256": "aa6db182dceed63ed96d65927ee5982be6d3447f705c45553058dee56121f40d"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BoardReminder.tsx",
+          "sha256": "a1fa505f1e79c583cb96ed8dda94db7a2f2d8da20677778e71449528ab8fc018"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BoardSmallNote.tsx",
+          "sha256": "0e5e73a01ee90ef47e028e25cc67139c86dc6d8e4b14338d5d9546f1b3697e64"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BoardSmile.tsx",
+          "sha256": "e800f4d8e190a4f31ed123c6a74f2b86ea3dbac43199bd4a0049db33f3ea523b"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/BulletinBoard.tsx",
+          "sha256": "98fa4c505673aca3a25935ae1c63c9630d1594f1ad25b7f1f19a08449c29189d"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/CableReel.tsx",
+          "sha256": "1907b552add59e1e91f84b509fc9ee04af079b37e458479b069affcd535d3cdc"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/CartBox.tsx",
+          "sha256": "e9e819ab663bbc5112ad7f355ea8ec2607cb4087e965ed0ee8913e23b5a40fdd"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/CartToolCup.tsx",
+          "sha256": "f91d1105a28af4e437383f39bd1de0cb8b96e3e3b17db74db60c94be8e78990e"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Clock.tsx",
+          "sha256": "4d10787572ecbb2a57fdeb70aba5c6c95f7acdecce81e5bea36efd6c656ba0b3"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/CoffeeMug.tsx",
+          "sha256": "b64ba641898b3cf672160d96d563fe9d06efd8bc4c68fedf48532f46e0507f68"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DeskLamp.tsx",
+          "sha256": "11bf555dec0f331f05bd60e20815bd95a4a6c7fe9c2f31813294a9d003eaf2a9"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DeskPaper.tsx",
+          "sha256": "97bda3934c5b63a03014b96f6d44983c7daefe004717f0b87930a32520673ed1"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DeskPedestal.tsx",
+          "sha256": "d442b81af58c1eec09abbb42d3f8932928ad5fefe8da25544870c9172c822366"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DeskPlant.tsx",
+          "sha256": "5f0f6a8a0eb713ed23863ea0fd2526f4c751c437d6fd5650fcdfb4ff9f07998a"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DrawerBottom.tsx",
+          "sha256": "3417a2d69b0cd6911688195b66e85ae68e5da35dbd223b63cc7c8e2135d329ab"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/DrawerTop.tsx",
+          "sha256": "034d1206d33ed6247d718651385daa579e0de0806952091b503e8e26f4a85519"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/FilingCabinet.tsx",
+          "sha256": "12b6a6e12cd9a27867cb7baf11192340a04869b27eab079a21e82fff1f8601fe"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Floor.tsx",
+          "sha256": "e839cc88bf3a72d4a5fdeb03a33b5831bf623c318dcc28389153a27060c2cea8"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/FloorBox.tsx",
+          "sha256": "c5ec60c2ef2f157d34d8abbc6779ef9c48eaa9be0b996356c150af211964c177"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/LooseHardware.tsx",
+          "sha256": "a0e99af37edb0abd13df8c902a09c4a5358b997ab41afc382000dcd082b07c89"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Outlet.tsx",
+          "sha256": "4419d1abf49c58e927c1e0ef61f26a94c45d0609c2a5cb89dfd6de693657020d"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Outside.tsx",
+          "sha256": "77c7b4f49837720118b76fa792497876bcebd0667972c20b79b639718a7ea48e"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/PartsOrganizer.tsx",
+          "sha256": "db397dbf3143ab2a14aca06c5dbcb3dea6e17a49bf30291077a8b30526eb3315"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/PencilCup.tsx",
+          "sha256": "479b6508b1715ea3989ecdee3eab025dda57b93cb17009ffe3e54ec370782050"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Screwdriver.tsx",
+          "sha256": "e6c2d730a4dd8184537eccfa09f3fa2bb6b67720d384ae74c226ab72a6e1808f"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Shelf.tsx",
+          "sha256": "b101025e7d5ce2eb5aa7755ad34a8e332bdc85aabb0940745160097333557912"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/ShelfPlant.tsx",
+          "sha256": "ae183e5efd954b2ca66d463ca318819c037a01af146160f25a6776ff43f1d50f"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/SolderingStation.tsx",
+          "sha256": "37d83e3d0854c948fc081b32d323df77e97e4e3e7d323bb26ea49dba3d3c22c2"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/StorageBoxes.tsx",
+          "sha256": "d774cfb32c804607a44dd8dbb2d4d45867290e3343cad048b8f264f8389a9292"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/TapeRoll.tsx",
+          "sha256": "e0523d2cd893822429976898e36fbb37d8e420781633a648fa9af441452246ec"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/TestMeter.tsx",
+          "sha256": "b5089ffcb7af3e0b97c6f45d3b71f191d9fe3ba21f0ab5290cd9df4b92d90256"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/ToolCart.tsx",
+          "sha256": "4b0960d316d504eb687a4711292291d164b447282063d8e5e95effd0da355f6f"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Wall.tsx",
+          "sha256": "19b7e67a65aa3c4551c61c8c5b2b7eb9bccc5cdc5b7af391b3f725eb1b542da6"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Window.tsx",
+          "sha256": "1e8a418dcc0ed3c391b400100aa485751901f9beba06ba256f13e97d8901263b"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/Workbench.tsx",
+          "sha256": "fe33ec9450a1eb99469cab61192e1e1e9489aeba80b56043c3d7c175d85ef47e"
+        },
+        {
+          "path": "apps/web/src/animation/office/objects/index.ts",
+          "sha256": "2febf92dff1f29fd9f9abddb8c1dce2d52fc51144953052061570ed59f34c0c5"
+        },
+        {
+          "path": "apps/web/src/animation/office/registry.ts",
+          "sha256": "247ff8564d122337f8d16a7c6cd802e1e3988653409f63afb9a7ab26df52941d"
+        },
+        {
+          "path": "apps/web/src/animation/office/room.css",
+          "sha256": "7f8fb752643b279422f722fe42d4ed6c616e9197719ceeac3883ba981193566e"
+        },
+        {
+          "path": "apps/web/src/animation/office/types.ts",
+          "sha256": "329d57506f48c5bb943b2d02703363349099de388e4429918cfa256b4640afb2"
+        },
+        {
+          "path": "apps/web/src/animation/orchestration/AnimationProvider.tsx",
+          "sha256": "de053476edccf7ca6a58f8862291dc914e75d87bb3cd6f1792357f7c141c207f"
+        },
+        {
+          "path": "apps/web/src/animation/orchestration/animationMachine.ts",
+          "sha256": "2b5eb41fbd0451657908145b101596ab8f5e99d19005f3c1bab87592fea7e40e"
+        },
+        {
+          "path": "apps/web/src/animation/rive/Character.tsx",
+          "sha256": "286e13343237b6f02c6ed5cc2ec5cbccbdbfed20460f916aa4201c4f4b947c83"
+        },
+        {
+          "path": "apps/web/src/animation/rive/RiveCharacter.tsx",
+          "sha256": "84d9ab19afb2db651dfc6c584855f91336d8a8d4f699e44d1ea1f877dd5a93d7"
+        },
+        {
+          "path": "apps/web/src/animation/rive/types.ts",
+          "sha256": "d4568c0f3cdbf1f9adf85f904b3270b5d59fa59b27e5e30a66fa7a4fc7f7fbda"
+        },
+        {
+          "path": "apps/web/src/animation/rive/verified-assets.json",
+          "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+        },
+        {
+          "path": "apps/web/src/components/DemoForm.tsx",
+          "sha256": "6ecf67f0f7ce4af82b15bdbceb4738c279eeddfb9b68c70090ca0cd60fdcca42"
+        },
+        {
+          "path": "apps/web/src/measurement/ConsentControls.tsx",
+          "sha256": "3783a86bb4b8c27465bf01cbc97ac0ed2d1aa72918d0440bd8adea44d47580b5"
+        },
+        {
+          "path": "apps/web/src/measurement/analytics.d.mts",
+          "sha256": "82ba3132db142bd06e435f181c11ef39c02544f3494820ffa5d72d26d3f01c83"
+        },
+        {
+          "path": "apps/web/src/measurement/analytics.mjs",
+          "sha256": "977f31f3f29e8eeee7d910f5ac0d15032d43839ba9c08f63d59c44f1282588f8"
+        },
+        {
+          "path": "apps/web/src/measurement/consent.css",
+          "sha256": "1dab419b7b2163c062904b6d4fcf554c8bb682a6256e6534c1ab88111a583930"
+        },
+        {
+          "path": "apps/web/src/measurement/index.ts",
+          "sha256": "96cc63db3974bfe9c3d7d044c5a8623db142ba80d66792a80b9de51d0577e246"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "818f0012c01844dc38517611b18166b0229098dd4e348db206739b8c8a8c6c69"
+        },
+        {
+          "path": "packages/site/content.ts",
+          "sha256": "9d0189e1cab8252212686704a5cfc8afd2c146f6e3f5a98ea5d08ed517a32b3b"
+        },
+        {
+          "path": "packages/site/search.ts",
+          "sha256": "4b8934f5a8b7b7b37a19fdf86f1a979f158c9618ddfa74c0e75e5e44c1874a66"
+        },
+        {
+          "path": "packages/site/truth.ts",
+          "sha256": "15da29acf5e58f6d77d61404db6102d237d01cbfd8851f07bdf5d9d9619a0a5a"
+        },
+        {
+          "path": "scripts/test.mjs",
+          "sha256": "c64bd124de45895fc855d4fe94a77a318e2f7e7fc6c193cae57391e83ff76daf"
+        },
+        {
+          "path": "tests/animation/contracts.test.mjs",
+          "sha256": "0c4963e5da32078019a702ccb9b1b8d3297238f74a04c1ed0d485461d8e1c262"
+        },
+        {
+          "path": "tests/api/api.test.ts",
+          "sha256": "1aef645d8c2e4c2128a5dcdf55ea6762fd6f0ece8d90ac65b6cf62264e7ea6dc"
+        },
+        {
+          "path": "tests/measurement/measurement.test.mjs",
+          "sha256": "0dd8187401ac32be8ee39a14451e209f4c03ad4665c9363656ac08ae519bb336"
+        },
+        {
+          "path": "tests/site/content.test.ts",
+          "sha256": "09b9b4b862aa3308a0411a8bd6b60540965d3acd5b3b338501a49ee7a84d136f"
+        },
+        {
+          "path": "tests/site/fixture.ts",
+          "sha256": "7cfde61e02cb5afb308decf87c8aed4e7da8cd85d25793567f470d2545c4f607"
+        },
+        {
+          "path": "tests/site/search.test.ts",
+          "sha256": "8078c8ac7a2979b50b0524a30dffa6896d587da85e61ed6e13fabbf002d93d8f"
+        },
+        {
+          "path": "tests/site/truth.test.ts",
+          "sha256": "d8a3e45e11fac3440512ba0fc9662b3af96bee59c66b63a58c49f18155c83202"
+        }
+      ],
+      "scope": "All current Node unit suites: animation source contracts, Fastify synthetic transports and negative inputs, site content/search/truth contracts, measurement fake-DOM consent/privacy/attribution/deduplication. No live SMTP, browser, GA network or public host.",
+      "limitations": [
+        "Synthetic truth fixtures establish rejection and reference behavior, not actual canonical facts.",
+        "Fake browser commands establish local adapter behavior, not third-party collection.",
+        "Animation contract tests do not establish native WebGL rendering or accessible page interaction."
+      ]
+    },
+    {
+      "id": "NATIVE-EVIDENCE-BINDING",
+      "status": "PASS",
+      "requirements": [
+        "ANIMATION",
+        "MEDIA",
+        "EVIDENCE"
+      ],
+      "observedAt": "2026-09-13T10:37:07.566Z",
+      "method": "Read producer Canvas report; count all70 actions/420 samples; SHA-256 compare each supplied compiled and public .riv file to the recorded native bytes.",
+      "evidence": "native/reports/native-canvas.json",
+      "evidenceSha256": "b715bae2ab41c7a51e9406576f45b294aad4bfcf0a16c6ce8d55358a968ec147",
+      "files": [
+        {
+          "slug": "smartphone",
+          "sha256": "c29833abd91f59ec8c18b3c6157cc418612dd05e7ae55232bdef7bff215ede1a",
+          "publicMatches": true,
+          "compiledMatches": true
+        },
+        {
+          "slug": "flip-phone",
+          "sha256": "fd8ea55e2fefadbd72cdfa22741c245cdab2fdf5cafce10163de0fda1d1778cb",
+          "publicMatches": true,
+          "compiledMatches": true
+        },
+        {
+          "slug": "app-bot",
+          "sha256": "23ec282b63f2f05104cad0686e847834c8673428125bddcee208c2908bb4546a",
+          "publicMatches": true,
+          "compiledMatches": true
+        },
+        {
+          "slug": "pager",
+          "sha256": "ef839d3581f878dec52102eaebf83bbed34a1cb467c3d5f0c64abf9e4155d54f",
+          "publicMatches": true,
+          "compiledMatches": true
+        },
+        {
+          "slug": "handheld",
+          "sha256": "ccd4b600925e55fb4a58792ee1b98e16c509f0d03240a65a1ead735d4f552329",
+          "publicMatches": true,
+          "compiledMatches": true
+        }
+      ],
+      "scope": "Separate verification of report/file correspondence. The actual official Canvas rendering and contact-sheet review were performed by the animation owner, not repeated by this reviewer. Active WebGL registry remains empty; no browser pass inferred."
+    },
+    {
+      "id": "DEPLOY-FILESYSTEM",
+      "status": "PASS",
+      "requirements": [
+        "RELEASE",
+        "SECURITY",
+        "EVIDENCE"
+      ],
+      "observedAt": "2026-09-13T10:37:07.567Z",
+      "command": "node --test deploy/release.test.mjs",
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "reviewedHashes": [
+        {
+          "path": "deploy/release.mjs",
+          "sha256": "6166be62fdc1b110c18cc42a266a908c7656ba4c5ee66d7da6dd817e8bb50877"
+        },
+        {
+          "path": "deploy/release.test.mjs",
+          "sha256": "d58bd894d83e02f920bb0fdbd2fdb977f962101637d4e986a617eadee531b961"
+        }
+      ],
+      "scope": "Separate current source read and fresh temporary-filesystem tests. No systemctl invocation, listener, network request, protected real configuration or actual production preflight."
+    },
+    {
+      "id": "BUILT-HTTP-INTEGRATION",
+      "status": "PASS",
+      "requirements": [
+        "HTML",
+        "URLS",
+        "SCHEMA",
+        "CRAWL_POLICY",
+        "MAIL_API",
+        "PRIVACY",
+        "SECURITY",
+        "MEDIA",
+        "EVIDENCE"
+      ],
+      "command": "node --import tsx scripts/check-build.ts",
+      "startedAt": "2026-09-13T10:37:47.270Z",
+      "endedAt": "2026-09-13T10:37:47.655Z",
+      "passed": 20,
+      "failed": 0,
+      "environment": {
+        "node": "v24.19.0",
+        "platform": "linux",
+        "arch": "x64",
+        "method": "Fastify.inject plus non-rendering HTML parser; no sockets, browser, DNS or mail transport"
+      },
+      "evidence": "docs/standards/build-integration.json",
+      "evidenceSha256": "10d7e26d860fc61194888fee3d29161136d7d3c2cf5fc8a612cb3d0d874bbf5a",
+      "publicFiles": 100,
+      "scope": "20 actual built-artifact/Fastify checks including exact current Vite asset inventory; HTML route/head/config/graph inputs, all100 public files, binary hashes/MIME and safe failures. No browser or email sending.",
+      "limitations": [
+        "No actual browser hydration, JavaScript execution, layout, WebGL, keyboard or accessibility-conformance proof.",
+        "No live email send, mailbox receipt, production identity, account data, DNS/TLS, public indexing or field-performance observation.",
+        "Public-source marker checks are targeted artifact-boundary evidence, not a claim that arbitrary secrets cannot exist."
+      ]
+    },
+    {
+      "id": "COMBINED-LOCAL-GATES",
+      "status": "PASS",
+      "requirements": [
+        "ARCH",
+        "SCOPE",
+        "HTML",
+        "MAIL_API",
+        "SECURITY",
+        "PRIVACY",
+        "URLS",
+        "SCHEMA",
+        "ANIMATION",
+        "EVIDENCE"
+      ],
+      "command": "npm run verify:local",
+      "startedAt": "2026-09-13T10:36:28.684Z",
+      "endedAt": "2026-09-13T10:36:34.652Z",
+      "evidence": "docs/standards/local-verification.json",
+      "evidenceSha256": "91ef910de3fd559b4f16d7152b706129525d2cb83f452cddcf69c516af8b07fc",
+      "scope": "Root-run sequential strict typecheck,96 application tests,React/SSR/API build,62 asset checks,standards and20 built HTTP checks; all phasesPASS. The later separate built check adds current bundler-inventory equality."
+    }
+  ],
+  "findings": [
+    {
+      "id": "REV01",
+      "requirements": [
+        "EVENTS",
+        "URLS"
+      ],
+      "finding": "Four service routes were absent from finite analytics route allowlist.",
+      "resolution": "All actual canonical routes now verified by importing the editorial route inventory in the measurement suite.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV02",
+      "requirements": [
+        "URLS",
+        "EVENTS",
+        "PRIVACY"
+      ],
+      "finding": "Canonical trailing-slash redirects dropped recognized attribution.",
+      "resolution": "Preserve exactly one allowed utm_source value; strip duplicate, unrecognized and all other fields. API regression covers the five finite sources.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV03",
+      "requirements": [
+        "MAIL_API",
+        "A11Y"
+      ],
+      "finding": "Form website/message maximum lengths exceeded server contracts and connection uncertainty suggested immediate retry.",
+      "resolution": "Markup limits aligned300/4000; interrupted request now states possible sending and discourages immediate retry; authoritative validation remains server-side.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV04",
+      "requirements": [
+        "EVENTS",
+        "PRIVACY"
+      ],
+      "finding": "A cached accepted backend response after SPA navigation could duplicate one inquiry event.",
+      "resolution": "generateLead now accepts the operational request ID for bounded memory-only deduplication; never emits or persists that key, stores nothing before consent. Caller passes exact server requestId.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV05",
+      "requirements": [
+        "EVENTS"
+      ],
+      "finding": "Measurement accepted min6 GA ID characters while API/bootstrap/SEO accepted min5.",
+      "resolution": "Finite validation aligned to5–20 characters after G-. This format check does not establish an actual account.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV06",
+      "requirements": [
+        "URLS",
+        "HTML"
+      ],
+      "finding": "Client route resolver stripped repeated trailing slashes, causing unknown404 HTML to hydrate as a real page.",
+      "resolution": "Only canonical paths and explicit one-missing-slash aliases resolve; repeated/encoded/case-altered/query-bearing inputs rejected.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REV07",
+      "requirements": [
+        "URLS",
+        "HTML",
+        "SECURITY"
+      ],
+      "finding": "Fastify decoded percent-encoded path aliases to200 while the client rejected the raw pathname.",
+      "resolution": "Backend now rejects percent encoding in raw path before route resolution; canonical ASCII routes and safe finite query attribution remain supported.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "REVIEWER-CORRECTIONS",
+      "requirements": [
+        "EVIDENCE"
+      ],
+      "finding": "Initial built checker assumed lowercase HTML attributes and422 validation status; it also observed a transient .vite manifest while a build was running.",
+      "resolution": "Checker now handles React attribute case and the actual400 contract. Initial report retained; final report must be run after the build has completed.",
+      "status": "RESOLVED",
+      "evidence": "docs/standards/build-integration-initial.json"
+    },
+    {
+      "id": "REVIEWER-CANONICAL-COMPARISON",
+      "requirements": [
+        "SCOPE",
+        "EVIDENCE"
+      ],
+      "status": "RESOLVED",
+      "finding": "Saved/generated ledger recursive values matched but raw JSON ordering could differ between generation paths.",
+      "resolution": "Compare recursively sorted object keys while preserving array order and ignoring only generatedAt/path-exists observations. Source hashes and all mapping/criteria values remain checked; native Node generation plus tsx check passed.",
+      "evidence": "docs/standards/local-verification-initial.json"
+    },
+    {
+      "id": "BUILD-ORPHANS",
+      "requirements": [
+        "RELEASE",
+        "PRIVACY",
+        "EVIDENCE"
+      ],
+      "status": "RESOLVED",
+      "finding": "Obsolete generated bundles and build manifest persisted despite directory cleanup.",
+      "resolution": "Root build now disables unused manifest generation, explicitly cleans it and prunes generated assets against Vite returned output. Actual integration asserts record.clientAssets exactly equals delivered assets. Final build report is authoritative."
+    }
+  ],
+  "blocked": [
+    {
+      "id": "BROWSER",
+      "requirements": [
+        "A11Y",
+        "HTML",
+        "ANIMATION",
+        "PERFORMANCE",
+        "EVIDENCE"
+      ],
+      "status": "BLOCKED",
+      "reason": "Browser URL policy explicitly blocks the local target and forbids alternate browser workarounds. No browser CLI workaround used. Portable Playwright/manual checks are for an authorized target."
+    },
+    {
+      "id": "CANONICAL-TRUTH",
+      "requirements": [
+        "TRUTH",
+        "SCHEMA",
+        "CONTENT",
+        "RELEASE"
+      ],
+      "status": "BLOCKED",
+      "reason": "Actual canonical repository/export absent. Production requires full reviewed commit and exact approved public export digest; no synthetic identity may replace it."
+    },
+    {
+      "id": "MAILBOX",
+      "requirements": [
+        "MAIL_RECEIPT",
+        "RELEASE"
+      ],
+      "status": "BLOCKED",
+      "reason": "No real SMTP send/mailbox inspection. Provider acceptance, authentication, mailbox receipt and human reading remain distinct."
+    },
+    {
+      "id": "LIVE-ACCOUNTS",
+      "requirements": [
+        "SEARCH_REPORTS",
+        "EVENTS",
+        "CRAWL_POLICY"
+      ],
+      "status": "BLOCKED",
+      "reason": "No live GA4 wire/DebugView, property configuration, Search Console or Bing account observations. Optional public IDs/tokens absent unless supplied; missing data remains unavailable."
+    },
+    {
+      "id": "PUBLIC-RELEASE",
+      "requirements": [
+        "RELEASE",
+        "URLS",
+        "CRAWL_POLICY"
+      ],
+      "status": "BLOCKED",
+      "reason": "No target-host deployment, DNS/TLS/IPv4/IPv6 edge, backup/rollback rehearsal, crawler/indexing or business-outcome observation."
+    },
+    {
+      "id": "FIELD-PERFORMANCE",
+      "requirements": [
+        "PERFORMANCE",
+        "SEARCH_REPORTS"
+      ],
+      "status": "BLOCKED",
+      "reason": "No consented field sample/window/device distribution. Payload counts and native Canvas samples cannot establish field Core Web Vitals."
+    }
+  ],
+  "wholeProductAcceptance": "NOT_GRANTED_BY_THIS_SCOPED_REVIEW",
+  "productionAuthorizationGranted": false,
+  "finalizedAt": "2026-09-13T10:38:11.356Z"
+}

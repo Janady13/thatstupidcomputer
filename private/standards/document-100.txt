@@ -1,0 +1,72 @@
+DOCUMENT 100 OF 135
+Title: R17 public-content brief — How do you prove that a website inquiry reached your mailbox?
+Path: Publishing/Briefs/R17-email-deliverability.md
+Group: briefs
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# R17 public-content brief — How do you prove that a website inquiry reached your mailbox?
+
+**State:** NOT_APPROVED_FOR_PUBLICATION. **Type:** evidence-led article/service-support brief. **Primary specialist:** R17. **Proposed author:** Joseph, subject to his review and approval; do not insert unverified credentials. This is not completed client work.
+
+## Reader and purpose
+
+A business owner or practitioner facing this specific problem needs a diagnosis and a way to evaluate professional help. The article should answer: **How do you prove that a website inquiry reached your mailbox?**
+
+**Distinct contribution:** A controlled message trace and redacted header walkthrough, including the 2026 DMARC specification update and bounded receipt claims.
+
+## Candidate search questions — hypotheses, not measured demand
+
+- contact form email deliverability audit
+- SPF DKIM DMARC website forms
+- prove website inquiry mailbox delivery
+
+No keyword volumes, ranking difficulty, expected traffic, citation probability or sales forecast have been measured for these suggestions. R23 validates commercial relevance from real inquiries or authorized search data; R10 checks answer relevance. Merge with an existing page when its task is already answered well.
+
+## Proposed outline
+
+1. Inventory sending paths
+2. Trace one synthetic message
+3. Inspect authentication and actual receipt
+4. Change policy carefully and retest
+
+Open with a direct bounded answer. Explain the observable distinction that matters, demonstrate the method with an authorized artifact or an explicitly hypothetical example, and close with practical limitations. Do not clone this outline across 26 pages by changing only role names.
+
+## Evidence needed before making an expertise or results claim
+
+- Sender-stream and authentication inventory
+- Redacted received headers and controlled-mailbox observation
+- DNS policy diff, monitoring and rollback plan
+
+These artifacts are requirements, not supplied project results. A methods article can explain documented principles without claiming that a customer implementation exists. A case study additionally needs a real scoped engagement, permission, original before/after artifacts, known confounders, dates and approved result wording. An unmeasured benefit must remain a hypothesis.
+
+## Proposed public route and internal relationships
+
+Suggested route, pending canonical-host approval: `/expertise/email-deliverability/`. This is a planning path, not a deployed URL. Choose one canonical home before publication; do not duplicate the same article on both ThatDevPro and ThatDeveloperGuy.
+
+Link contextually from the relevant real service page and the discipline hub. Link to the next diagnostic step, an original proof artifact that is safe to publish, and a working contact path. The page must be useful without those links; link counts are not acceptance criteria.
+
+## Conversion and measurement contract
+
+Suggested action: request a scoped review of this problem, **only if that service is actually available**. Do not advertise 26 staffed departments. A practical single-author description is “A multidisciplinary review process with defined specialist responsibilities,” subject to the owner's approval.
+
+Measure the canonical page's observed search/citation exposure separately from referral sessions and qualified inquiries. Record page/source/window and event definitions with R16. The mere addition of this brief to a private library cannot create search exposure.
+
+## Publication gate
+
+R13 checks usefulness and distinction; R14 checks factual claims, author identity and any credentials; R20 approves sanitization and privacy; R11 checks truthful entity markup; R08 checks the chosen public URL; R25 coordinates publication and R26 performs the agreed independent checks where required. Missing evidence remains BLOCKED. A drafted byline is not author approval.
+
+No rankings, model recommendations or “recognized expert” status are promised. The intended path is demonstrated useful work, accurate attribution, accessible publication, independent corroboration and measured outcomes.
+
+## Research references
+
+- [D32 — Email sender guidelines](https://support.google.com/a/answer/81126?hl=en): Provider authentication and sending requirements vary by sending class; no guaranteed inbox placement.
+- [D33 — Simple Mail Transfer Protocol (RFC 5321)](https://www.rfc-editor.org/rfc/rfc5321.html): SMTP acceptance, relaying and failures; acceptance is distinct from final mailbox observation.
+- [D34 — Sender Policy Framework (RFC 7208)](https://www.rfc-editor.org/rfc/rfc7208.html): SPF authorization and evaluation; inventory legitimate senders before altering DNS.
+- [D35 — DomainKeys Identified Mail (RFC 6376)](https://www.rfc-editor.org/rfc/rfc6376.html): DKIM signatures and domain authentication; inspect results on received mail.
+- [D36 — DMARC (RFC 9989)](https://www.rfc-editor.org/rfc/rfc9989.html): May 2026 core DMARC specification, obsoletes RFCs 7489 and 9091. A pass does not guarantee inbox desirability.
+- [D37 — DMARC aggregate reporting (RFC 9990)](https://www.rfc-editor.org/info/rfc9990/): May 2026 aggregate reporting specification; data sensitivity and provider compatibility still require review.
+- [D38 — DMARC failure reporting (RFC 9991)](https://www.rfc-editor.org/info/rfc9991/): May 2026 failure reporting specification; do not expose message data in public evidence.
+
+==============================================================================

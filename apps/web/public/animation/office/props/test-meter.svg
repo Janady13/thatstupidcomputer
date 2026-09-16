@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-24.00 -16.00 148.00 103.00" width="148" height="103">
+  <title>Bench test meter / needle</title>
+  <g id="test-meter" data-art="test-meter">
+    <path id="test-meter-meter-shell" d="M-16 -2 L95 -8 Q108 -7 111 4 L113 69 L-14 79 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="test-meter-side" d="M95 -8 L111 -3 L116 68 L104 72 L104 5 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+    <path id="test-meter-screen-frame" d="M12 8 L54 5 L55 38 L13 41 Z" fill="#29261F" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="test-meter-screen-glass" d="M17 13 L49 11 L50 33 L17 36 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="test-meter-meter-arc" d="M21 29 Q30 13 45 27" fill="none" stroke="#29261F" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="test-meter-needle-motion" data-motion="meter-needle" data-pivot="34,32" data-phase="0.9">
+      <path id="test-meter-needle" d="M34 32 L29 19" fill="none" stroke="#C97038" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <circle id="test-meter-dial-1" cx="22" cy="57" r="9" fill="#F4E5C4" stroke="#29261F" stroke-width="1.4"/>
+    <circle id="test-meter-dial-1-center" cx="22" cy="57" r="5" fill="#29261F" stroke="#29261F" stroke-width="0.7"/>
+    <path id="test-meter-dial-1-mark" d="M22 52 L22 56" fill="none" stroke="#F4E5C4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="test-meter-dial-2" cx="63" cy="58" r="9" fill="#F4E5C4" stroke="#29261F" stroke-width="1.4"/>
+    <circle id="test-meter-dial-2-center" cx="63" cy="58" r="5" fill="#29261F" stroke="#29261F" stroke-width="0.7"/>
+    <path id="test-meter-dial-2-mark" d="M63 53 L63 57" fill="none" stroke="#F4E5C4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="test-meter-dial-3" cx="91" cy="57" r="9" fill="#F4E5C4" stroke="#29261F" stroke-width="1.4"/>
+    <circle id="test-meter-dial-3-center" cx="91" cy="57" r="5" fill="#29261F" stroke="#29261F" stroke-width="0.7"/>
+    <path id="test-meter-dial-3-mark" d="M91 52 L91 56" fill="none" stroke="#F4E5C4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="test-meter-upper-switch" x="66" y="10" width="26" height="11" rx="1" fill="#29261F" stroke="#29261F" stroke-width="0.8"/>
+    <g id="test-meter-status-led-motion" data-motion="led">
+      <circle id="test-meter-status-led" cx="75" cy="29" r="3" fill="#C97038" stroke="#29261F" stroke-width="0.8"/>
+    </g>
+    <circle id="test-meter-socket-left" cx="-2" cy="50" r="3" fill="#29261F" stroke="#29261F" stroke-width="0.7"/>
+    <circle id="test-meter-socket-right" cx="-2" cy="62" r="3" fill="#29261F" stroke="#29261F" stroke-width="0.7"/>
+  </g>
+</svg>

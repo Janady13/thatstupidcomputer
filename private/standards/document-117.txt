@@ -1,0 +1,30 @@
+DOCUMENT 117 OF 135
+Title: Public expertise layer — briefs and reviewable drafts
+Path: Publishing/README.md
+Group: publishing
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# Public expertise layer — briefs and reviewable drafts
+
+This folder is a **publication workbench**, not a ready-to-upload website. It contains 26 distinct role-linked briefs, six substantial methodology drafts and an identity/content plan. None is approved for publication or evidence that a client engagement happened. Do not publish the private library or its site-fact/log templates.
+
+## Use the material
+
+Choose a real buyer problem and an actually demonstrated capability. Review the relevant brief, add safe original evidence where the article makes experience/results claims, obtain Joseph's substantive review and approve a truthful byline. Run claims/privacy and technical publication checks. Choose one canonical host and an actual route before publishing.
+
+Methods articles can explain documented principles without claiming client results. Hypothetical examples must remain labeled. Candidate queries are ideas, not measured search volume. The aim is useful attributable work that may earn discovery and citations, not a guarantee of rankings or recognition.
+
+## Six methodology drafts
+
+- [Why SEO cannot repair a broken inquiry pipeline](Drafts/01-SEO-CANNOT-FIX-BROKEN-INQUIRIES.md)
+- [A public website needs a public test](Drafts/02-PUBLIC-REACHABILITY.md)
+- [Sent is not the same as received](Drafts/03-INQUIRY-DELIVERY-PROOF.md)
+- [Browser coverage without overclaiming](Drafts/04-REAL-BROWSER-EVIDENCE.md)
+- [Measure AI visibility without inventing attribution](Drafts/05-AI-VISIBILITY-EVIDENCE.md)
+- [Independent acceptance is more than another green check](Drafts/06-INDEPENDENT-ACCEPTANCE.md)
+
+Read the [public identity plan](ENTITY-AND-PUBLICATION-PLAN.md), [discipline directory](../Library/Disciplines/README.md) and [publishing operating model](../Library/Disciplines/04-SEARCH-EXPERTISE-PUBLISHING.md). The 26 brief paths are also listed in `Research/discipline-role-registry.json`.
+
+==============================================================================

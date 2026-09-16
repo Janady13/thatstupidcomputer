@@ -1,0 +1,307 @@
+DOCUMENT 125 OF 135
+Title: Discipline expansion — primary-source register
+Path: Research/DISCIPLINE-SOURCE-REGISTER.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# Discipline expansion — primary-source register
+
+Reviewed 9 September 2026. These 49 source records supplement, not replace, the baseline S01–S52 register. Some sources overlap intentionally so each expansion role has a self-contained authority trail. Do not call the sum 101 unique references. The custom 26-role division, workflow gates, suggested briefs and routing rules are agency operating design, not mandates issued by these publishers.
+
+## D01 — Monitoring distributed systems
+
+Publisher: Google SRE. [Primary source](https://sre.google/sre-book/monitoring-distributed-systems/). Observed: 2026-09-09.
+
+SLO-oriented monitoring and user-visible symptoms; no uptime assertion about Bubbles.
+
+## D02 — NGINX beginners guide
+
+Publisher: NGINX. [Primary source](https://nginx.org/en/docs/beginners_guide.html). Observed: 2026-09-09.
+
+Configuration checks, processes and reverse proxy concepts; deployment-specific paths must be discovered.
+
+## D03 — Automating recovery with systemd
+
+Publisher: Red Hat. [Primary source](https://www.redhat.com/en/blog/systemd-automate-recovery). Observed: 2026-09-09.
+
+Service-manager restart/recovery concepts; vendor tutorial, not proof of an installed unit.
+
+## D04 — Domain names: concepts and facilities (RFC 1034)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc1034.html). Observed: 2026-09-09.
+
+Authoritative and recursive DNS concepts; foundational specification with later updates.
+
+## D05 — HTTP semantics (RFC 9110)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc9110.html). Observed: 2026-09-09.
+
+HTTP method and response semantics; application response does not establish business delivery.
+
+## D06 — What is a tailnet?
+
+Publisher: Tailscale. [Primary source](https://tailscale.com/docs/concepts/tailnet). Observed: 2026-09-09.
+
+Private tailnet membership and connectivity; tailnet success is not a public-internet test.
+
+## D07 — HTML forms
+
+Publisher: WHATWG. [Primary source](https://html.spec.whatwg.org/multipage/forms.html). Observed: 2026-09-09.
+
+Native form submission, constraints, labels and submit controls; client validation is not server validation.
+
+## D08 — Browsers
+
+Publisher: Playwright. [Primary source](https://playwright.dev/docs/browsers). Observed: 2026-09-09.
+
+Supported engines and branded channels; WebKit automation is not a real Safari or iOS test.
+
+## D09 — Web Vitals
+
+Publisher: Google web.dev. [Primary source](https://web.dev/articles/vitals). Observed: 2026-09-09.
+
+LCP, INP and CLS; field assessment differs from lab diagnostics.
+
+## D10 — Defining the Core Web Vitals thresholds
+
+Publisher: Google web.dev. [Primary source](https://web.dev/articles/defining-core-web-vitals-thresholds). Observed: 2026-09-09.
+
+Good thresholds and 75th-percentile aggregation; not a universal conversion or ranking guarantee.
+
+## D11 — Web Content Accessibility Guidelines 2.2
+
+Publisher: W3C. [Primary source](https://www.w3.org/TR/WCAG22/). Observed: 2026-09-09.
+
+WCAG 2.2 success criteria and conformance requirements; AA is the project target, not a legal certification.
+
+## D12 — Understanding conformance
+
+Publisher: W3C WAI. [Primary source](https://www.w3.org/WAI/WCAG22/Understanding/conformance). Observed: 2026-09-09.
+
+Whole pages, complete processes and human evaluation; no automated-only full-conformance claim.
+
+## D13 — Google Search technical requirements
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/essentials/technical). Observed: 2026-09-09.
+
+Minimum eligibility conditions; eligibility does not guarantee indexing or ranking.
+
+## D14 — Make your links crawlable
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/crawling-indexing/links-crawlable). Observed: 2026-09-09.
+
+Crawlable links and descriptive anchors; no prescribed universal link count.
+
+## D15 — Evaluation in information retrieval
+
+Publisher: Manning, Raghavan and Schütze / Stanford. [Primary source](https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-in-information-retrieval-1.html). Observed: 2026-09-09.
+
+Relevance judgments and retrieval evaluation; not disclosure of a commercial engine ranking algorithm.
+
+## D16 — Person
+
+Publisher: Schema.org. [Primary source](https://schema.org/Person). Observed: 2026-09-09.
+
+Vocabulary for a real person; use truthful properties and exact identity links.
+
+## D17 — Organization
+
+Publisher: Schema.org. [Primary source](https://schema.org/Organization). Observed: 2026-09-09.
+
+Organization identity vocabulary; do not convert internal roles into fictional employees.
+
+## D18 — TechArticle
+
+Publisher: Schema.org. [Primary source](https://schema.org/TechArticle). Observed: 2026-09-09.
+
+Technical-article vocabulary; vocabulary support does not establish a Google rich-result feature.
+
+## D19 — Structured data general guidelines
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/appearance/structured-data/sd-policies). Observed: 2026-09-09.
+
+Accurate visible content and feature-specific eligibility; valid JSON alone is insufficient.
+
+## D20 — AI optimization guide
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide). Observed: 2026-09-09.
+
+Google AI Search retains core SEO foundations; no special llms.txt or schema requirement or ranking guarantee.
+
+## D21 — Creating helpful, reliable, people-first content
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/fundamentals/creating-helpful-content). Observed: 2026-09-09.
+
+Original value, sources, authorship and first-hand expertise; not a points-based ranking formula.
+
+## D22 — OpenAI crawlers
+
+Publisher: OpenAI. [Primary source](https://developers.openai.com/api/docs/bots). Observed: 2026-09-09.
+
+OAI-SearchBot, GPTBot and user-triggered fetching have distinct purposes and controls.
+
+## D23 — Does Anthropic crawl data from the web?
+
+Publisher: Anthropic. [Primary source](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler). Observed: 2026-09-09.
+
+Engine-specific crawl policies; inspect current agent-specific controls rather than inherit Google assumptions.
+
+## D24 — Perplexity crawlers
+
+Publisher: Perplexity. [Primary source](https://docs.perplexity.ai/docs/resources/perplexity-crawlers). Observed: 2026-09-09.
+
+Engine-specific crawler and user-fetch documentation; access is not proof of selection.
+
+## D25 — Advertising FAQs: A guide for small business
+
+Publisher: US Federal Trade Commission. [Primary source](https://www.ftc.gov/business-guidance/resources/advertising-faqs-guide-small-business). Observed: 2026-09-09.
+
+US advertising substantiation principles; context-specific legal review may still be needed.
+
+## D26 — Endorsements, influencers and reviews
+
+Publisher: US Federal Trade Commission. [Primary source](https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews). Observed: 2026-09-09.
+
+Truthful endorsements and relevant disclosures; no invented testimonials or review provenance.
+
+## D27 — Patterns of trustworthy experimentation: pre-experiment stage
+
+Publisher: Microsoft Research. [Primary source](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/). Observed: 2026-09-09.
+
+Define trustworthy experiment design before interpreting results; no universal sample size or uplift claim.
+
+## D28 — Set up events
+
+Publisher: Google Analytics Developers. [Primary source](https://developers.google.com/analytics/devguides/collection/ga4/events). Observed: 2026-09-09.
+
+Event implementation and verification; emitting an event does not prove a qualified lead.
+
+## D29 — Default channel group
+
+Publisher: Google Analytics Help. [Primary source](https://support.google.com/analytics/answer/9756891?hl=en). Observed: 2026-09-09.
+
+AI Assistant channel; Google AI Overviews and AI Mode classified in Organic Search in current documentation.
+
+## D30 — Set up consent mode
+
+Publisher: Google for Developers. [Primary source](https://developers.google.com/tag-platform/security/guides/consent). Observed: 2026-09-09.
+
+Technical consent signaling; configuration alone does not establish legal permission.
+
+## D31 — New AI visibility insights in Bing Webmaster Tools
+
+Publisher: Microsoft Bing. [Primary source](https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare). Observed: 2026-09-09.
+
+June 2026 reporting expansion; citation measurements are not website conversions or revenue.
+
+## D32 — Email sender guidelines
+
+Publisher: Google Workspace / Gmail. [Primary source](https://support.google.com/a/answer/81126?hl=en). Observed: 2026-09-09.
+
+Provider authentication and sending requirements vary by sending class; no guaranteed inbox placement.
+
+## D33 — Simple Mail Transfer Protocol (RFC 5321)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc5321.html). Observed: 2026-09-09.
+
+SMTP acceptance, relaying and failures; acceptance is distinct from final mailbox observation.
+
+## D34 — Sender Policy Framework (RFC 7208)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc7208.html). Observed: 2026-09-09.
+
+SPF authorization and evaluation; inventory legitimate senders before altering DNS.
+
+## D35 — DomainKeys Identified Mail (RFC 6376)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc6376.html). Observed: 2026-09-09.
+
+DKIM signatures and domain authentication; inspect results on received mail.
+
+## D36 — DMARC (RFC 9989)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/rfc/rfc9989.html). Observed: 2026-09-09.
+
+May 2026 core DMARC specification, obsoletes RFCs 7489 and 9091. A pass does not guarantee inbox desirability.
+
+## D37 — DMARC aggregate reporting (RFC 9990)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/info/rfc9990/). Observed: 2026-09-09.
+
+May 2026 aggregate reporting specification; data sensitivity and provider compatibility still require review.
+
+## D38 — DMARC failure reporting (RFC 9991)
+
+Publisher: RFC Editor / IETF. [Primary source](https://www.rfc-editor.org/info/rfc9991/). Observed: 2026-09-09.
+
+May 2026 failure reporting specification; do not expose message data in public evidence.
+
+## D39 — Guidelines for representing your business on Google
+
+Publisher: Google Business Profile. [Primary source](https://support.google.com/business/answer/3038177?hl=en). Observed: 2026-09-09.
+
+Real-world representation, eligible businesses and locations; no fabricated offices or credentials.
+
+## D40 — Spam policies for Google web search
+
+Publisher: Google Search Central. [Primary source](https://developers.google.com/search/docs/essentials/spam-policies). Observed: 2026-09-09.
+
+Link spam, doorway and scaled-content abuse boundaries; public authority cannot be manufactured with false signals.
+
+## D41 — Application Security Verification Standard
+
+Publisher: OWASP. [Primary source](https://owasp.org/www-project-application-security-verification-standard/). Observed: 2026-09-09.
+
+Application security verification requirements; tailor version and assurance scope before adopting controls.
+
+## D42 — Web Security Testing Guide
+
+Publisher: OWASP. [Primary source](https://owasp.org/www-project-web-security-testing-guide/). Observed: 2026-09-09.
+
+Authorized security testing methodology; not permission to test third-party production systems.
+
+## D43 — Content Security Policy Level 3
+
+Publisher: W3C. [Primary source](https://www.w3.org/TR/CSP3/). Observed: 2026-09-09.
+
+Working-draft specification: report-only and enforcement differ; test against actual browser support.
+
+## D44 — Secure Software Development Framework 1.1
+
+Publisher: NIST. [Primary source](https://csrc.nist.gov/pubs/sp/800/218/final). Observed: 2026-09-09.
+
+Final SP 800-218 v1.1; the v1.2 public draft is not substituted as a final standard.
+
+## D45 — Release engineering
+
+Publisher: Google SRE. [Primary source](https://sre.google/sre-book/release-engineering/). Observed: 2026-09-09.
+
+Controlled, repeatable releases and rollback; actual release authorization is project-specific.
+
+## D46 — Evolving SRE engagement model
+
+Publisher: Google SRE. [Primary source](https://sre.google/sre-book/evolving-sre-engagement-model/). Observed: 2026-09-09.
+
+Production readiness review and operational ownership; custom role organization is an agency design.
+
+## D47 — Plan your business
+
+Publisher: US Small Business Administration. [Primary source](https://www.sba.gov/counseling/plan-your-business/). Observed: 2026-09-09.
+
+Market/business planning overview; query demand and commercial fit require local evidence.
+
+## D48 — Custom instructions with AGENTS.md
+
+Publisher: OpenAI. [Primary source](https://developers.openai.com/codex/guides/agents-md). Observed: 2026-09-09.
+
+Codex instruction discovery and hierarchy; a downloaded library does not install itself in another repository.
+
+## D49 — Overview of Google crawlers and fetchers
+
+Publisher: Google. [Primary source](https://developers.google.com/crawling/docs/crawlers-fetchers/overview-google-crawlers). Observed: 2026-09-09.
+
+Crawler/fetcher purposes and verification references; user-agent strings alone are not identity proof.
+
+==============================================================================

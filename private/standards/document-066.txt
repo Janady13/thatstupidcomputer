@@ -1,0 +1,46 @@
+DOCUMENT 066 OF 135
+Title: Research maintenance and documentation drift control
+Path: Library/Framework/framework-research-maintenance.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Research maintenance and documentation drift control
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Ongoing stewardship of this library  
+**Evidence:** S01, S02, S04, S05, S47 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Use a source ledger rather than a refresh slogan
+
+Each maintained rule needs an owner, current source, observed date, affected modules and a next-review condition. A document is not current merely because its title includes the year. Preserve the difference between publication date, source update date, retrieval date and the effective date of a product change.
+
+This release encountered a concrete example: older Google AI documentation described overall reporting, while a later announcement and help page document a dedicated report. Keep a conflict record so the next editor does not accidentally restore the older interpretation. [S03–S05 in the source register]
+
+## Proposed review cadence
+
+Review engine bot controls, eligibility changes and critical policies before each relevant deployment and on a recurring team-owned schedule. Review framework-specific examples when the installed major version changes. Review business facts when their source changes. These are recommended operating practices; no background monitoring service has been scheduled by this package.
+
+Use the official changelog as a trigger, not a substitute for reading the affected page. A documentation clarification may not mean a new ranking factor or a newly launched feature. Record the event type explicitly. [S01]
+
+## Change workflow
+
+Open a change record with the source, exact changed claim, affected modules, urgency and test impact. Update the canonical owner first, then dependent tiers, templates, sales wording and acceptance tests. Keep a concise before/after explanation and the original evidence location.
+
+For protocol and software changes, distinguish stable, older supported and draft versions. A draft security page can inform a threat review, but should not silently redefine a pinned production implementation. The MCP module intentionally records version boundaries. [S47]
+
+## Automated checks
+
+Run the supplied library auditor for local file links, JSON syntax, metadata references and preserved-original hashes. These checks do not confirm that an external page is still live or that its content supports a claim. External link checking and semantic source review are separate activities.
+
+Maintain a queue for unverified historical claims. A regex match is a lead for review, not a confirmed defect. Close a claim only after a reviewer records a disposition: verified, narrowed, superseded, removed or still unresolved.
+
+## Acceptance
+
+Every release should carry a manifest, migration map, source register, coverage matrix and test report. Mark retained legacy documents honestly instead of assigning a current research stamp to untouched prose. Preserve rollback copies and make the authoritative entry point obvious to both humans and AI assistants.
+
+The objective is controlled, traceable improvement, not endless document growth. Add a new module only when it owns a distinct decision, implementation contract or evidence workflow.
+
+==============================================================================

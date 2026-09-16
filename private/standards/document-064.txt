@@ -1,0 +1,42 @@
+DOCUMENT 064 OF 135
+Title: Preferred Sources and publisher relationship design
+Path: Library/Framework/framework-publisher-preferences.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Preferred Sources and publisher relationship design
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Eligible publisher sites and reader-facing preference controls  
+**Evidence:** S45, S43, S44 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## A reader preference is not an SEO switch
+
+Google provides a Preferred Sources workflow and publisher guidance, including an interactive button option. The feature is based on reader choices and supported Search contexts. Do not market a button installation as guaranteed placement, universal availability or a substitute for useful publishing. [S45]
+
+## Applicability assessment
+
+Verify the current feature's domain, page and market requirements from the official guide before implementation. Confirm that the client is a relevant publisher and that the destination identifies the correct publication. A generic service business may gain more from a better service page than from a publisher-specific feature.
+
+Record the intended reader action and why it is useful. Use clear wording that tells the reader what the preference affects. Do not obscure the destination, imitate a browser warning or make the action appear necessary to access ordinary content.
+
+## Design and implementation
+
+Follow the current official integration method rather than embedding a stale copied URL pattern. Keep the control accessible and visually distinct from primary navigation or a purchase action. Test keyboard access, mobile layout, loading failure and the destination on the supported surfaces.
+
+Avoid introducing heavy scripts or layout shifts for a secondary preference action. Preserve core content when the integration fails. Do not require an unrelated subscription or collect unnecessary personal information merely to expose the preference control.
+
+## Measurement
+
+Track an approved button interaction separately from a confirmed preference or later Search exposure. A click on the button does not prove the user completed the preference flow, and subsequent traffic cannot automatically be attributed to it. Use the current platform report definitions and disclose any unavailable outcome.
+
+Where the publication also has supported social/video profiles, maintain consistent factual identity and evaluate their Search Console properties separately. Those reports measure different assets and should not be combined into a fabricated publisher-authority score. [S43, S44]
+
+## Acceptance
+
+Deliver the applicability record, official-source date, approved UI copy, tested destination, accessibility evidence and measurement limitations. Remove or revise the integration if its official contract changes. This library release adds the workflow but does not install a button or change any publisher account.
+
+==============================================================================

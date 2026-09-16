@@ -1,0 +1,52 @@
+DOCUMENT 038 OF 135
+Title: SEO build reference: intake to production evidence
+Path: Library/Framework/SEO-BUILD-REFERENCE.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# SEO build reference: intake to production evidence
+
+> **26-discipline expansion — 2026.09.09-d26:** Route engineering, SEO, AI visibility and publication work through the [discipline operating library](../Disciplines/README.md). Read the [master router](../Disciplines/01-MASTER-ROUTER.md), [cross-discipline playbooks](../Playbooks/README.md) and [public expertise layer](../../Publishing/README.md). New role IDs do not change commercial tiers, pricing or the retirement of Tier 13. Baseline legacy review boundaries remain in force.
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Project planning and execution across the existing tier system  
+**Evidence:** S14, S15, S16, S20, S38 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Intake
+
+Obtain the real domain, platform/runtime versions, hosting target, page inventory, business goals, markets, legitimate entity details and access limitations. Record which accounts are available and which are not. Do not infer live performance from a proposal or a library example.
+
+Create an applicability map for the production tiers. Preserve Tier 13 as retired. Identify the page types actually needed and the business owner for each. Agree on what counts as a qualified outcome and which changes require separate approval.
+
+## Audit and design
+
+Collect available source data and mark completeness. Define the URL lifecycle, public/private boundary, canonical relationships, rendering strategy and measurement contract. Resolve contradictions before implementation. The correct choice can differ between an article, a shopping product, an internal tool and a location page.
+
+Use the current evidence modules when old documents disagree. Search for deprecated features, unsupported numerical guarantees and copied infrastructure assumptions. Retain unresolved questions in the project risk register rather than converting them into confident requirements.
+
+## Implement
+
+Work from approved page data into visible content, metadata, structured data and relevant feeds. Keep one owner per field. Implement crawler policy only after the business chooses discovery and training preferences. Preserve authentication independently.
+
+Use the appropriate stack adapter and installed version. Do not assume Debian, nginx, PM2, WordPress or Next.js simply because an older example uses it. A library snippet is not a production environment description.
+
+## Validate
+
+Run route-contract tests on the intended public, private, duplicate, missing and retired page classes. Compare initial and rendered HTML where relevant; inspect actual headers and status. Validate the chosen structured-data feature and factual consistency. The important official distinctions are delivery, canonicalization, index/snippet rules and feature eligibility. [S14–S16, S20]
+
+Test the customer's actual task, not just metadata. Confirm form delivery, booking or checkout behavior, consent handling and mobile interaction. Keep automated and manual evidence together.
+
+## Release and monitor
+
+Use a reviewed deployment and rollback plan. For migrations, retain the old/new URL map and verify the production transition. [S38] Repeat critical tests against the actual live hostname. Configure only the reporting available to the client and distinguish measurement setup from achieved outcomes.
+
+## Handoff package
+
+Deliver the scope/applicability matrix, approved facts, implementation locations, URL rules, policy choices, validation results, source dates, unresolved risks and maintenance ownership. A professional handoff should allow another developer to reproduce the state without trusting a sales claim or an AI-generated summary.
+
+This is a build procedure, not proof that a particular website is complete. The updated library includes offline tools and examples; client-specific deployment and account work are not performed automatically.
+
+==============================================================================

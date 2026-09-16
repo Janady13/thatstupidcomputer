@@ -1,0 +1,99 @@
+{
+  "schema": "tsc-workshop-cleanup-review/v4",
+  "createdAt": "2026-09-13T11:39:44.103Z",
+  "mode": "REFERENCE_ONLY_NOT_AN_INSTALLER_MANIFEST",
+  "priorReference": "TSC-DESKTOP-CHARACTER-v3",
+  "scope": "Source review for a tab-free workshop and inline computer conversation. The focused AST helper operates on actual current Workshop source; do not wholesale replace unknown live files or use old animation manifests.",
+  "files": [
+    {
+      "path": "apps/web/src/App.tsx",
+      "priorV3Sha256": "cc399b7464c87a9b036c2022d1f74a471feee443d8da0dc7bc7306e2794cd326",
+      "sha256": "13e13b6b25c591982d42a4b579580593252f3f5390015bd1a2533eb41f9648bc"
+    },
+    {
+      "path": "apps/web/src/components/Workshop.tsx",
+      "priorV3Sha256": "d455dfd8572230bbcc0f5026665989c7beba4a1cd2b2b5766c7a8e12ca346bba",
+      "sha256": "38f9ac0a74388a6d63f55bc75de40d327a302260d6cd1458884eeab685d9c54e"
+    },
+    {
+      "path": "apps/web/src/components/ComputerConversation.tsx",
+      "priorV3Sha256": "0422a23eb162f17823a101d3ff304cd894267eb5676c1bd6ef21cd5ab25f060a",
+      "sha256": "bef2f42ab062b8660474aaec3ed394e902f07d02de0c3f51fb4ac671ac6ab693"
+    },
+    {
+      "path": "apps/web/src/styles/site.css",
+      "priorV3Sha256": "45ff64761403b38c7f14a9c7bf231fb25f0bd1af3bc17fa945f47fe33a4af053",
+      "sha256": "6f25fe3d37133f9c41cc5d739ce359229eb8123184046e8163438c7b8924365a"
+    },
+    {
+      "path": "apps/web/src/styles/computer-conversation.css",
+      "priorV3Sha256": "1f4bc6dfcf5372c3245f22f0a2b71e7258005a627aeec4d67f8ce0594e6fab19",
+      "sha256": "7f546a7a298644cf39b3ad4b1f0fa31ee32535b866a561ca9c68a6f0cbb8e7c9"
+    },
+    {
+      "path": "packages/site/content.ts",
+      "priorV3Sha256": "9d0189e1cab8252212686704a5cfc8afd2c146f6e3f5a98ea5d08ed517a32b3b",
+      "sha256": "15d6ed1efb32b4dd3364300785114004a4641a8dac93bfd68ac5a30cf086adaf"
+    },
+    {
+      "path": "tests/animation/demo-ssr.test.ts",
+      "priorV3Sha256": "33f091160b9ae35a896f53fd6e55b7307f8d1f4967f8a0f4b56ba97729d1e7aa",
+      "sha256": "4fea051dd96de13ca21fa6a9c531ecebd86c42221e9825a73f23ce8bcafd53db"
+    },
+    {
+      "path": "tests/browser/site.spec.ts",
+      "priorV3Sha256": "8b22f7ab076e7c2bfaa40041f502917fa2f3156a7826ac6c15cd4aa7500384ae",
+      "sha256": "ebc92c2620bd148844f3aaecd72a2bc6e55ff752e6855c4aca1bde804afbe30d"
+    },
+    {
+      "path": "tests/browser/desktop-conversation.spec.ts",
+      "priorV3Sha256": "cb0dcd26a192795bf296a5a780371dc47b87c69bfc97c00478b0304f12138832",
+      "sha256": "9b16ab07f8531272045f6db36987cd83c1ac71300c1f20e6aa0e1dcf1c4d35c2"
+    },
+    {
+      "path": "scripts/apply-room-tab-cleanup.mjs",
+      "priorV3Sha256": null,
+      "sha256": "bf5c9b2bec5842c034864c373e838fbc1def64802242aab5771fed9a661c3f03"
+    },
+    {
+      "path": "tests/animation/room-tab-cleanup-installer.test.mjs",
+      "priorV3Sha256": null,
+      "sha256": "9956b709d7cd30cfffb40bdb5ff6c4a5da0e482014e2e63fc77e003c9814ea02"
+    },
+    {
+      "path": "scripts/standards-inventory.ts",
+      "priorV3Sha256": "41dccd31b1e2443ae920fe667847f8f72c4cb1db80b53d8c8d0aeeaec50bf7b0",
+      "sha256": "6e92f6a526f71230ee32036176d8ce3bbec57199dbfd7b0cdc309c7285667a8c"
+    },
+    {
+      "path": "scripts/package.ts",
+      "priorV3Sha256": "17e7fb4bf9ab3cee4013e62c8408a6d69e2a267a59b17c0693614553adcb54ea",
+      "sha256": "085bedf8c63ea5a25fdea89f2017631aa9c15923a85903399e8ee078c24be13a"
+    },
+    {
+      "path": "README.md",
+      "priorV3Sha256": "171f1dc5a446fc660c25de9a7c5c90cba665562774d9598dd1457bfd6b4806ac",
+      "sha256": "29a6e1ee47f53e406074b632a95ee14291d4cb8425a2a2c532dd4c0408191129"
+    },
+    {
+      "path": "CLAUDE.md",
+      "priorV3Sha256": "f716dc95ad8ac1c37b87f979bbc740e444d130190293a511357988867cb710eb",
+      "sha256": "b593573f85f5f4bb1f0be5cc70d3d4f535bd978aa31784626b537f4465e73fea"
+    },
+    {
+      "path": "docs/WORKSHOP-CLEANUP-ACCEPTANCE.md",
+      "priorV3Sha256": null,
+      "sha256": "9b648b75f197f1cdfe0bf46fe2de18e726790a317004be4a4ee584c491d3a782"
+    },
+    {
+      "path": "docs/WORKSHOP-CLEANUP-INTEGRATION.md",
+      "priorV3Sha256": null,
+      "sha256": "437ca126faf0e593668772e1c0141a186cd0ae2226b3b8716651c02369ed9784"
+    },
+    {
+      "path": "docs/workshop-cleanup.patch",
+      "priorV3Sha256": null,
+      "sha256": "a5121e86ce4f07efbb64e95aae7121989f4e0a70ca1f60fe927d1932daf56072"
+    }
+  ]
+}

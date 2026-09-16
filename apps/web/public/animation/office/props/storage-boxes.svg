@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-13.00 -110.00 135.00 121.00" width="135" height="121">
+  <title>Stacked parts boxes</title>
+  <g id="storage-boxes" data-art="storage-boxes">
+    <path id="storage-boxes-lower-body" d="M0 -47 L110 -45 L107 3 L0 0 Z" fill="#29261F" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-lower-lid" d="M-4 -52 L111 -49 L114 -40 L-5 -42 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-lower-label-frame" d="M40 -33 L73 -32 L73 -16 L40 -17 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-lower-label" d="M45 -29 L68 -28 L68 -20 L45 -21 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-upper-body" d="M9 -94 L108 -95 L111 -48 L7 -50 Z" fill="#C97038" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-upper-lid" d="M5 -101 L111 -102 L114 -91 L3 -91 Z" fill="#C97038" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-upper-label-frame" d="M36 -84 L73 -84 L74 -66 L36 -66 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-upper-label" d="M41 -80 L68 -80 L68 -70 L41 -70 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.55" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="storage-boxes-upper-rim" d="M6 -96 L110 -97" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+DOCUMENT 082 OF 135
+Title: Preflight, controlled release and fresh acceptance
+Path: Library/Playbooks/08-RELEASE-AND-INDEPENDENT-ACCEPTANCE.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Preflight, controlled release and fresh acceptance
+
+**Lead:** R25. **Consulted roles:** R01, R20, R21, R22, R24, R25, R26 plus affected domain owners. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+An actual owner-authorized change has a defined build/environment and predeclared acceptance contract. The library itself performs no deployment.
+
+## Sequence and ownership
+
+### 1. Freeze the contract
+
+Record project/build/environment, exact change scope, required checks, allowed exceptions and required independence. Preserve the contract hash before collecting acceptance records.
+
+### 2. Verify readiness
+
+R01 demonstrates recovery readiness, R21 runs preflight regressions, R22 challenges approved assumptions and R20 reviews critical exposure. R24 resolves conflicts.
+
+### 3. Authorize execution
+
+R25 confirms the actual operator, sequence, stop thresholds and rollback owner. A JSON pass or role prompt cannot grant permission.
+
+### 4. Observe the deployed result
+
+Collect timestamped raw evidence for the actual build. R26 executes fresh required journeys, discloses reviewer relationship and does not accept builder summaries on trust.
+
+### 5. Record the bounded verdict
+
+Validate the record structure and artifact hashes with the offline gate, then have the responsible owner inspect truth and independence. Report failed/blocked requirements, residual risk and actual rollback if performed.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Required checks have fresh scoped evidence and match the declared build
+- Independence satisfies the agreed policy and is truthfully disclosed
+- A responsible owner—not the tool—makes the release decision
+
+## Stop or block
+
+Never create a fake second reviewer identity or modify a failed requirement after testing to obtain a pass. The offline evidence gate checks consistency, not truth or authority.
+
+## Role and source references
+
+- [R21 — QA/SDET Engineer](../Disciplines/R21-qa-sdet.md)
+- [R25 — Release/Change Manager](../Disciplines/R25-release-change-management.md)
+- [R26 — Independent Acceptance Engineer](../Disciplines/R26-independent-acceptance.md)
+
+Primary-source IDs: D44, D45, D46. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

@@ -1,0 +1,143 @@
+DOCUMENT 121 OF 135
+Title: SEO library audit and research update
+Path: Research/AUDIT-REPORT.md
+Group: baseline
+Label: BASELINE · historical report
+Review status: scope_stated_in_document
+==============================================================================
+
+# SEO library audit and research update
+
+**Prepared for Joseph · Research snapshot: 9 September 2026 · Release: 2026.09.09**
+
+## Executive assessment
+
+The uploaded library has substantial breadth. Its primary weakness is not a shortage of subjects: it is the difficulty of determining which version, claim, threshold or implementation rule deserves authority. Four repeated version sets, a stale master index, broken internal paths and confident statements with different evidence quality make the material harder to use safely than its size suggests.
+
+This release therefore does two jobs. It adds current capabilities that were missing or poorly separated, and it gives the existing material a usable evidence and version structure. The result is one canonical active edition, unchanged historical originals, explicit review labels, a source register, reproducible local checks and an offline browser. It is designed to be usable by a developer, an editor or an AI coding assistant without silently treating old prose as a verified implementation specification.
+
+The audit covered the entire archive structurally. Factual review was targeted at high-impact and time-sensitive claims, not every sentence of approximately one million unique original words. The distinction is intentional: a file receiving a legacy banner has not been rewritten or fully fact-checked. The [coverage matrix](COVERAGE-MATRIX.md) discloses the treatment of every unique original.
+
+## 1. What the archive actually contained
+
+| Measure | Observed result |
+| --- | --- |
+| ZIP entries, including directories and macOS metadata | 812 |
+| Content files across the four sets | 511 |
+| Unique file contents, by SHA-256 | 146 |
+| Redundant content copies | 365 |
+| Unique Markdown files | 143 |
+| Other unique files | One Python, one JSON, one TXT |
+| Approximate unique original word count | 1,047,235 |
+| Broken local inline Markdown targets in the original scan | 157, across 39 files |
+| Distinct embedded legacy URLs inventoried | 1,758 |
+
+The sets contain 114, 111, 143 and 143 content files respectively. Work 3 and Work 4 have identical content sets. Within the original archive, the same basename did not represent independently changed content. This made exact consolidation possible without choosing between different factual revisions hidden behind the same filename.
+
+The release uses Work 4's hierarchy where available and preserves the few historical-only items from earlier sets. All 146 unique originals remain byte-for-byte intact in `99-Originals/`; the inventory records all 511 original paths. Consolidation removes repeated working copies, not unique historical content. The input ZIP is not overwritten.
+
+The old master index asserted a much smaller library than the actual archive. It has been rebuilt from the release catalog. The empty original `Schema.org` directory now contains four explicitly fictional examples rather than implying that deployable schema assets were already present.
+
+## 2. Audit and research method
+
+The structural pass enumerated archive entries, ignored directory and macOS resource-fork noise for content counts, calculated exact hashes, grouped duplicate contents, counted approximate words and scanned local Markdown targets. These are reproducible file observations, not search-engine measurements. The source inventory and migration map let another reviewer trace a current file back to its preserved original.
+
+A second pass located candidate problems: guarantees, universal thresholds, crawler names, structured-data features, research attributions, rendering claims and destructive implementation instructions. Automated flagging was used for triage, not to decide that a statement was false. Selected passages were read in context and compared with primary documentation or the named research where available.
+
+The research register contains 52 primary sources. Fifty concern search, analytics, web platforms, research or agent protocols; two cover official usage of the proposed GitHub Actions components. Each record identifies the publisher, location, observation date, inspected scope and an actual document date only when available. Official documentation supports product behavior and stated policies. It does not certify every agency workflow proposed here.
+
+When sources disagreed because of timing, the release records the conflict rather than combining contradictory passages. Older Google AI guidance remains useful for eligibility while newer reporting documentation controls current reporting claims. The older FAQ announcement is not used to preserve eligibility after the final 2026 retirement. Version-pinned protocol material is labeled as pinned, not silently called latest. [S01, S03–S05, S21, S48]
+
+## 3. High-impact research findings
+
+### Current AI reporting needs a different measurement model
+
+Google announced dedicated generative AI performance reports on June 3, 2026 and updated the announcement to describe worldwide rollout on August 31. The documented Search report provides AI Overviews and AI Mode impressions with page, country, device and date views. This replaces both an incorrect older rollout claim and the blanket assumption that dedicated Google AI reporting cannot exist. Actual property availability and sufficient data still need inspection. [S04, S05]
+
+The new reporting modules deliberately avoid inventing dedicated clicks, CTR, raw prompts or a separate AI Overview-versus-AI Mode breakdown. They also prevent double-counting AI impressions already represented in overall reporting. A report impression is not a website session, and neither is automatically a qualified lead. These boundaries are reflected in the metric-contract template.
+
+GA4's current default-channel documentation includes an AI Assistant channel; Google AI Overviews and AI Mode remain within Organic Search. A custom grouping may still serve a specific analysis, but it is no longer presented as universally required merely to identify the documented assistant category. Session, event and first-user attribution scopes must be named rather than mixed in a single performance claim. [S36]
+
+Bing's newer preview reporting adds useful citation-oriented dimensions. Its Citation Share is tied to citations for a grounding query, not general market share, ranking position or a share of all AI traffic. The library now has a dedicated Bing workflow rather than forcing Google, Bing and referral analytics into one “AI score.” [S06, S07]
+
+### Technical eligibility is not a secret optimization formula
+
+Google's current guide does not require a special AI text file or special schema for its generative Search features. It also explicitly gives `llms.txt` no special positive or negative role in Google Search visibility. The release keeps room for an identified external consumer that actually uses an auxiliary file, but removes the assumption that creating such a file makes every engine consume or trust the site. [S02]
+
+The original material included universal rendering claims and confident quantitative assertions. Those selected claims have been corrected, narrowed or marked unverified. A benchmark from a research paper is not automatically a production rule for a current search product. A proprietary score, patent or third-party multiplier cannot be treated as a disclosed ranking algorithm without evidence that supports that exact interpretation. The GEO paper is used within its research scope, not as a guarantee of present-day citation gains. [S29]
+
+The useful engineering question becomes specific: which consumer needs which content, through which request and rendering path, under which access policy? The answer is tested on the actual route. That is more actionable than a broad promise about all models.
+
+### Crawler permissions need purpose-specific controls
+
+The updated engine matrix separates discovery/search, training and user-requested retrieval. OpenAI's OAI-SearchBot, GPTBot and ChatGPT-User do not have interchangeable roles. Anthropic and Perplexity likewise document purpose-specific agents and different behavior boundaries. Google-Extended is a policy token for specified non-Search uses, not a substitute for Googlebot access. [S08–S13]
+
+The template therefore requires an explicit client policy rather than automatically enabling or blocking everything with “AI” in its name. The examples are not a complete opt-out from every unlisted crawler. They also do not treat `robots.txt` as authentication, or a claimed user-agent string as proof of identity. The observability module records how a request was verified and what the request actually establishes.
+
+This distinction matters to business reporting: an allowed request can establish attempted or successful retrieval, depending on the log evidence. It does not establish that a page was indexed, cited, recommended or responsible for revenue. The library now provides separate observation and attribution records instead of collapsing those steps.
+
+### Structured-data eligibility must have a lifecycle
+
+Google stopped showing FAQ rich results on May 7, 2026; its documentation was removed in June. HowTo rich results had already been retired. Useful FAQ content and the existence of a Schema.org vocabulary type are separate from eligibility for a Google visual feature. The current guide now distinguishes vocabulary validity, implementation syntax, visible factual agreement and feature support. [S01, S21]
+
+Review guidance also requires attention to current policy and whether the review concerns the publishing entity itself. The release does not include fabricated stars, review counts or guaranteed rich-result outcomes. Merchant examples require consistency between visible offers, structured data and any relevant feed rather than treating markup as an independent place to invent sales information. [S20, S22, S23]
+
+The four example assets illustrate organization/site/breadcrumb relationships, an article and author, a product offer, and a real-storefront-only business case. Their data is fictional. Local JSON parsing verifies syntax only; it does not prove that a particular business qualifies for any feature or that the sample has passed a live rich-result test.
+
+### Route and rendering instructions needed safety boundaries
+
+Targeted inline edits replace universal instructions to lowercase routes, change established WordPress permalinks or remove thin/orphaned content without diagnosis. The revised approach is to define the actual route inventory, document the intended outcome, identify dependencies and approve a migration or retirement only when justified. Site moves need mappings, checks and rollback ownership. [S15, S38]
+
+The library also stops calling client rendering categorically invisible or malpractice. Google documents JavaScript rendering. Rendering choices should be based on the route, consumer, content, failure modes and application constraints. The updated React-related patches and content-delivery guide replace an absolute judgment with explicit checks. [S14, S24]
+
+The Next.js revision is version-aware. In particular, a custom `htmlLimitedBots` expression replaces the default list rather than safely appending to it. The release warns against judging a streamed response solely from its first chunk or modifying this setting without testing the relevant bot and browser behavior. [S25–S27]
+
+## 4. What was actually changed
+
+The active library contains 169 Markdown documents. Twenty-seven are newly written researched modules. Nine original core guides were replaced with current scoped guidance: content delivery, Google AI visibility, AI citations, schema types, ChatGPT Search, spam policy, Search Console, GA4 and Next.js. The master index was regenerated separately.
+
+Five additional legacy documents received 14 exact inline safety edits. Their remaining content is still labeled legacy. Another 127 active original documents were retained with explicit review boundaries and links to current guidance. Four historical audit artifacts were preserved outside the active edition. No statement that every legacy paragraph has been corrected is implied by these labels.
+
+The 27 additions form practical groups: evidence and source governance; per-engine access; Google and Bing AI reporting; observation and referral attribution; route and release contracts; location and regional eligibility; structured-data and commerce consistency; Next.js metadata validation; verified crawler observability; crawl payload and field-performance checks; agent access; social/video reporting; migration rollback; maintenance; client scope; faceted navigation; publisher preferences; title/description guidance; and the previously missing build/reference entry points.
+
+The 157 original broken local targets were repaired. Some were simply wrong relative paths; others named documents that were absent. Where a full specialist document remains absent, the replacement link says that it points to a related broader reference. A repaired link is not presented as a newly completed specialist chapter. The link-repair log preserves the old target and reason.
+
+## 5. Operating assets and acceptance
+
+The 12 JSON templates cover intake, claims, engine policy, URL behavior, metric definitions, observations, migrations, locations, release acceptance, research maintenance, source facts and client scope. They use example-only flags, placeholders or unavailable values rather than fictional completed client results. They are proposed records for a workflow, not integrations that have already been installed.
+
+Four new standard-library Python utilities are included. The HTML checker inspects a saved complete HTML document for selected metadata and indexability expectations; it does not crawl a live site or run JavaScript. The robots generator turns an explicit policy into text and requires an approval declaration outside example mode; that declaration is not itself proof of human authorization. The JSON-LD embedder safely serializes example data into a script context but cannot establish its truth. The library audit checks declared local file targets, JSON syntax, catalog references and preserved hashes.
+
+Twenty-four local unit tests cover both valid cases and deliberate failures, including canonical conflicts, noindex expectations, malformed JSON, policy input injection and script-breakout escaping. These tests are evidence about the utilities' implemented checks. They do not certify the original million-word corpus, every code sample, platform compliance or production SEO outcomes. The supplied CI workflow is proposed only; no GitHub execution was performed. [S51, S52]
+
+The release includes machine-readable inventories, a migration map, catalog, source register, exact finding records, change log and checksum manifest. The offline browser defaults to current material while keeping legacy documents searchable with their status visible. This makes the research usable without asking an assistant to read every file before each task.
+
+## 6. How to apply the updated library to real work
+
+Start with project facts, not with a tier checklist. Identify the domain and canonical host, existing routes, application version, target markets, actual services or products, account ownership, publication rights, conversion definition and restrictions on crawler use. Record unavailable information rather than silently filling it with a plausible guess.
+
+Next, choose only the applicable modules. A local service-area business should not inherit a fictional storefront schema. An established site should not change URL conventions solely because a general checklist prefers a different style. A store with facets needs explicit indexable-state rules; a publisher needs rights, provenance and its own content distribution choices. Tier numbering remains useful for commercial organization, but not as a universal technical dependency graph.
+
+Establish a baseline before changing behavior. The baseline should separate access and rendering, indexing or reported appearances, site referrals and qualified business outcomes. Write acceptance criteria that can be observed on staging and after release. A release can pass technical checks without immediately increasing rankings; a visibility increase can occur without creating a qualified lead. Neither result should be mislabeled.
+
+Deploy only approved changes with a rollback route. Capture the version, affected URLs, before/after artifacts, tool output and accountable owner. Then evaluate the defined reporting period and cohort, retaining scope and denominator information. Improvements should be attributed cautiously when multiple changes, seasonality or reporting differences could explain them. These operating practices are recommendations, not claims about hidden platform algorithms.
+
+## 7. What remains unverified
+
+The largest remaining work item is the retained legacy corpus, including many industry and stack-specific chapters. They remain available because preserving useful original material is preferable to deleting it without a full review. Their status is not a certificate. The review queue prioritizes high-stakes advice, unsupported numbers, outdated product instructions and code intended for production.
+
+The 1,758 embedded legacy URLs were not all checked for availability or claim support. The local audit does not validate Markdown fragment anchors or every possible HTML link form. Existing server configurations and framework examples were not all executed. No benchmark was independently replicated, no client property was connected, and no real website's rankings, crawl permissions, leads or revenue were measured.
+
+Future maintenance should be triggered by an actual source change, stack upgrade, feature retirement or project decision, not merely a new date on a cover page. Assign an owner and preserve the old record when promoting a guide. The release supplies a maintenance ledger and proposed cadence; it does not start a background monitor.
+
+## Conclusion
+
+The most important update is a change in authority: the library is no longer organized as though every confident paragraph deserves equal trust. New current guidance has explicit scope, source support and operational boundaries; older work is preserved and discoverable without pretending it was all revalidated.
+
+Use the current build reference and evidence rules as the entry point, the tier map for applicability, and the legacy documents as reviewable background. The package supplies concrete additions and tested offline tools while leaving live implementation and client acceptance where they belong: in the actual project's facts, permissions and measured results.
+
+## Supporting records
+
+[Primary sources](SOURCE-REGISTER.md) · [28 findings](FINDINGS.md) · [Coverage matrix](COVERAGE-MATRIX.md) · [Tier applicability](TIER-APPLICABILITY-MAP.md) · [Remaining review queue](REMAINING-REVIEW-QUEUE.md) · [Change log](../CHANGELOG.md) · [Tool boundaries](../Tools/README.md)
+
+==============================================================================

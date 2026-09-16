@@ -1,0 +1,57 @@
+DOCUMENT 008 OF 135
+Title: Integrate the discipline library into an actual AI coding project
+Path: Library/Disciplines/05-INTEGRATION-GUIDE.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Integrate the discipline library into an actual AI coding project
+
+## What is already done, and what is not
+
+The downloaded package contains role charters, standalone prompts, an advisory router and evidence-record checks. It does not install itself into a live repository, connect to Bubbles, read mail, edit DNS or configure an analytics account. No real project path was supplied or modified during this expansion.
+
+Codex reads project instructions through its documented `AGENTS.md` hierarchy. Root instructions can be supplemented by nearer project instructions, subject to the documented discovery and size rules. Use an actual project root, not an unrelated downloads folder. [Official Codex configuration](https://developers.openai.com/codex/guides/agents-md).
+
+## Recommended layout
+
+Place this extracted library inside an approved documentation location such as `docs/seo-aio-library/`, or keep it in a known read-accessible location and use a verified relative/absolute reference. The example is not a claim that this directory exists on your machines.
+
+Merge the [integration snippet](../../Templates/Agent-Integration/AGENTS.snippet.md) into the project's **existing** `AGENTS.md`; preserve higher-priority instructions, tests and project safety rules. Do not overwrite a real project file blindly. Update the snippet's library path to the actual chosen location.
+
+A repository-level instruction may say: read the library's operating model and route each task to a lead before making changes; use current source-linked modules over retained legacy advice; require evidence and explicit approval for risky changes. It should not say that every role has already verified the result.
+
+## Use a role context pack
+
+From the extracted library root:
+
+```
+python3 Tools/discipline_router.py --task-file /path/to/task.txt --intent audit --output /tmp/route.json --prompt-output /tmp/task-context.txt
+```
+
+Replace the example path with a real authorized file. Review the proposed lead and consulted roles, then supply the context pack and task to the assistant operating on the actual project. The helper supports a lead override for incorrect or ambiguous keyword classification. It does not invoke Codex or any model, and it cannot automatically “prompt itself” without an agent reading and following the instructions.
+
+The pack intentionally contains a small set of role prompts. Remaining consulted roles are named for follow-up, not claimed as executed. Let the agent read linked modules on demand rather than embedding the whole legacy corpus.
+
+## Connect actual evidence
+
+Create a private project working directory for task intake, verified site facts, findings, raw artifacts, redacted artifacts and acceptance records. Keep secrets in the project's actual secret-management system, never in prompts or templates. Populate unknown facts from authorized inspection. Record the build/config version and evidence acquisition time.
+
+When a task requires a real mailbox, actual Safari/iPhone, DNS control, production logs or analytics access, the agent must use available authorized tools or mark the check BLOCKED. A simulated environment or unit fixture cannot fill those gaps.
+
+## Validate a record
+
+```
+python3 Tools/evidence_gate.py --contract /path/to/approved-contract.json --record /path/to/acceptance-record.json --evidence-root /path/to/private-evidence
+```
+
+Use real paths and an approved contract. The template record is intentionally incomplete and should fail. Exit 0 means only that structural checks passed. A responsible owner must still verify evidence truth, actual independence and release/publication authority. Read [acceptance rules](03-ACCEPTANCE-AND-INDEPENDENCE.md).
+
+## Maintenance and compatibility
+
+Keep the baseline `99-Originals/` as history. Do not execute old code examples because an AI found them. Preserve the current/legacy labels and the commercial tier definitions. Refresh fast-changing provider and reporting documentation before acting on it. Track local project overrides separately so future library updates cannot silently remove them.
+
+Run the supplied tests and integrity auditor after changing the role registry or tools. A passing library test run proves the local tooling behavior tested, not production readiness of any website.
+
+==============================================================================

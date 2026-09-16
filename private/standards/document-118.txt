@@ -1,0 +1,37 @@
+DOCUMENT 118 OF 135
+Title: SEO / AIO Library — 26-Discipline Edition
+Path: README.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# SEO / AIO Library — 26-Discipline Edition
+
+**Release:** 2026.09.09-d26 · **Prepared for:** Joseph · **Date:** 9 September 2026.
+
+Open **START-HERE.html** for the integrated offline browser. It now includes all 26 professional role charters, their operating model, cross-discipline playbooks, public-content workbench and the prior current/legacy library. Keep the extracted folder intact for links to JSON, prompts, code and historical originals.
+
+## What to use first
+
+Read [the expansion report](Research/DISCIPLINE-EXPANSION-REPORT.md), then [the discipline directory](Library/Disciplines/README.md). `CODEX-START-HERE.txt` provides a copy-and-paste starting instruction. The [integration guide](Library/Disciplines/05-INTEGRATION-GUIDE.md) explains actual project placement; downloading this package does not install it into another repository.
+
+**Private operating layer:** 26 source-linked charters and 26 standalone prompts; advisory task routing; evidence and handoff contracts; scope/ownership/conflict rules; eight critical-path playbooks; and honest acceptance/independence checks.
+
+**Public expertise layer:** 26 distinct problem-led publication briefs and six methodology drafts, with proof requirements, truthful author/entity planning, canonical-home review and measurement boundaries. They are unapproved workbench material, not fabricated case studies or evidence of 26 employees/credentials. Do not publish internal configuration or raw evidence.
+
+## Tools and validation
+
+The two new Python utilities are offline and standard-library-only: `Tools/discipline_router.py` proposes task context; `Tools/evidence_gate.py` validates records and artifact hashes. Neither performs the task, establishes evidence truth, authenticates independent reviewers nor authorizes a release. The template records intentionally fail until completed with actual approved scope and evidence.
+
+Read the [tools guide](Tools/DISCIPLINES-README.md) and [current validation report](Reports/DISCIPLINE-VALIDATION.md). Prior validation reports remain historical records of the baseline edition and are not new production tests.
+
+## Compatibility and boundaries
+
+All 146 unique original files in `99-Originals/` remain byte-for-byte intact. Existing tier numbering, names, pricing and promises were not changed; commercial Tier 13 remains retired. Source-linked new work does not make the retained legacy corpus fully verified.
+
+The source supplement contains 49 primary-source records, some overlapping the baseline's 52 records; do not add them together as unique sources. The 26-role taxonomy and routing/acceptance policies are a custom operating design, not a universal regulated job classification.
+
+No live website, Bubbles configuration, DNS, mailbox, repository, account or public profile was inspected or changed by the local build/validation work. Provider documentation was researched separately. Publishing and genuine project evidence remain subject to actual owner approval and access.
+
+==============================================================================

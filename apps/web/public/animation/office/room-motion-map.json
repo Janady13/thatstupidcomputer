@@ -1,0 +1,554 @@
+[
+  {
+    "id": "outside-cloud-drift",
+    "object": "outside",
+    "type": "cloud",
+    "pivot": null,
+    "phase": "0.2",
+    "restTransform": null
+  },
+  {
+    "id": "outside-trees-motion",
+    "object": "outside",
+    "type": "tree",
+    "pivot": "218,361",
+    "phase": "0.7",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-01-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,-15",
+    "phase": "0.0",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-02-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,3",
+    "phase": "0.07",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-03-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,21",
+    "phase": "0.14",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-04-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,39",
+    "phase": "0.21000000000000002",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-05-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,57",
+    "phase": "0.28",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-06-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,75",
+    "phase": "0.35000000000000003",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-07-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,93",
+    "phase": "0.42000000000000004",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-08-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,111",
+    "phase": "0.49000000000000005",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-09-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,129",
+    "phase": "0.56",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-10-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,147",
+    "phase": "0.6300000000000001",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-slat-11-motion",
+    "object": "blinds",
+    "type": "blind",
+    "pivot": "0,165",
+    "phase": "0.7000000000000001",
+    "restTransform": null
+  },
+  {
+    "id": "blinds-pull-cord-motion",
+    "object": "blinds",
+    "type": "cord",
+    "pivot": "21,26",
+    "phase": "0.3",
+    "restTransform": null
+  },
+  {
+    "id": "board-blueprint-sheet-motion",
+    "object": "board-blueprint",
+    "type": "paper",
+    "pivot": "37,6",
+    "phase": "0.5",
+    "restTransform": null
+  },
+  {
+    "id": "board-reminder-sheet-motion",
+    "object": "board-reminder",
+    "type": "paper",
+    "pivot": "37,1",
+    "phase": "1.5",
+    "restTransform": null
+  },
+  {
+    "id": "board-smile-sheet-motion",
+    "object": "board-smile",
+    "type": "paper",
+    "pivot": "32,0",
+    "phase": "2",
+    "restTransform": null
+  },
+  {
+    "id": "board-photo-sheet-motion",
+    "object": "board-photo",
+    "type": "paper",
+    "pivot": "38,-4",
+    "phase": "3",
+    "restTransform": null
+  },
+  {
+    "id": "board-small-note-sheet-motion",
+    "object": "board-small-note",
+    "type": "paper",
+    "pivot": "28,1",
+    "phase": "3.8",
+    "restTransform": null
+  },
+  {
+    "id": "clock-hour-hand-motion",
+    "object": "clock",
+    "type": "clock-hour",
+    "pivot": "0,0",
+    "phase": null,
+    "restTransform": "rotate(304)"
+  },
+  {
+    "id": "clock-minute-hand-motion",
+    "object": "clock",
+    "type": "clock-minute",
+    "pivot": "0,0",
+    "phase": null,
+    "restTransform": "rotate(62)"
+  },
+  {
+    "id": "clock-second-hand-motion",
+    "object": "clock",
+    "type": "clock-second",
+    "pivot": "0,0",
+    "phase": null,
+    "restTransform": "rotate(180)"
+  },
+  {
+    "id": "shelf-plant-top-left-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-16,-95",
+    "phase": "0.4",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-upper-left-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-16,-96",
+    "phase": "0.9",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-top-right-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "10,-92",
+    "phase": "1.1",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-upper-right-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "7,-93",
+    "phase": "1.6",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-top-middle-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-1,-77",
+    "phase": "2",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-left-spread-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-35,-64",
+    "phase": "2.3",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-right-spread-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "6,-67",
+    "phase": "2.7",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-one-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-86,-22",
+    "phase": "3",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-two-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-81,2",
+    "phase": "3.3",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-three-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-69,58",
+    "phase": "3.6",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-four-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-61,76",
+    "phase": "4",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-five-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-52,127",
+    "phase": "4.3",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-six-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-47,153",
+    "phase": "4.7",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-seven-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-38,206",
+    "phase": "5.1",
+    "restTransform": null
+  },
+  {
+    "id": "shelf-plant-trail-eight-motion",
+    "object": "shelf-plant",
+    "type": "leaf",
+    "pivot": "-35,228",
+    "phase": "5.5",
+    "restTransform": null
+  },
+  {
+    "id": "filing-cabinet-drawer-1-motion",
+    "object": "filing-cabinet",
+    "type": "cabinet-drawer",
+    "pivot": null,
+    "phase": "0",
+    "restTransform": null
+  },
+  {
+    "id": "filing-cabinet-drawer-2-motion",
+    "object": "filing-cabinet",
+    "type": "cabinet-drawer",
+    "pivot": null,
+    "phase": "1",
+    "restTransform": null
+  },
+  {
+    "id": "filing-cabinet-drawer-3-motion",
+    "object": "filing-cabinet",
+    "type": "cabinet-drawer",
+    "pivot": null,
+    "phase": "2",
+    "restTransform": null
+  },
+  {
+    "id": "drawer-top-slide-motion",
+    "object": "drawer-top",
+    "type": "drawer-top",
+    "pivot": "0,0",
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "drawer-bottom-slide-motion",
+    "object": "drawer-bottom",
+    "type": "drawer-bottom",
+    "pivot": "0,0",
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "desk-lamp-lower-arm-motion",
+    "object": "desk-lamp",
+    "type": "lamp-lower-arm",
+    "pivot": "8,-29",
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "desk-lamp-upper-arm-motion",
+    "object": "desk-lamp",
+    "type": "lamp-upper-arm",
+    "pivot": "-54,-173",
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "desk-lamp-head-motion",
+    "object": "desk-lamp",
+    "type": "lamp-head",
+    "pivot": "61,-282",
+    "phase": "0.2",
+    "restTransform": null
+  },
+  {
+    "id": "desk-lamp-light-pool",
+    "object": "desk-lamp",
+    "type": "lamp-light",
+    "pivot": null,
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-left-low-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-18,-75",
+    "phase": "0.1",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-left-mid-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-19,-84",
+    "phase": "0.6",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-left-high-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-17,-102",
+    "phase": "1.2",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-top-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-8,-102",
+    "phase": "1.7",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-right-high-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "6,-100",
+    "phase": "2.3",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-right-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "7,-77",
+    "phase": "2.8",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-center-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-3,-79",
+    "phase": "3.4",
+    "restTransform": null
+  },
+  {
+    "id": "desk-plant-leaf-low-motion",
+    "object": "desk-plant",
+    "type": "leaf",
+    "pivot": "-3,-59",
+    "phase": "3.8",
+    "restTransform": null
+  },
+  {
+    "id": "coffee-mug-steam-1-motion",
+    "object": "coffee-mug",
+    "type": "steam",
+    "pivot": null,
+    "phase": "0",
+    "restTransform": null
+  },
+  {
+    "id": "coffee-mug-steam-2-motion",
+    "object": "coffee-mug",
+    "type": "steam",
+    "pivot": null,
+    "phase": "0.34",
+    "restTransform": null
+  },
+  {
+    "id": "coffee-mug-steam-3-motion",
+    "object": "coffee-mug",
+    "type": "steam",
+    "pivot": null,
+    "phase": "0.69",
+    "restTransform": null
+  },
+  {
+    "id": "desk-paper-paper-motion",
+    "object": "desk-paper",
+    "type": "desk-paper",
+    "pivot": "10,0",
+    "phase": "1.4",
+    "restTransform": null
+  },
+  {
+    "id": "test-meter-needle-motion",
+    "object": "test-meter",
+    "type": "meter-needle",
+    "pivot": "34,32",
+    "phase": "0.9",
+    "restTransform": null
+  },
+  {
+    "id": "test-meter-status-led-motion",
+    "object": "test-meter",
+    "type": "led",
+    "pivot": null,
+    "phase": null,
+    "restTransform": null
+  },
+  {
+    "id": "cable-reel-coil-motion",
+    "object": "cable-reel",
+    "type": "cable-coil",
+    "pivot": "0,0",
+    "phase": "1",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-1-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.0",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-2-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.137",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-3-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.274",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-4-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.41100000000000003",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-5-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.548",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-6-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.685",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-7-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.8220000000000001",
+    "restTransform": null
+  },
+  {
+    "id": "air-dust-mote-8-motion",
+    "object": "air-dust",
+    "type": "dust",
+    "pivot": null,
+    "phase": "0.9590000000000001",
+    "restTransform": null
+  }
+]

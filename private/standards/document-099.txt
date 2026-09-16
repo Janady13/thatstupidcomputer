@@ -1,0 +1,69 @@
+DOCUMENT 099 OF 135
+Title: R16 public-content brief — How do you reconcile search visibility, AI referrals and qualified website inquiries?
+Path: Publishing/Briefs/R16-analytics-measurement.md
+Group: briefs
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# R16 public-content brief — How do you reconcile search visibility, AI referrals and qualified website inquiries?
+
+**State:** NOT_APPROVED_FOR_PUBLICATION. **Type:** evidence-led article/service-support brief. **Primary specialist:** R16. **Proposed author:** Joseph, subject to his review and approval; do not insert unverified credentials. This is not completed client work.
+
+## Reader and purpose
+
+A business owner or practitioner facing this specific problem needs a diagnosis and a way to evaluate professional help. The article should answer: **How do you reconcile search visibility, AI referrals and qualified website inquiries?**
+
+**Distinct contribution:** A metric dictionary and synthetic-journey reconciliation that never merges incompatible denominators into a vanity score.
+
+## Candidate search questions — hypotheses, not measured demand
+
+- GA4 AI Assistant attribution
+- GSC Bing citations versus website leads
+- website inquiry event tracking audit
+
+No keyword volumes, ranking difficulty, expected traffic, citation probability or sales forecast have been measured for these suggestions. R23 validates commercial relevance from real inquiries or authorized search data; R10 checks answer relevance. Merge with an existing page when its task is already answered well.
+
+## Proposed outline
+
+1. Define sources and scopes
+2. Validate an event against reality
+3. Separate channels and outcomes
+4. Disclose attribution limits
+
+Open with a direct bounded answer. Explain the observable distinction that matters, demonstrate the method with an authorized artifact or an explicitly hypothetical example, and close with practical limitations. Do not clone this outline across 26 pages by changing only role names.
+
+## Evidence needed before making an expertise or results claim
+
+- Metric/event contracts
+- Synthetic journey collection and business-state reconciliation
+- Data-quality, consent and attribution limitations report
+
+These artifacts are requirements, not supplied project results. A methods article can explain documented principles without claiming that a customer implementation exists. A case study additionally needs a real scoped engagement, permission, original before/after artifacts, known confounders, dates and approved result wording. An unmeasured benefit must remain a hypothesis.
+
+## Proposed public route and internal relationships
+
+Suggested route, pending canonical-host approval: `/expertise/analytics-measurement/`. This is a planning path, not a deployed URL. Choose one canonical home before publication; do not duplicate the same article on both ThatDevPro and ThatDeveloperGuy.
+
+Link contextually from the relevant real service page and the discipline hub. Link to the next diagnostic step, an original proof artifact that is safe to publish, and a working contact path. The page must be useful without those links; link counts are not acceptance criteria.
+
+## Conversion and measurement contract
+
+Suggested action: request a scoped review of this problem, **only if that service is actually available**. Do not advertise 26 staffed departments. A practical single-author description is “A multidisciplinary review process with defined specialist responsibilities,” subject to the owner's approval.
+
+Measure the canonical page's observed search/citation exposure separately from referral sessions and qualified inquiries. Record page/source/window and event definitions with R16. The mere addition of this brief to a private library cannot create search exposure.
+
+## Publication gate
+
+R13 checks usefulness and distinction; R14 checks factual claims, author identity and any credentials; R20 approves sanitization and privacy; R11 checks truthful entity markup; R08 checks the chosen public URL; R25 coordinates publication and R26 performs the agreed independent checks where required. Missing evidence remains BLOCKED. A drafted byline is not author approval.
+
+No rankings, model recommendations or “recognized expert” status are promised. The intended path is demonstrated useful work, accurate attribution, accessible publication, independent corroboration and measured outcomes.
+
+## Research references
+
+- [D28 — Set up events](https://developers.google.com/analytics/devguides/collection/ga4/events): Event implementation and verification; emitting an event does not prove a qualified lead.
+- [D29 — Default channel group](https://support.google.com/analytics/answer/9756891?hl=en): AI Assistant channel; Google AI Overviews and AI Mode classified in Organic Search in current documentation.
+- [D30 — Set up consent mode](https://developers.google.com/tag-platform/security/guides/consent): Technical consent signaling; configuration alone does not establish legal permission.
+- [D31 — New AI visibility insights in Bing Webmaster Tools](https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare): June 2026 reporting expansion; citation measurements are not website conversions or revenue.
+
+==============================================================================

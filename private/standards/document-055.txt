@@ -1,0 +1,47 @@
+DOCUMENT 055 OF 135
+Title: GA4 implementation — current AI channels, scopes and outcome quality
+Path: Library/Framework/framework-ga4.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# GA4 implementation — current AI channels, scopes and outcome quality
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S36 S37 S09 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-ga4.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Start from business measurement
+
+Define the customer action and the independently verifiable business result. A page view, button interaction, form submission, accepted lead and completed sale are different stages. Record which system owns each event and how duplicates, tests, spam and refunds are handled.
+
+## Current channel and scope rules
+
+The live GA4 documentation includes an AI Assistant default channel and keeps Google AI Overviews/AI Mode in Organic Search. First-user, session and event-scoped channel dimensions have different meanings. A custom AI channel is therefore an optional analytical choice, not a universal prerequisite for isolating all assistant traffic. [S36]
+
+Use the current field definitions for the specific report or export. Do not recycle Universal Analytics session assumptions into GA4, and do not assert that a session restarts at midnight or every campaign change without the applicable GA4 source. The old document's session paragraph is superseded by this requirement to verify the actual contract.
+
+## Collection and privacy
+
+Specify the required events and the minimum permitted parameters. Keep personally identifying form values, email addresses and phone numbers out of analytics URLs, titles and event/campaign fields. Do not copy legacy analytics.js code from a general privacy article into a GA4 implementation. [S37]
+
+Test both accepted and denied consent paths according to the project's approved implementation. Server-side collection does not remove the need to respect the applicable consent and privacy requirements. Do not disguise missing consented measurement as an observed visit or conversion.
+
+## AI referral path
+
+OpenAI documents a ChatGPT referral UTM convention. [S09] Test parameter preservation and collection through the real landing flow. Use current channel definitions and record changes over time. A missing referrer or later direct return cannot automatically be assigned to a particular AI platform.
+
+## QA and reconciliation
+
+Use clearly labeled test submissions and confirm that the business system receives the intended result. Compare browser collection, server processing and CRM outcomes without double counting. Confirm that a failed form does not emit the same success event as an accepted inquiry.
+
+For ecommerce, reconcile accepted purchases and refunds against the transactional source. For lead generation, define qualification and the time required for review. Report the unresolved lead cohort rather than assuming all submissions qualify immediately.
+
+## Analysis and handoff
+
+Report acquisition and attribution with explicit scope and model settings. A platform-attributed result is not causal proof of incremental value. Keep measured visits, self-reported discovery and inferred exposure separately labeled.
+
+Use [AI referral attribution](framework-ai-referral-attribution-2026.md), `Templates/metric-contracts.json` and the project intake template. This release does not install tags, inspect a GA4 account or claim measured performance for any client. It supplies the current analytical rules and acceptance workflow.
+
+==============================================================================

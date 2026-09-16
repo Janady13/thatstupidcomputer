@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-13T10:34:45.965Z",
+  "environment": {
+    "scope": "local build container, not BUBBLES",
+    "node": "v24.19.0",
+    "platform": "linux",
+    "architecture": "x64",
+    "systemd": "systemd 255 (255.4-1ubuntu8.17)"
+  },
+  "checks": [
+    {
+      "name": "release helper syntax",
+      "command": "node --check deploy/release.mjs",
+      "status": "PASS"
+    },
+    {
+      "name": "temporary filesystem activation and rollback boundaries",
+      "command": "node --test deploy/release.test.mjs",
+      "status": "PASS",
+      "passed": 6,
+      "failed": 0,
+      "scope": "Atomic symlink selection, artifact preservation, ordinary path protection, traversal/alias refusal and preview refusal; no systemctl or network"
+    },
+    {
+      "name": "rendered service template syntax",
+      "command": "systemd-analyze verify TEMP_RENDERED_UNIT",
+      "status": "PASS",
+      "scope": "Node executable token replaced in a temporary local copy; no service installed or started"
+    },
+    {
+      "name": "nginx actual configuration",
+      "status": "BLOCKED",
+      "reason": "nginx is unavailable in this local environment; merged host config must pass nginx -t on BUBBLES"
+    },
+    {
+      "name": "live BUBBLES activation and public acceptance",
+      "status": "BLOCKED",
+      "reason": "No remote host execution or live SMTP/mailbox/account observation performed"
+    }
+  ]
+}

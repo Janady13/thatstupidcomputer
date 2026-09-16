@@ -1,0 +1,65 @@
+{
+  "schema": "tsc-local-verification/v1",
+  "startedAt": "2026-09-13T21:39:51.383Z",
+  "finishedAt": "2026-09-13T21:40:06.862Z",
+  "node": "v24.21.0",
+  "lockSha256": "818f0012c01844dc38517611b18166b0229098dd4e348db206739b8c8a8c6c69",
+  "result": "PASS",
+  "results": [
+    {
+      "id": "typecheck",
+      "command": "npm run typecheck",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1917,
+      "log": ".build/verification/typecheck.log",
+      "logSha256": "7e44ccdaaaa1759438af9f6a83a6cb31003ad890fc40cf505f3b8358d6e79df5"
+    },
+    {
+      "id": "application-tests",
+      "command": "npm test",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 7187,
+      "log": ".build/verification/application-tests.log",
+      "logSha256": "05f0f6e4b7a15704d1e0040fd6509587bda3e21810772f79cb7a53f07f945a2b"
+    },
+    {
+      "id": "build",
+      "command": "npm run build",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2117,
+      "log": ".build/verification/build.log",
+      "logSha256": "3126df3f78abf7a75d2c54bcf59d1ee865d2415c5acb761e20ce6f8927773ab7"
+    },
+    {
+      "id": "assets",
+      "command": "npm run test:assets",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2355,
+      "log": ".build/verification/assets.log",
+      "logSha256": "14352db03fa1f86e368fb89e3028fe5bf1e6c8c4775e9b252e778bdea9506c70"
+    },
+    {
+      "id": "standards",
+      "command": "npm run test:standards",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 466,
+      "log": ".build/verification/standards.log",
+      "logSha256": "a91478fad2efe8235f049bd87be273271691adf9cf3ecc5c495f674be0157c57"
+    },
+    {
+      "id": "built-http-integration",
+      "command": "npm run test:build",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1433,
+      "log": ".build/verification/built-http-integration.log",
+      "logSha256": "26c728cdc0e9dfa67af9138cdeaa56306695c1970e9cddfe4426a8645ea68f08"
+    }
+  ],
+  "scope": "Local source/build/HTTP injection only. No browser, live SMTP, external account, device or production deployment result is inferred."
+}

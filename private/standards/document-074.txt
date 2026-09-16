@@ -1,0 +1,42 @@
+DOCUMENT 074 OF 135
+Title: URL lifecycle, canonical decisions and safe retirement
+Path: Library/Framework/framework-url-lifecycle.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# URL lifecycle, canonical decisions and safe retirement
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Existing URLs, duplicate pages, filters and discontinued content  
+**Evidence:** S15, S16, S38, S39 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Classify before changing
+
+Maintain one record per URL with current status, desired state, content owner, business purpose, incoming/internal links, observed traffic, canonical relationship and planned action. Low traffic is one observation, not a deletion instruction. An orphan page can have value even when internal discovery is broken.
+
+Use a decision table: **keep and improve**, **link better**, **merge into a genuinely equivalent destination**, **retain but exclude from indexing**, **temporarily redirect**, or **permanently retire**. Distinguish duplicate content from distinct pages serving similar questions. A common keyword does not establish equivalence.
+
+Canonicalization is a preference signal rather than an absolute directive, and a blocked page may prevent indexing directives from being read. Apply each control to its actual purpose. [S15, S16]
+
+## Redirect contract
+
+Choose the destination because it satisfies the original intent, not because it is the homepage. Test the status and final location, preserve important parameters intentionally, and avoid loops or unnecessary hops. Use temporary versus permanent semantics according to the move. Do not claim that every 302 automatically leaks ranking credit.
+
+Do not change established WordPress permalinks or globally lowercase URLs just to satisfy a style rule. Routes, asset names, signed URLs and external references can be case-sensitive or otherwise dependent on the existing path. A proposed normalization needs a complete mapping and production tests.
+
+## Retention and exclusion
+
+An internal utility page may remain useful while not belonging in search. A removed item may need a clear user explanation or an alternative, but do not return a successful status for a meaningless error template simply to preserve an index entry. Choose behavior by actual content and request intent.
+
+Separate crawl-load control from search-result removal. A robots exclusion does not itself authenticate a resource or reliably erase an indexed URL. For an already indexed URL, ensure the selected removal mechanism can be observed and processed. Do not combine contradictory controls without a documented reason.
+
+## Approval and rollback
+
+Require a batch-level owner and a reviewed sample of the mapping before bulk action. Snapshot the old routes and configuration. Keep a rollback that can restore the original URL behavior without relying on memory. Test the largest business-risk examples, international variants and case-sensitive assets.
+
+The handoff includes the action rationale, implementation diff, test evidence, expected monitoring signals and exception list. No ranking or indexing recovery time is guaranteed. Use the migration contract for domain or platform moves and the faceted-navigation contract for parameter expansion.
+
+==============================================================================

@@ -1,0 +1,49 @@
+DOCUMENT 051 OF 135
+Title: Engine-specific discovery, training and user-access controls
+Path: Library/Framework/framework-engine-control-matrix.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Engine-specific discovery, training and user-access controls
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Public website crawler policy; not authentication or access to private records  
+**Evidence:** S03, S08, S10, S11, S12, S17 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Do not treat all AI traffic as one bot
+
+| Consumer/token | Documented role | Policy decision |
+| --- | --- | --- |
+| Googlebot | Google Search crawling | Decide public Search crawl access; evaluate index/snippet rules separately. |
+| Google-Extended | Gemini training and specified grounding uses; no separate HTTP user agent | Independent product-use choice; not a Google Search inclusion switch. |
+| OAI-SearchBot | OpenAI search | Search discovery choice, separate from training. |
+| GPTBot | OpenAI training | Training preference. |
+| ChatGPT-User | User-triggered retrieval | Robots rules may not apply; access protection must not depend on robots. |
+| Claude-SearchBot | Anthropic search | Search discovery choice. |
+| ClaudeBot | Anthropic training | Training preference. |
+| Claude-User | User-directed retrieval | Follow Anthropic's stated robots behavior; confirm real requests in logs. |
+| PerplexityBot | Perplexity search | Search discovery, not foundation-model training. |
+| Perplexity-User | User-directed retrieval | Generally ignores robots according to the provider. |
+
+Roles above are from S03, S08, S10, S11 and S12. OAI-AdsBot is an ad-landing-page workflow, not a prerequisite for organic search visibility. Do not open it without a relevant advertising use case. [S08]
+
+## Build a policy from business choices
+
+Ask the owner separately about public discovery, training use, user-requested retrieval, paid-ad validation and private areas. Store the approved choices and the reason for each. A common example is allowing search discovery while opting out of training, but it is not a mandatory default and can restrict other grounding uses for some products.
+
+Generate explicit groups from the approved policy. The supplied generator repeats protected-path crawl exclusions in specific groups rather than assuming every bot inherits the wildcard group. Never use robots to secure customer data, staging credentials, exports, unpublished drafts or administrative tools; enforce authentication and authorization at the application or edge.
+
+Apply the file independently to the relevant hosts. Preview hosts, bare domains, www hosts and asset hosts can have different owners and access needs. Test the exact deployed origin and redirect behavior. Avoid accidentally publishing a staging-wide `Disallow: /` to the production hostname.
+
+## Verification and safe rollout
+
+Simulating a user agent checks a response variant, not the identity of a real crawler. Validate incoming identities using the provider's documented method and current published data. Cache verification metadata with a refresh timestamp and a last-known-good fallback. A failed refresh should not create a global allow rule.
+
+Release a narrowly scoped policy change, monitor verified request success and record unexpected denials. Do not bypass authentication, malware defenses, rate limits or all WAF rules simply because a string resembles a crawler name. Crawler access, indexing, citation selection and customer conversion are different outcomes.
+
+Acceptance evidence includes the approved policy JSON, generated robots file, host inventory, public/private route tests, edge rule diff and rollback instructions. This package provides examples, not an unapproved production policy.
+
+==============================================================================

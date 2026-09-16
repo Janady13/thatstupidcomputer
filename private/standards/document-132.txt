@@ -1,0 +1,19 @@
+DOCUMENT 132 OF 135
+Title: Discipline templates
+Path: Templates/Disciplines/README.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: scope_stated_in_document
+==============================================================================
+
+# Discipline templates
+
+All templates start unverified, unassessed or BLOCKED. Null means unknown, not zero. Replace planning placeholders only with verified project facts and actual authorization; never fill them with plausible inventions.
+
+The site-facts, task-intake, finding, handoff, architecture-decision, audit-coverage, publication-record, claim-ledger and independence-declaration files organize work. The release/publication contract and acceptance pairs are inputs to the strict offline evidence gate. A copied template is not a completed audit.
+
+Evidence records use relative artifact paths inside a private evidence root, SHA-256, timestamps, build IDs and execution-run IDs. Preserve raw evidence privately and hash separately redacted public copies. Never include credentials or customer message contents in the library.
+
+Read the [tools guide](../../Tools/DISCIPLINES-README.md) and [acceptance boundaries](../../Library/Disciplines/03-ACCEPTANCE-AND-INDEPENDENCE.md) before relying on a gate result. The separate role prompts under `Prompts/` are assignment instructions, not executed reviews.
+
+==============================================================================

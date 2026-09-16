@@ -1,0 +1,57 @@
+DOCUMENT 111 OF 135
+Title: A public website needs a public test
+Path: Publishing/Drafts/02-PUBLIC-REACHABILITY.md
+Group: drafts
+Label: PUBLIC WORKBENCH · not approved
+Review status: scope_stated_in_document
+==============================================================================
+
+# A public website needs a public test
+
+*Why private-network success, a running process and a valid-looking DNS record are not sufficient evidence of customer reachability.*
+
+> Editorial workbench: this is an unpublished methodology draft. No client results, credentials, real site test outcomes or owner approval are asserted. Remove this editorial note only after the actual publication review; do not publish the private library.
+
+A website that works from one computer has passed one connectivity test. Whether that test represents customers depends on where it was run and which path it used.
+
+This matters when a development or hosting environment uses a private network such as Tailscale. A tailnet connects authorized devices within its configured network. Successful access there does not, by itself, establish that an unaffiliated visitor or search crawler can reach the intended public hostname. [Tailscale tailnet concepts](https://tailscale.com/docs/concepts/tailnet).
+
+## Name the intended audience and path
+
+Before changing DNS or a firewall, distinguish the public website from private administration, monitoring and development services. A service that is intentionally private should not be exposed merely to make an external test green.
+
+For the public journey, record the hostname, the expected application and a genuinely external vantage point. Keep the private result as useful comparison evidence rather than relabeling it as an external test.
+
+## Examine DNS authority, not just one cached answer
+
+DNS has authoritative and recursive roles. A resolver may return cached information, while the authoritative nameservers describe the zone’s configured data. Comparing the two helps distinguish a configuration issue from a particular resolver’s cached view. Record timestamps and relevant TTL context; do not promise that a DNS change reaches every client at an exact universal time. [DNS concepts](https://www.rfc-editor.org/rfc/rfc1034.html).
+
+The question is not simply whether the domain has a record. It is whether the intended public name resolves to the authorized serving path and whether that path works.
+
+## Separate address families and hostname behavior
+
+When a hostname publishes both IPv4 and IPv6 addresses, test the advertised paths independently. A working IPv4 result should not conceal a broken IPv6 path. Similarly, a connection to an address is not enough when the application relies on the requested hostname and TLS configuration.
+
+An evidence matrix can identify each hostname, address family, test vantage, timestamp, expected result and observed result. Unavailable tests should remain clearly untested. The appropriate repair depends on the actual cause and intended configuration, not a generic instruction to remove records.
+
+## Follow the request to the application
+
+Once transport reaches the server, inspect the serving chain. Nginx may be receiving requests while the upstream application is unavailable. A service-manager process can be alive while a specific route is failing. Nginx’s documentation describes the proxy and process concepts, but the actual configuration paths and upstreams must be discovered in the authorized environment. [NGINX guide](https://nginx.org/en/docs/beginners_guide.html).
+
+Correlated timestamps and request references help the network and reliability specialists compare their observations. Bounded redacted logs are preferable to indiscriminate dumps of visitor data or credentials.
+
+## Change the smallest supported part
+
+A justified repair might involve a DNS answer, an ingress rule, a certificate configuration, a proxy target or an application dependency. Those changes have different owners and risks. Mail records, private services and canonical hostname decisions may be affected by a seemingly simple zone edit.
+
+Preserve the prior configuration, agree the exact change and rollback, and test the customer journey again from outside the private network. Recovery should be demonstrated through the same path that originally failed.
+
+A useful final report is specific: which public hostname worked, from which vantage, over which advertised paths, on which build and at what time. “It works on my machine” can remain one observation; it should not become the whole acceptance test.
+
+---
+
+## Editorial handoff — not public article copy
+
+R13: confirm distinct usefulness and the actual audience. R14: verify current sources and every added result/credential claim. R20: approve any screenshots or proof artifacts for publication. Joseph: substantively review the final article and approve the exact author/byline. R08/R11: approve the actual canonical URL and truthful entity representation. R16: define measurement without implying guaranteed citations or inquiries. The suggested service action is appropriate only if the service is actually offered and its contact path works.
+
+==============================================================================

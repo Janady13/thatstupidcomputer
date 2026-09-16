@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -10.00 1228.00 375.00" width="1228" height="375">
+  <title>Workbench / complete tabletop and legs</title>
+  <g id="workbench" data-art="workbench">
+    <path id="workbench-rear-contact" d="M24 62 L1139 44 L1109 104 L41 119 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.08"/>
+    <path id="workbench-left-back-leg" d="M112 83 L139 83 L158 250 L139 259 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-back-stretcher" d="M136 211 L849 211 V229 L137 229 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-right-back-leg" d="M842 69 L866 69 L866 263 L844 264 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-left-front-leg" d="M32 80 L60 81 L53 304 L34 305 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-left-leg-shade" d="M49 82 L61 81 L53 304 L46 299 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.15"/>
+    <path id="workbench-right-front-leg" d="M1105 76 L1149 73 L1130 353 L1113 355 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-right-leg-shade" d="M1137 83 L1148 80 L1130 353 L1123 351 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.16"/>
+    <path id="workbench-apron" d="M29 88 L1145 84 L1143 115 L28 119 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-apron-bottom" d="M32 112 L1143 110 L1143 115 L28 119 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+    <path id="workbench-tabletop" d="M0 63 L115 -2 L1212 8 L1153 80 L0 88 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-rear-bevel" d="M115 -2 L1212 8 L1206 13 L118 4 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+    <path id="workbench-front-edge" d="M0 77 L1156 80 L1154 99 L0 91 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-right-edge" d="M1156 80 L1212 8 L1211 24 L1154 99 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-front-edge-shade" d="M0 86 L1155 93 L1154 99 L0 91 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.13"/>
+    <path id="workbench-edge-wood-lines" d="M7 83 L291 86 M301 86 L732 89 M762 89 L1147 93 M103 88 L782 92" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.56"/>
+    <path id="workbench-desk-grain-long" d="M116 24 C249 15 301 26 437 21 M479 23 Q656 20 779 25 M827 24 L1094 25 M98 42 Q141 38 185 41 M513 60 L899 60 M30 66 L171 66 M994 62 Q1051 55 1128 60 M1061 49 L1146 50" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+    <path id="workbench-desk-knots" d="M270 45 q14 -7 31 0 q-14 7 -31 0 M275 45 q10 -3 18 0 M757 41 q11 -5 24 1 q-9 5 -24 -1" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    <circle id="workbench-top-fixing-1-head" cx="61" cy="60" r="2" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="workbench-top-fixing-1-slot" d="M59.8 60.7 L62.2 59.3" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="workbench-top-fixing-2-head" cx="1158" cy="38" r="2" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="workbench-top-fixing-2-slot" d="M1156.8 38.7 L1159.2 37.3" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="workbench-top-fixing-3-head" cx="1099" cy="70" r="2" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="workbench-top-fixing-3-slot" d="M1097.8 70.7 L1100.2 69.3" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="workbench-top-fixing-4-head" cx="111" cy="13" r="2" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="workbench-top-fixing-4-slot" d="M109.8 13.7 L112.2 12.3" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="workbench-foot-contact" d="M24 307 L74 305 M1108 357 L1141 353" fill="none" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+  </g>
+</svg>

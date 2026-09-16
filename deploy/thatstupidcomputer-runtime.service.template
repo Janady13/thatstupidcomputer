@@ -1,0 +1,49 @@
+# Proposed NEW unit. Verify account, runtime and host support before installation.
+# Replace __VERIFIED_NODE24_EXECUTABLE__ with the actual absolute Node 24.19+ executable.
+[Unit]
+Description=That Stupid Computer direct-email website
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=user
+Group=user
+WorkingDirectory=/home/user/sites/thatstupidcomputer-runtime/current
+ExecStart=__VERIFIED_NODE24_EXECUTABLE__ --env-file=/home/user/sites/thatstupidcomputer-runtime/current/runtime.env apps/api/dist/server.mjs
+Environment=NODE_ENV=production
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=30
+TimeoutStopSec=35
+KillSignal=SIGTERM
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=thatstupidcomputer-runtime
+LimitCORE=0
+NoNewPrivileges=true
+PrivateTmp=true
+ReadOnlyPaths=/tmp /var/tmp
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+LockPersonality=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+# Node/V8 and Rive WASM need JIT mappings. Do not set MemoryDenyWriteExecute=true.
+# No write paths are granted: inquiry contents must never be written to disk.
+# Do not add environment values or request bodies to diagnostic output.
+
+[Install]
+WantedBy=multi-user.target

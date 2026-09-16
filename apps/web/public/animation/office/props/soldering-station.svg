@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-98.30 -113.00 169.30 272.00" width="170" height="272">
+  <title>Soldering station / lead and iron</title>
+  <g id="soldering-station" data-art="soldering-station">
+    <path id="soldering-station-lead" d="M-31 2 C-82 -2 -76 39 -84 61 C-90 97 -99 134 -71 151" fill="none" stroke="#29261F" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-base" d="M-38 -10 L33 -14 L58 -2 L58 10 L-44 11 L-45 1 Z" fill="#29261F" stroke="#29261F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-top" d="M-38 -10 L33 -14 L57 -2 L-45 2 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-cleaning-pad" d="M3 -8 L32 -10 L43 -4 L12 0 Z" fill="#C97038" stroke="#29261F" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-iron-handle" d="M-10 -34 L28 -70 L37 -64 L2 -25 Z" fill="#C97038" stroke="#29261F" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-iron-shaft" d="M29 -70 L55 -94 L59 -90 L37 -64 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-iron-tip" d="M55 -94 L63 -105 L59 -90 Z" fill="#29261F" stroke="#29261F" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="soldering-station-coil-support" d="M-25 -1 L-27 -22 L-9 -48" fill="none" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse id="soldering-station-coil-loop-1" cx="-18.0" cy="-19.0" rx="7" ry="4.2" fill="none" stroke="#29261F" stroke-width="1.3" transform="rotate(40 -18.0 -19.0)"/>
+    <ellipse id="soldering-station-coil-loop-2" cx="-13.7" cy="-24.2" rx="7" ry="4.2" fill="none" stroke="#29261F" stroke-width="1.3" transform="rotate(40 -13.7 -24.2)"/>
+    <ellipse id="soldering-station-coil-loop-3" cx="-9.4" cy="-29.4" rx="7" ry="4.2" fill="none" stroke="#29261F" stroke-width="1.3" transform="rotate(40 -9.4 -29.4)"/>
+    <ellipse id="soldering-station-coil-loop-4" cx="-5.100000000000001" cy="-34.6" rx="7" ry="4.2" fill="none" stroke="#29261F" stroke-width="1.3" transform="rotate(40 -5.100000000000001 -34.6)"/>
+    <ellipse id="soldering-station-coil-loop-5" cx="-0.8000000000000007" cy="-39.8" rx="7" ry="4.2" fill="none" stroke="#29261F" stroke-width="1.3" transform="rotate(40 -0.8000000000000007 -39.8)"/>
+    <path id="soldering-station-coil-foot" d="M-35 0 L-20 -4 L-10 0" fill="none" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+DOCUMENT 046 OF 135
+Title: Client scope, tier applicability and acceptance
+Path: Library/Framework/framework-client-scope-acceptance.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Client scope, tier applicability and acceptance
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Proposals, production tiers and delivery evidence  
+**Evidence:** S02, S20, S30 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Preserve the tier system without making every item mandatory
+
+The existing tier names and numbering are retained, including Tier 13's retired status. A tier is a commercial grouping, not proof that every client requires every item. Words such as “domination” in legacy branding are not a guarantee of ranking, citations or market share.
+
+For each client, create an applicability matrix with page types, business goals, platforms, geography, budget constraints and access. Mark each task required, recommended, optional, not applicable or blocked by missing information. Explain the reason rather than hiding exclusions.
+
+## Sell controllable deliverables
+
+A defensible deliverable is a configuration, implementation, validated template, research record, report or tested workflow. Search appearance, citation selection and revenue are outcomes influenced by many factors. Google does not require a special AI file, structured data does not guarantee a rich result, and an accepted IndexNow submission does not establish indexing. [S02, S20, S30]
+
+Define acceptance using observable evidence: approved URL map, deployed metadata contract, working form, report configuration, source-backed content or documented test results. Avoid “citation growth required for completion” when the task is merely to make access and measurement work.
+
+## Scope worksheet
+
+For each task record an ID, owner, input dependency, implementation location, included effort, excluded work, acceptance evidence, risk and rollback. Keep a separate business-outcome field for later evaluation. Do not invent hours, rates or savings without project-specific information.
+
+Separate one-time implementation from maintenance. Bot policy can be configured once, but provider changes require future review. A schema generator may be delivered, but catalog data remains the business's responsibility. Analytics collection may be implemented, but consent decisions and CRM qualification rules need client approval.
+
+## Change control
+
+If a requested feature is deprecated or unavailable to the client's market, explain the change and substitute a useful eligible task only with transparent scope handling. Do not retain obsolete checklist items to inflate the apparent volume of work.
+
+When legacy instructions conflict with the current release's evidence modules, use the current specific rule and record the exception. A copied checklist is not authorization to delete URLs, open training access or expose a private API.
+
+## Handoff
+
+Deliver the implementation evidence, account ownership details, known limitations and maintenance responsibilities. Record which outcomes were actually measured and which remain hypotheses. The updated library is a production reference; it does not alter existing client contracts, prices or live systems automatically.
+
+==============================================================================

@@ -1,0 +1,44 @@
+DOCUMENT 049 OF 135
+Title: Crawl payload budgets and content delivery
+Path: Library/Framework/framework-crawl-payload-budgets.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Crawl payload budgets and content delivery
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Large HTML responses, hydration data and media-heavy sites  
+**Evidence:** S46, S14, S28 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Budget the resource actually fetched
+
+Google's March 2026 clarification describes a 2 MB Googlebot fetch limit for supported files other than PDF, with response headers included; resources such as scripts and styles are fetched separately. Do not transfer the number to every crawler or confuse it with a universal page-weight performance target. [S46]
+
+## Measure before trimming
+
+Capture representative complete responses and the deployed headers. Record uncompressed body size separately from compressed transfer size, and identify what the relevant crawler documentation measures. Keep media and dependent resource budgets distinct from the main HTML response.
+
+Inspect repeated navigation markup, duplicated JSON-LD, oversized inline state, embedded base64 images, serialized records not used by the page and hidden duplicate copy. Remove waste without deleting necessary context or creating a crawler-only version of the page.
+
+## Content delivery contract
+
+Ensure the page's meaningful identity, primary content, useful links and required metadata are delivered reliably to the intended consumers. Do not assume content at the end of a very large response will always be processed. Avoid constructing a page as a giant database dump merely to make every possible entity visible.
+
+When splitting content, maintain a coherent user journey and discoverable links. Pagination or separate reference pages should serve actual reading and retrieval needs, not a mechanical attempt to distribute keywords. Test deep links and backward navigation after the change.
+
+## Performance tradeoffs
+
+Smaller HTML can improve delivery efficiency, but a low byte count is not proof of good user experience. Measure field performance and real interactions separately. Server streaming, caching and code splitting change different parts of the delivery path; evaluate them using the project's actual hosting and consumer requirements. [S14, S28]
+
+## Acceptance tests
+
+Set a project budget below the documented processing boundary with an explicit safety margin justified by expected growth. Label the margin as an engineering choice, not Google's ranking requirement. Test the largest realistic catalog item, longest article, maximum navigation state and multilingual content.
+
+Fail the release when the project-specific budget or meaningful-content contract is violated, and retain the capture showing why. Monitor growth over subsequent releases rather than treating the first passing build as permanent compliance. Do not truncate customer-facing content silently to make a metric green.
+
+The deliverable is a response-size inventory, root-cause breakdown, chosen budget, test fixtures and regression check. The supplied library audit does not fetch or weigh any live client pages; these tests require project-specific response captures.
+
+==============================================================================

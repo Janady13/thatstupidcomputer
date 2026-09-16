@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -8.00 1664.00 278.00" width="1664" height="278">
+  <title>Floor / complete surface</title>
+  <g id="floor" data-art="floor">
+    <rect id="floor-base" x="0" y="0" width="1648" height="262" rx="0" fill="#F4E5C4" stroke="none" stroke-width="1.5"/>
+    <path id="floor-rear-tone" d="M0 0 H1648 V54 C1190 22 940 35 714 43 S201 87 0 46 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.035"/>
+    <path id="floor-seam-left" d="M512 0 L340 262" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.13"/>
+    <path id="floor-seam-right" d="M1200 0 L1355 262" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+    <path id="floor-seam-cross" d="M0 213 Q780 180 1648 233" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.09"/>
+  </g>
+</svg>

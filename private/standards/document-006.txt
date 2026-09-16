@@ -1,0 +1,50 @@
+DOCUMENT 006 OF 135
+Title: Acceptance and independence — what a pass actually means
+Path: Library/Disciplines/03-ACCEPTANCE-AND-INDEPENDENCE.md
+Group: expansion
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Acceptance and independence — what a pass actually means
+
+## Define the contract first
+
+Acceptance tests the stated requirement on the stated build and environment. A builder cannot redefine a failed requirement after seeing the result. Freeze a versioned contract and preserve its hash before the acceptance run. Any legitimate contract change requires a recorded reason and renewed owner approval, not silent editing.
+
+Separate functional acceptance, production release authorization and public claim approval. The same evidence may support more than one, but they remain different decisions. Passing an offline JSON validator does not authorize deployment, prove a website works or certify legal compliance.
+
+## Result vocabulary
+
+**PASS:** an executed observation supports the requirement within the recorded scope. **FAIL:** the observation contradicts it. **BLOCKED:** access, evidence, environment, authority or an executed test is missing. **NOT_APPLICABLE:** a permitted exception with specific rationale and owner acceptance. A mandatory check cannot be marked inapplicable solely to obtain a green report.
+
+Risk severity and confidence are separate. An inaccessible real iPhone test is BLOCKED when real-device coverage is mandatory; a WebKit engine run is not a substitute. An SMTP acceptance event is not mailbox observation. An automated accessibility scan is not complete WCAG conformance. [Playwright browser documentation](https://playwright.dev/docs/browsers), [W3C conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance), [SMTP](https://www.rfc-editor.org/rfc/rfc5321.html).
+
+## Independence levels
+
+| Label | Meaning | Permitted public description |
+| --- | --- | --- |
+| same_agent | The same assistant/author revisits its work | Second-pass self-review |
+| isolated_ai_review | A separately run AI review, with context/input separation disclosed | Separate AI review; not independent human verification |
+| separate_operator | Another actual operator executes fresh tests and declares relationship | Separately executed verification, with relationship disclosed |
+| external_independent | An outside verifier with disclosed relationship/conflicts performs the contracted review | External independent review within its actual scope |
+
+These labels are policy design, not certification classes. Different actor strings in JSON cannot prove different people. The record requires declared identity/run separation and owner review of independence when the contract requires it. A human must verify that declaration. Do not invent a verifier to unblock the gate.
+
+## Evidence gate implementation
+
+`Tools/evidence_gate.py` compares a record with a separately supplied contract, verifies required fields/checks, artifact existence and hashes, timestamps, build/environment consistency, execution-run declarations and required independence declarations. It fails closed for missing or failing required checks. A NOT_APPLICABLE result is allowed only when the contract permits it and a reason is supplied.
+
+The gate intentionally returns `authorization_granted: false` even when structural validation passes. It cannot prove that an artifact is truthful, that a browser ran, that a mailbox received a message, that a reviewer is independent, or that consent is legally adequate. Self-reported metadata can be falsified. Its value is catching omissions and inconsistent records before a responsible human evaluates the actual evidence.
+
+Templates are blocked by default. Synthetic pass fixtures exist only inside unit tests and temporary test directories; they are not client evidence. The report must never say Joseph's production site passed these checks merely because the utility's own tests passed.
+
+## Minimum independent critical journey
+
+For a website release affecting inquiries, the predeclared contract should include: intended public reachability, relevant URL/indexing policy, actual form handling and failure behavior, controlled mailbox receipt when email is the promised path, required accessibility/browser scope, accurate measurement, and no critical security/privacy regression. Tailor scope explicitly; do not pretend every release needs every possible criterion.
+
+R26 re-executes required checks with fresh inputs against the actual candidate/deployed build. R25 uses that bounded verdict alongside actual authorization and recovery readiness. A material unresolved critical block prevents acceptance, even when the builder's tests are green.
+
+See [release contract template](../../Templates/Disciplines/release-contract.template.json) and [tools guide](../../Tools/DISCIPLINES-README.md).
+
+==============================================================================

@@ -1,0 +1,44 @@
+DOCUMENT 050 OF 135
+Title: Crawler identity, logs and safe edge access
+Path: Library/Framework/framework-crawler-identity-observability.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Crawler identity, logs and safe edge access
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** CDN, reverse proxy and origin request telemetry  
+**Evidence:** S08, S10, S11, S13, S17 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Distinguish claimed identity from verified identity
+
+A request's user-agent text is a claim anyone can send. Store `claimed_agent` separately from `verification_result`, `verification_method` and `verification_data_date`. Use the provider's published verification mechanism; for Google, the official guidance includes IP-range and reverse/forward DNS approaches. [S13]
+
+OpenAI, Anthropic and Perplexity document their crawler roles and access information. Recheck their official references rather than hardcoding an old list or assuming all traffic from a shared network belongs to one bot. [S08, S10, S11]
+
+## Minimum useful log record
+
+For authorized operations, record timestamp, host, path, status, response bytes, latency, cache outcome, claimed agent and verification result. Treat IP addresses and any query strings as potentially sensitive operational data: limit access and retention, redact secrets, and do not dump raw logs into marketing dashboards.
+
+Group traffic by route class and verified consumer. Separate bot-policy rejection, WAF challenge, application error, rate limit and successful response. A 200 status alone does not prove useful content was returned; challenge pages and empty shells need content-aware checks.
+
+## Edge policy design
+
+Create narrow public-read exceptions only when justified. Do not bypass authentication, administrative restrictions or all security rules for a verified crawler. Keep protection of private resources independent from robots directives. Limit scope by host, method and route where the platform supports it.
+
+Keep a last-known-good verification dataset and record refresh failures. Define what happens during provider outages or malformed updates. A failed refresh must not become `allow everyone`; a stale verification result must not silently become permanent truth.
+
+## Operational tests
+
+Use fixtures for a spoofed agent, an unrecognized IP, a verified crawler request, a protected route and a temporarily rate-limited route. Test both cached and origin responses. A command using a crawler user-agent string checks response behavior, not real crawler identity.
+
+Compare successful retrieval rates and response usefulness before and after an edge change. Do not use crawl frequency as a proxy for citation frequency, human attention or revenue. A crawler may revisit a page without showing it to anyone.
+
+## Handoff
+
+Deliver the approved access policy, identity-verification method, log schema, dashboard definitions, evidence samples and rollback. Document missing visibility where a hosting platform does not expose the required fields. This package supplies the contract and fixtures, not a running client log collector or a verified account-level crawler report.
+
+==============================================================================

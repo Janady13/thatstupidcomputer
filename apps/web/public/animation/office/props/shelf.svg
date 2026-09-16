@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8.00 -20.00 338.00 124.00" width="338" height="124">
+  <title>Wall shelf / two brackets</title>
+  <g id="shelf" data-art="shelf">
+    <path id="shelf-back-edge" d="M0 0 L297 -12 322 -1 15 18 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shelf-front-edge" d="M15 18 L322 -1 V13 L15 33 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shelf-front-shade" d="M15 29 L322 9 V13 L15 33 Z" fill="#29261F" stroke="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.13"/>
+    <path id="shelf-bracket-left" d="M53 32 V94 L64 96 V49 L108 26 L103 23 L65 41 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shelf-bracket-left-inner" d="M63 48 L64 82 L84 37" fill="none" stroke="#29261F" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shelf-bracket-right" d="M252 17 V78 L263 81 V35 L304 16 L299 12 L264 27 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="shelf-mount-left-head" cx="59" cy="84" r="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="shelf-mount-left-slot" d="M57.5 84.875 L60.5 83.125" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="shelf-mount-right-head" cx="258" cy="68" r="2.5" fill="#F4E5C4" stroke="#29261F" stroke-width="0.9"/>
+    <path id="shelf-mount-right-slot" d="M256.5 68.875 L259.5 67.125" fill="none" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="shelf-shelf-grain" d="M32 12 L223 0 M96 18 L272 6" fill="none" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.48"/>
+  </g>
+</svg>

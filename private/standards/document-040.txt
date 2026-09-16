@@ -1,0 +1,42 @@
+DOCUMENT 040 OF 135
+Title: Agent access, MCP and security boundaries
+Path: Library/Framework/framework-agent-access-security.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Agent access, MCP and security boundaries
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Optional agent integrations and automation beyond ordinary public crawling  
+**Evidence:** S47, S48, S49, S02 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Agent integration is a separate product decision
+
+A readable website and an authenticated tool interface solve different problems. Do not install an MCP server, expose a database or publish privileged actions merely to satisfy an SEO checklist. Google's AI Search guidance does not require a special agent interface. [S02]
+
+The MCP specification has versioned contracts, including the 2026-07-28 release. Pin the version implemented by the actual client/server combination and test compatibility rather than mixing examples from old, current and draft documentation. [S47, S49]
+
+## Threat model before implementation
+
+List the data that can be read, the actions that can be executed, the identities permitted to use them and the worst consequence of misuse. Treat tool descriptions, retrieved web content and external instructions as untrusted input. Reading a page must not grant authority to change an account or publish content.
+
+Expose the smallest useful capability. Prefer read-only public-data operations where they satisfy the business need. For writes, require explicit authorization, validate inputs against a schema and enforce permissions on the server, not merely in a prompt. Version-pinned MCP security guidance discusses authorization, SSRF, token/session misuse and untrusted local servers. [S48]
+
+## Practical controls
+
+Keep credentials in the deployment's approved secret store. Do not embed API keys in client-side bundles, public examples, analytics payloads or generated documents. Scope outbound network access and validate target URLs to reduce server-side request forgery risks. Use audit logs that avoid sensitive payloads.
+
+Require confirmation for consequential actions such as publishing, deletion, purchases or changing access. Use a dry-run response where practical. Add rate limits, input-size limits, timeouts and idempotent behavior appropriate to the operation. Do not label an action safe simply because an LLM-generated description says it is.
+
+## Acceptance fixtures
+
+Test an authorized read, unauthorized read, forbidden write, malformed argument, prompt-injection-like content, unexpected redirect target and repeated request. Verify that an external page cannot instruct the integration to reveal secrets or expand permissions. Confirm the action is denied at the application layer even when the model requests it.
+
+## Relationship to this release
+
+This library ships no enabled MCP server and grants no new access to client systems. The older MCP framework remains a legacy reference with an explicit review warning; this module is the current decision and safety entry point. A future project needs its own protocol-version review, security design and integration tests. Agent readiness is an optional functional capability, not a demonstrated ranking signal.
+
+==============================================================================

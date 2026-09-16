@@ -1,0 +1,44 @@
+DOCUMENT 061 OF 135
+Title: Migration contract, checkpoints and rollback
+Path: Library/Framework/framework-migration-rollback-contract.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Migration contract, checkpoints and rollback
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Domain, URL, CMS, rendering and hosting migrations  
+**Evidence:** S38, S15, S16 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Treat a migration as a controlled state transition
+
+Write down the old and new states: domains, URL patterns, content, rendering, infrastructure, analytics, structured data and business workflows. Avoid changing all of them at once without a clear reason and an evidence plan. Google's migration guidance emphasizes preparation, mapping and monitoring; no checklist guarantees unchanged rankings. [S38]
+
+## Required inputs
+
+Export the known URL inventory from multiple available sources, such as the CMS, sitemap, crawl, analytics and link records. Label each source's completeness. Build an explicit old-to-new map with actions for retained, consolidated, moved and removed content.
+
+Inventory verification files, robots rules, canonical generation, hreflang, feeds, media URLs, forms, redirects and transactional emails. Include the bare/www variants and subdomains actually involved. Do not infer that a single main-host test covers the entire estate.
+
+## Preflight
+
+Test representative routes and high-value edge cases in the new environment. Confirm public content, status behavior, internal links, metadata and business transactions. Protect staging through appropriate access controls; do not rely solely on robots, and ensure any intended production indexing rules are prepared separately.
+
+Canonical and indexing decisions need explicit intent. A migration must not accidentally retain a staging canonical, leak an environment hostname or ship `noindex` to public routes. [S15, S16]
+
+## Cutover and rollback
+
+Record who can approve cutover, what evidence is required and which failures trigger rollback. Examples of blocking operational failures include widespread errors, broken checkout, missing public content or an unintended host redirect. Define the rollback steps for code, DNS/edge configuration, content and caches; they may have different propagation characteristics.
+
+Keep the old mapping and configuration accessible. A rollback is not “restore everything” unless the team knows exactly which state to restore. Rehearse a small representative recovery in a safe environment where practical.
+
+## Post-launch verification
+
+Repeat the preflight tests against the actual production hostname. Check form delivery, transactions, redirect destinations, canonical output and verification access. Then monitor crawl/indexing signals and business outcomes over appropriate periods. Distinguish incomplete reporting from an actual loss.
+
+Maintain a migration ledger with deployment time, observed issues, fixes and source exports. Do not claim a traffic change is caused by the migration until measurement, seasonality and concurrent changes are considered. Acceptance means the agreed technical and business behavior is demonstrated; it does not mean the search engines have promised a specific result.
+
+==============================================================================

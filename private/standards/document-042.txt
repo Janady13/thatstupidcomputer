@@ -1,0 +1,40 @@
+DOCUMENT 042 OF 135
+Title: AI referrals, analytics channels and qualified outcomes
+Path: Library/Framework/framework-ai-referral-attribution-2026.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# AI referrals, analytics channels and qualified outcomes
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** GA4 and privacy-respecting CRM measurement  
+**Evidence:** S09, S36, S37 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Use current channel definitions
+
+GA4 now documents an **AI Assistant** default channel, while Google AI Overviews and AI Mode are included in Organic Search. Event-scoped, session-scoped and first-user channel dimensions answer different questions. Check the definition and collection dates before extending historical custom rules. OpenAI documents `utm_source=chatgpt.com` on ChatGPT referral URLs. [S36, S09]
+
+## Create a metric contract
+
+Choose the primary business outcome: qualified inquiry, booked appointment, completed purchase or another verifiable event. Define qualification before reporting. A contact-button click is not a qualified lead; a form submission may be spam; a sale may be refunded. Store the business outcome separately from intermediate interactions.
+
+For session acquisition, retain the session source, medium, channel, landing page, timestamp and consent state as available. For first-touch analysis, use first-user fields deliberately. For attributed key events, record the selected attribution model and lookback settings rather than describing the result as an observed causal contribution.
+
+A first-party CRM can store a permitted, opaque lead key and the independently observed outcome. Do not place names, email addresses, phone numbers or raw sensitive form answers into analytics parameters. Google's PII policy applies to URLs, titles and campaign/event fields as well as obvious profile fields. [S37]
+
+## QA the route to the outcome
+
+Test a referral landing through every redirect and canonical host transition. Confirm that query parameters needed for approved measurement survive until collection, without publishing duplicate indexable variants solely for tracking. Test mobile, denied-consent and blocked-analytics scenarios. Mark missing measurement honestly instead of silently assigning the visit to an AI source.
+
+Use a small controlled test record with a clearly labeled test outcome. Confirm one accepted outcome is not counted twice by a browser event, a server event and a CRM import. Follow actual platform deduplication guidance for the chosen implementation; this document does not prescribe a universal event-ID mechanism.
+
+## Reconcile without double counting
+
+Publish a funnel with separately labeled systems: crawler access from logs; AI visibility from platform reports; measured referrals from analytics; qualified outcomes from the CRM. They are not interchangeable counts. A person can encounter an AI answer and later return directly, leaving no reliable source attribution. An optional “how did you hear about us?” response is self-reported evidence, not a measured exposure.
+
+When definitions change, annotate the reporting boundary. Maintain a legacy-to-current classification bridge rather than rewriting old reports to look artificially consistent. The client report should say what was measured, what was inferred and what remains unknown. Do not promise that the backend can eliminate answer volatility or reveal all private recommendation algorithms.
+
+==============================================================================

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-22.00 -15.00 264.00 164.00" width="264" height="164">
+  <title>Desk drawer / lower + contents</title>
+  <g id="drawer-bottom" data-art="drawer-bottom">
+    <g id="drawer-bottom-slide-motion" data-motion="drawer-bottom" data-pivot="0,0">
+      <path id="drawer-bottom-open-box" d="M6 -6 L217 3 L234 26 L-14 11 Z" fill="#29261F" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-folder-one" d="M14 -4 L66 -1 L69 -7 L194 0 L198 14 L11 7 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-folder-two" d="M24 1 L95 4 L98 -2 L207 4 L210 15 L22 11 Z" fill="#C97038" stroke="#29261F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-folder-three" d="M11 3 L171 9 L179 5 L211 9 L213 20 L12 12 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-drawer-left-side" d="M6 -6 L-14 11 L-14 128 L7 112 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-drawer-front" d="M-14 11 L234 28 L231 141 L-14 128 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-front-inset" d="M-6 20 L225 36 L223 133 L-6 121 Z" fill="none" stroke="#29261F" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+      <path id="drawer-bottom-label-frame" d="M78 39 L135 43 L135 69 L78 65 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-label-paper" d="M83 43 L130 47 L130 64 L83 60 Z" fill="#F4E5C4" stroke="#29261F" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="drawer-bottom-handle" d="M88 72 L131 75" fill="none" stroke="#29261F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

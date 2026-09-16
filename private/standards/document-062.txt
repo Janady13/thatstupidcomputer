@@ -1,0 +1,44 @@
+DOCUMENT 062 OF 135
+Title: Next.js metadata, streaming and rendering validation
+Path: Library/Framework/framework-nextjs-metadata-validation.md
+Group: baseline
+Label: NEW · researched
+Review status: new_researched_module
+==============================================================================
+
+# Next.js metadata, streaming and rendering validation
+
+**Edition:** 2026.09.09 · **Status:** researched guidance and proposed operating procedure  
+**Applies to:** Next.js App Router and React public-content routes  
+**Evidence:** S14, S24, S25, S26, S27 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Boundary:** Official facts are attributed below. Acceptance gates, priorities and workflows are agency recommendations, not secret ranking factors or performance guarantees.
+
+## Pin the implementation context
+
+Record the installed Next.js and React versions, router, runtime, hosting target, cache strategy and deployment adapter. Do not copy a server configuration from another client's machine or assume that a framework version mentioned in an old document matches the project.
+
+Next.js supports metadata streaming and has an `htmlLimitedBots` configuration introduced in 15.2. A custom expression replaces its default list rather than extending it automatically. The official documentation recommends leaving the default sufficient for most cases. [S25–S27]
+
+## Route contract
+
+For each public route, identify the content owner, metadata source, intended canonical, social preview and required initial content. Static metadata is appropriate when the values are static; dynamic metadata should be derived from the actual route record. Ensure invalid identifiers lead to the intended missing-page behavior rather than fabricated titles or successful empty pages.
+
+Keep canonical and visible product/article identity consistent. Do not generate one canonical in the initial response and change it to a conflicting value after hydration. Google can render JavaScript, but that does not prove every retrieval client sees the same content or behaves identically. [S14]
+
+## Capture the right evidence
+
+Test a normal browser and the specific limited consumers relevant to the project. Save complete response bodies, response timing, headers and rendered output; a first-chunk-only grep can misread streamed metadata. Distinguish “not in the first chunk” from “not delivered at all.” A spoofed user agent is a response-variant test, not proof that a real provider fetched the page.
+
+Check title, description, canonical, language, robots directives, Open Graph fields and JSON-LD for duplicates and contradictions. Use a slow content source and a failure fixture to test error behavior. Recheck after a content update to expose cache-invalidation problems.
+
+## Configuration changes
+
+Do not disable metadata streaming globally simply because a legacy checklist says all tags must be in the first byte. Establish a failing consumer case, compare alternatives and measure the latency tradeoff. If overriding `htmlLimitedBots`, preserve the intended consumers and verify the resulting behavior against the pinned release.
+
+## Release result
+
+The acceptance package contains version information, template tests, raw and rendered captures, exceptions and the reason for any advanced override. The offline HTML checker in this release can inspect a saved complete response but cannot execute the Next.js app or certify streaming behavior. Browser and production-edge tests remain required.
+
+React itself is not an SEO verdict. Choose CSR, SSG, SSR or a hybrid based on route purpose, user experience and the consumers that must retrieve it. Treat rendering choice as an engineering decision with evidence, not a claim that every public CSR route is inherently professional malpractice. [S24]
+
+==============================================================================

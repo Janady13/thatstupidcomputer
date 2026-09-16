@@ -1,0 +1,431 @@
+DOCUMENT 128 OF 135
+Title: Primary-source register
+Path: Research/SOURCE-REGISTER.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Primary-source register
+
+Research snapshot: **9 September 2026**. These 52 primary sources were consulted for the stated scopes: 50 search, analytics, web-platform and agent sources, plus two sources for the proposed CI workflow. A source supports only its stated claim, not every recommendation in the library. Operational workflows and acceptance gates are proposed agency practices, not undisclosed ranking rules.
+
+Older live documentation can lag a dated update. In particular S04/S05 supersede S03 on dedicated AI reporting; S01 supersedes S21 on FAQ eligibility. S48 is intentionally version-pinned, not represented as the latest MCP security contract. No source publication date is invented when unavailable.
+
+## S01 — Google Search documentation updates
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-09-08
+
+FAQ retirement; 2026 policy, feature and documentation changes. Changelog dates distinguish documentation changes from feature launches.
+
+[Open primary source](https://developers.google.com/search/updates)
+
+## S02 — AI optimization guide
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+No special AI file or schema requirement for Google Search; llms.txt has no special Search role.
+
+[Open primary source](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+
+## S03 — AI features and your website
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2025-12-10
+
+Search eligibility and snippet controls. Its older reporting paragraph is superseded by S04/S05 for dedicated AI reporting.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/ai-features)
+
+## S04 — Introducing Search Generative AI performance reports
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-06-03
+
+Announcement updated with worldwide rollout on 2026-08-31; dedicated reports coexist with overall performance data.
+
+[Open primary source](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports)
+
+## S05 — Generative AI performance report (Search)
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+AI Overviews/AI Mode impressions; page, country, device and date dimensions. Availability requires sufficient data. No dedicated clicks or prompt dimension asserted.
+
+[Open primary source](https://support.google.com/webmasters/answer/16984139)
+
+## S06 — Introducing AI Performance in Bing Webmaster Tools
+
+**Publisher:** Microsoft Bing · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-02-10
+
+Public-preview AI citation reporting.
+
+[Open primary source](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)
+
+## S07 — New AI visibility insights: Intents, Topics, Citation Share and Compare
+
+**Publisher:** Microsoft Bing · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-06-16
+
+Citation Share is relative to all cited sites for a grounding query; topic/intent classifications and period comparisons.
+
+[Open primary source](https://blogs.bing.com/search/June-2026/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare)
+
+## S08 — Overview of OpenAI crawlers
+
+**Publisher:** OpenAI · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Separate OAI-SearchBot, GPTBot, ChatGPT-User and OAI-AdsBot roles; published verification feeds and user-fetch caveat.
+
+[Open primary source](https://developers.openai.com/api/docs/bots)
+
+## S09 — Publishers and Developers FAQ
+
+**Publisher:** OpenAI · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+ChatGPT referral UTM convention; search-access guidance.
+
+[Open primary source](https://help.openai.com/en/articles/12627856-publishers-and-developers-faq)
+
+## S10 — Does Anthropic crawl data from the web?
+
+**Publisher:** Anthropic · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-04-07
+
+ClaudeBot training, Claude-SearchBot search and Claude-User retrieval; published robots behavior and IP-information link.
+
+[Open primary source](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+
+## S11 — Perplexity crawlers
+
+**Publisher:** Perplexity · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+PerplexityBot search and Perplexity-User user-directed fetch; IP feeds and robots caveat.
+
+[Open primary source](https://docs.perplexity.ai/docs/resources/perplexity-crawlers)
+
+## S12 — Google common crawlers
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-07-14
+
+Google-Extended is a robots product token, not a separate HTTP user agent; Gemini training/grounding scope, not Google Search.
+
+[Open primary source](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers)
+
+## S13 — Verify requests from Google crawlers and fetchers
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Published IP ranges and reverse/forward DNS verification procedures.
+
+[Open primary source](https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests)
+
+## S14 — JavaScript SEO basics
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Google can render JavaScript; rendering, HTTP, canonical and initial-noindex considerations.
+
+[Open primary source](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+
+## S15 — How to specify a canonical URL
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Canonicalization methods are signals with different strengths, not a universal mandate or a guarantee.
+
+[Open primary source](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+
+## S16 — Robots meta tag, data-nosnippet and X-Robots-Tag
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Page-level indexing and snippet controls; crawl access is needed to read directives.
+
+[Open primary source](https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag)
+
+## S17 — How Google interprets robots.txt
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Robots group matching and crawl directives; robots is not authentication.
+
+[Open primary source](https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec)
+
+## S18 — Spam policies for Google web search
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Doorway, scaled-content, hidden-content and reputation abuse; policies also cover manipulation of generative Search responses.
+
+[Open primary source](https://developers.google.com/search/docs/essentials/spam-policies)
+
+## S19 — Creating helpful, reliable, people-first content
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+People-first evaluation and quality questions, not an engine-exposed numeric E-E-A-T score.
+
+[Open primary source](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+
+## S20 — General structured data guidelines
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Visible-content accuracy, feature eligibility, validation and no guaranteed rich result.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
+
+## S21 — Changes to HowTo and FAQ rich results
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2023-08-08
+
+Updated 2023-09-14: HowTo retirement effective 2023-09-13. Old FAQ eligibility is superseded by 2026 retirement in S01.
+
+[Open primary source](https://developers.google.com/search/blog/2023/08/howto-faq-changes)
+
+## S22 — Review snippet structured data
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Authentic visible reviews; no fake or undisclosed incentivized reviews; self-serving LocalBusiness/Organization review-star restriction.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/structured-data/review-snippet)
+
+## S23 — Merchant listing structured data
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Product/Offer eligibility, sale-duration fields and truthful commercial data. Not a promise of AI citations.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing)
+
+## S24 — Creating a React app
+
+**Publisher:** React · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Frameworks can support client rendering, prerendering and server rendering according to route needs.
+
+[Open primary source](https://react.dev/learn/creating-a-react-app)
+
+## S25 — generateMetadata
+
+**Publisher:** Next.js / Vercel · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-08-25
+
+Metadata API, streaming behavior and framework-version-specific usage.
+
+[Open primary source](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
+
+## S26 — Metadata and OG images
+
+**Publisher:** Next.js / Vercel · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-08-25
+
+App Router metadata and social image implementation.
+
+[Open primary source](https://nextjs.org/docs/app/getting-started/metadata-and-og-images)
+
+## S27 — htmlLimitedBots configuration
+
+**Publisher:** Next.js / Vercel · **Observed:** 2026-09-09 · **Document/announcement date:** 2025-10-03
+
+Option introduced in 15.2; custom regex replaces default list; all-bot blocking changes streaming behavior.
+
+[Open primary source](https://nextjs.org/docs/app/api-reference/config/next-config-js/htmlLimitedBots)
+
+## S28 — Web Vitals
+
+**Publisher:** Google web.dev · **Observed:** 2026-09-09 · **Document/announcement date:** 2024-10-31
+
+Current LCP, INP, CLS thresholds and 75th-percentile field methodology; lab is not field evidence.
+
+[Open primary source](https://web.dev/articles/vitals)
+
+## S29 — GEO: Generative Engine Optimization
+
+**Publisher:** Aggarwal et al. / arXiv · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Benchmark and deployed-engine experiments; findings depend on setup, domain, metric and model. Not a 2026 Google production ranking specification.
+
+[Open primary source](https://arxiv.org/html/2311.09735v3)
+
+## S30 — IndexNow documentation
+
+**Publisher:** IndexNow · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Changed-URL submission, ownership verification, batches up to 10000; success acknowledges receipt, not indexing.
+
+[Open primary source](https://www.indexnow.org/documentation)
+
+## S31 — Indexing API quickstart
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Restricted to JobPosting or BroadcastEvent embedded in VideoObject, not a universal website indexing endpoint.
+
+[Open primary source](https://developers.google.com/search/apis/indexing-api/v3/quickstart)
+
+## S32 — Guidelines for representing your business on Google
+
+**Publisher:** Google Business Profile · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Real business representation, address/service-area eligibility and location restrictions.
+
+[Open primary source](https://support.google.com/business/answer/3038177?hl=en)
+
+## S33 — Manage service areas for service-area and hybrid businesses
+
+**Publisher:** Google Business Profile · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Service areas versus customer-facing addresses; avoid invented storefronts.
+
+[Open primary source](https://support.google.com/business/answer/9157481?hl=en)
+
+## S34 — Influencing title links
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Descriptive titles, automated selection and display truncation; no fixed character-count requirement.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/title-link)
+
+## S35 — Control snippets in search results
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Meta-description selection and truncation; no fixed character-count requirement.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/snippet)
+
+## S36 — Default channel group
+
+**Publisher:** Google Analytics · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Current AI Assistant channel; Google AI Overviews/AI Mode remain Organic Search; event/session/first-user scopes differ.
+
+[Open primary source](https://support.google.com/analytics/answer/9756891?hl=en)
+
+## S37 — Avoid sending personally identifiable information
+
+**Publisher:** Google Analytics · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+PII exclusion from URLs, titles, user inputs and campaign/event fields. Legacy UA code on this page is not adopted.
+
+[Open primary source](https://support.google.com/analytics/answer/6366371?hl=en)
+
+## S38 — Site moves and migrations
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+URL mapping, redirects, monitoring and move sequencing.
+
+[Open primary source](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)
+
+## S39 — Managing faceted navigation crawling
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Control unnecessary filter URL crawling; decide which facets need search visibility.
+
+[Open primary source](https://developers.google.com/crawling/docs/faceted-navigation)
+
+## S40 — Tell Google about localized versions
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Hreflang implementation alternatives and reciprocal alternate relationships.
+
+[Open primary source](https://developers.google.com/search/docs/specialty/international/localized-versions)
+
+## S41 — Regional differences in Google Search
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Region-, query- and feature-specific eligibility; documented on 2026-09-08.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/aggregator-features)
+
+## S42 — Update to the site reputation abuse policy
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-08-28
+
+Changes beginning 2026-08-30 distinguish EEA treatment; not permission to pursue abuse.
+
+[Open primary source](https://developers.google.com/search/blog/2026/08/update-site-reputation-policy)
+
+## S43 — Search Console platform properties and social/video guide
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-07-29
+
+Global platform properties for supported social/video platforms; Search visibility differs from native-platform analytics.
+
+[Open primary source](https://developers.google.com/search/blog/2026/07/platform-properties-social-video-guide)
+
+## S44 — Analyze social and video content performance
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Connected/verified platform property workflows and Search performance interpretation.
+
+[Open primary source](https://developers.google.com/search/docs/monitor-debug/analyze-social-video-content)
+
+## S45 — Preferred Sources guide for web publishers
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+User-driven publisher preferences and button implementation; not a universal ranking guarantee.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/preferred-sources)
+
+## S46 — Googlebot crawling size clarification
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-03-31
+
+Googlebot fetch-size guidance: 2 MB for supported files except PDF, with headers included; separate resources fetched separately.
+
+[Open primary source](https://developers.google.com/search/blog/2026/03/crawler-blog-post)
+
+## S47 — Model Context Protocol specification 2026-07-28
+
+**Publisher:** Model Context Protocol · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-07-28
+
+Versioned agent integration protocol; implementation must negotiate supported version and enforce security.
+
+[Open primary source](https://modelcontextprotocol.io/specification/2026-07-28)
+
+## S48 — MCP security best practices, 2025-11-25
+
+**Publisher:** Model Context Protocol · **Observed:** 2026-09-09 · **Document/announcement date:** 2025-11-25
+
+Version-pinned threat guidance: authorization, untrusted servers, SSRF and token/session risks; not the latest protocol contract.
+
+[Open primary source](https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices)
+
+## S49 — MCP tools, 2026-07-28
+
+**Publisher:** Model Context Protocol · **Observed:** 2026-09-09 · **Document/announcement date:** 2026-07-28
+
+Tool interface metadata and human control; older examples can need migration.
+
+[Open primary source](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)
+
+## S50 — Video SEO best practices
+
+**Publisher:** Google · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Watch-page eligibility, stable media resources and differences between video and ordinary web indexing.
+
+[Open primary source](https://developers.google.com/search/docs/appearance/video)
+
+## S51 — actions/checkout official README
+
+**Publisher:** GitHub Actions · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Current checkout@v7 example and read-only repository permissions; proposed workflow only, not executed on GitHub.
+
+[Open primary source](https://github.com/actions/checkout)
+
+## S52 — actions/setup-python official README
+
+**Publisher:** GitHub Actions · **Observed:** 2026-09-09 · **Document/announcement date:** not assigned
+
+Current setup-python@v7 usage and Python version selection; proposed workflow only, not executed on GitHub.
+
+[Open primary source](https://github.com/actions/setup-python)
+
+==============================================================================

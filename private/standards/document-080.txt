@@ -1,0 +1,62 @@
+DOCUMENT 080 OF 135
+Title: Turn verified work into a public expertise asset
+Path: Library/Playbooks/06-EVIDENCE-TO-PUBLIC-EXPERTISE.md
+Group: playbooks
+Label: EXPANSION · source-linked operating design
+Review status: new_discipline_operating_design
+==============================================================================
+
+# Turn verified work into a public expertise asset
+
+**Lead:** R13. **Consulted roles:** R08, R09, R10, R11, R12, R13, R14, R16, R19, R20, R23, R25, R26. **Mode:** read-only diagnosis until actual authorization.
+
+## Entry condition
+
+A documented method or actual authorized engagement can answer a distinct buyer question. This is a publication workflow, not an instruction to declare expertise without proof.
+
+## Sequence and ownership
+
+### 1. Choose the reader problem
+
+R23 validates audience and demand evidence; R10 judges query relevance; R09 checks existing content so the article adds a distinct answer.
+
+### 2. Collect and classify proof
+
+Separate a sourced methodology article from a real case study. R14 checks exact claims, denominators, dates, credentials and permissions; R20 redacts sensitive artifacts.
+
+### 3. Write and attribute truthfully
+
+R13 builds a useful answer with original explanation and limitations. Joseph must actually review and approve a byline or experience claim. R11 models only verified person/business/document facts.
+
+### 4. Approve a canonical publication
+
+Choose the actual host/route; R08 checks directives and links. R25 obtains owner authorization and controls publication. Do not upload the private library or duplicate the same article across both brands.
+
+### 5. Observe and earn corroboration
+
+R12/R16 measure named-surface citations, referrals and qualified outcomes separately. R19 pursues relevant independent coverage of useful work, disclosing paid/owned relationships.
+
+## Evidence package
+
+Preserve task/run IDs, exact environment/build, timestamped observations, safe synthetic inputs, expected versus observed state, tool/browser versions, raw private artifacts and separately hashed public-safe redactions. Record unavailable tools and tests not executed. Attach the handoffs rather than compressing distinct observations into one success flag.
+
+## Acceptance
+
+- Distinct useful answer and truthful approved authorship
+- Material claims have sufficient traceable evidence
+- Public artifacts contain no secrets or unauthorized personal data
+- Actual publication is owner-authorized and technically checked
+
+## Stop or block
+
+No fabricated results, client logos, certifications, independent reviewers or Wikidata identities. A planning brief and keyword list are not a completed case study or measured demand.
+
+## Role and source references
+
+- [R13 — Content Strategist/SEO Editor](../Disciplines/R13-content-strategy-seo-editor.md)
+- [R14 — Fact-Checker/Claims Auditor](../Disciplines/R14-claims-auditor.md)
+- [R23 — Product Marketing/Market Researcher](../Disciplines/R23-product-marketing-research.md)
+
+Primary-source IDs: D20, D21, D25, D26, D19, D40. See the [source register](../../Research/DISCIPLINE-SOURCE-REGISTER.md) for URLs, scope and currentness boundaries. The sequence is custom operating design; it is not a promise that every case has the same cause.
+
+==============================================================================

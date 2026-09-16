@@ -1,0 +1,11 @@
+> Live layout (release 2026-09-13, this checkout): full-viewport room below the header, object hit shapes in `Workshop.tsx` (`.room-hotspots`), the computer's caption in `ComputerConversation.tsx` (no card, no floating labels), home sections in flow (`.home-overview`). v3 (32 performances) and v4 (tab cleanup, inline sections) are merged; `docs/WORKSHOP-CLEANUP-*.md` describe the v4 reference, not this file tree. Older upgrade commands below are historical — never run the v3 installer or the v4 room-tab helper against this tree.
+
+# Continue this website on BUBBLES
+
+Read `AGENTS.md`, `README.md`, `docs/CLAUDE-DEPLOYMENT.md`, `docs/ACCEPTANCE.md`, `docs/DESKTOP-ACCEPTANCE.md`, `docs/DESKTOP-INTEGRATION.md`, and `docs/TRUTH-INTEGRATION.md` before changes. The entire website has been authored locally; preserve the completed implementation and fix evidenced integration issues. Do not restart it as Next.js or replace the supplied character system.
+
+The SEO/AIO library at `private/standards/SEO-AIO-Library.txt` tells AI how to build this correctly. Apply its full current requirements; do not treat the presence of a checklist as compliance. Respect Joseph's explicit constraints: React, no Python, no PostgreSQL or lead DB, direct-email submissions, canonical organizational/personal truth node, GA4 and actual verification.
+
+The remaining live bindings require actual BUBBLES inspection. Never fabricate the truth projection or copy credentials from another legacy app. Use the protected SMTP configuration, the verified recipient and GA4 property, the documented canonical projection, and a staged release before replacing the redirect. Preserve existing production rollback and unrelated services.
+
+This is the complete desktop-character v3 source. It preserves the original CRT art while adding 32 performances and its real demo conversation/form handoff. If continuing from an earlier website tree, run the guarded desktop upgrade dry run described in `docs/DESKTOP-INTEGRATION.md`; do not overwrite an edited tree wholesale. Unknown target edits require a reviewed merge. The offline MP4 proves character controller output, not browser interaction. Actual browser acceptance remains for the permitted deployment environment.

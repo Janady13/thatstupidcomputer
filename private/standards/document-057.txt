@@ -1,0 +1,47 @@
+DOCUMENT 057 OF 135
+Title: Search Console analysis — current reports and defensible diagnostics
+Path: Library/Framework/framework-gscanalysis.md
+Group: baseline
+Label: REWRITTEN · researched
+Review status: rewritten_current_guidance
+==============================================================================
+
+# Search Console analysis — current reports and defensible diagnostics
+
+**Edition:** 2026.09.09 · **Status:** researched replacement of the legacy entry point  
+**Primary sources:** S04 S05 S01 S43 S44 S15 S28 in the [source register](../../Research/SOURCE-REGISTER.md).  
+**Preservation:** The complete prior document remains byte-for-byte in `99-Originals/Framework/framework-gscanalysis.md`. This replacement deliberately removes unsupported universal rules; it does not claim to have tested a client website.
+
+## Verify the property and the report
+
+Start with the actual property scope, permissions, reporting dates and available features. A domain property, URL-prefix property and platform property do not automatically represent the same assets. Do not infer a client's data from a library example or an old screenshot.
+
+The new generative AI report is documented in the June 2026 announcement and August 31 rollout note. The legacy document's Q4 2025 AI-tab timeline and broad list of retired search appearances are not carried forward. [S04, S05, S01]
+
+## Diagnostic order
+
+When performance changes, first validate the measurement: property, filters, incomplete dates, device/country mix, canonical aggregation and any report definition change. Then check technical availability, intended indexing state, content changes and business seasonality.
+
+Do not use a single average position or aggregate CTR as an explanation for everything. Compare meaningful page and query cohorts where available. Keep new, unchanged and retired URLs separate to avoid confusing site expansion with improvement to existing pages.
+
+## Indexing investigation
+
+For an important URL, confirm the intended state, deployed status, public content, canonical relationship, internal discovery and available inspection evidence. Canonicalization is a signal, so compare the intended canonical with what the available report actually shows. [S15]
+
+A low impression count does not authorize noindex or deletion. A technical problem requires a specific diagnosis, not a bulk action against every “thin” or low-traffic page. Record URL decisions through the lifecycle contract.
+
+## Current additional surfaces
+
+Use [Google AI performance](framework-google-ai-performance-2026.md) for dedicated AI impression reporting and its limits. Use [social/video properties](framework-social-video-properties.md) when the client's supported accounts are verified. Those platform properties measure discovery of those assets, not ordinary website behavior. [S43, S44]
+
+Use field performance evidence correctly when interpreting Core Web Vitals. Do not equate a lab screenshot with a field report or infer that a threshold alone explains a ranking change. [S28]
+
+## Reporting contract
+
+Keep raw exports immutable. Store report name, metric definitions, filters, timezone, date range and extraction time with each analysis. Do not invent a universal query-anonymization cutoff or assume every UI field is available through an API/export channel without checking its own documentation.
+
+A client summary should identify the strongest observed change, competing explanations, the action supported by evidence and what remains unknown. It should not label a suspected cause as a confirmed algorithm penalty.
+
+No Search Console property was connected or audited during this library work. The deliverable is the updated analytical procedure and templates; real client measurements require the relevant access and source exports.
+
+==============================================================================

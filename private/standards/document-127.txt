@@ -1,0 +1,33 @@
+DOCUMENT 127 OF 135
+Title: Remaining review queue and explicit limits
+Path: Research/REMAINING-REVIEW-QUEUE.md
+Group: baseline
+Label: REFERENCE · scope stated in document
+Review status: scope_stated_in_document
+==============================================================================
+
+# Remaining review queue and explicit limits
+
+This release is a completed structural audit and targeted research update, not a line-by-line factual certification of approximately one million original words.
+
+## Highest-priority remaining reviews
+
+**Legacy claims and numerical promises.** There are 127 retained active documents without full factual review, plus legacy remainders in five patched guides. The automatic candidate list is a triage aid, not a list of established defects. Revisit named studies, percentages, benchmarks, guarantees, exact thresholds and claims about unpublished systems before use.
+
+**Industry-specific advice.** Existing medical, legal, financial and other high-stakes industry chapters remain legacy reference. A library banner does not establish professional or jurisdiction-specific compliance. Have an appropriately qualified reviewer check intended use, place and current authority before client deployment.
+
+**Stack-specific code.** Old examples for React, Next.js, Remix, WordPress, Shopify, Webflow, server configuration and other platforms were not all installed or runtime-tested. Pin the actual project version, inspect dependencies and test on staging. The nine researched rewrites are guidance, not a fully implemented client application.
+
+**Missing specialist chapters.** Some historical links named absent specialist files, including security headers/CSP, TLS, FastAPI sidecars, fail2ban, compression and HTTP/3. Repairs point to labeled related references where appropriate. They do not pretend that a complete missing specialist treatment now exists.
+
+## Scope not covered by local validation
+
+The 1,758 distinct embedded legacy URLs were inventoried, not all retrieved and checked. The link audit tests local Markdown file targets in its declared folders, not external availability, fragment anchors, every HTML link or source entailment. JSON parsing is not Schema.org vocabulary validation or rich-result testing. Python unit tests cover the four new utilities, not the preserved original Jaccard script or every legacy code block.
+
+No client website was crawled as part of this release. No Search Console, Analytics, Bing Webmaster Tools, hosting, CRM or repository account was connected. No live rankings, real-user performance metrics, consent setup, bot identity, revenue attribution or client result was verified. No research benchmark was independently replicated.
+
+## Release promotion rule
+
+To promote a legacy guide, give it a named scope, current sources, corrected wording, explicit exceptions, representative implementation tests where applicable and a review date. Update the document catalog and migration map; do not silently relabel a file as reviewed. Maintain the original checksum record. A proposed review cadence is not an active scheduled monitor.
+
+==============================================================================
