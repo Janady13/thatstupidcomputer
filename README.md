@@ -1,5 +1,7 @@
 # That Stupid Computer — complete website
 
+> **Status.** This repository holds the source of thatstupidcomputer.com as it stood in September 2026. The live site has changed since, and its current source is kept in a private repository.
+
 The complete React website and Node/TypeScript email backend for **thatstupidcomputer.com**. The supplied workshop artwork fills the home page below a clear header: the bulletin board, clock, desk drawer and coffee mug are the navigation (invisible hit shapes over the drawing, no floating labels), the computer turns toward whatever the visitor points at, and its conversation runs as one caption on the floor under the desk. The same service explanations follow as ordinary page content. Mobile visitors get a dedicated character scene, a link grid and readable, flowing pages.
 
 This delivery includes editable source, the pinned dependency lock, compiled preview files, the original desktop computer with 32 performances, five expanded native Rive mobile characters, animation source and proof, automated tests, the supplied SEO/AIO build manual and its implementation mapping, and BUBBLES deployment files. It uses **no Next.js, Python, PostgreSQL or lead database**.
