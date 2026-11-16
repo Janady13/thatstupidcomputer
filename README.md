@@ -88,3 +88,7 @@ The original desktop SVG/controller has offline render proof for every performan
 Read `docs/ARCHITECTURE.md`, `docs/TRUTH-INTEGRATION.md`, `docs/MEASUREMENT.md` and `docs/ANIMATION.md` for the corresponding implementation contracts. The manual is a build authority, not content for the public website. The catalog's 146 older file references are retained with their unavailable-source status; no claim is made to have read absent originals.
 
 `npm run package` regenerates a complete ZIP and SHA-256 sidecar under `artifacts/`. It includes source and built output, excludes credentials and dependencies, and writes a file-by-file transfer manifest inside the archive. The manifest verifies delivered bytes; changes made after extraction intentionally require a fresh build and package.
+
+## About
+
+Built by [ThatDeveloperGuy](https://thatdeveloperguy.com/) (THATDEVELOPERGUY LLC), a service-disabled veteran-owned web and AI engineering company in Cassville, Missouri. Founder: [Joseph W. Anady](https://feedthejoe.com/joseph/).
